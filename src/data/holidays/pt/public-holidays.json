@@ -1,0 +1,83 @@
+{
+  "country": "PT",
+  "holidays": [
+    {
+      "id": "ano-novo",
+      "name": "Ano Novo",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "sexta-feira-santa",
+      "name": "Sexta-feira Santa",
+      "date": "easter-2",
+      "type": "variable"
+    },
+    {
+      "id": "pascoa",
+      "name": "Domingo de Páscoa",
+      "date": "easter",
+      "type": "variable"
+    },
+    {
+      "id": "dia-da-liberdade",
+      "name": "Dia da Liberdade",
+      "date": "04-25",
+      "type": "fixed"
+    },
+    {
+      "id": "dia-do-trabalhador",
+      "name": "Dia do Trabalhador",
+      "date": "05-01",
+      "type": "fixed"
+    },
+    {
+      "id": "corpo-de-deus",
+      "name": "Corpo de Deus",
+      "date": "easter+60",
+      "type": "variable"
+    },
+    {
+      "id": "dia-de-portugal",
+      "name": "Dia de Portugal",
+      "date": "06-10",
+      "type": "fixed"
+    },
+    {
+      "id": "assuncao-de-nossa-senhora",
+      "name": "Assunção de Nossa Senhora",
+      "date": "08-15",
+      "type": "fixed"
+    },
+    {
+      "id": "implantacao-da-republica",
+      "name": "Implantação da República",
+      "date": "10-05",
+      "type": "fixed"
+    },
+    {
+      "id": "todos-os-santos",
+      "name": "Dia de Todos os Santos",
+      "date": "11-01",
+      "type": "fixed"
+    },
+    {
+      "id": "restauracao-da-independencia",
+      "name": "Restauração da Independência",
+      "date": "12-01",
+      "type": "fixed"
+    },
+    {
+      "id": "imaculada-conceicao",
+      "name": "Imaculada Conceição",
+      "date": "12-08",
+      "type": "fixed"
+    },
+    {
+      "id": "natal",
+      "name": "Natal",
+      "date": "12-25",
+      "type": "fixed"
+    }
+  ]
+}

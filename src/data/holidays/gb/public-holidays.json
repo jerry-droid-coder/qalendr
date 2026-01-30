@@ -1,0 +1,83 @@
+{
+  "country": "GB",
+  "holidays": [
+    {
+      "id": "new-years-day",
+      "name": "New Year's Day",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "st-patricks-day",
+      "name": "St Patrick's Day",
+      "date": "03-17",
+      "type": "fixed",
+      "regions": ["GB-NIR"]
+    },
+    {
+      "id": "good-friday",
+      "name": "Good Friday",
+      "date": "easter-2",
+      "type": "variable"
+    },
+    {
+      "id": "easter-monday",
+      "name": "Easter Monday",
+      "date": "easter+1",
+      "type": "variable",
+      "regions": ["GB-ENG", "GB-WLS", "GB-NIR"]
+    },
+    {
+      "id": "early-may-bank-holiday",
+      "name": "Early May Bank Holiday",
+      "date": "early-may-bank-holiday",
+      "type": "variable"
+    },
+    {
+      "id": "spring-bank-holiday",
+      "name": "Spring Bank Holiday",
+      "date": "spring-bank-holiday",
+      "type": "variable"
+    },
+    {
+      "id": "battle-of-the-boyne",
+      "name": "Battle of the Boyne",
+      "date": "07-12",
+      "type": "fixed",
+      "regions": ["GB-NIR"]
+    },
+    {
+      "id": "summer-bank-holiday",
+      "name": "Summer Bank Holiday",
+      "date": "summer-bank-holiday",
+      "type": "variable",
+      "regions": ["GB-ENG", "GB-WLS", "GB-NIR"]
+    },
+    {
+      "id": "summer-bank-holiday-scotland",
+      "name": "Summer Bank Holiday",
+      "date": "first-monday-08",
+      "type": "variable",
+      "regions": ["GB-SCT"]
+    },
+    {
+      "id": "st-andrews-day",
+      "name": "St Andrew's Day",
+      "date": "11-30",
+      "type": "fixed",
+      "regions": ["GB-SCT"]
+    },
+    {
+      "id": "christmas-day",
+      "name": "Christmas Day",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "boxing-day",
+      "name": "Boxing Day",
+      "date": "12-26",
+      "type": "fixed"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "country": "AT",
+  "holidays": [
+    {
+      "id": "neujahr",
+      "name": "Neujahr",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "heilige-drei-koenige",
+      "name": "Heilige Drei Könige",
+      "date": "01-06",
+      "type": "fixed"
+    },
+    {
+      "id": "ostermontag",
+      "name": "Ostermontag",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "staatsfeiertag",
+      "name": "Staatsfeiertag",
+      "date": "05-01",
+      "type": "fixed"
+    },
+    {
+      "id": "christi-himmelfahrt",
+      "name": "Christi Himmelfahrt",
+      "date": "easter+39",
+      "type": "variable"
+    },
+    {
+      "id": "pfingstmontag",
+      "name": "Pfingstmontag",
+      "date": "easter+50",
+      "type": "variable"
+    },
+    {
+      "id": "fronleichnam",
+      "name": "Fronleichnam",
+      "date": "easter+60",
+      "type": "variable"
+    },
+    {
+      "id": "maria-himmelfahrt",
+      "name": "Mariä Himmelfahrt",
+      "date": "08-15",
+      "type": "fixed"
+    },
+    {
+      "id": "nationalfeiertag",
+      "name": "Nationalfeiertag",
+      "date": "10-26",
+      "type": "fixed"
+    },
+    {
+      "id": "allerheiligen",
+      "name": "Allerheiligen",
+      "date": "11-01",
+      "type": "fixed"
+    },
+    {
+      "id": "maria-empfaengnis",
+      "name": "Mariä Empfängnis",
+      "date": "12-08",
+      "type": "fixed"
+    },
+    {
+      "id": "weihnachten",
+      "name": "Christtag",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "stefanitag",
+      "name": "Stefanitag",
+      "date": "12-26",
+      "type": "fixed"
+    }
+  ]
+}

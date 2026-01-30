@@ -1,0 +1,466 @@
+{
+  "regions": [
+    {
+      "code": "DE",
+      "name": "Deutschland",
+      "country": "DE",
+      "type": "country"
+    },
+    {
+      "code": "DE-BW",
+      "name": "Baden-Württemberg",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-BY",
+      "name": "Bayern",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-BE",
+      "name": "Berlin",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-BB",
+      "name": "Brandenburg",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-HB",
+      "name": "Bremen",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-HH",
+      "name": "Hamburg",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-HE",
+      "name": "Hessen",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-MV",
+      "name": "Mecklenburg-Vorpommern",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-NI",
+      "name": "Niedersachsen",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-NW",
+      "name": "Nordrhein-Westfalen",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-RP",
+      "name": "Rheinland-Pfalz",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-SL",
+      "name": "Saarland",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-SN",
+      "name": "Sachsen",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-ST",
+      "name": "Sachsen-Anhalt",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-SH",
+      "name": "Schleswig-Holstein",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "DE-TH",
+      "name": "Thüringen",
+      "country": "DE",
+      "type": "state"
+    },
+    {
+      "code": "AT",
+      "name": "Österreich",
+      "country": "AT",
+      "type": "country"
+    },
+    {
+      "code": "AT-1",
+      "name": "Burgenland",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-2",
+      "name": "Kärnten",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-3",
+      "name": "Niederösterreich",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-4",
+      "name": "Oberösterreich",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-5",
+      "name": "Salzburg",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-6",
+      "name": "Steiermark",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-7",
+      "name": "Tirol",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-8",
+      "name": "Vorarlberg",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "AT-9",
+      "name": "Wien",
+      "country": "AT",
+      "type": "state"
+    },
+    {
+      "code": "CH",
+      "name": "Schweiz",
+      "country": "CH",
+      "type": "country"
+    },
+    {
+      "code": "CH-AG",
+      "name": "Aargau",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-AI",
+      "name": "Appenzell Innerrhoden",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-AR",
+      "name": "Appenzell Ausserrhoden",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-BE",
+      "name": "Bern",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-BL",
+      "name": "Basel-Landschaft",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-BS",
+      "name": "Basel-Stadt",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-FR",
+      "name": "Freiburg",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-GE",
+      "name": "Genf",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-GL",
+      "name": "Glarus",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-GR",
+      "name": "Graubünden",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-JU",
+      "name": "Jura",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-LU",
+      "name": "Luzern",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-NE",
+      "name": "Neuenburg",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-NW",
+      "name": "Nidwalden",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-OW",
+      "name": "Obwalden",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-SG",
+      "name": "St. Gallen",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-SH",
+      "name": "Schaffhausen",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-SO",
+      "name": "Solothurn",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-SZ",
+      "name": "Schwyz",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-TG",
+      "name": "Thurgau",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-TI",
+      "name": "Tessin",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-UR",
+      "name": "Uri",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-VD",
+      "name": "Waadt",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-VS",
+      "name": "Wallis",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-ZG",
+      "name": "Zug",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "CH-ZH",
+      "name": "Zürich",
+      "country": "CH",
+      "type": "state"
+    },
+    {
+      "code": "FR",
+      "name": "Frankreich",
+      "country": "FR",
+      "type": "country"
+    },
+    {
+      "code": "NL",
+      "name": "Niederlande",
+      "country": "NL",
+      "type": "country"
+    },
+    {
+      "code": "BE",
+      "name": "Belgien",
+      "country": "BE",
+      "type": "country"
+    },
+    {
+      "code": "IT",
+      "name": "Italien",
+      "country": "IT",
+      "type": "country"
+    },
+    {
+      "code": "ES",
+      "name": "Spanien",
+      "country": "ES",
+      "type": "country"
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "country": "PT",
+      "type": "country"
+    },
+    {
+      "code": "PL",
+      "name": "Polen",
+      "country": "PL",
+      "type": "country"
+    },
+    {
+      "code": "GB",
+      "name": "Vereinigtes Königreich",
+      "country": "GB",
+      "type": "country"
+    },
+    {
+      "code": "GB-ENG",
+      "name": "England",
+      "country": "GB",
+      "type": "state"
+    },
+    {
+      "code": "GB-WLS",
+      "name": "Wales",
+      "country": "GB",
+      "type": "state"
+    },
+    {
+      "code": "GB-SCT",
+      "name": "Schottland",
+      "country": "GB",
+      "type": "state"
+    },
+    {
+      "code": "GB-NIR",
+      "name": "Nordirland",
+      "country": "GB",
+      "type": "state"
+    },
+    {
+      "code": "US",
+      "name": "USA",
+      "country": "US",
+      "type": "country"
+    },
+    {
+      "code": "CA",
+      "name": "Kanada",
+      "country": "CA",
+      "type": "country"
+    },
+    {
+      "code": "AU",
+      "name": "Australien",
+      "country": "AU",
+      "type": "country"
+    },
+    {
+      "code": "AU-ACT",
+      "name": "Australian Capital Territory",
+      "country": "AU",
+      "type": "state"
+    },
+    {
+      "code": "AU-NSW",
+      "name": "New South Wales",
+      "country": "AU",
+      "type": "state"
+    },
+    {
+      "code": "AU-NT",
+      "name": "Northern Territory",
+      "country": "AU",
+      "type": "state"
+    },
+    {
+      "code": "AU-QLD",
+      "name": "Queensland",
+      "country": "AU",
+      "type": "state"
+    },
+    {
+      "code": "AU-SA",
+      "name": "South Australia",
+      "country": "AU",
+      "type": "state"
+    },
+    {
+      "code": "AU-TAS",
+      "name": "Tasmania",
+      "country": "AU",
+      "type": "state"
+    },
+    {
+      "code": "AU-VIC",
+      "name": "Victoria",
+      "country": "AU",
+      "type": "state"
+    },
+    {
+      "code": "AU-WA",
+      "name": "Western Australia",
+      "country": "AU",
+      "type": "state"
+    }
+  ]
+}

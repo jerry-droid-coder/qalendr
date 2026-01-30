@@ -1,0 +1,106 @@
+{
+  "country": "CH",
+  "holidays": [
+    {
+      "id": "neujahr",
+      "name": "Neujahr",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "berchtoldstag",
+      "name": "Berchtoldstag",
+      "date": "01-02",
+      "type": "fixed",
+      "regions": ["CH-AG", "CH-BE", "CH-FR", "CH-GL", "CH-JU", "CH-LU", "CH-NE", "CH-OW", "CH-SG", "CH-SH", "CH-SO", "CH-TG", "CH-VD", "CH-ZG", "CH-ZH"]
+    },
+    {
+      "id": "heilige-drei-koenige",
+      "name": "Heilige Drei Könige",
+      "date": "01-06",
+      "type": "fixed",
+      "regions": ["CH-GR", "CH-SZ", "CH-TI", "CH-UR"]
+    },
+    {
+      "id": "karfreitag",
+      "name": "Karfreitag",
+      "date": "easter-2",
+      "type": "variable",
+      "regions": ["CH-AG", "CH-AI", "CH-AR", "CH-BE", "CH-BL", "CH-BS", "CH-FR", "CH-GE", "CH-GL", "CH-GR", "CH-JU", "CH-LU", "CH-NE", "CH-NW", "CH-OW", "CH-SG", "CH-SH", "CH-SO", "CH-SZ", "CH-TG", "CH-UR", "CH-VD", "CH-ZG", "CH-ZH"]
+    },
+    {
+      "id": "ostermontag",
+      "name": "Ostermontag",
+      "date": "easter+1",
+      "type": "variable",
+      "regions": ["CH-AG", "CH-AI", "CH-AR", "CH-BE", "CH-BL", "CH-BS", "CH-FR", "CH-GE", "CH-GL", "CH-GR", "CH-JU", "CH-LU", "CH-NW", "CH-OW", "CH-SG", "CH-SH", "CH-SO", "CH-SZ", "CH-TG", "CH-TI", "CH-UR", "CH-ZG", "CH-ZH"]
+    },
+    {
+      "id": "tag-der-arbeit",
+      "name": "Tag der Arbeit",
+      "date": "05-01",
+      "type": "fixed",
+      "regions": ["CH-BL", "CH-BS", "CH-JU", "CH-NE", "CH-SH", "CH-TG", "CH-TI", "CH-ZH"]
+    },
+    {
+      "id": "christi-himmelfahrt",
+      "name": "Auffahrt",
+      "date": "easter+39",
+      "type": "variable"
+    },
+    {
+      "id": "pfingstmontag",
+      "name": "Pfingstmontag",
+      "date": "easter+50",
+      "type": "variable",
+      "regions": ["CH-AG", "CH-AI", "CH-AR", "CH-BE", "CH-BL", "CH-BS", "CH-FR", "CH-GE", "CH-GL", "CH-GR", "CH-JU", "CH-LU", "CH-NW", "CH-OW", "CH-SG", "CH-SH", "CH-SO", "CH-SZ", "CH-TG", "CH-TI", "CH-UR", "CH-ZG", "CH-ZH"]
+    },
+    {
+      "id": "fronleichnam",
+      "name": "Fronleichnam",
+      "date": "easter+60",
+      "type": "variable",
+      "regions": ["CH-AG", "CH-AI", "CH-FR", "CH-GR", "CH-JU", "CH-LU", "CH-NE", "CH-NW", "CH-OW", "CH-SO", "CH-SZ", "CH-TI", "CH-UR", "CH-VS", "CH-ZG"]
+    },
+    {
+      "id": "bundesfeier",
+      "name": "Bundesfeier",
+      "date": "08-01",
+      "type": "fixed"
+    },
+    {
+      "id": "maria-himmelfahrt",
+      "name": "Mariä Himmelfahrt",
+      "date": "08-15",
+      "type": "fixed",
+      "regions": ["CH-AG", "CH-AI", "CH-FR", "CH-GR", "CH-JU", "CH-LU", "CH-NW", "CH-OW", "CH-SO", "CH-SZ", "CH-TI", "CH-UR", "CH-VS", "CH-ZG"]
+    },
+    {
+      "id": "allerheiligen",
+      "name": "Allerheiligen",
+      "date": "11-01",
+      "type": "fixed",
+      "regions": ["CH-AG", "CH-AI", "CH-FR", "CH-GL", "CH-GR", "CH-JU", "CH-LU", "CH-NW", "CH-OW", "CH-SG", "CH-SO", "CH-SZ", "CH-TI", "CH-UR", "CH-VS", "CH-ZG"]
+    },
+    {
+      "id": "maria-empfaengnis",
+      "name": "Mariä Empfängnis",
+      "date": "12-08",
+      "type": "fixed",
+      "regions": ["CH-AG", "CH-AI", "CH-FR", "CH-GR", "CH-LU", "CH-NW", "CH-OW", "CH-SO", "CH-SZ", "CH-TI", "CH-UR", "CH-VS", "CH-ZG"]
+    },
+    {
+      "id": "weihnachten",
+      "name": "Weihnachten",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "stephanstag",
+      "name": "Stephanstag",
+      "date": "12-26",
+      "type": "fixed",
+      "regions": ["CH-AG", "CH-AI", "CH-AR", "CH-BE", "CH-BL", "CH-BS", "CH-FR", "CH-GL", "CH-GR", "CH-LU", "CH-NW", "CH-OW", "CH-SG", "CH-SH", "CH-SO", "CH-SZ", "CH-TG", "CH-TI", "CH-UR", "CH-ZG", "CH-ZH"]
+    }
+  ]
+}

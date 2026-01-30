@@ -1,0 +1,102 @@
+{
+  "countries": [
+    {
+      "code": "DE",
+      "name": "Deutschland",
+      "flag": "🇩🇪",
+      "hasSchoolHolidays": true,
+      "hasStates": true
+    },
+    {
+      "code": "AT",
+      "name": "Österreich",
+      "flag": "🇦🇹",
+      "hasSchoolHolidays": false,
+      "hasStates": true
+    },
+    {
+      "code": "CH",
+      "name": "Schweiz",
+      "flag": "🇨🇭",
+      "hasSchoolHolidays": false,
+      "hasStates": true
+    },
+    {
+      "code": "FR",
+      "name": "Frankreich",
+      "flag": "🇫🇷",
+      "hasSchoolHolidays": false,
+      "hasStates": false
+    },
+    {
+      "code": "NL",
+      "name": "Niederlande",
+      "flag": "🇳🇱",
+      "hasSchoolHolidays": false,
+      "hasStates": false
+    },
+    {
+      "code": "BE",
+      "name": "Belgien",
+      "flag": "🇧🇪",
+      "hasSchoolHolidays": false,
+      "hasStates": false
+    },
+    {
+      "code": "IT",
+      "name": "Italien",
+      "flag": "🇮🇹",
+      "hasSchoolHolidays": false,
+      "hasStates": false
+    },
+    {
+      "code": "ES",
+      "name": "Spanien",
+      "flag": "🇪🇸",
+      "hasSchoolHolidays": false,
+      "hasStates": true
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "flag": "🇵🇹",
+      "hasSchoolHolidays": false,
+      "hasStates": false
+    },
+    {
+      "code": "PL",
+      "name": "Polen",
+      "flag": "🇵🇱",
+      "hasSchoolHolidays": false,
+      "hasStates": false
+    },
+    {
+      "code": "GB",
+      "name": "Vereinigtes Königreich",
+      "flag": "🇬🇧",
+      "hasSchoolHolidays": false,
+      "hasStates": true
+    },
+    {
+      "code": "US",
+      "name": "USA",
+      "flag": "🇺🇸",
+      "hasSchoolHolidays": false,
+      "hasStates": true
+    },
+    {
+      "code": "CA",
+      "name": "Kanada",
+      "flag": "🇨🇦",
+      "hasSchoolHolidays": false,
+      "hasStates": true
+    },
+    {
+      "code": "AU",
+      "name": "Australien",
+      "flag": "🇦🇺",
+      "hasSchoolHolidays": false,
+      "hasStates": true
+    }
+  ]
+}

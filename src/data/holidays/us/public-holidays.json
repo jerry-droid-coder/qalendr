@@ -1,0 +1,71 @@
+{
+  "country": "US",
+  "holidays": [
+    {
+      "id": "new-years-day",
+      "name": "New Year's Day",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "mlk-day",
+      "name": "Martin Luther King Jr. Day",
+      "date": "mlk-day",
+      "type": "variable"
+    },
+    {
+      "id": "presidents-day",
+      "name": "Presidents' Day",
+      "date": "presidents-day",
+      "type": "variable"
+    },
+    {
+      "id": "memorial-day",
+      "name": "Memorial Day",
+      "date": "memorial-day",
+      "type": "variable"
+    },
+    {
+      "id": "juneteenth",
+      "name": "Juneteenth",
+      "date": "06-19",
+      "type": "fixed"
+    },
+    {
+      "id": "independence-day",
+      "name": "Independence Day",
+      "date": "07-04",
+      "type": "fixed"
+    },
+    {
+      "id": "labor-day",
+      "name": "Labor Day",
+      "date": "labor-day-us",
+      "type": "variable"
+    },
+    {
+      "id": "columbus-day",
+      "name": "Columbus Day",
+      "date": "columbus-day",
+      "type": "variable"
+    },
+    {
+      "id": "veterans-day",
+      "name": "Veterans Day",
+      "date": "11-11",
+      "type": "fixed"
+    },
+    {
+      "id": "thanksgiving",
+      "name": "Thanksgiving Day",
+      "date": "thanksgiving-us",
+      "type": "variable"
+    },
+    {
+      "id": "christmas",
+      "name": "Christmas Day",
+      "date": "12-25",
+      "type": "fixed"
+    }
+  ]
+}

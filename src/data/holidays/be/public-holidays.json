@@ -1,0 +1,65 @@
+{
+  "country": "BE",
+  "holidays": [
+    {
+      "id": "nieuwjaar",
+      "name": "Nieuwjaar / Nouvel An",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "paasmaandag",
+      "name": "Paasmaandag / Lundi de Pâques",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "dag-van-de-arbeid",
+      "name": "Dag van de Arbeid / Fête du Travail",
+      "date": "05-01",
+      "type": "fixed"
+    },
+    {
+      "id": "hemelvaart",
+      "name": "Onze-Lieve-Heer-Hemelvaart / Ascension",
+      "date": "easter+39",
+      "type": "variable"
+    },
+    {
+      "id": "pinkstermaandag",
+      "name": "Pinkstermaandag / Lundi de Pentecôte",
+      "date": "easter+50",
+      "type": "variable"
+    },
+    {
+      "id": "nationale-feestdag",
+      "name": "Nationale Feestdag / Fête Nationale",
+      "date": "07-21",
+      "type": "fixed"
+    },
+    {
+      "id": "maria-hemelvaart",
+      "name": "O.L.V.-Hemelvaart / Assomption",
+      "date": "08-15",
+      "type": "fixed"
+    },
+    {
+      "id": "allerheiligen",
+      "name": "Allerheiligen / Toussaint",
+      "date": "11-01",
+      "type": "fixed"
+    },
+    {
+      "id": "wapenstilstand",
+      "name": "Wapenstilstand / Armistice",
+      "date": "11-11",
+      "type": "fixed"
+    },
+    {
+      "id": "kerstmis",
+      "name": "Kerstmis / Noël",
+      "date": "12-25",
+      "type": "fixed"
+    }
+  ]
+}

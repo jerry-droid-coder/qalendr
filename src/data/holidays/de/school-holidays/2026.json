@@ -1,0 +1,144 @@
+{
+  "year": 2026,
+  "country": "DE",
+  "holidays": [
+    {
+      "id": "winterferien-2026",
+      "name": "Winterferien",
+      "type": "winter",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2026-02-14", "endDate": "2026-02-14" },
+        { "region": "DE-BY", "startDate": "2026-02-16", "endDate": "2026-02-20" },
+        { "region": "DE-BE", "startDate": "2026-02-02", "endDate": "2026-02-07" },
+        { "region": "DE-BB", "startDate": "2026-02-02", "endDate": "2026-02-07" },
+        { "region": "DE-HB", "startDate": "2026-02-02", "endDate": "2026-02-03" },
+        { "region": "DE-HH", "startDate": "2026-01-30", "endDate": "2026-01-30" },
+        { "region": "DE-HE", "startDate": "2026-02-02", "endDate": "2026-02-02" },
+        { "region": "DE-MV", "startDate": "2026-02-02", "endDate": "2026-02-14" },
+        { "region": "DE-NI", "startDate": "2026-02-02", "endDate": "2026-02-03" },
+        { "region": "DE-NW", "startDate": "2026-02-02", "endDate": "2026-02-02" },
+        { "region": "DE-RP", "startDate": "2026-02-02", "endDate": "2026-02-10" },
+        { "region": "DE-SL", "startDate": "2026-02-09", "endDate": "2026-02-14" },
+        { "region": "DE-SN", "startDate": "2026-02-09", "endDate": "2026-02-21" },
+        { "region": "DE-ST", "startDate": "2026-02-02", "endDate": "2026-02-07" },
+        { "region": "DE-SH", "startDate": "2026-02-02", "endDate": "2026-02-02" },
+        { "region": "DE-TH", "startDate": "2026-02-02", "endDate": "2026-02-07" }
+      ]
+    },
+    {
+      "id": "osterferien-2026",
+      "name": "Osterferien",
+      "type": "easter",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2026-03-30", "endDate": "2026-04-10" },
+        { "region": "DE-BY", "startDate": "2026-03-30", "endDate": "2026-04-11" },
+        { "region": "DE-BE", "startDate": "2026-03-30", "endDate": "2026-04-10" },
+        { "region": "DE-BB", "startDate": "2026-03-30", "endDate": "2026-04-10" },
+        { "region": "DE-HB", "startDate": "2026-03-23", "endDate": "2026-04-04" },
+        { "region": "DE-HH", "startDate": "2026-03-02", "endDate": "2026-03-13" },
+        { "region": "DE-HE", "startDate": "2026-04-06", "endDate": "2026-04-18" },
+        { "region": "DE-MV", "startDate": "2026-03-30", "endDate": "2026-04-08" },
+        { "region": "DE-NI", "startDate": "2026-03-23", "endDate": "2026-04-04" },
+        { "region": "DE-NW", "startDate": "2026-03-30", "endDate": "2026-04-11" },
+        { "region": "DE-RP", "startDate": "2026-03-23", "endDate": "2026-04-03" },
+        { "region": "DE-SL", "startDate": "2026-03-23", "endDate": "2026-04-03" },
+        { "region": "DE-SN", "startDate": "2026-04-03", "endDate": "2026-04-11" },
+        { "region": "DE-ST", "startDate": "2026-03-30", "endDate": "2026-04-04" },
+        { "region": "DE-SH", "startDate": "2026-04-03", "endDate": "2026-04-18" },
+        { "region": "DE-TH", "startDate": "2026-03-30", "endDate": "2026-04-11" }
+      ]
+    },
+    {
+      "id": "pfingstferien-2026",
+      "name": "Pfingstferien",
+      "type": "pentecost",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2026-05-26", "endDate": "2026-06-06" },
+        { "region": "DE-BY", "startDate": "2026-05-26", "endDate": "2026-06-05" },
+        { "region": "DE-BE", "startDate": "2026-05-15", "endDate": "2026-05-15" },
+        { "region": "DE-BB", "startDate": "2026-05-15", "endDate": "2026-05-15" },
+        { "region": "DE-HB", "startDate": "2026-05-15", "endDate": "2026-05-26" },
+        { "region": "DE-HH", "startDate": "2026-05-11", "endDate": "2026-05-15" },
+        { "region": "DE-HE", "startDate": "2026-05-26", "endDate": "2026-05-26" },
+        { "region": "DE-MV", "startDate": "2026-05-22", "endDate": "2026-05-26" },
+        { "region": "DE-NI", "startDate": "2026-05-15", "endDate": "2026-05-26" },
+        { "region": "DE-NW", "startDate": "2026-05-26", "endDate": "2026-05-26" },
+        { "region": "DE-RP", "startDate": "2026-05-26", "endDate": "2026-06-05" },
+        { "region": "DE-SL", "startDate": "2026-05-26", "endDate": "2026-05-29" },
+        { "region": "DE-SN", "startDate": "2026-05-15", "endDate": "2026-05-15" },
+        { "region": "DE-ST", "startDate": "2026-05-15", "endDate": "2026-05-22" },
+        { "region": "DE-SH", "startDate": "2026-05-15", "endDate": "2026-05-15" },
+        { "region": "DE-TH", "startDate": "2026-05-15", "endDate": "2026-05-15" }
+      ]
+    },
+    {
+      "id": "sommerferien-2026",
+      "name": "Sommerferien",
+      "type": "summer",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2026-07-30", "endDate": "2026-09-12" },
+        { "region": "DE-BY", "startDate": "2026-08-03", "endDate": "2026-09-14" },
+        { "region": "DE-BE", "startDate": "2026-07-09", "endDate": "2026-08-21" },
+        { "region": "DE-BB", "startDate": "2026-07-09", "endDate": "2026-08-22" },
+        { "region": "DE-HB", "startDate": "2026-07-16", "endDate": "2026-08-26" },
+        { "region": "DE-HH", "startDate": "2026-07-09", "endDate": "2026-08-19" },
+        { "region": "DE-HE", "startDate": "2026-07-06", "endDate": "2026-08-14" },
+        { "region": "DE-MV", "startDate": "2026-07-13", "endDate": "2026-08-22" },
+        { "region": "DE-NI", "startDate": "2026-07-16", "endDate": "2026-08-26" },
+        { "region": "DE-NW", "startDate": "2026-06-29", "endDate": "2026-08-11" },
+        { "region": "DE-RP", "startDate": "2026-07-06", "endDate": "2026-08-14" },
+        { "region": "DE-SL", "startDate": "2026-07-06", "endDate": "2026-08-14" },
+        { "region": "DE-SN", "startDate": "2026-06-29", "endDate": "2026-08-07" },
+        { "region": "DE-ST", "startDate": "2026-07-13", "endDate": "2026-08-22" },
+        { "region": "DE-SH", "startDate": "2026-07-13", "endDate": "2026-08-22" },
+        { "region": "DE-TH", "startDate": "2026-06-29", "endDate": "2026-08-08" }
+      ]
+    },
+    {
+      "id": "herbstferien-2026",
+      "name": "Herbstferien",
+      "type": "autumn",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2026-10-26", "endDate": "2026-10-30" },
+        { "region": "DE-BY", "startDate": "2026-11-02", "endDate": "2026-11-06" },
+        { "region": "DE-BE", "startDate": "2026-10-19", "endDate": "2026-10-31" },
+        { "region": "DE-BB", "startDate": "2026-10-19", "endDate": "2026-10-30" },
+        { "region": "DE-HB", "startDate": "2026-10-12", "endDate": "2026-10-24" },
+        { "region": "DE-HH", "startDate": "2026-10-19", "endDate": "2026-10-30" },
+        { "region": "DE-HE", "startDate": "2026-10-19", "endDate": "2026-10-30" },
+        { "region": "DE-MV", "startDate": "2026-10-12", "endDate": "2026-10-17" },
+        { "region": "DE-NI", "startDate": "2026-10-12", "endDate": "2026-10-24" },
+        { "region": "DE-NW", "startDate": "2026-10-12", "endDate": "2026-10-24" },
+        { "region": "DE-RP", "startDate": "2026-10-12", "endDate": "2026-10-23" },
+        { "region": "DE-SL", "startDate": "2026-10-12", "endDate": "2026-10-23" },
+        { "region": "DE-SN", "startDate": "2026-10-12", "endDate": "2026-10-24" },
+        { "region": "DE-ST", "startDate": "2026-10-19", "endDate": "2026-10-24" },
+        { "region": "DE-SH", "startDate": "2026-10-19", "endDate": "2026-10-31" },
+        { "region": "DE-TH", "startDate": "2026-10-05", "endDate": "2026-10-17" }
+      ]
+    },
+    {
+      "id": "weihnachtsferien-2026",
+      "name": "Weihnachtsferien",
+      "type": "christmas",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2026-12-23", "endDate": "2027-01-09" },
+        { "region": "DE-BY", "startDate": "2026-12-23", "endDate": "2027-01-09" },
+        { "region": "DE-BE", "startDate": "2026-12-23", "endDate": "2027-01-02" },
+        { "region": "DE-BB", "startDate": "2026-12-23", "endDate": "2027-01-02" },
+        { "region": "DE-HB", "startDate": "2026-12-23", "endDate": "2027-01-06" },
+        { "region": "DE-HH", "startDate": "2026-12-21", "endDate": "2027-01-02" },
+        { "region": "DE-HE", "startDate": "2026-12-21", "endDate": "2027-01-08" },
+        { "region": "DE-MV", "startDate": "2026-12-21", "endDate": "2027-01-02" },
+        { "region": "DE-NI", "startDate": "2026-12-23", "endDate": "2027-01-06" },
+        { "region": "DE-NW", "startDate": "2026-12-23", "endDate": "2027-01-06" },
+        { "region": "DE-RP", "startDate": "2026-12-21", "endDate": "2027-01-04" },
+        { "region": "DE-SL", "startDate": "2026-12-21", "endDate": "2027-01-02" },
+        { "region": "DE-SN", "startDate": "2026-12-23", "endDate": "2027-01-02" },
+        { "region": "DE-ST", "startDate": "2026-12-19", "endDate": "2027-01-02" },
+        { "region": "DE-SH", "startDate": "2026-12-21", "endDate": "2027-01-06" },
+        { "region": "DE-TH", "startDate": "2026-12-23", "endDate": "2027-01-02" }
+      ]
+    }
+  ]
+}

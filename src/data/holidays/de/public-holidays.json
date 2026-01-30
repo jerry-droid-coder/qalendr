@@ -1,0 +1,129 @@
+{
+  "country": "DE",
+  "holidays": [
+    {
+      "id": "neujahr",
+      "name": "Neujahr",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "heilige-drei-koenige",
+      "name": "Heilige Drei Könige",
+      "date": "01-06",
+      "type": "fixed",
+      "regions": ["DE-BW", "DE-BY", "DE-ST"]
+    },
+    {
+      "id": "frauentag",
+      "name": "Internationaler Frauentag",
+      "date": "03-08",
+      "type": "fixed",
+      "regions": ["DE-BE", "DE-MV"]
+    },
+    {
+      "id": "karfreitag",
+      "name": "Karfreitag",
+      "date": "easter-2",
+      "type": "variable"
+    },
+    {
+      "id": "ostersonntag",
+      "name": "Ostersonntag",
+      "date": "easter",
+      "type": "variable",
+      "regions": ["DE-BB"]
+    },
+    {
+      "id": "ostermontag",
+      "name": "Ostermontag",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "tag-der-arbeit",
+      "name": "Tag der Arbeit",
+      "date": "05-01",
+      "type": "fixed"
+    },
+    {
+      "id": "christi-himmelfahrt",
+      "name": "Christi Himmelfahrt",
+      "date": "easter+39",
+      "type": "variable"
+    },
+    {
+      "id": "pfingstsonntag",
+      "name": "Pfingstsonntag",
+      "date": "easter+49",
+      "type": "variable",
+      "regions": ["DE-BB"]
+    },
+    {
+      "id": "pfingstmontag",
+      "name": "Pfingstmontag",
+      "date": "easter+50",
+      "type": "variable"
+    },
+    {
+      "id": "fronleichnam",
+      "name": "Fronleichnam",
+      "date": "easter+60",
+      "type": "variable",
+      "regions": ["DE-BW", "DE-BY", "DE-HE", "DE-NW", "DE-RP", "DE-SL", "DE-SN", "DE-TH"]
+    },
+    {
+      "id": "maria-himmelfahrt",
+      "name": "Mariä Himmelfahrt",
+      "date": "08-15",
+      "type": "fixed",
+      "regions": ["DE-BY", "DE-SL"]
+    },
+    {
+      "id": "weltkindertag",
+      "name": "Weltkindertag",
+      "date": "09-20",
+      "type": "fixed",
+      "regions": ["DE-TH"]
+    },
+    {
+      "id": "tag-der-deutschen-einheit",
+      "name": "Tag der Deutschen Einheit",
+      "date": "10-03",
+      "type": "fixed"
+    },
+    {
+      "id": "reformationstag",
+      "name": "Reformationstag",
+      "date": "10-31",
+      "type": "fixed",
+      "regions": ["DE-BB", "DE-HB", "DE-HH", "DE-MV", "DE-NI", "DE-SN", "DE-ST", "DE-SH", "DE-TH"]
+    },
+    {
+      "id": "allerheiligen",
+      "name": "Allerheiligen",
+      "date": "11-01",
+      "type": "fixed",
+      "regions": ["DE-BW", "DE-BY", "DE-NW", "DE-RP", "DE-SL"]
+    },
+    {
+      "id": "buss-und-bettag",
+      "name": "Buß- und Bettag",
+      "date": "buss-und-bettag",
+      "type": "variable",
+      "regions": ["DE-SN"]
+    },
+    {
+      "id": "weihnachten-1",
+      "name": "1. Weihnachtstag",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "weihnachten-2",
+      "name": "2. Weihnachtstag",
+      "date": "12-26",
+      "type": "fixed"
+    }
+  ]
+}

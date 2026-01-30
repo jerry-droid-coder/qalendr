@@ -1,0 +1,83 @@
+{
+  "country": "PL",
+  "holidays": [
+    {
+      "id": "nowy-rok",
+      "name": "Nowy Rok",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "trzech-kroli",
+      "name": "Święto Trzech Króli",
+      "date": "01-06",
+      "type": "fixed"
+    },
+    {
+      "id": "wielkanoc",
+      "name": "Niedziela Wielkanocna",
+      "date": "easter",
+      "type": "variable"
+    },
+    {
+      "id": "poniedzialek-wielkanocny",
+      "name": "Poniedziałek Wielkanocny",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "swieto-pracy",
+      "name": "Święto Pracy",
+      "date": "05-01",
+      "type": "fixed"
+    },
+    {
+      "id": "swieto-konstytucji",
+      "name": "Święto Konstytucji 3 Maja",
+      "date": "05-03",
+      "type": "fixed"
+    },
+    {
+      "id": "zielone-swiatki",
+      "name": "Zielone Świątki",
+      "date": "easter+49",
+      "type": "variable"
+    },
+    {
+      "id": "boze-cialo",
+      "name": "Boże Ciało",
+      "date": "easter+60",
+      "type": "variable"
+    },
+    {
+      "id": "wniebowziecie-nmp",
+      "name": "Wniebowzięcie NMP",
+      "date": "08-15",
+      "type": "fixed"
+    },
+    {
+      "id": "wszystkich-swietych",
+      "name": "Wszystkich Świętych",
+      "date": "11-01",
+      "type": "fixed"
+    },
+    {
+      "id": "swieto-niepodleglosci",
+      "name": "Święto Niepodległości",
+      "date": "11-11",
+      "type": "fixed"
+    },
+    {
+      "id": "boze-narodzenie-1",
+      "name": "Pierwszy dzień Bożego Narodzenia",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "boze-narodzenie-2",
+      "name": "Drugi dzień Bożego Narodzenia",
+      "date": "12-26",
+      "type": "fixed"
+    }
+  ]
+}

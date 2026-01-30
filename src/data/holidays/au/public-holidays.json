@@ -1,0 +1,80 @@
+{
+  "country": "AU",
+  "holidays": [
+    {
+      "id": "new-years-day",
+      "name": "New Year's Day",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "australia-day",
+      "name": "Australia Day",
+      "date": "01-26",
+      "type": "fixed"
+    },
+    {
+      "id": "good-friday",
+      "name": "Good Friday",
+      "date": "easter-2",
+      "type": "variable"
+    },
+    {
+      "id": "saturday-before-easter",
+      "name": "Saturday before Easter Sunday",
+      "date": "easter-1",
+      "type": "variable"
+    },
+    {
+      "id": "easter-sunday",
+      "name": "Easter Sunday",
+      "date": "easter",
+      "type": "variable"
+    },
+    {
+      "id": "easter-monday",
+      "name": "Easter Monday",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "anzac-day",
+      "name": "Anzac Day",
+      "date": "04-25",
+      "type": "fixed"
+    },
+    {
+      "id": "queens-birthday",
+      "name": "Queen's Birthday",
+      "date": "queens-birthday-au",
+      "type": "variable",
+      "regions": ["AU-ACT", "AU-NSW", "AU-NT", "AU-SA", "AU-TAS", "AU-VIC"]
+    },
+    {
+      "id": "queens-birthday-qld",
+      "name": "Queen's Birthday",
+      "date": "first-monday-10",
+      "type": "variable",
+      "regions": ["AU-QLD"]
+    },
+    {
+      "id": "queens-birthday-wa",
+      "name": "Queen's Birthday",
+      "date": "fourth-monday-09",
+      "type": "variable",
+      "regions": ["AU-WA"]
+    },
+    {
+      "id": "christmas",
+      "name": "Christmas Day",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "boxing-day",
+      "name": "Boxing Day",
+      "date": "12-26",
+      "type": "fixed"
+    }
+  ]
+}

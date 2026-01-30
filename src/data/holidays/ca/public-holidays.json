@@ -1,0 +1,77 @@
+{
+  "country": "CA",
+  "holidays": [
+    {
+      "id": "new-years-day",
+      "name": "New Year's Day",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "good-friday",
+      "name": "Good Friday",
+      "date": "easter-2",
+      "type": "variable"
+    },
+    {
+      "id": "easter-monday",
+      "name": "Easter Monday",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "victoria-day",
+      "name": "Victoria Day",
+      "date": "victoria-day",
+      "type": "variable"
+    },
+    {
+      "id": "canada-day",
+      "name": "Canada Day",
+      "date": "07-01",
+      "type": "fixed"
+    },
+    {
+      "id": "civic-holiday",
+      "name": "Civic Holiday",
+      "date": "first-monday-08",
+      "type": "variable"
+    },
+    {
+      "id": "labour-day",
+      "name": "Labour Day",
+      "date": "first-monday-09",
+      "type": "variable"
+    },
+    {
+      "id": "national-day-truth-reconciliation",
+      "name": "National Day for Truth and Reconciliation",
+      "date": "09-30",
+      "type": "fixed"
+    },
+    {
+      "id": "thanksgiving",
+      "name": "Thanksgiving Day",
+      "date": "thanksgiving-ca",
+      "type": "variable"
+    },
+    {
+      "id": "remembrance-day",
+      "name": "Remembrance Day",
+      "date": "11-11",
+      "type": "fixed"
+    },
+    {
+      "id": "christmas",
+      "name": "Christmas Day",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "boxing-day",
+      "name": "Boxing Day",
+      "date": "12-26",
+      "type": "fixed"
+    }
+  ]
+}

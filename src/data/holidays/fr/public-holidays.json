@@ -1,0 +1,71 @@
+{
+  "country": "FR",
+  "holidays": [
+    {
+      "id": "jour-de-lan",
+      "name": "Jour de l'An",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "lundi-de-paques",
+      "name": "Lundi de Pâques",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "fete-du-travail",
+      "name": "Fête du Travail",
+      "date": "05-01",
+      "type": "fixed"
+    },
+    {
+      "id": "victoire-1945",
+      "name": "Victoire 1945",
+      "date": "05-08",
+      "type": "fixed"
+    },
+    {
+      "id": "ascension",
+      "name": "Ascension",
+      "date": "easter+39",
+      "type": "variable"
+    },
+    {
+      "id": "lundi-de-pentecote",
+      "name": "Lundi de Pentecôte",
+      "date": "easter+50",
+      "type": "variable"
+    },
+    {
+      "id": "fete-nationale",
+      "name": "Fête Nationale",
+      "date": "07-14",
+      "type": "fixed"
+    },
+    {
+      "id": "assomption",
+      "name": "Assomption",
+      "date": "08-15",
+      "type": "fixed"
+    },
+    {
+      "id": "toussaint",
+      "name": "Toussaint",
+      "date": "11-01",
+      "type": "fixed"
+    },
+    {
+      "id": "armistice",
+      "name": "Armistice",
+      "date": "11-11",
+      "type": "fixed"
+    },
+    {
+      "id": "noel",
+      "name": "Noël",
+      "date": "12-25",
+      "type": "fixed"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "country": "NL",
+  "holidays": [
+    {
+      "id": "nieuwjaarsdag",
+      "name": "Nieuwjaarsdag",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "koningsdag",
+      "name": "Koningsdag",
+      "date": "04-27",
+      "type": "fixed"
+    },
+    {
+      "id": "bevrijdingsdag",
+      "name": "Bevrijdingsdag",
+      "date": "05-05",
+      "type": "fixed"
+    },
+    {
+      "id": "goede-vrijdag",
+      "name": "Goede Vrijdag",
+      "date": "easter-2",
+      "type": "variable"
+    },
+    {
+      "id": "pasen",
+      "name": "Eerste Paasdag",
+      "date": "easter",
+      "type": "variable"
+    },
+    {
+      "id": "tweede-paasdag",
+      "name": "Tweede Paasdag",
+      "date": "easter+1",
+      "type": "variable"
+    },
+    {
+      "id": "hemelvaartsdag",
+      "name": "Hemelvaartsdag",
+      "date": "easter+39",
+      "type": "variable"
+    },
+    {
+      "id": "pinksteren",
+      "name": "Eerste Pinksterdag",
+      "date": "easter+49",
+      "type": "variable"
+    },
+    {
+      "id": "tweede-pinksterdag",
+      "name": "Tweede Pinksterdag",
+      "date": "easter+50",
+      "type": "variable"
+    },
+    {
+      "id": "eerste-kerstdag",
+      "name": "Eerste Kerstdag",
+      "date": "12-25",
+      "type": "fixed"
+    },
+    {
+      "id": "tweede-kerstdag",
+      "name": "Tweede Kerstdag",
+      "date": "12-26",
+      "type": "fixed"
+    }
+  ]
+}

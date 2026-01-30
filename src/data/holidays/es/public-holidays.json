@@ -1,0 +1,65 @@
+{
+  "country": "ES",
+  "holidays": [
+    {
+      "id": "ano-nuevo",
+      "name": "Año Nuevo",
+      "date": "01-01",
+      "type": "fixed"
+    },
+    {
+      "id": "epifania",
+      "name": "Epifanía del Señor",
+      "date": "01-06",
+      "type": "fixed"
+    },
+    {
+      "id": "viernes-santo",
+      "name": "Viernes Santo",
+      "date": "easter-2",
+      "type": "variable"
+    },
+    {
+      "id": "dia-del-trabajo",
+      "name": "Día del Trabajo",
+      "date": "05-01",
+      "type": "fixed"
+    },
+    {
+      "id": "asuncion",
+      "name": "Asunción de la Virgen",
+      "date": "08-15",
+      "type": "fixed"
+    },
+    {
+      "id": "fiesta-nacional",
+      "name": "Fiesta Nacional de España",
+      "date": "10-12",
+      "type": "fixed"
+    },
+    {
+      "id": "todos-los-santos",
+      "name": "Todos los Santos",
+      "date": "11-01",
+      "type": "fixed"
+    },
+    {
+      "id": "constitucion",
+      "name": "Día de la Constitución",
+      "date": "12-06",
+      "type": "fixed"
+    },
+    {
+      "id": "inmaculada-concepcion",
+      "name": "Inmaculada Concepción",
+      "date": "12-08",
+      "type": "fixed"
+    },
+    {
+      "id": "navidad",
+      "name": "Navidad",
+      "date": "12-25",
+      "type": "fixed"
+    }
+  ]
+}
