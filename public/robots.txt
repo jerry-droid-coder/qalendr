@@ -1,0 +1,10 @@
+# robots.txt for Qalendr
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://qalendr.com/sitemap.xml
+
+# Disallow API routes from indexing
+Disallow: /api/

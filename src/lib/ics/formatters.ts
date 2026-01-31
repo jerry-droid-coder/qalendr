@@ -104,7 +104,7 @@ export function joinIcsLines(lines: string[]): string {
 /**
  * Generate a stable, unique UID for an event
  */
-export function generateUid(eventId: string, domain = 'standard-termine.de'): string {
+export function generateUid(eventId: string, domain = 'qalendr.com'): string {
   return `${eventId}@${domain}`;
 }
 
@@ -406,6 +406,19 @@ export function resolveDatePattern(pattern: string, year: number): string {
   // Australian Holidays
   if (pattern === 'queens-birthday-au') {
     const date = calculateQueensBirthdayAU(year);
+    return date.toISOString().split('T')[0];
+  }
+
+  // Daylight Saving Time (Europe)
+  if (pattern === 'dst-spring') {
+    // Last Sunday in March (clocks forward)
+    const date = calculateLastWeekday(year, 3, 0); // Sunday = 0
+    return date.toISOString().split('T')[0];
+  }
+
+  if (pattern === 'dst-autumn') {
+    // Last Sunday in October (clocks back)
+    const date = calculateLastWeekday(year, 10, 0); // Sunday = 0
     return date.toISOString().split('T')[0];
   }
 

@@ -1,0 +1,76 @@
+{
+  "description": "Zufällige Wikipedia-Artikel für jeden Tag",
+  "lastUpdated": "2025-01-31",
+  "articles": {
+    "01-01": {
+      "title": "Quastenflosser",
+      "excerpt": "Als lebende Fossilien gelten diese Fische, die seit 400 Millionen Jahren fast unverändert existieren.",
+      "link": "https://de.wikipedia.org/wiki/Quastenflosser"
+    },
+    "01-15": {
+      "title": "Voyager Golden Record",
+      "excerpt": "Eine vergoldete Datenplatte mit Bild- und Audioinformationen über die Erde, die 1977 mit den Voyager-Sonden ins All geschickt wurde.",
+      "link": "https://de.wikipedia.org/wiki/Voyager_Golden_Record"
+    },
+    "02-14": {
+      "title": "Blobfisch",
+      "excerpt": "Ein Tiefseefisch, der 2013 zum hässlichsten Tier der Welt gewählt wurde.",
+      "link": "https://de.wikipedia.org/wiki/Blobfisch"
+    },
+    "03-14": {
+      "title": "Pi",
+      "excerpt": "Die Kreiszahl Pi ist eine mathematische Konstante, die das Verhältnis des Umfangs eines Kreises zu seinem Durchmesser beschreibt.",
+      "link": "https://de.wikipedia.org/wiki/Kreiszahl"
+    },
+    "04-01": {
+      "title": "Spaghetti-Baum",
+      "excerpt": "Ein berühmter Aprilscherz der BBC von 1957, der Schweizer Bauern bei der Spaghetti-Ernte zeigte.",
+      "link": "https://de.wikipedia.org/wiki/Spaghetti-Baum"
+    },
+    "05-04": {
+      "title": "Lichtschwert",
+      "excerpt": "Die ikonische Waffe der Jedi-Ritter aus dem Star-Wars-Universum.",
+      "link": "https://de.wikipedia.org/wiki/Lichtschwert"
+    },
+    "06-21": {
+      "title": "Mitternachtssonne",
+      "excerpt": "Ein Phänomen in polaren Regionen, bei dem die Sonne im Sommer nicht untergeht.",
+      "link": "https://de.wikipedia.org/wiki/Mitternachtssonne"
+    },
+    "07-20": {
+      "title": "Mondlandung",
+      "excerpt": "Am 20. Juli 1969 betraten Neil Armstrong und Buzz Aldrin als erste Menschen den Mond.",
+      "link": "https://de.wikipedia.org/wiki/Mondlandung"
+    },
+    "08-08": {
+      "title": "Schrödingers Katze",
+      "excerpt": "Ein Gedankenexperiment, das die Paradoxien der Quantenmechanik veranschaulicht.",
+      "link": "https://de.wikipedia.org/wiki/Schr%C3%B6dingers_Katze"
+    },
+    "09-19": {
+      "title": "Talk Like a Pirate Day",
+      "excerpt": "Ein parodistischer Feiertag, an dem Menschen ermutigt werden, wie Piraten zu sprechen.",
+      "link": "https://de.wikipedia.org/wiki/International_Talk_Like_a_Pirate_Day"
+    },
+    "10-31": {
+      "title": "Kürbis",
+      "excerpt": "Eine Pflanzengattung, deren Früchte zu Halloween traditionell zu Laternen geschnitzt werden.",
+      "link": "https://de.wikipedia.org/wiki/K%C3%BCrbisse"
+    },
+    "11-11": {
+      "title": "Karneval",
+      "excerpt": "Die fünfte Jahreszeit beginnt traditionell am 11.11. um 11:11 Uhr.",
+      "link": "https://de.wikipedia.org/wiki/Karneval"
+    },
+    "12-24": {
+      "title": "Weihnachtsbaum",
+      "excerpt": "Der geschmückte Nadelbaum ist seit dem 19. Jahrhundert ein zentrales Symbol des Weihnachtsfestes.",
+      "link": "https://de.wikipedia.org/wiki/Weihnachtsbaum"
+    },
+    "12-31": {
+      "title": "Feuerwerk",
+      "excerpt": "Pyrotechnische Effekte, die traditionell zu Silvester gezündet werden.",
+      "link": "https://de.wikipedia.org/wiki/Feuerwerk"
+    }
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "$source": "https://www.kmk.org/service/ferien.html",
   "year": 2026,
   "country": "DE",
   "holidays": [

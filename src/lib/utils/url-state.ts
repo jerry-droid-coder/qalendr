@@ -13,6 +13,11 @@ const VALID_CATEGORIES: EventCategory[] = [
   'public-holidays',
   'observances',
   'fun-days',
+  'bridge-days',
+  'moon-phases',
+  'wikipedia-today',
+  'wikipedia-random',
+  'famous-birthdays',
   'vacation',
   'custom',
 ];
@@ -43,6 +48,21 @@ export function encodeConfigToUrl(config: CalendarConfig): string {
     params.set('y', config.year.toString());
   }
 
+  // Selected observances
+  if (config.selectedObservances && config.selectedObservances.length > 0) {
+    params.set('obs', config.selectedObservances.join(','));
+  }
+
+  // Selected fun days
+  if (config.selectedFunDays && config.selectedFunDays.length > 0) {
+    params.set('fun', config.selectedFunDays.join(','));
+  }
+
+  // Selected famous people
+  if (config.selectedFamousPeople && config.selectedFamousPeople.length > 0) {
+    params.set('ppl', config.selectedFamousPeople.join(','));
+  }
+
   // Optional: reminders
   if (config.includeReminders) {
     params.set('rem', '1');
@@ -62,6 +82,9 @@ export function decodeUrlToConfig(searchParams: URLSearchParams): CalendarConfig
   const regionsParam = searchParams.get('r');
   const categoriesParam = searchParams.get('c');
   const yearParam = searchParams.get('y');
+  const observancesParam = searchParams.get('obs');
+  const funDaysParam = searchParams.get('fun');
+  const famousPeopleParam = searchParams.get('ppl');
   const remindersParam = searchParams.get('rem');
   const reminderDaysParam = searchParams.get('remd');
 
@@ -88,6 +111,19 @@ export function decodeUrlToConfig(searchParams: URLSearchParams): CalendarConfig
     ? getCurrentYear()
     : year;
 
+  // Parse selected items
+  const selectedObservances = observancesParam
+    ? observancesParam.split(',').filter((o) => o.length > 0)
+    : undefined;
+
+  const selectedFunDays = funDaysParam
+    ? funDaysParam.split(',').filter((f) => f.length > 0)
+    : undefined;
+
+  const selectedFamousPeople = famousPeopleParam
+    ? famousPeopleParam.split(',').filter((p) => p.length > 0)
+    : undefined;
+
   // Parse reminders
   const includeReminders = remindersParam === '1';
   const reminderDays = reminderDaysParam
@@ -98,6 +134,9 @@ export function decodeUrlToConfig(searchParams: URLSearchParams): CalendarConfig
     countries,
     regions,
     categories,
+    selectedObservances,
+    selectedFunDays,
+    selectedFamousPeople,
     year: validYear,
     includeReminders,
     reminderDays,

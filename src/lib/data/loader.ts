@@ -23,9 +23,9 @@ import regionsJson from '@/data/regions.json';
 
 // German holidays and school holidays
 import publicHolidaysDeJson from '@/data/holidays/de/public-holidays.json';
-import schoolHolidays2024Json from '@/data/holidays/de/school-holidays/2024.json';
-import schoolHolidays2025Json from '@/data/holidays/de/school-holidays/2025.json';
 import schoolHolidays2026Json from '@/data/holidays/de/school-holidays/2026.json';
+import schoolHolidays2027Json from '@/data/holidays/de/school-holidays/2027.json';
+import schoolHolidays2028Json from '@/data/holidays/de/school-holidays/2028.json';
 
 // International public holidays
 import publicHolidaysAtJson from '@/data/holidays/at/public-holidays.json';
@@ -42,9 +42,13 @@ import publicHolidaysUsJson from '@/data/holidays/us/public-holidays.json';
 import publicHolidaysCaJson from '@/data/holidays/ca/public-holidays.json';
 import publicHolidaysAuJson from '@/data/holidays/au/public-holidays.json';
 
-// Special days (observances and fun days)
+// Special days (observances, fun days, moon phases, wikipedia, famous people)
 import observancesJson from '@/data/special-days/observances.json';
 import funDaysJson from '@/data/special-days/fun-days.json';
+import moonPhasesJson from '@/data/special-days/moon-phases.json';
+import wikipediaTodayJson from '@/data/special-days/wikipedia-today.json';
+import wikipediaRandomJson from '@/data/special-days/wikipedia-random.json';
+import famousPeopleJson from '@/data/special-days/famous-people.json';
 
 // Type assertions for imported JSON
 const countriesData = countriesJson as CountriesData;
@@ -70,9 +74,9 @@ const publicHolidaysData: Record<string, PublicHolidaysData> = {
 
 // School holidays (only Germany for now)
 const schoolHolidaysData: Record<number, SchoolHolidayYearData> = {
-  2024: schoolHolidays2024Json as SchoolHolidayYearData,
-  2025: schoolHolidays2025Json as SchoolHolidayYearData,
   2026: schoolHolidays2026Json as SchoolHolidayYearData,
+  2027: schoolHolidays2027Json as SchoolHolidayYearData,
+  2028: schoolHolidays2028Json as SchoolHolidayYearData,
 };
 
 // Special days data structure
@@ -92,6 +96,73 @@ interface SpecialDaysFile {
 const observancesData = observancesJson as SpecialDaysFile;
 const funDaysData = funDaysJson as SpecialDaysFile;
 
+// Moon phases data structure
+interface MoonPhaseEntry {
+  date: string;
+  type: 'new' | 'full';
+  name: string;
+}
+
+interface MoonPhasesFile {
+  description: string;
+  phases: Record<string, MoonPhaseEntry[]>;
+}
+
+const moonPhasesData = moonPhasesJson as MoonPhasesFile;
+
+// Wikipedia today data structure
+interface WikipediaEvent {
+  year: number;
+  text: string;
+  link?: string;
+}
+
+interface WikipediaTodayFile {
+  description: string;
+  lastUpdated: string;
+  events: Record<string, WikipediaEvent[]>;
+}
+
+const wikipediaTodayData = wikipediaTodayJson as WikipediaTodayFile;
+
+// Wikipedia random data structure
+interface WikipediaRandomArticle {
+  title: string;
+  excerpt: string;
+  link: string;
+}
+
+interface WikipediaRandomFile {
+  description: string;
+  lastUpdated: string;
+  articles: Record<string, WikipediaRandomArticle>;
+}
+
+const wikipediaRandomData = wikipediaRandomJson as WikipediaRandomFile;
+
+// Famous people data structure
+interface FamousPerson {
+  id: string;
+  name: string;
+  birthDate: string;
+  birthYear: number;
+  deathDate?: string;
+  deathYear?: number;
+  profession: string;
+  link?: string;
+}
+
+interface FamousPeopleFile {
+  description: string;
+  lastUpdated: string;
+  people: FamousPerson[];
+}
+
+const famousPeopleData = famousPeopleJson as FamousPeopleFile;
+
+// Export types for use in components
+export type { FamousPerson };
+
 /**
  * Get all available observances
  */
@@ -104,6 +175,13 @@ export function getObservances(): SpecialDayData[] {
  */
 export function getFunDays(): SpecialDayData[] {
   return funDaysData.days;
+}
+
+/**
+ * Get all famous people
+ */
+export function getFamousPeople(): FamousPerson[] {
+  return famousPeopleData.people;
 }
 
 // Export the type for use in components
@@ -372,6 +450,215 @@ export function loadFunDays(year: number, selectedIds?: string[]): CalendarEvent
 }
 
 /**
+ * Load moon phases (Neumond/Vollmond) for a specific year
+ * @param year - The year to load moon phases for
+ */
+export function loadMoonPhases(year: number): CalendarEvent[] {
+  const events: CalendarEvent[] = [];
+  const yearData = moonPhasesData.phases[year.toString()];
+
+  if (!yearData) return events;
+
+  for (const phase of yearData) {
+    events.push({
+      id: `moon-${phase.type}-${phase.date}`,
+      title: phase.name,
+      startDate: phase.date,
+      endDate: phase.date,
+      allDay: true,
+      category: 'moon-phases',
+    });
+  }
+
+  return events;
+}
+
+/**
+ * Load Wikipedia "On this day" historical events for a specific year
+ * @param year - The year to generate events for
+ */
+export function loadWikipediaToday(year: number): CalendarEvent[] {
+  const events: CalendarEvent[] = [];
+
+  for (const [monthDay, dayEvents] of Object.entries(wikipediaTodayData.events)) {
+    const [month, day] = monthDay.split('-');
+    const date = `${year}-${month}-${day}`;
+
+    for (const event of dayEvents) {
+      const yearsAgo = year - event.year;
+      events.push({
+        id: `wikipedia-${monthDay}-${event.year}`,
+        title: `${event.year}: ${event.text}`,
+        startDate: date,
+        endDate: date,
+        allDay: true,
+        category: 'wikipedia-today',
+        description: event.link ? `Vor ${yearsAgo} Jahren. Mehr: ${event.link}` : `Vor ${yearsAgo} Jahren.`,
+      });
+    }
+  }
+
+  return events;
+}
+
+/**
+ * Load random Wikipedia articles for a specific year
+ * @param year - The year to generate events for
+ */
+export function loadWikipediaRandom(year: number): CalendarEvent[] {
+  const events: CalendarEvent[] = [];
+
+  for (const [monthDay, article] of Object.entries(wikipediaRandomData.articles)) {
+    const [month, day] = monthDay.split('-');
+    const date = `${year}-${month}-${day}`;
+
+    events.push({
+      id: `wikipedia-random-${monthDay}`,
+      title: `📚 ${article.title}`,
+      startDate: date,
+      endDate: date,
+      allDay: true,
+      category: 'wikipedia-random',
+      description: `${article.excerpt}\n\nWikipedia: ${article.link}`,
+    });
+  }
+
+  return events;
+}
+
+/**
+ * Load famous birthdays and death anniversaries for a specific year
+ * @param year - The year to generate events for
+ * @param selectedIds - Optional array of person IDs to filter by. If undefined, loads all.
+ */
+export function loadFamousBirthdays(year: number, selectedIds?: string[]): CalendarEvent[] {
+  const events: CalendarEvent[] = [];
+
+  for (const person of famousPeopleData.people) {
+    // Skip if selection is provided and this person is not selected
+    if (selectedIds && !selectedIds.includes(person.id)) continue;
+
+    // Birthday event
+    const [birthMonth, birthDay] = person.birthDate.split('-');
+    const birthDate = `${year}-${birthMonth}-${birthDay}`;
+    const birthAge = year - person.birthYear;
+
+    events.push({
+      id: `birthday-${person.id}-${year}`,
+      title: `🎂 ${person.name} (*${person.birthYear})`,
+      startDate: birthDate,
+      endDate: birthDate,
+      allDay: true,
+      category: 'famous-birthdays',
+      description: person.link
+        ? `${person.profession}. ${birthAge}. Geburtstag.\n\nWikipedia: ${person.link}`
+        : `${person.profession}. ${birthAge}. Geburtstag.`,
+    });
+
+    // Death anniversary event (if person has died)
+    if (person.deathDate && person.deathYear) {
+      const [deathMonth, deathDay] = person.deathDate.split('-');
+      const deathDate = `${year}-${deathMonth}-${deathDay}`;
+      const deathYearsAgo = year - person.deathYear;
+
+      events.push({
+        id: `death-${person.id}-${year}`,
+        title: `✝ ${person.name} (†${person.deathYear})`,
+        startDate: deathDate,
+        endDate: deathDate,
+        allDay: true,
+        category: 'famous-birthdays',
+        description: person.link
+          ? `${person.profession}. Vor ${deathYearsAgo} Jahren verstorben.\n\nWikipedia: ${person.link}`
+          : `${person.profession}. Vor ${deathYearsAgo} Jahren verstorben.`,
+      });
+    }
+  }
+
+  return events;
+}
+
+/**
+ * Calculate bridge days (Brückentage) based on public holidays
+ *
+ * A bridge day is a recommended vacation day that connects a holiday to a weekend:
+ * - Holiday on Tuesday: Take Monday off → 4 days free (Sat-Tue)
+ * - Holiday on Thursday: Take Friday off → 4 days free (Thu-Sun)
+ * - Holiday on Wednesday: Take Mon+Tue or Thu+Fri off → 5 days free
+ */
+export function calculateBridgeDays(
+  holidays: CalendarEvent[],
+  year: number
+): CalendarEvent[] {
+  const bridgeDays: CalendarEvent[] = [];
+
+  for (const holiday of holidays) {
+    // Only process public holidays from the requested year
+    if (!holiday.startDate.startsWith(year.toString())) continue;
+    if (holiday.category !== 'public-holidays') continue;
+
+    const holidayDate = new Date(holiday.startDate);
+    const dayOfWeek = holidayDate.getDay(); // 0=Sunday, 1=Monday, ..., 6=Saturday
+
+    // Helper to format date as YYYY-MM-DD
+    const formatDate = (d: Date): string => {
+      return d.toISOString().split('T')[0];
+    };
+
+    // Helper to add days to a date
+    const addDays = (d: Date, days: number): Date => {
+      const result = new Date(d);
+      result.setDate(result.getDate() + days);
+      return result;
+    };
+
+    // Clean holiday name (remove region suffix like "(DE-BY, DE-NW)")
+    const cleanHolidayName = holiday.title.replace(/\s*\([^)]+\)\s*$/, '');
+
+    if (dayOfWeek === 2) {
+      // Tuesday: Bridge day on Monday
+      const bridgeDate = addDays(holidayDate, -1);
+      bridgeDays.push({
+        id: `bridge-${holiday.id}-mon`,
+        title: 'Brückentag (1 Tag Urlaub = 4 Tage frei)',
+        startDate: formatDate(bridgeDate),
+        endDate: formatDate(bridgeDate),
+        allDay: true,
+        category: 'bridge-days',
+        description: `Nimm den Montag vor ${cleanHolidayName} frei und genieße ein langes Wochenende von Samstag bis Dienstag.`,
+      });
+    } else if (dayOfWeek === 4) {
+      // Thursday: Bridge day on Friday
+      const bridgeDate = addDays(holidayDate, 1);
+      bridgeDays.push({
+        id: `bridge-${holiday.id}-fri`,
+        title: 'Brückentag (1 Tag Urlaub = 4 Tage frei)',
+        startDate: formatDate(bridgeDate),
+        endDate: formatDate(bridgeDate),
+        allDay: true,
+        category: 'bridge-days',
+        description: `Nimm den Freitag nach ${cleanHolidayName} frei und genieße ein langes Wochenende von Donnerstag bis Sonntag.`,
+      });
+    } else if (dayOfWeek === 3) {
+      // Wednesday: Two options - take Mon+Tue or Thu+Fri (we recommend Thu+Fri as it's closer to weekend)
+      const bridgeDate1 = addDays(holidayDate, 1); // Thursday
+      const bridgeDate2 = addDays(holidayDate, 2); // Friday
+      bridgeDays.push({
+        id: `bridge-${holiday.id}-thufri`,
+        title: 'Brückentage (2 Tage Urlaub = 5 Tage frei)',
+        startDate: formatDate(bridgeDate1),
+        endDate: formatDate(bridgeDate2),
+        allDay: true,
+        category: 'bridge-days',
+        description: `Nimm Donnerstag und Freitag nach ${cleanHolidayName} frei und genieße 5 freie Tage von Mittwoch bis Sonntag.`,
+      });
+    }
+  }
+
+  return bridgeDays;
+}
+
+/**
  * Convert vacation entries to calendar events
  */
 export function vacationsToEvents(vacations: VacationEntry[]): CalendarEvent[] {
@@ -395,7 +682,8 @@ export function loadEvents(
   countryCodes?: string[],
   vacations?: VacationEntry[],
   selectedObservances?: string[],
-  selectedFunDays?: string[]
+  selectedFunDays?: string[],
+  selectedFamousPeople?: string[]
 ): CalendarEvent[] {
   const events: CalendarEvent[] = [];
 
@@ -418,11 +706,42 @@ export function loadEvents(
     events.push(...loadFunDays(year, selectedFunDays));
   }
 
+  if (categories.includes('moon-phases')) {
+    events.push(...loadMoonPhases(year));
+  }
+
+  if (categories.includes('wikipedia-today')) {
+    events.push(...loadWikipediaToday(year));
+  }
+
+  if (categories.includes('wikipedia-random')) {
+    events.push(...loadWikipediaRandom(year));
+  }
+
+  if (categories.includes('famous-birthdays')) {
+    events.push(...loadFamousBirthdays(year, selectedFamousPeople));
+  }
+
   if (categories.includes('vacation') && vacations) {
     const vacationEvents = vacationsToEvents(vacations).filter((v) =>
       v.startDate.startsWith(year.toString())
     );
     events.push(...vacationEvents);
+  }
+
+  if (categories.includes('bridge-days')) {
+    // Bridge days depend on public holidays, so we need to load them first
+    const publicHolidays = events.filter((e) => e.category === 'public-holidays');
+    // If public holidays weren't already loaded, load them for bridge day calculation
+    if (publicHolidays.length === 0 && countryCodes && countryCodes.length > 0) {
+      const tempHolidays: CalendarEvent[] = [];
+      for (const countryCode of countryCodes) {
+        tempHolidays.push(...loadPublicHolidays(regionCodes, year, countryCode));
+      }
+      events.push(...calculateBridgeDays(tempHolidays, year));
+    } else {
+      events.push(...calculateBridgeDays(publicHolidays, year));
+    }
   }
 
   // Sort events by start date

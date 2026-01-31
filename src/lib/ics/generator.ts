@@ -29,7 +29,7 @@ export interface IcsGeneratorOptions {
 
 const DEFAULT_OPTIONS: IcsGeneratorOptions = {
   calendarName: 'Ferien & Feiertage',
-  prodId: '-//Standard-Termine//DE',
+  prodId: '-//Qalendr//DE',
 };
 
 /**
@@ -41,6 +41,11 @@ function categoryToIcs(category: EventCategory): string {
     'public-holidays': 'FEIERTAGE',
     'observances': 'GEDENKTAGE',
     'fun-days': 'AKTIONSTAGE',
+    'bridge-days': 'BRUECKENTAGE',
+    'moon-phases': 'MONDPHASEN',
+    'wikipedia-today': 'WIKIPEDIA',
+    'wikipedia-random': 'WIKIPEDIA',
+    'famous-birthdays': 'GEBURTSTAGE',
     'vacation': 'URLAUB',
     'custom': 'SONSTIGE',
   };
@@ -164,6 +169,11 @@ export function generateCalendarName(
     'public-holidays': 'Feiertage',
     'observances': 'Gedenktage',
     'fun-days': 'Aktionstage',
+    'bridge-days': 'Brückentage',
+    'moon-phases': 'Mondphasen',
+    'wikipedia-today': 'Wikipedia',
+    'wikipedia-random': 'Wikipedia',
+    'famous-birthdays': 'Geburtstage',
     'vacation': 'Urlaub',
     'custom': 'Termine',
   };

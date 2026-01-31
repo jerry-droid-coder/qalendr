@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
     // Check if there's any content to generate
     const hasCountryContent = config.regions.length > 0 || config.countries.length > 0;
     const hasGlobalContent = config.categories.some(
-      (c) => c === 'vacation' || c === 'observances' || c === 'fun-days'
+      (c) => c === 'vacation' || c === 'observances' || c === 'fun-days' || c === 'wikipedia-today' || c === 'wikipedia-random' || c === 'famous-birthdays' || c === 'moon-phases'
     );
 
     if (!hasCountryContent && !hasGlobalContent) {
@@ -40,7 +40,11 @@ export async function GET(request: NextRequest) {
       config.regions,
       config.categories,
       config.year,
-      config.countries
+      config.countries,
+      undefined, // vacations (not stored server-side)
+      config.selectedObservances,
+      config.selectedFunDays,
+      config.selectedFamousPeople
     );
 
     if (events.length === 0) {
@@ -58,6 +62,10 @@ export async function GET(request: NextRequest) {
       const categoryParts: string[] = [];
       if (config.categories.includes('observances')) categoryParts.push('Gedenktage');
       if (config.categories.includes('fun-days')) categoryParts.push('Aktionstage');
+      if (config.categories.includes('wikipedia-today')) categoryParts.push('Geschichte');
+      if (config.categories.includes('wikipedia-random')) categoryParts.push('Wikipedia');
+      if (config.categories.includes('famous-birthdays')) categoryParts.push('Geburtstage');
+      if (config.categories.includes('moon-phases')) categoryParts.push('Mondphasen');
       if (config.categories.includes('vacation')) categoryParts.push('Urlaub');
       calendarName = categoryParts.length > 0 ? categoryParts.join(' & ') : 'Kalender';
     } else if (config.countries.length === 1) {
@@ -105,18 +113,20 @@ export async function GET(request: NextRequest) {
     // Generate ICS content
     const icsContent = generateIcs(events, {
       calendarName,
-      calendarDescription: `Generiert von Standard-Termine für ${config.year}`,
+      calendarDescription: `Generiert von Qalendr für ${config.year}`,
     });
 
-    // Generate filename
-    const filename = generateFilename(config.regions, config.year);
+    // Generate filename and sanitize for Content-Disposition header
+    const rawFilename = generateFilename(config.regions, config.year);
+    // Only allow safe characters in filename (alphanumeric, underscore, hyphen, dot)
+    const filename = rawFilename.replace(/[^a-zA-Z0-9_\-\.]/g, '_');
 
     // Return ICS file with appropriate headers
     return new NextResponse(icsContent, {
       status: 200,
       headers: {
         'Content-Type': 'text/calendar; charset=utf-8',
-        'Content-Disposition': `attachment; filename="${filename}"`,
+        'Content-Disposition': `attachment; filename="${filename}"; filename*=UTF-8''${encodeURIComponent(filename)}`,
         // Cache for 1 hour, stale-while-revalidate for 1 day
         'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
       },

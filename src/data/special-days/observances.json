@@ -2,6 +2,13 @@
   "description": "Gedenktage und besondere Anlässe",
   "days": [
     {
+      "id": "zeitumstellung-sommer",
+      "name": "Zeitumstellung (Sommerzeit)",
+      "date": "dst-spring",
+      "type": "variable",
+      "note": "Uhren 1 Stunde vor (2:00 → 3:00 Uhr)"
+    },
+    {
       "id": "valentinstag",
       "name": "Valentinstag",
       "date": "02-14",
@@ -61,6 +68,13 @@
       "name": "Erntedankfest",
       "date": "first-sunday-10",
       "type": "variable"
+    },
+    {
+      "id": "zeitumstellung-winter",
+      "name": "Zeitumstellung (Winterzeit)",
+      "date": "dst-autumn",
+      "type": "variable",
+      "note": "Uhren 1 Stunde zurück (3:00 → 2:00 Uhr)"
     },
     {
       "id": "halloween",

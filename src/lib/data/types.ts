@@ -6,6 +6,11 @@ export type EventCategory =
   | 'public-holidays'    // Gesetzliche Feiertage
   | 'observances'        // Gedenktage (Muttertag, Valentinstag, etc.)
   | 'fun-days'           // Kuriose Tage (Tag des Bieres, etc.)
+  | 'bridge-days'        // Brückentage (empfohlene Urlaubstage)
+  | 'moon-phases'        // Mondphasen (Neumond, Vollmond)
+  | 'wikipedia-today'    // Historische Ereignisse aus Wikipedia
+  | 'wikipedia-random'   // Zufällige Wikipedia-Artikel
+  | 'famous-birthdays'   // Geburts- und Todestage berühmter Persönlichkeiten
   | 'vacation'           // Persönlicher Urlaub
   | 'custom';            // Nutzer-Import (später)
 
@@ -76,6 +81,7 @@ export interface CalendarConfig {
   categories: EventCategory[];
   selectedObservances?: string[];  // IDs of selected observances
   selectedFunDays?: string[];      // IDs of selected fun days
+  selectedFamousPeople?: string[]; // IDs of selected famous people
   year: number;
   includeReminders?: boolean;  // Später
   reminderDays?: number[];     // [7, 14]

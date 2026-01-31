@@ -13,7 +13,7 @@ export function YearSelector({
 }: YearSelectorProps) {
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-semibold text-gray-900">Jahr wählen</h3>
+      <h3 className="text-lg font-semibold text-[var(--text-primary)]">Jahr wählen</h3>
 
       <div className="flex flex-wrap gap-2">
         {availableYears.map((year) => (
@@ -23,11 +23,11 @@ export function YearSelector({
             onClick={() => onYearChange(year)}
             className={`
               px-4 py-2 rounded-lg font-medium text-sm
-              transition-colors duration-150
+              transition-all duration-150
               ${
                 selectedYear === year
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-[var(--accent)] text-white shadow-md'
+                  : 'bg-[var(--bg-hover)] text-[var(--text-secondary)] hover:bg-[var(--border)] hover:text-[var(--text-primary)]'
               }
             `}
           >

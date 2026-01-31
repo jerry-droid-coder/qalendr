@@ -1,0 +1,119 @@
+{
+  "description": "Historische Ereignisse aus Wikipedia",
+  "lastUpdated": "2025-01-31",
+  "events": {
+    "01-01": [
+      {
+        "year": 1801,
+        "text": "Das Vereinigte Königreich Großbritannien und Irland entsteht durch den Act of Union",
+        "link": "https://de.wikipedia.org/wiki/Act_of_Union_1800"
+      },
+      {
+        "year": 1959,
+        "text": "Fidel Castro übernimmt die Macht auf Kuba",
+        "link": "https://de.wikipedia.org/wiki/Kubanische_Revolution"
+      }
+    ],
+    "01-09": [
+      {
+        "year": 2007,
+        "text": "Steve Jobs stellt das erste iPhone vor",
+        "link": "https://de.wikipedia.org/wiki/IPhone"
+      }
+    ],
+    "01-27": [
+      {
+        "year": 1945,
+        "text": "Befreiung des KZ Auschwitz durch die Rote Armee",
+        "link": "https://de.wikipedia.org/wiki/KZ_Auschwitz"
+      }
+    ],
+    "02-14": [
+      {
+        "year": 1876,
+        "text": "Alexander Graham Bell reicht das Patent für das Telefon ein",
+        "link": "https://de.wikipedia.org/wiki/Alexander_Graham_Bell"
+      }
+    ],
+    "03-08": [
+      {
+        "year": 1917,
+        "text": "Beginn der Februarrevolution in Russland (julianischer Kalender: 23. Februar)",
+        "link": "https://de.wikipedia.org/wiki/Februarrevolution_1917"
+      }
+    ],
+    "04-12": [
+      {
+        "year": 1961,
+        "text": "Juri Gagarin wird der erste Mensch im Weltraum",
+        "link": "https://de.wikipedia.org/wiki/Juri_Gagarin"
+      }
+    ],
+    "05-08": [
+      {
+        "year": 1945,
+        "text": "Tag der Befreiung: Ende des Zweiten Weltkriegs in Europa",
+        "link": "https://de.wikipedia.org/wiki/Tag_der_Befreiung"
+      }
+    ],
+    "06-06": [
+      {
+        "year": 1944,
+        "text": "D-Day: Alliierte Landung in der Normandie",
+        "link": "https://de.wikipedia.org/wiki/Operation_Overlord"
+      }
+    ],
+    "07-20": [
+      {
+        "year": 1969,
+        "text": "Erste Mondlandung: Apollo 11 mit Neil Armstrong und Buzz Aldrin",
+        "link": "https://de.wikipedia.org/wiki/Apollo_11"
+      },
+      {
+        "year": 1944,
+        "text": "Attentat auf Hitler durch Claus Schenk Graf von Stauffenberg",
+        "link": "https://de.wikipedia.org/wiki/Attentat_vom_20._Juli_1944"
+      }
+    ],
+    "08-13": [
+      {
+        "year": 1961,
+        "text": "Beginn des Baus der Berliner Mauer",
+        "link": "https://de.wikipedia.org/wiki/Berliner_Mauer"
+      }
+    ],
+    "09-11": [
+      {
+        "year": 2001,
+        "text": "Terroranschläge in New York und Washington",
+        "link": "https://de.wikipedia.org/wiki/Terroranschl%C3%A4ge_am_11._September_2001"
+      }
+    ],
+    "10-03": [
+      {
+        "year": 1990,
+        "text": "Deutsche Wiedervereinigung",
+        "link": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung"
+      }
+    ],
+    "11-09": [
+      {
+        "year": 1989,
+        "text": "Fall der Berliner Mauer",
+        "link": "https://de.wikipedia.org/wiki/Mauerfall"
+      },
+      {
+        "year": 1938,
+        "text": "Reichspogromnacht",
+        "link": "https://de.wikipedia.org/wiki/Novemberpogrome_1938"
+      }
+    ],
+    "12-25": [
+      {
+        "year": 800,
+        "text": "Karl der Große wird in Rom zum Kaiser gekrönt",
+        "link": "https://de.wikipedia.org/wiki/Karl_der_Gro%C3%9Fe"
+      }
+    ]
+  }
+}

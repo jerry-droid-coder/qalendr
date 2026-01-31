@@ -1,26 +1,207 @@
 @import "tailwindcss";
 
+/* Base Colors - Light Mode (default) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --bg-hover: #F5F5F5;
+  --text-primary: #1A1A1A;
+  --text-secondary: #4B5563;
+  --text-muted: #9CA3AF;
+  --accent: #3B82F6;
+  --accent-hover: #2563EB;
+  --accent-light: #DBEAFE;
+  --border: #E5E7EB;
+  --border-hover: #D1D5DB;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+
+  /* Category colors - Light mode */
+  --green-bg: #F0FDF4;
+  --green-border: #BBF7D0;
+  --green-badge-bg: #DCFCE7;
+  --green-badge-text: #166534;
+  --red-bg: #FEF2F2;
+  --red-border: #FECACA;
+  --red-badge-bg: #FEE2E2;
+  --red-badge-text: #991B1B;
+  --orange-bg: #FFF7ED;
+  --orange-border: #FED7AA;
+  --orange-badge-bg: #FFEDD5;
+  --orange-badge-text: #9A3412;
+  --yellow-bg: #FEFCE8;
+  --yellow-border: #FEF08A;
+  --yellow-badge-bg: #FEF9C3;
+  --yellow-badge-text: #854D0E;
+  --teal-bg: #F0FDFA;
+  --teal-border: #99F6E4;
+  --teal-badge-bg: #CCFBF1;
+  --teal-badge-text: #115E59;
+  --indigo-bg: #EEF2FF;
+  --indigo-border: #C7D2FE;
+  --indigo-badge-bg: #E0E7FF;
+  --indigo-badge-text: #3730A3;
+  --slate-bg: #F8FAFC;
+  --slate-border: #E2E8F0;
+  --slate-badge-bg: #F1F5F9;
+  --slate-badge-text: #334155;
+  --cyan-bg: #ECFEFF;
+  --cyan-border: #A5F3FC;
+  --cyan-badge-bg: #CFFAFE;
+  --cyan-badge-text: #155E75;
+  --pink-bg: #FDF2F8;
+  --pink-border: #FBCFE8;
+  --pink-badge-bg: #FCE7F3;
+  --pink-badge-text: #9D174D;
+  --purple-bg: #FAF5FF;
+  --purple-border: #E9D5FF;
+  --purple-badge-bg: #F3E8FF;
+  --purple-badge-text: #6B21A8;
+  --blue-bg: #EFF6FF;
+  --blue-border: #BFDBFE;
+  --blue-badge-bg: #DBEAFE;
+  --blue-badge-text: #1E40AF;
+}
+
+/* Explicit Light Mode */
+html.light,
+:root:not(.dark) {
+  color-scheme: light;
+}
+
+/* Dark Mode Colors - Softer contrast */
+html.dark {
+  color-scheme: dark;
+
+  --bg-primary: #161618;
+  --bg-card: #1E1E20;
+  --bg-hover: #28282A;
+  --text-primary: #B8B8BC;
+  --text-secondary: #8A8A92;
+  --text-muted: #636369;
+  --accent: #60A5FA;
+  --accent-hover: #93C5FD;
+  --accent-light: #1E3A5F;
+  --border: #2E2E32;
+  --border-hover: #3F3F46;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+
+  /* Category colors - Dark mode (softer) */
+  --green-bg: #0D1F12;
+  --green-border: #1A4024;
+  --green-badge-bg: #14532D;
+  --green-badge-text: #86EFAC;
+  --red-bg: #1F0D0D;
+  --red-border: #5C1D1D;
+  --red-badge-bg: #450A0A;
+  --red-badge-text: #FCA5A5;
+  --orange-bg: #1F1408;
+  --orange-border: #6B3410;
+  --orange-badge-bg: #431407;
+  --orange-badge-text: #FDBA74;
+  --yellow-bg: #1F1A08;
+  --yellow-border: #5C400E;
+  --yellow-badge-bg: #422006;
+  --yellow-badge-text: #FDE047;
+  --teal-bg: #0A1F1E;
+  --teal-border: #134E4A;
+  --teal-badge-bg: #115E59;
+  --teal-badge-text: #5EEAD4;
+  --indigo-bg: #151530;
+  --indigo-border: #2E2B6B;
+  --indigo-badge-bg: #312E81;
+  --indigo-badge-text: #A5B4FC;
+  --slate-bg: #181C24;
+  --slate-border: #334155;
+  --slate-badge-bg: #334155;
+  --slate-badge-text: #CBD5E1;
+  --cyan-bg: #0A1820;
+  --cyan-border: #155E75;
+  --cyan-badge-bg: #164E63;
+  --cyan-badge-text: #67E8F9;
+  --pink-bg: #1F0D18;
+  --pink-border: #6B1A40;
+  --pink-badge-bg: #500724;
+  --pink-badge-text: #F9A8D4;
+  --purple-bg: #1A1030;
+  --purple-border: #4C1D6B;
+  --purple-badge-bg: #4C1D95;
+  --purple-badge-text: #D8B4FE;
+  --blue-bg: #101828;
+  --blue-border: #1E3A6B;
+  --blue-badge-bg: #1E3A8A;
+  --blue-badge-text: #93C5FD;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--bg-primary);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: ease;
+  transition-duration: 150ms;
+}
+
+/* Exclude transform transitions from the global transition */
+*:not(.transition-transform) {
+  transition-property: background-color, border-color, color, fill, stroke;
+}
+
+/* Custom scrollbar for dark mode */
+html.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: var(--bg-card);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
+
+/* Focus ring styling */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+
+/* Softer checkboxes in dark mode */
+html.dark input[type="checkbox"] {
+  accent-color: #7899C6;
+  opacity: 0.85;
+}
+
+/* Date input styling for dark mode */
+html.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }

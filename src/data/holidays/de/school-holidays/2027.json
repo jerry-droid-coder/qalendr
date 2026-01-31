@@ -1,0 +1,145 @@
+{
+  "$source": "https://www.kmk.org/service/ferien.html",
+  "year": 2027,
+  "country": "DE",
+  "holidays": [
+    {
+      "id": "winterferien-2027",
+      "name": "Winterferien",
+      "type": "winter",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2027-02-13", "endDate": "2027-02-13" },
+        { "region": "DE-BY", "startDate": "2027-02-15", "endDate": "2027-02-19" },
+        { "region": "DE-BE", "startDate": "2027-02-01", "endDate": "2027-02-06" },
+        { "region": "DE-BB", "startDate": "2027-02-01", "endDate": "2027-02-06" },
+        { "region": "DE-HB", "startDate": "2027-02-01", "endDate": "2027-02-02" },
+        { "region": "DE-HH", "startDate": "2027-01-29", "endDate": "2027-01-29" },
+        { "region": "DE-HE", "startDate": "2027-02-01", "endDate": "2027-02-01" },
+        { "region": "DE-MV", "startDate": "2027-02-06", "endDate": "2027-02-20" },
+        { "region": "DE-NI", "startDate": "2027-02-01", "endDate": "2027-02-02" },
+        { "region": "DE-NW", "startDate": "2027-02-01", "endDate": "2027-02-01" },
+        { "region": "DE-RP", "startDate": "2027-02-01", "endDate": "2027-02-09" },
+        { "region": "DE-SL", "startDate": "2027-02-08", "endDate": "2027-02-13" },
+        { "region": "DE-SN", "startDate": "2027-02-08", "endDate": "2027-02-20" },
+        { "region": "DE-ST", "startDate": "2027-02-01", "endDate": "2027-02-10" },
+        { "region": "DE-SH", "startDate": "2027-02-01", "endDate": "2027-02-01" },
+        { "region": "DE-TH", "startDate": "2027-02-08", "endDate": "2027-02-13" }
+      ]
+    },
+    {
+      "id": "osterferien-2027",
+      "name": "Osterferien",
+      "type": "easter",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2027-03-29", "endDate": "2027-04-09" },
+        { "region": "DE-BY", "startDate": "2027-03-29", "endDate": "2027-04-10" },
+        { "region": "DE-BE", "startDate": "2027-03-29", "endDate": "2027-04-09" },
+        { "region": "DE-BB", "startDate": "2027-03-29", "endDate": "2027-04-09" },
+        { "region": "DE-HB", "startDate": "2027-03-22", "endDate": "2027-04-03" },
+        { "region": "DE-HH", "startDate": "2027-03-08", "endDate": "2027-03-19" },
+        { "region": "DE-HE", "startDate": "2027-03-29", "endDate": "2027-04-10" },
+        { "region": "DE-MV", "startDate": "2027-03-29", "endDate": "2027-04-07" },
+        { "region": "DE-NI", "startDate": "2027-03-22", "endDate": "2027-04-03" },
+        { "region": "DE-NW", "startDate": "2027-03-29", "endDate": "2027-04-10" },
+        { "region": "DE-RP", "startDate": "2027-03-22", "endDate": "2027-04-02" },
+        { "region": "DE-SL", "startDate": "2027-03-22", "endDate": "2027-04-02" },
+        { "region": "DE-SN", "startDate": "2027-04-02", "endDate": "2027-04-10" },
+        { "region": "DE-ST", "startDate": "2027-03-29", "endDate": "2027-04-03" },
+        { "region": "DE-SH", "startDate": "2027-04-02", "endDate": "2027-04-17" },
+        { "region": "DE-TH", "startDate": "2027-03-29", "endDate": "2027-04-10" }
+      ]
+    },
+    {
+      "id": "pfingstferien-2027",
+      "name": "Pfingstferien",
+      "type": "pentecost",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2027-05-25", "endDate": "2027-06-05" },
+        { "region": "DE-BY", "startDate": "2027-05-25", "endDate": "2027-06-04" },
+        { "region": "DE-BE", "startDate": "2027-05-14", "endDate": "2027-05-14" },
+        { "region": "DE-BB", "startDate": "2027-05-14", "endDate": "2027-05-14" },
+        { "region": "DE-HB", "startDate": "2027-05-14", "endDate": "2027-05-25" },
+        { "region": "DE-HH", "startDate": "2027-05-10", "endDate": "2027-05-14" },
+        { "region": "DE-HE", "startDate": "2027-05-25", "endDate": "2027-05-25" },
+        { "region": "DE-MV", "startDate": "2027-05-21", "endDate": "2027-05-25" },
+        { "region": "DE-NI", "startDate": "2027-05-14", "endDate": "2027-05-25" },
+        { "region": "DE-NW", "startDate": "2027-05-25", "endDate": "2027-05-25" },
+        { "region": "DE-RP", "startDate": "2027-05-25", "endDate": "2027-06-04" },
+        { "region": "DE-SL", "startDate": "2027-05-25", "endDate": "2027-05-28" },
+        { "region": "DE-SN", "startDate": "2027-05-14", "endDate": "2027-05-14" },
+        { "region": "DE-ST", "startDate": "2027-05-11", "endDate": "2027-05-21" },
+        { "region": "DE-SH", "startDate": "2027-05-14", "endDate": "2027-05-14" },
+        { "region": "DE-TH", "startDate": "2027-05-14", "endDate": "2027-05-14" }
+      ]
+    },
+    {
+      "id": "sommerferien-2027",
+      "name": "Sommerferien",
+      "type": "summer",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2027-07-29", "endDate": "2027-09-11" },
+        { "region": "DE-BY", "startDate": "2027-08-02", "endDate": "2027-09-13" },
+        { "region": "DE-BE", "startDate": "2027-07-15", "endDate": "2027-08-27" },
+        { "region": "DE-BB", "startDate": "2027-07-15", "endDate": "2027-08-28" },
+        { "region": "DE-HB", "startDate": "2027-07-22", "endDate": "2027-09-01" },
+        { "region": "DE-HH", "startDate": "2027-07-08", "endDate": "2027-08-18" },
+        { "region": "DE-HE", "startDate": "2027-07-19", "endDate": "2027-08-27" },
+        { "region": "DE-MV", "startDate": "2027-07-19", "endDate": "2027-08-28" },
+        { "region": "DE-NI", "startDate": "2027-07-22", "endDate": "2027-09-01" },
+        { "region": "DE-NW", "startDate": "2027-07-05", "endDate": "2027-08-17" },
+        { "region": "DE-RP", "startDate": "2027-07-19", "endDate": "2027-08-27" },
+        { "region": "DE-SL", "startDate": "2027-07-19", "endDate": "2027-08-27" },
+        { "region": "DE-SN", "startDate": "2027-07-05", "endDate": "2027-08-13" },
+        { "region": "DE-ST", "startDate": "2027-07-19", "endDate": "2027-08-28" },
+        { "region": "DE-SH", "startDate": "2027-07-19", "endDate": "2027-08-28" },
+        { "region": "DE-TH", "startDate": "2027-07-05", "endDate": "2027-08-14" }
+      ]
+    },
+    {
+      "id": "herbstferien-2027",
+      "name": "Herbstferien",
+      "type": "autumn",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2027-10-25", "endDate": "2027-10-30" },
+        { "region": "DE-BY", "startDate": "2027-11-01", "endDate": "2027-11-05" },
+        { "region": "DE-BE", "startDate": "2027-10-11", "endDate": "2027-10-23" },
+        { "region": "DE-BB", "startDate": "2027-10-11", "endDate": "2027-10-23" },
+        { "region": "DE-HB", "startDate": "2027-10-18", "endDate": "2027-10-30" },
+        { "region": "DE-HH", "startDate": "2027-10-18", "endDate": "2027-10-29" },
+        { "region": "DE-HE", "startDate": "2027-10-11", "endDate": "2027-10-23" },
+        { "region": "DE-MV", "startDate": "2027-10-18", "endDate": "2027-10-23" },
+        { "region": "DE-NI", "startDate": "2027-10-18", "endDate": "2027-10-30" },
+        { "region": "DE-NW", "startDate": "2027-10-11", "endDate": "2027-10-23" },
+        { "region": "DE-RP", "startDate": "2027-10-11", "endDate": "2027-10-22" },
+        { "region": "DE-SL", "startDate": "2027-10-11", "endDate": "2027-10-22" },
+        { "region": "DE-SN", "startDate": "2027-10-18", "endDate": "2027-10-30" },
+        { "region": "DE-ST", "startDate": "2027-10-18", "endDate": "2027-10-23" },
+        { "region": "DE-SH", "startDate": "2027-10-11", "endDate": "2027-10-23" },
+        { "region": "DE-TH", "startDate": "2027-10-04", "endDate": "2027-10-16" }
+      ]
+    },
+    {
+      "id": "weihnachtsferien-2027",
+      "name": "Weihnachtsferien",
+      "type": "christmas",
+      "periods": [
+        { "region": "DE-BW", "startDate": "2027-12-23", "endDate": "2028-01-08" },
+        { "region": "DE-BY", "startDate": "2027-12-24", "endDate": "2028-01-08" },
+        { "region": "DE-BE", "startDate": "2027-12-23", "endDate": "2028-01-01" },
+        { "region": "DE-BB", "startDate": "2027-12-23", "endDate": "2028-01-01" },
+        { "region": "DE-HB", "startDate": "2027-12-23", "endDate": "2028-01-05" },
+        { "region": "DE-HH", "startDate": "2027-12-23", "endDate": "2028-01-04" },
+        { "region": "DE-HE", "startDate": "2027-12-23", "endDate": "2028-01-08" },
+        { "region": "DE-MV", "startDate": "2027-12-22", "endDate": "2028-01-03" },
+        { "region": "DE-NI", "startDate": "2027-12-23", "endDate": "2028-01-05" },
+        { "region": "DE-NW", "startDate": "2027-12-24", "endDate": "2028-01-06" },
+        { "region": "DE-RP", "startDate": "2027-12-23", "endDate": "2028-01-05" },
+        { "region": "DE-SL", "startDate": "2027-12-23", "endDate": "2028-01-03" },
+        { "region": "DE-SN", "startDate": "2027-12-23", "endDate": "2028-01-01" },
+        { "region": "DE-ST", "startDate": "2027-12-22", "endDate": "2028-01-04" },
+        { "region": "DE-SH", "startDate": "2027-12-23", "endDate": "2028-01-06" },
+        { "region": "DE-TH", "startDate": "2027-12-23", "endDate": "2028-01-01" }
+      ]
+    }
+  ]
+}

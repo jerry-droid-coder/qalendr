@@ -151,7 +151,7 @@ export function CountrySelector({
 
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-semibold text-gray-900">Länder & Regionen</h3>
+      <h3 className="text-lg font-semibold text-[var(--text-primary)]">Länder & Regionen</h3>
 
       <div className="space-y-2">
         {countries.map((country) => {
@@ -166,14 +166,16 @@ export function CountrySelector({
           return (
             <div
               key={country.code}
-              className={`rounded-lg border overflow-hidden transition-colors ${
-                isSelected ? 'border-blue-300 bg-blue-50/50' : 'border-gray-200'
+              className={`rounded-xl border overflow-hidden transition-all duration-150 ${
+                isSelected
+                  ? 'border-[var(--accent)] bg-[var(--accent-light)]'
+                  : 'border-[var(--border)] hover:border-[var(--border-hover)]'
               }`}
             >
               {/* Country Header */}
               <div
-                className={`flex items-center gap-3 p-3 ${
-                  isSelected ? 'bg-blue-50' : 'bg-white hover:bg-gray-50'
+                className={`flex items-center gap-3 p-3 transition-colors ${
+                  isSelected ? '' : 'bg-[var(--bg-card)] hover:bg-[var(--bg-hover)]'
                 }`}
               >
                 {/* Checkbox */}
@@ -181,7 +183,8 @@ export function CountrySelector({
                   type="checkbox"
                   checked={isSelected}
                   onChange={() => handleCountryToggle(country.code)}
-                  className="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  className="h-5 w-5 rounded border-[var(--border)]"
+                  style={{ accentColor: 'var(--accent)' }}
                 />
 
                 {/* Flag & Name */}
@@ -191,13 +194,13 @@ export function CountrySelector({
                   className="flex items-center gap-2 flex-1 text-left"
                 >
                   <span className="text-xl">{country.flag}</span>
-                  <span className="font-medium text-gray-900">{country.name}</span>
+                  <span className="font-medium text-[var(--text-primary)]">{country.name}</span>
                 </button>
 
                 {/* Info badges */}
                 <div className="flex items-center gap-2">
                   {isSelected && hasStates && selectedCount > 0 && (
-                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
+                    <span className="text-xs bg-[var(--accent)] text-white px-2 py-0.5 rounded-full">
                       {selectedCount} {selectedCount === 1 ? labels.singular : labels.plural}
                     </span>
                   )}
@@ -208,11 +211,11 @@ export function CountrySelector({
                   <button
                     type="button"
                     onClick={() => handleExpandToggle(country.code)}
-                    className="p-1 hover:bg-blue-100 rounded transition-colors"
+                    className="p-1 hover:bg-[var(--bg-hover)] rounded transition-colors"
                     aria-label={isExpanded ? 'Zuklappen' : 'Aufklappen'}
                   >
                     <svg
-                      className={`w-5 h-5 text-gray-500 transition-transform ${
+                      className={`w-5 h-5 text-[var(--text-muted)] transition-transform duration-150 ${
                         isExpanded ? 'rotate-180' : ''
                       }`}
                       fill="none"
@@ -232,10 +235,10 @@ export function CountrySelector({
 
               {/* Expanded Panel */}
               {isSelected && needsExpansion && isExpanded && (
-                <div className="border-t border-blue-200 bg-white p-3 space-y-4">
+                <div className="border-t border-[var(--accent)] bg-[var(--bg-card)] p-3 space-y-4">
                   {/* Category options for this country */}
                   <div className="space-y-2">
-                    <span className="text-sm font-medium text-gray-700">Inhalte:</span>
+                    <span className="text-sm font-medium text-[var(--text-secondary)]">Inhalte:</span>
                     <div className="flex flex-wrap gap-3">
                       {/* Public Holidays - always available */}
                       <label className="flex items-center gap-2 cursor-pointer">
@@ -243,9 +246,10 @@ export function CountrySelector({
                           type="checkbox"
                           checked={selectedCategories.includes('public-holidays')}
                           onChange={() => handleCategoryToggle('public-holidays')}
-                          className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                          className="h-4 w-4 rounded border-[var(--border)]"
+                          style={{ accentColor: 'var(--accent)' }}
                         />
-                        <span className="text-sm text-gray-700">Gesetzliche Feiertage</span>
+                        <span className="text-sm text-[var(--text-secondary)]">Gesetzliche Feiertage</span>
                       </label>
 
                       {/* School Holidays - only for countries that have them */}
@@ -255,9 +259,10 @@ export function CountrySelector({
                             type="checkbox"
                             checked={selectedCategories.includes('school-holidays')}
                             onChange={() => handleCategoryToggle('school-holidays')}
-                            className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                            className="h-4 w-4 rounded border-[var(--border)]"
+                            style={{ accentColor: 'var(--accent)' }}
                           />
-                          <span className="text-sm text-gray-700">Schulferien</span>
+                          <span className="text-sm text-[var(--text-secondary)]">Schulferien</span>
                         </label>
                       )}
                     </div>
@@ -265,25 +270,25 @@ export function CountrySelector({
 
                   {/* Regions Panel */}
                   {hasStates && (
-                    <div className="space-y-3 pt-2 border-t border-gray-100">
+                    <div className="space-y-3 pt-2 border-t border-[var(--border)]">
                       {/* Region actions */}
                       <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium text-gray-700">
+                        <span className="text-sm font-medium text-[var(--text-secondary)]">
                           {labels.plural}:
                         </span>
                         <div className="flex gap-2">
                           <button
                             type="button"
                             onClick={() => handleSelectAllRegions(country.code)}
-                            className="text-xs text-blue-600 hover:text-blue-800"
+                            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
                           >
                             Alle
                           </button>
-                          <span className="text-gray-300">|</span>
+                          <span className="text-[var(--border)]">|</span>
                           <button
                             type="button"
                             onClick={() => handleClearRegions(country.code)}
-                            className="text-xs text-blue-600 hover:text-blue-800"
+                            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
                           >
                             Keine
                           </button>
@@ -298,12 +303,12 @@ export function CountrySelector({
                             <label
                               key={region.code}
                               className={`
-                                flex items-center gap-2 p-2 rounded border cursor-pointer
-                                transition-colors text-sm
+                                flex items-center gap-2 p-2 rounded-lg border cursor-pointer
+                                transition-all duration-150 text-sm
                                 ${
                                   isRegionSelected
-                                    ? 'bg-blue-100 border-blue-400 text-blue-900'
-                                    : 'bg-gray-50 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-100'
+                                    ? 'bg-[var(--accent-light)] border-[var(--accent)] text-[var(--text-primary)]'
+                                    : 'bg-[var(--bg-hover)] border-[var(--border)] text-[var(--text-secondary)] hover:border-[var(--border-hover)] hover:bg-[var(--bg-card)]'
                                 }
                               `}
                             >
@@ -311,7 +316,8 @@ export function CountrySelector({
                                 type="checkbox"
                                 checked={isRegionSelected}
                                 onChange={() => handleRegionToggle(region.code)}
-                                className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                className="h-4 w-4 rounded border-[var(--border)]"
+                                style={{ accentColor: 'var(--accent)' }}
                               />
                               <span className="truncate">{region.name}</span>
                             </label>
@@ -328,7 +334,7 @@ export function CountrySelector({
       </div>
 
       {/* Summary */}
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-[var(--text-muted)]">
         {selectedCountries.length} {selectedCountries.length === 1 ? 'Land' : 'Länder'} ausgewählt
         {selectedRegions.length > 0 && ` · ${selectedRegions.length} Regionen`}
       </p>

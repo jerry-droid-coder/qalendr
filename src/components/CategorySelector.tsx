@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { EventCategory, VacationEntry } from '@/lib/data/types';
-import { getObservances, getFunDays, SpecialDayData } from '@/lib/data';
+import { getObservances, getFunDays, getFamousPeople, SpecialDayData, FamousPerson } from '@/lib/data';
 import { formatDateRangeDE, daysBetween, getCurrentYear } from '@/lib/utils';
 
 interface CategorySelectorProps {
@@ -12,6 +12,8 @@ interface CategorySelectorProps {
   onObservancesChange: (ids: string[]) => void;
   selectedFunDays: string[];
   onFunDaysChange: (ids: string[]) => void;
+  selectedFamousPeople: string[];
+  onFamousPeopleChange: (ids: string[]) => void;
   vacations: VacationEntry[];
   onVacationsChange: (vacations: VacationEntry[]) => void;
 }
@@ -65,6 +67,111 @@ function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 }
 
+// Category configuration for rendering
+interface CategoryConfig {
+  id: EventCategory;
+  icon: string;
+  title: string;
+  description: string;
+  borderColor: string;
+  bgColor: string;
+  badgeColor: string;
+  badgeTextColor: string;
+  checkboxColor: string;
+}
+
+const CATEGORY_CONFIGS: CategoryConfig[] = [
+  {
+    id: 'observances',
+    icon: '💐',
+    title: 'Gedenktage',
+    description: 'Muttertag, Valentinstag, Halloween & mehr',
+    borderColor: 'var(--orange-border)',
+    bgColor: 'var(--orange-bg)',
+    badgeColor: 'var(--orange-badge-bg)',
+    badgeTextColor: 'var(--orange-badge-text)',
+    checkboxColor: '#f97316',
+  },
+  {
+    id: 'fun-days',
+    icon: '🎉',
+    title: 'Kuriose Tage',
+    description: 'Tag des Bieres, Star Wars Tag & Co.',
+    borderColor: 'var(--yellow-border)',
+    bgColor: 'var(--yellow-bg)',
+    badgeColor: 'var(--yellow-badge-bg)',
+    badgeTextColor: 'var(--yellow-badge-text)',
+    checkboxColor: '#eab308',
+  },
+  {
+    id: 'wikipedia-today',
+    icon: '📖',
+    title: 'Wikipedia heute',
+    description: 'Historische Ereignisse für jeden Tag',
+    borderColor: 'var(--slate-border)',
+    bgColor: 'var(--slate-bg)',
+    badgeColor: 'var(--slate-badge-bg)',
+    badgeTextColor: 'var(--slate-badge-text)',
+    checkboxColor: '#64748b',
+  },
+  {
+    id: 'wikipedia-random',
+    icon: '🎲',
+    title: 'Wikipedia zufällig',
+    description: 'Zufällige interessante Artikel',
+    borderColor: 'var(--cyan-border)',
+    bgColor: 'var(--cyan-bg)',
+    badgeColor: 'var(--cyan-badge-bg)',
+    badgeTextColor: 'var(--cyan-badge-text)',
+    checkboxColor: '#06b6d4',
+  },
+  {
+    id: 'famous-birthdays',
+    icon: '🎂',
+    title: 'Berühmte Personen',
+    description: 'Geburts- und Todestage berühmter Persönlichkeiten',
+    borderColor: 'var(--pink-border)',
+    bgColor: 'var(--pink-bg)',
+    badgeColor: 'var(--pink-badge-bg)',
+    badgeTextColor: 'var(--pink-badge-text)',
+    checkboxColor: '#ec4899',
+  },
+  {
+    id: 'moon-phases',
+    icon: '🌙',
+    title: 'Mondphasen',
+    description: 'Neumond & Vollmond',
+    borderColor: 'var(--indigo-border)',
+    bgColor: 'var(--indigo-bg)',
+    badgeColor: 'var(--indigo-badge-bg)',
+    badgeTextColor: 'var(--indigo-badge-text)',
+    checkboxColor: '#6366f1',
+  },
+  {
+    id: 'bridge-days',
+    icon: '🌉',
+    title: 'Brückentage',
+    description: 'Empfohlene Urlaubstage für lange Wochenenden',
+    borderColor: 'var(--teal-border)',
+    bgColor: 'var(--teal-bg)',
+    badgeColor: 'var(--teal-badge-bg)',
+    badgeTextColor: 'var(--teal-badge-text)',
+    checkboxColor: '#14b8a6',
+  },
+];
+
+const VACATION_CONFIG: CategoryConfig = {
+  id: 'vacation',
+  icon: '🏖️',
+  title: 'Urlaub',
+  description: 'Deine persönlichen Urlaubstage',
+  borderColor: 'var(--purple-border)',
+  bgColor: 'var(--purple-bg)',
+  badgeColor: 'var(--purple-badge-bg)',
+  badgeTextColor: 'var(--purple-badge-text)',
+  checkboxColor: '#a855f7',
+};
+
 export function CategorySelector({
   selectedCategories,
   onSelectionChange,
@@ -72,6 +179,8 @@ export function CategorySelector({
   onObservancesChange,
   selectedFunDays,
   onFunDaysChange,
+  selectedFamousPeople,
+  onFamousPeopleChange,
   vacations,
   onVacationsChange,
 }: CategorySelectorProps) {
@@ -85,6 +194,7 @@ export function CategorySelector({
 
   const observances = getObservances();
   const funDays = getFunDays();
+  const famousPeople = getFamousPeople();
   const currentYear = getCurrentYear();
 
   const handleCategoryToggle = (categoryId: EventCategory) => {
@@ -94,16 +204,20 @@ export function CategorySelector({
       // Clear selections when category is disabled
       if (categoryId === 'observances') onObservancesChange([]);
       if (categoryId === 'fun-days') onFunDaysChange([]);
+      if (categoryId === 'famous-birthdays') onFamousPeopleChange([]);
     } else {
       onSelectionChange([...selectedCategories, categoryId]);
       // Auto-expand when enabling
       setExpandedCategories([...expandedCategories, categoryId]);
-      // Auto-select all for observances/fun-days
+      // Auto-select all for observances/fun-days/famous-birthdays
       if (categoryId === 'observances') {
         onObservancesChange(observances.map((o) => o.id));
       }
       if (categoryId === 'fun-days') {
         onFunDaysChange(funDays.map((f) => f.id));
+      }
+      if (categoryId === 'famous-birthdays') {
+        onFamousPeopleChange(famousPeople.map((p) => p.id));
       }
     }
   };
@@ -140,21 +254,38 @@ export function CategorySelector({
     }
   };
 
-  const handleSelectAll = (type: 'observances' | 'fun-days') => {
-    if (type === 'observances') {
-      onObservancesChange(observances.map((o) => o.id));
+  const handleFamousPersonToggle = (id: string) => {
+    if (selectedFamousPeople.includes(id)) {
+      const newSelection = selectedFamousPeople.filter((p) => p !== id);
+      onFamousPeopleChange(newSelection);
+      if (newSelection.length === 0) {
+        onSelectionChange(selectedCategories.filter((c) => c !== 'famous-birthdays'));
+      }
     } else {
-      onFunDaysChange(funDays.map((f) => f.id));
+      onFamousPeopleChange([...selectedFamousPeople, id]);
     }
   };
 
-  const handleSelectNone = (type: 'observances' | 'fun-days') => {
+  const handleSelectAll = (type: 'observances' | 'fun-days' | 'famous-birthdays') => {
+    if (type === 'observances') {
+      onObservancesChange(observances.map((o) => o.id));
+    } else if (type === 'fun-days') {
+      onFunDaysChange(funDays.map((f) => f.id));
+    } else {
+      onFamousPeopleChange(famousPeople.map((p) => p.id));
+    }
+  };
+
+  const handleSelectNone = (type: 'observances' | 'fun-days' | 'famous-birthdays') => {
     if (type === 'observances') {
       onObservancesChange([]);
       onSelectionChange(selectedCategories.filter((c) => c !== 'observances'));
-    } else {
+    } else if (type === 'fun-days') {
       onFunDaysChange([]);
       onSelectionChange(selectedCategories.filter((c) => c !== 'fun-days'));
+    } else {
+      onFamousPeopleChange([]);
+      onSelectionChange(selectedCategories.filter((c) => c !== 'famous-birthdays'));
     }
   };
 
@@ -228,22 +359,22 @@ export function CategorySelector({
   ) => (
     <div className="space-y-3">
       <div className="flex items-center justify-between">
-        <span className="text-sm text-gray-600">
+        <span className="text-sm text-[var(--text-secondary)]">
           {selectedIds.length} von {days.length} ausgewählt
         </span>
         <div className="flex gap-2">
           <button
             type="button"
             onClick={() => handleSelectAll(type)}
-            className="text-xs text-blue-600 hover:text-blue-800"
+            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
           >
             Alle
           </button>
-          <span className="text-gray-300">|</span>
+          <span className="text-[var(--border)]">|</span>
           <button
             type="button"
             onClick={() => handleSelectNone(type)}
-            className="text-xs text-blue-600 hover:text-blue-800"
+            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
           >
             Keine
           </button>
@@ -254,12 +385,12 @@ export function CategorySelector({
           <label
             key={day.id}
             className={`
-              flex items-center gap-2 p-2 rounded border cursor-pointer
-              transition-colors text-sm
+              flex items-center gap-2 p-2 rounded-lg border cursor-pointer
+              transition-all duration-150 text-sm
               ${
                 selectedIds.includes(day.id)
-                  ? 'bg-blue-50 border-blue-300 text-blue-900'
-                  : 'bg-gray-50 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-100'
+                  ? 'bg-[var(--accent-light)] border-[var(--accent)] text-[var(--text-primary)]'
+                  : 'bg-[var(--bg-hover)] border-[var(--border)] text-[var(--text-secondary)] hover:border-[var(--border-hover)] hover:bg-[var(--bg-card)]'
               }
             `}
           >
@@ -267,9 +398,67 @@ export function CategorySelector({
               type="checkbox"
               checked={selectedIds.includes(day.id)}
               onChange={() => onToggle(day.id)}
-              className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+              className="h-4 w-4 rounded border-[var(--border)] text-[var(--accent)] focus:ring-[var(--accent)]"
             />
             <span className="truncate">{day.name}</span>
+          </label>
+        ))}
+      </div>
+    </div>
+  );
+
+  const renderFamousPeopleList = (
+    people: FamousPerson[],
+    selectedIds: string[],
+    onToggle: (id: string) => void
+  ) => (
+    <div className="space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="text-sm text-[var(--text-secondary)]">
+          {selectedIds.length} von {people.length} ausgewählt
+        </span>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={() => handleSelectAll('famous-birthdays')}
+            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
+          >
+            Alle
+          </button>
+          <span className="text-[var(--border)]">|</span>
+          <button
+            type="button"
+            onClick={() => handleSelectNone('famous-birthdays')}
+            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
+          >
+            Keine
+          </button>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-64 overflow-y-auto">
+        {people.map((person) => (
+          <label
+            key={person.id}
+            className={`
+              flex items-center gap-2 p-2 rounded-lg border cursor-pointer
+              transition-all duration-150 text-sm
+              ${
+                selectedIds.includes(person.id)
+                  ? 'bg-[var(--pink-bg)] border-[var(--pink-border)] text-[var(--text-primary)]'
+                  : 'bg-[var(--bg-hover)] border-[var(--border)] text-[var(--text-secondary)] hover:border-[var(--border-hover)] hover:bg-[var(--bg-card)]'
+              }
+            `}
+          >
+            <input
+              type="checkbox"
+              checked={selectedIds.includes(person.id)}
+              onChange={() => onToggle(person.id)}
+              className="h-4 w-4 rounded border-[var(--border)] text-pink-600 focus:ring-pink-500"
+            />
+            <div className="min-w-0 flex-1">
+              <span className="truncate block">{person.name}</span>
+              <span className="text-xs text-[var(--text-muted)] truncate block">{person.profession}</span>
+            </div>
           </label>
         ))}
       </div>
@@ -284,20 +473,20 @@ export function CategorySelector({
           {vacations.map((vacation) => (
             <div
               key={vacation.id}
-              className="flex items-center justify-between p-2 rounded bg-purple-50 border border-purple-200"
+              className="flex items-center justify-between p-2 rounded-lg bg-[var(--purple-bg)] border border-[var(--purple-border)]"
             >
               <div className="min-w-0 flex-1">
-                <p className="font-medium text-gray-900 text-sm truncate">{vacation.name}</p>
-                <p className="text-xs text-gray-600">
+                <p className="font-medium text-[var(--text-primary)] text-sm truncate">{vacation.name}</p>
+                <p className="text-xs text-[var(--text-secondary)]">
                   {formatDateRangeDE(vacation.startDate, vacation.endDate)}
-                  <span className="ml-1 text-gray-400">
+                  <span className="ml-1 text-[var(--text-muted)]">
                     ({daysBetween(vacation.startDate, vacation.endDate)}d)
                   </span>
                 </p>
               </div>
               <button
                 onClick={() => handleRemoveVacation(vacation.id)}
-                className="ml-2 p-1 text-gray-400 hover:text-red-500 transition-colors"
+                className="ml-2 p-1 text-[var(--text-muted)] hover:text-red-500 transition-colors"
                 title="Löschen"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -314,10 +503,10 @@ export function CategorySelector({
         <button
           type="button"
           onClick={() => setInputMode('quick')}
-          className={`px-3 py-1 text-xs rounded-full transition-colors ${
+          className={`px-3 py-1 text-xs rounded-full transition-all duration-150 ${
             inputMode === 'quick'
-              ? 'bg-purple-100 text-purple-700'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              ? 'bg-[var(--purple-badge-bg)] text-[var(--purple-badge-text)]'
+              : 'bg-[var(--bg-hover)] text-[var(--text-secondary)] hover:bg-[var(--border)]'
           }`}
         >
           Schnelleingabe
@@ -325,10 +514,10 @@ export function CategorySelector({
         <button
           type="button"
           onClick={() => setInputMode('picker')}
-          className={`px-3 py-1 text-xs rounded-full transition-colors ${
+          className={`px-3 py-1 text-xs rounded-full transition-all duration-150 ${
             inputMode === 'picker'
-              ? 'bg-purple-100 text-purple-700'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              ? 'bg-[var(--purple-badge-bg)] text-[var(--purple-badge-text)]'
+              : 'bg-[var(--bg-hover)] text-[var(--text-secondary)] hover:bg-[var(--border)]'
           }`}
         >
           Kalender
@@ -344,7 +533,7 @@ export function CategorySelector({
             onChange={(e) => setQuickInput(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="z.B. 15.07-28.07"
-            className="w-full px-3 py-2 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            className="w-full px-3 py-2 text-sm text-[var(--text-primary)] bg-[var(--bg-card)] border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)] placeholder-[var(--text-muted)]"
           />
         ) : (
           <div className="grid grid-cols-2 gap-2">
@@ -353,14 +542,16 @@ export function CategorySelector({
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="px-2 py-2 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+              aria-label="Startdatum"
+              className="px-2 py-2 text-sm text-[var(--text-primary)] bg-[var(--bg-card)] border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)]"
             />
             <input
               type="date"
               value={endDate}
               onChange={(e) => setEndDate(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="px-2 py-2 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+              aria-label="Enddatum"
+              className="px-2 py-2 text-sm text-[var(--text-primary)] bg-[var(--bg-card)] border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)]"
             />
           </div>
         )}
@@ -372,203 +563,216 @@ export function CategorySelector({
             onChange={(e) => setNameInput(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Bezeichnung (optional)"
-            className="flex-1 px-3 py-2 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            className="flex-1 px-3 py-2 text-sm text-[var(--text-primary)] bg-[var(--bg-card)] border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)] placeholder-[var(--text-muted)]"
           />
           <button
             type="button"
             onClick={handleAddVacation}
-            className="px-4 py-2 bg-purple-600 text-white text-sm rounded-lg hover:bg-purple-700 transition-colors"
+            aria-label="Urlaub hinzufügen"
+            className="px-4 py-2 bg-[var(--accent)] text-white text-sm rounded-lg hover:bg-[var(--accent-hover)] transition-all duration-150 active:scale-95"
           >
             +
           </button>
         </div>
       </div>
 
-      {error && <p className="text-xs text-red-600">{error}</p>}
+      {error && <p className="text-xs text-red-500">{error}</p>}
 
-      <p className="text-xs text-gray-500">
+      <p className="text-xs text-[var(--text-muted)]">
         Einträge werden im Browser gespeichert.
       </p>
     </div>
   );
 
+  // Get counts for expandable categories
+  const getCategoryCount = (id: EventCategory): { count: number; total: number } | undefined => {
+    switch (id) {
+      case 'observances':
+        return { count: selectedObservances.length, total: observances.length };
+      case 'fun-days':
+        return { count: selectedFunDays.length, total: funDays.length };
+      case 'famous-birthdays':
+        return { count: selectedFamousPeople.length, total: famousPeople.length };
+      default:
+        return undefined;
+    }
+  };
+
+  // Check if category is expandable
+  const isExpandable = (id: EventCategory): boolean => {
+    return ['observances', 'fun-days', 'famous-birthdays'].includes(id);
+  };
+
+  // Get expanded content for category
+  const getExpandedContent = (id: EventCategory): React.ReactNode => {
+    switch (id) {
+      case 'observances':
+        return renderDaysList(observances, selectedObservances, handleObservanceToggle, 'observances');
+      case 'fun-days':
+        return renderDaysList(funDays, selectedFunDays, handleFunDayToggle, 'fun-days');
+      case 'famous-birthdays':
+        return renderFamousPeopleList(famousPeople, selectedFamousPeople, handleFamousPersonToggle);
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-semibold text-gray-900">Weitere Termine</h3>
+      <h3 className="text-lg font-semibold text-[var(--text-primary)]">Weitere Termine</h3>
 
       <div className="space-y-2">
-        {/* Observances */}
-        <div
-          className={`rounded-lg border overflow-hidden transition-colors ${
-            selectedCategories.includes('observances')
-              ? 'border-orange-300 bg-orange-50/50'
-              : 'border-gray-200'
-          }`}
-        >
-          <div
-            className={`flex items-center gap-3 p-3 ${
-              selectedCategories.includes('observances')
-                ? 'bg-orange-50'
-                : 'bg-white hover:bg-gray-50'
-            }`}
-          >
-            <input
-              type="checkbox"
-              checked={selectedCategories.includes('observances')}
-              onChange={() => handleCategoryToggle('observances')}
-              className="h-5 w-5 rounded border-gray-300 text-orange-600 focus:ring-orange-500"
-            />
-            <button
-              type="button"
-              onClick={() => handleCategoryToggle('observances')}
-              className="flex items-center gap-2 flex-1 text-left"
+        {CATEGORY_CONFIGS.map((config) => {
+          const isSelected = selectedCategories.includes(config.id);
+          const isExpanded = expandedCategories.includes(config.id);
+          const counts = getCategoryCount(config.id);
+          const expandable = isExpandable(config.id);
+          const expandedContent = getExpandedContent(config.id);
+
+          return (
+            <div
+              key={config.id}
+              className={`rounded-xl border overflow-hidden transition-all duration-150 ${
+                isSelected
+                  ? ''
+                  : 'border-[var(--border)] hover:border-[var(--border-hover)]'
+              }`}
+              style={{
+                borderColor: isSelected ? config.borderColor : undefined,
+                backgroundColor: isSelected ? config.bgColor : undefined,
+              }}
             >
-              <span className="text-xl">💐</span>
-              <div>
-                <span className="font-medium text-gray-900">Gedenktage</span>
-                <p className="text-sm text-gray-500">Muttertag, Valentinstag, Halloween & mehr</p>
-              </div>
-            </button>
-            {selectedCategories.includes('observances') && (
-              <>
-                <span className="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full">
-                  {selectedObservances.length}/{observances.length}
-                </span>
+              <div
+                className={`flex items-center gap-3 p-3 transition-colors ${
+                  isSelected ? '' : 'bg-[var(--bg-card)] hover:bg-[var(--bg-hover)]'
+                }`}
+                style={{
+                  backgroundColor: isSelected ? config.bgColor : undefined,
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={isSelected}
+                  onChange={() => handleCategoryToggle(config.id)}
+                  className="h-5 w-5 rounded border-[var(--border)]"
+                  style={{ accentColor: config.checkboxColor }}
+                />
                 <button
                   type="button"
-                  onClick={() => handleExpandToggle('observances')}
-                  className="p-1 hover:bg-orange-100 rounded transition-colors"
+                  onClick={() => handleCategoryToggle(config.id)}
+                  className="flex items-center gap-2 flex-1 text-left"
                 >
-                  <svg
-                    className={`w-5 h-5 text-gray-500 transition-transform ${
-                      expandedCategories.includes('observances') ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+                  <span className="text-xl">{config.icon}</span>
+                  <div>
+                    <span className="font-medium text-[var(--text-primary)]">{config.title}</span>
+                    <p className="text-sm text-[var(--text-secondary)]">{config.description}</p>
+                  </div>
                 </button>
-              </>
-            )}
-          </div>
-          {selectedCategories.includes('observances') && expandedCategories.includes('observances') && (
-            <div className="border-t border-orange-200 bg-white p-3">
-              {renderDaysList(observances, selectedObservances, handleObservanceToggle, 'observances')}
-            </div>
-          )}
-        </div>
-
-        {/* Fun Days */}
-        <div
-          className={`rounded-lg border overflow-hidden transition-colors ${
-            selectedCategories.includes('fun-days')
-              ? 'border-yellow-300 bg-yellow-50/50'
-              : 'border-gray-200'
-          }`}
-        >
-          <div
-            className={`flex items-center gap-3 p-3 ${
-              selectedCategories.includes('fun-days')
-                ? 'bg-yellow-50'
-                : 'bg-white hover:bg-gray-50'
-            }`}
-          >
-            <input
-              type="checkbox"
-              checked={selectedCategories.includes('fun-days')}
-              onChange={() => handleCategoryToggle('fun-days')}
-              className="h-5 w-5 rounded border-gray-300 text-yellow-600 focus:ring-yellow-500"
-            />
-            <button
-              type="button"
-              onClick={() => handleCategoryToggle('fun-days')}
-              className="flex items-center gap-2 flex-1 text-left"
-            >
-              <span className="text-xl">🎉</span>
-              <div>
-                <span className="font-medium text-gray-900">Kuriose Tage</span>
-                <p className="text-sm text-gray-500">Tag des Bieres, Star Wars Tag & Co.</p>
+                {isSelected && counts && (
+                  <>
+                    <span
+                      className="text-xs px-2 py-0.5 rounded-full"
+                      style={{ backgroundColor: config.badgeColor, color: config.badgeTextColor }}
+                    >
+                      {counts.count}/{counts.total}
+                    </span>
+                    {expandable && (
+                      <button
+                        type="button"
+                        onClick={() => handleExpandToggle(config.id)}
+                        aria-label={isExpanded ? `${config.title} zuklappen` : `${config.title} aufklappen`}
+                        aria-expanded={isExpanded}
+                        className="p-1 rounded transition-colors hover:bg-[var(--bg-hover)]"
+                      >
+                        <svg
+                          className={`w-5 h-5 text-[var(--text-muted)] transition-transform duration-150 ${
+                            isExpanded ? 'rotate-180' : ''
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                    )}
+                  </>
+                )}
               </div>
-            </button>
-            {selectedCategories.includes('fun-days') && (
-              <>
-                <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full">
-                  {selectedFunDays.length}/{funDays.length}
-                </span>
-                <button
-                  type="button"
-                  onClick={() => handleExpandToggle('fun-days')}
-                  className="p-1 hover:bg-yellow-100 rounded transition-colors"
+              {isSelected && expandable && isExpanded && expandedContent && (
+                <div
+                  className="border-t p-3 bg-[var(--bg-card)]"
+                  style={{ borderColor: config.borderColor }}
                 >
-                  <svg
-                    className={`w-5 h-5 text-gray-500 transition-transform ${
-                      expandedCategories.includes('fun-days') ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-              </>
-            )}
-          </div>
-          {selectedCategories.includes('fun-days') && expandedCategories.includes('fun-days') && (
-            <div className="border-t border-yellow-200 bg-white p-3">
-              {renderDaysList(funDays, selectedFunDays, handleFunDayToggle, 'fun-days')}
+                  {expandedContent}
+                </div>
+              )}
             </div>
-          )}
-        </div>
+          );
+        })}
 
-        {/* Vacation */}
+        {/* Vacation - special case with input form */}
         <div
-          className={`rounded-lg border overflow-hidden transition-colors ${
+          className={`rounded-xl border overflow-hidden transition-all duration-150 ${
             selectedCategories.includes('vacation')
-              ? 'border-purple-300 bg-purple-50/50'
-              : 'border-gray-200'
+              ? ''
+              : 'border-[var(--border)] hover:border-[var(--border-hover)]'
           }`}
+          style={{
+            borderColor: selectedCategories.includes('vacation') ? VACATION_CONFIG.borderColor : undefined,
+            backgroundColor: selectedCategories.includes('vacation') ? VACATION_CONFIG.bgColor : undefined,
+          }}
         >
           <div
-            className={`flex items-center gap-3 p-3 ${
+            className={`flex items-center gap-3 p-3 transition-colors ${
               selectedCategories.includes('vacation')
-                ? 'bg-purple-50'
-                : 'bg-white hover:bg-gray-50'
+                ? ''
+                : 'bg-[var(--bg-card)] hover:bg-[var(--bg-hover)]'
             }`}
+            style={{
+              backgroundColor: selectedCategories.includes('vacation') ? VACATION_CONFIG.bgColor : undefined,
+            }}
           >
             <input
               type="checkbox"
               checked={selectedCategories.includes('vacation')}
               onChange={() => handleCategoryToggle('vacation')}
-              className="h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
+              className="h-5 w-5 rounded border-[var(--border)]"
+              style={{ accentColor: VACATION_CONFIG.checkboxColor }}
             />
             <button
               type="button"
               onClick={() => handleCategoryToggle('vacation')}
               className="flex items-center gap-2 flex-1 text-left"
             >
-              <span className="text-xl">🏖️</span>
+              <span className="text-xl">{VACATION_CONFIG.icon}</span>
               <div>
-                <span className="font-medium text-gray-900">Urlaub</span>
-                <p className="text-sm text-gray-500">Deine persönlichen Urlaubstage</p>
+                <span className="font-medium text-[var(--text-primary)]">{VACATION_CONFIG.title}</span>
+                <p className="text-sm text-[var(--text-secondary)]">{VACATION_CONFIG.description}</p>
               </div>
             </button>
             {selectedCategories.includes('vacation') && (
               <>
                 {vacations.length > 0 && (
-                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">
+                  <span
+                    className="text-xs px-2 py-0.5 rounded-full"
+                    style={{
+                      backgroundColor: VACATION_CONFIG.badgeColor,
+                      color: VACATION_CONFIG.badgeTextColor,
+                    }}
+                  >
                     {vacations.length}
                   </span>
                 )}
                 <button
                   type="button"
                   onClick={() => handleExpandToggle('vacation')}
-                  className="p-1 hover:bg-purple-100 rounded transition-colors"
+                  aria-label={expandedCategories.includes('vacation') ? 'Urlaub zuklappen' : 'Urlaub aufklappen'}
+                  aria-expanded={expandedCategories.includes('vacation')}
+                  className="p-1 rounded transition-colors hover:bg-[var(--bg-hover)]"
                 >
                   <svg
-                    className={`w-5 h-5 text-gray-500 transition-transform ${
+                    className={`w-5 h-5 text-[var(--text-muted)] transition-transform duration-150 ${
                       expandedCategories.includes('vacation') ? 'rotate-180' : ''
                     }`}
                     fill="none"
@@ -582,7 +786,10 @@ export function CategorySelector({
             )}
           </div>
           {selectedCategories.includes('vacation') && expandedCategories.includes('vacation') && (
-            <div className="border-t border-purple-200 bg-white p-3">
+            <div
+              className="border-t p-3 bg-[var(--bg-card)]"
+              style={{ borderColor: VACATION_CONFIG.borderColor }}
+            >
               {renderVacationInput()}
             </div>
           )}

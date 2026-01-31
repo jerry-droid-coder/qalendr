@@ -27,8 +27,8 @@ export function DownloadButton({ config, disabled }: DownloadButtonProps) {
           flex items-center justify-center gap-3
           ${
             disabled
-              ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
-              : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 shadow-lg hover:shadow-xl'
+              ? 'bg-[var(--border)] text-[var(--text-muted)] cursor-not-allowed'
+              : 'bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] active:scale-[0.98] shadow-lg hover:shadow-xl'
           }
         `}
       >
@@ -50,12 +50,12 @@ export function DownloadButton({ config, disabled }: DownloadButtonProps) {
       </button>
 
       {disabled && (
-        <p className="text-sm text-amber-600 text-center">
+        <p className="text-sm text-amber-500 dark:text-amber-400 text-center">
           Bitte wähle mindestens ein Land/Region oder eine Kategorie aus
         </p>
       )}
 
-      <p className="text-xs text-gray-500 text-center">
+      <p className="text-xs text-[var(--text-muted)] text-center">
         Funktioniert mit Apple Kalender, Google Kalender, Outlook und anderen
       </p>
     </div>

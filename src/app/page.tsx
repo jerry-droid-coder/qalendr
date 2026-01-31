@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import Link from 'next/link';
 import { CalendarConfig, EventCategory } from '@/lib/data/types';
 import {
   getCountries,
@@ -17,6 +18,7 @@ import {
   YearSelector,
   DownloadButton,
   EventPreview,
+  ThemeToggle,
 } from '@/components';
 import { useVacationStorage } from '@/hooks/useVacationStorage';
 
@@ -32,6 +34,7 @@ export default function Home() {
     categories: [],
     selectedObservances: [],
     selectedFunDays: [],
+    selectedFamousPeople: [],
     year: getCurrentYear(),
   });
 
@@ -60,7 +63,7 @@ export default function Home() {
     // Check if there's any content to load
     const hasCountryContent = effectiveRegions.length > 0;
     const hasGlobalContent = config.categories.some(
-      (c) => c === 'vacation' || c === 'observances' || c === 'fun-days'
+      (c) => c === 'vacation' || c === 'observances' || c === 'fun-days' || c === 'wikipedia-today' || c === 'wikipedia-random' || c === 'famous-birthdays' || c === 'moon-phases'
     );
 
     if (!hasCountryContent && !hasGlobalContent) return [];
@@ -72,9 +75,10 @@ export default function Home() {
       config.countries,
       vacations,
       config.selectedObservances,
-      config.selectedFunDays
+      config.selectedFunDays,
+      config.selectedFamousPeople
     );
-  }, [config.regions, config.categories, config.year, config.countries, allCountryStates.length, vacations, config.selectedObservances, config.selectedFunDays]);
+  }, [config.regions, config.categories, config.year, config.countries, allCountryStates.length, vacations, config.selectedObservances, config.selectedFunDays, config.selectedFamousPeople]);
 
   const handleCountriesChange = (countryCodes: string[]) => {
     // Check if any of the new countries has school holidays
@@ -118,6 +122,10 @@ export default function Home() {
     setConfig((prev) => ({ ...prev, selectedFunDays }));
   };
 
+  const handleFamousPeopleChange = (selectedFamousPeople: string[]) => {
+    setConfig((prev) => ({ ...prev, selectedFamousPeople }));
+  };
+
   const handleYearChange = (year: number) => {
     setConfig((prev) => ({ ...prev, year }));
   };
@@ -125,10 +133,10 @@ export default function Home() {
   // Ready to download if:
   // - Countries with states: at least one region selected
   // - Countries without states: at least one country selected
-  // - Or: global categories selected (vacation, observances, fun-days)
+  // - Or: global categories selected
   const hasStates = allCountryStates.length > 0;
   const hasGlobalContent = config.categories.some(
-    (c) => c === 'vacation' || c === 'observances' || c === 'fun-days'
+    (c) => c === 'vacation' || c === 'observances' || c === 'fun-days' || c === 'wikipedia-today' || c === 'wikipedia-random' || c === 'famous-birthdays' || c === 'moon-phases'
   );
   const hasCountryContent = hasStates
     ? config.regions.length > 0
@@ -136,24 +144,34 @@ export default function Home() {
   const isReadyToDownload = hasCountryContent || hasGlobalContent;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <main className="max-w-4xl mx-auto px-4 py-8 sm:py-12">
-        {/* Header */}
-        <header className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Standard-Termine
+    <div className="min-h-screen bg-[var(--bg-primary)]">
+      {/* Sticky Header */}
+      <header className="sticky top-0 z-50 backdrop-blur-sm bg-[var(--bg-primary)]/80 border-b border-[var(--border)]">
+        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+          <h1 className="text-xl font-semibold text-[var(--text-primary)]">
+            Qalendr
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Erstelle einen Kalender mit Feiertagen für dein Land.
+          <ThemeToggle />
+        </div>
+      </header>
+
+      <main className="max-w-5xl mx-auto px-4 py-8 sm:py-12">
+        {/* Hero Section */}
+        <section className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[var(--accent)] to-purple-500 bg-clip-text text-transparent">
+            Dein Kalender
+          </h2>
+          <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed">
+            Erstelle einen Kalender mit Feiertagen, Schulferien und besonderen Tagen.
             Einfach herunterladen und in deinen Kalender importieren.
           </p>
-        </header>
+        </section>
 
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Configuration Panel */}
-          <div className="lg:col-span-2 space-y-8">
-            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div className="lg:col-span-2 space-y-6">
+            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
               <CountrySelector
                 countries={countries}
                 regions={allRegions}
@@ -166,7 +184,7 @@ export default function Home() {
               />
             </section>
 
-            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
               <CategorySelector
                 selectedCategories={config.categories}
                 onSelectionChange={handleCategoriesChange}
@@ -174,12 +192,14 @@ export default function Home() {
                 onObservancesChange={handleObservancesChange}
                 selectedFunDays={config.selectedFunDays || []}
                 onFunDaysChange={handleFunDaysChange}
+                selectedFamousPeople={config.selectedFamousPeople || []}
+                onFamousPeopleChange={handleFamousPeopleChange}
                 vacations={vacations}
                 onVacationsChange={setVacations}
               />
             </section>
 
-            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
               <YearSelector
                 availableYears={availableYears}
                 selectedYear={config.year}
@@ -187,7 +207,7 @@ export default function Home() {
               />
             </section>
 
-            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
               <DownloadButton
                 config={{
                   ...config,
@@ -201,21 +221,35 @@ export default function Home() {
 
           {/* Preview Panel */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sticky top-6">
+            <div className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 sticky top-24">
               <EventPreview events={events} maxItems={15} />
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <footer className="mt-16 text-center text-sm text-gray-500">
+        <footer className="mt-20 text-center text-sm text-[var(--text-muted)]">
           <p>
             Die Kalender-Datei (.ics) ist kompatibel mit Apple Kalender, Google Kalender,
             Microsoft Outlook und anderen Kalender-Apps.
           </p>
           <p className="mt-2">
-            Daten ohne Gewähr. Stand: 2024-2026
+            Daten ohne Gewähr. Stand: 2026-2028
           </p>
+          <div className="mt-6 flex justify-center gap-6">
+            <Link
+              href="/impressum"
+              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+            >
+              Impressum
+            </Link>
+            <Link
+              href="/datenschutz"
+              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+            >
+              Datenschutz
+            </Link>
+          </div>
         </footer>
       </main>
     </div>
