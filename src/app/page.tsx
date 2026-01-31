@@ -159,7 +159,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[var(--accent)] to-purple-500 bg-clip-text text-transparent">
-            Dein Kalender
+            Dein Qalendr
           </h2>
           <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed">
             Erstelle einen Kalender mit Feiertagen, Schulferien und besonderen Tagen.
