@@ -15,20 +15,18 @@ export function DownloadButton({ config, disabled }: DownloadButtonProps) {
     window.location.href = url;
   };
 
-  const isDisabled = disabled || config.regions.length === 0;
-
   return (
     <div className="space-y-4">
       <button
         type="button"
         onClick={handleDownload}
-        disabled={isDisabled}
+        disabled={disabled}
         className={`
           w-full py-4 px-6 rounded-xl font-semibold text-lg
           transition-all duration-150
           flex items-center justify-center gap-3
           ${
-            isDisabled
+            disabled
               ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
               : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 shadow-lg hover:shadow-xl'
           }
@@ -51,9 +49,9 @@ export function DownloadButton({ config, disabled }: DownloadButtonProps) {
         Kalender herunterladen (.ics)
       </button>
 
-      {isDisabled && config.regions.length === 0 && (
+      {disabled && (
         <p className="text-sm text-amber-600 text-center">
-          Bitte wähle mindestens ein Bundesland aus
+          Bitte wähle mindestens ein Land/Region oder eine Kategorie aus
         </p>
       )}
 

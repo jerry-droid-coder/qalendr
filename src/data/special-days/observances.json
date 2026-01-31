@@ -1,0 +1,116 @@
+{
+  "description": "Gedenktage und besondere Anlässe",
+  "days": [
+    {
+      "id": "valentinstag",
+      "name": "Valentinstag",
+      "date": "02-14",
+      "type": "fixed"
+    },
+    {
+      "id": "weltfrauentag",
+      "name": "Weltfrauentag",
+      "date": "03-08",
+      "type": "fixed"
+    },
+    {
+      "id": "fruehlingsbeginn",
+      "name": "Frühlingsanfang",
+      "date": "03-20",
+      "type": "fixed"
+    },
+    {
+      "id": "tag-der-erde",
+      "name": "Tag der Erde",
+      "date": "04-22",
+      "type": "fixed"
+    },
+    {
+      "id": "muttertag",
+      "name": "Muttertag",
+      "date": "second-sunday-05",
+      "type": "variable"
+    },
+    {
+      "id": "vatertag",
+      "name": "Vatertag",
+      "date": "easter+39",
+      "type": "variable",
+      "note": "In Deutschland an Christi Himmelfahrt"
+    },
+    {
+      "id": "kindertag",
+      "name": "Internationaler Kindertag",
+      "date": "06-01",
+      "type": "fixed"
+    },
+    {
+      "id": "sommerbeginn",
+      "name": "Sommeranfang",
+      "date": "06-21",
+      "type": "fixed"
+    },
+    {
+      "id": "herbstbeginn",
+      "name": "Herbstanfang",
+      "date": "09-22",
+      "type": "fixed"
+    },
+    {
+      "id": "erntedankfest",
+      "name": "Erntedankfest",
+      "date": "first-sunday-10",
+      "type": "variable"
+    },
+    {
+      "id": "halloween",
+      "name": "Halloween",
+      "date": "10-31",
+      "type": "fixed"
+    },
+    {
+      "id": "martinstag",
+      "name": "Martinstag",
+      "date": "11-11",
+      "type": "fixed"
+    },
+    {
+      "id": "volkstrauertag",
+      "name": "Volkstrauertag",
+      "date": "second-sunday-11",
+      "type": "variable",
+      "note": "Zwei Sonntage vor dem 1. Advent"
+    },
+    {
+      "id": "totensonntag",
+      "name": "Totensonntag",
+      "date": "last-sunday-11",
+      "type": "variable",
+      "note": "Sonntag vor dem 1. Advent"
+    },
+    {
+      "id": "winterbeginn",
+      "name": "Winteranfang",
+      "date": "12-21",
+      "type": "fixed"
+    },
+    {
+      "id": "nikolaus",
+      "name": "Nikolaus",
+      "date": "12-06",
+      "type": "fixed"
+    },
+    {
+      "id": "heiligabend",
+      "name": "Heiligabend",
+      "date": "12-24",
+      "type": "fixed"
+    },
+    {
+      "id": "silvester",
+      "name": "Silvester",
+      "date": "12-31",
+      "type": "fixed"
+    }
+  ]
+}

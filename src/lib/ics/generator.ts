@@ -40,6 +40,8 @@ function categoryToIcs(category: EventCategory): string {
     'school-holidays': 'SCHULFERIEN',
     'public-holidays': 'FEIERTAGE',
     'observances': 'GEDENKTAGE',
+    'fun-days': 'AKTIONSTAGE',
+    'vacation': 'URLAUB',
     'custom': 'SONSTIGE',
   };
   return mapping[category] || 'SONSTIGE';
@@ -161,6 +163,8 @@ export function generateCalendarName(
     'school-holidays': 'Schulferien',
     'public-holidays': 'Feiertage',
     'observances': 'Gedenktage',
+    'fun-days': 'Aktionstage',
+    'vacation': 'Urlaub',
     'custom': 'Termine',
   };
 

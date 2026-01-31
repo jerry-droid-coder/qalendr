@@ -13,6 +13,7 @@ import {
   SchoolHolidayYearData,
   RegionsData,
   CountriesData,
+  VacationEntry,
 } from './types';
 import { resolveDatePattern } from '@/lib/ics/formatters';
 
@@ -40,6 +41,10 @@ import publicHolidaysGbJson from '@/data/holidays/gb/public-holidays.json';
 import publicHolidaysUsJson from '@/data/holidays/us/public-holidays.json';
 import publicHolidaysCaJson from '@/data/holidays/ca/public-holidays.json';
 import publicHolidaysAuJson from '@/data/holidays/au/public-holidays.json';
+
+// Special days (observances and fun days)
+import observancesJson from '@/data/special-days/observances.json';
+import funDaysJson from '@/data/special-days/fun-days.json';
 
 // Type assertions for imported JSON
 const countriesData = countriesJson as CountriesData;
@@ -69,6 +74,40 @@ const schoolHolidaysData: Record<number, SchoolHolidayYearData> = {
   2025: schoolHolidays2025Json as SchoolHolidayYearData,
   2026: schoolHolidays2026Json as SchoolHolidayYearData,
 };
+
+// Special days data structure
+interface SpecialDayData {
+  id: string;
+  name: string;
+  date: string;
+  type: 'fixed' | 'variable';
+  note?: string;
+}
+
+interface SpecialDaysFile {
+  description: string;
+  days: SpecialDayData[];
+}
+
+const observancesData = observancesJson as SpecialDaysFile;
+const funDaysData = funDaysJson as SpecialDaysFile;
+
+/**
+ * Get all available observances
+ */
+export function getObservances(): SpecialDayData[] {
+  return observancesData.days;
+}
+
+/**
+ * Get all available fun days
+ */
+export function getFunDays(): SpecialDayData[] {
+  return funDaysData.days;
+}
+
+// Export the type for use in components
+export type { SpecialDayData };
 
 /**
  * Get all available countries
@@ -269,22 +308,121 @@ export function loadSchoolHolidays(
 }
 
 /**
+ * Load observances (Gedenktage) for a specific year
+ * @param year - The year to load observances for
+ * @param selectedIds - Optional array of IDs to filter by. If undefined, loads all.
+ */
+export function loadObservances(year: number, selectedIds?: string[]): CalendarEvent[] {
+  const events: CalendarEvent[] = [];
+
+  for (const day of observancesData.days) {
+    // Skip if selection is provided and this day is not selected
+    if (selectedIds && !selectedIds.includes(day.id)) continue;
+
+    try {
+      const date = resolveDatePattern(day.date, year);
+
+      events.push({
+        id: `observance-${day.id}-${year}`,
+        title: day.name,
+        startDate: date,
+        endDate: date,
+        allDay: true,
+        category: 'observances',
+        description: day.note,
+      });
+    } catch (error) {
+      console.error(`Error resolving date for observance ${day.id}:`, error);
+    }
+  }
+
+  return events;
+}
+
+/**
+ * Load fun days (kuriose Tage) for a specific year
+ * @param year - The year to load fun days for
+ * @param selectedIds - Optional array of IDs to filter by. If undefined, loads all.
+ */
+export function loadFunDays(year: number, selectedIds?: string[]): CalendarEvent[] {
+  const events: CalendarEvent[] = [];
+
+  for (const day of funDaysData.days) {
+    // Skip if selection is provided and this day is not selected
+    if (selectedIds && !selectedIds.includes(day.id)) continue;
+
+    try {
+      const date = resolveDatePattern(day.date, year);
+
+      events.push({
+        id: `funday-${day.id}-${year}`,
+        title: day.name,
+        startDate: date,
+        endDate: date,
+        allDay: true,
+        category: 'fun-days',
+        description: day.note,
+      });
+    } catch (error) {
+      console.error(`Error resolving date for fun day ${day.id}:`, error);
+    }
+  }
+
+  return events;
+}
+
+/**
+ * Convert vacation entries to calendar events
+ */
+export function vacationsToEvents(vacations: VacationEntry[]): CalendarEvent[] {
+  return vacations.map((v) => ({
+    id: `vacation-${v.id}`,
+    title: v.name || 'Urlaub',
+    startDate: v.startDate,
+    endDate: v.endDate,
+    allDay: true,
+    category: 'vacation' as EventCategory,
+  }));
+}
+
+/**
  * Load all events for specified configuration
  */
 export function loadEvents(
   regionCodes: string[],
   categories: EventCategory[],
   year: number,
-  countryCode?: string
+  countryCodes?: string[],
+  vacations?: VacationEntry[],
+  selectedObservances?: string[],
+  selectedFunDays?: string[]
 ): CalendarEvent[] {
   const events: CalendarEvent[] = [];
 
-  if (categories.includes('public-holidays')) {
-    events.push(...loadPublicHolidays(regionCodes, year, countryCode));
+  if (categories.includes('public-holidays') && countryCodes && countryCodes.length > 0) {
+    // Load public holidays for each selected country
+    for (const countryCode of countryCodes) {
+      events.push(...loadPublicHolidays(regionCodes, year, countryCode));
+    }
   }
 
   if (categories.includes('school-holidays')) {
     events.push(...loadSchoolHolidays(regionCodes, year));
+  }
+
+  if (categories.includes('observances')) {
+    events.push(...loadObservances(year, selectedObservances));
+  }
+
+  if (categories.includes('fun-days')) {
+    events.push(...loadFunDays(year, selectedFunDays));
+  }
+
+  if (categories.includes('vacation') && vacations) {
+    const vacationEvents = vacationsToEvents(vacations).filter((v) =>
+      v.startDate.startsWith(year.toString())
+    );
+    events.push(...vacationEvents);
   }
 
   // Sort events by start date

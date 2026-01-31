@@ -4,8 +4,20 @@
 export type EventCategory =
   | 'school-holidays'    // Schulferien
   | 'public-holidays'    // Gesetzliche Feiertage
-  | 'observances'        // Gedenktage ("Tag des...")
+  | 'observances'        // Gedenktage (Muttertag, Valentinstag, etc.)
+  | 'fun-days'           // Kuriose Tage (Tag des Bieres, etc.)
+  | 'vacation'           // Persönlicher Urlaub
   | 'custom';            // Nutzer-Import (später)
+
+/**
+ * User vacation entry
+ */
+export interface VacationEntry {
+  id: string;           // UUID
+  name: string;         // "Sommerurlaub", "Kurztrip"
+  startDate: string;    // ISO 8601: "2025-07-15"
+  endDate: string;      // ISO 8601: "2025-07-28"
+}
 
 /**
  * Country definition
@@ -59,9 +71,11 @@ export interface CalendarEvent {
  * Calendar configuration (URL-State)
  */
 export interface CalendarConfig {
-  country: string;             // "DE", "AT", "US"
+  countries: string[];         // ["DE", "AT"] - multiple countries supported
   regions: string[];           // ["DE-BY", "DE-NW"]
   categories: EventCategory[];
+  selectedObservances?: string[];  // IDs of selected observances
+  selectedFunDays?: string[];      // IDs of selected fun days
   year: number;
   includeReminders?: boolean;  // Später
   reminderDays?: number[];     // [7, 14]

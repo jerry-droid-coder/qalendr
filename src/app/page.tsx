@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { CalendarConfig, EventCategory, Country } from '@/lib/data/types';
+import { CalendarConfig, EventCategory } from '@/lib/data/types';
 import {
   getCountries,
   getCountryByCode,
@@ -13,35 +13,32 @@ import {
 import { getCurrentYear } from '@/lib/utils';
 import {
   CountrySelector,
-  RegionSelector,
   CategorySelector,
   YearSelector,
   DownloadButton,
   EventPreview,
 } from '@/components';
+import { useVacationStorage } from '@/hooks/useVacationStorage';
 
 export default function Home() {
   const countries = getCountries();
   const allRegions = getRegions();
   const availableYears = getAvailableYears();
+  const [vacations, setVacations] = useVacationStorage();
 
   const [config, setConfig] = useState<CalendarConfig>({
-    country: 'DE',
+    countries: [],
     regions: [],
-    categories: ['school-holidays', 'public-holidays'],
+    categories: [],
+    selectedObservances: [],
+    selectedFunDays: [],
     year: getCurrentYear(),
   });
 
-  // Get the current country object
-  const currentCountry = useMemo(
-    () => getCountryByCode(config.country),
-    [config.country]
-  );
-
-  // Get states for current country
-  const countryStates = useMemo(
-    () => getStatesByCountry(config.country),
-    [config.country]
+  // Get states for all selected countries that have states
+  const allCountryStates = useMemo(
+    () => config.countries.flatMap((c) => getStatesByCountry(c)),
+    [config.countries]
   );
 
   // Ensure the selected year is in available years
@@ -54,45 +51,54 @@ export default function Home() {
     }
   }, [availableYears, config.year]);
 
-  // Filter out school-holidays if country doesn't support it
-  useEffect(() => {
-    if (currentCountry && !currentCountry.hasSchoolHolidays) {
-      if (config.categories.includes('school-holidays')) {
-        setConfig((prev) => ({
-          ...prev,
-          categories: prev.categories.filter((c) => c !== 'school-holidays'),
-        }));
-      }
-    }
-  }, [currentCountry, config.categories]);
-
   // Load events for preview
   const events = useMemo(() => {
-    // For countries without states, use the country code as region
+    // For countries without states, use the country codes as regions
     const effectiveRegions =
-      countryStates.length === 0 ? [config.country] : config.regions;
+      allCountryStates.length === 0 ? config.countries : config.regions;
 
-    if (effectiveRegions.length === 0) return [];
-    return loadEvents(effectiveRegions, config.categories, config.year, config.country);
-  }, [config.regions, config.categories, config.year, config.country, countryStates.length]);
+    // Check if there's any content to load
+    const hasCountryContent = effectiveRegions.length > 0;
+    const hasGlobalContent = config.categories.some(
+      (c) => c === 'vacation' || c === 'observances' || c === 'fun-days'
+    );
 
-  const handleCountryChange = (countryCode: string) => {
-    const newCountry = getCountryByCode(countryCode);
-    // Reset regions when country changes
-    // Also reset categories if the new country doesn't have school holidays
-    const newCategories = newCountry?.hasSchoolHolidays
-      ? config.categories
-      : config.categories.filter((c) => c !== 'school-holidays');
+    if (!hasCountryContent && !hasGlobalContent) return [];
 
-    // Ensure at least one category is selected
-    const finalCategories =
-      newCategories.length > 0 ? newCategories : ['public-holidays'];
+    return loadEvents(
+      effectiveRegions,
+      config.categories,
+      config.year,
+      config.countries,
+      vacations,
+      config.selectedObservances,
+      config.selectedFunDays
+    );
+  }, [config.regions, config.categories, config.year, config.countries, allCountryStates.length, vacations, config.selectedObservances, config.selectedFunDays]);
+
+  const handleCountriesChange = (countryCodes: string[]) => {
+    // Check if any of the new countries has school holidays
+    const anyHasSchoolHolidays = countryCodes.some(
+      (c) => getCountryByCode(c)?.hasSchoolHolidays
+    );
+
+    // Filter school-holidays if none of the new countries support it
+    let newCategories = config.categories;
+    if (!anyHasSchoolHolidays && config.categories.includes('school-holidays')) {
+      newCategories = config.categories.filter((c) => c !== 'school-holidays');
+    }
+
+    // Filter regions to only include those from selected countries
+    const validRegions = config.regions.filter((r) => {
+      const countryCode = r.split('-')[0];
+      return countryCodes.includes(countryCode);
+    });
 
     setConfig((prev) => ({
       ...prev,
-      country: countryCode,
-      regions: [],
-      categories: finalCategories as EventCategory[],
+      countries: countryCodes,
+      regions: validRegions,
+      categories: newCategories,
     }));
   };
 
@@ -104,13 +110,30 @@ export default function Home() {
     setConfig((prev) => ({ ...prev, categories }));
   };
 
+  const handleObservancesChange = (selectedObservances: string[]) => {
+    setConfig((prev) => ({ ...prev, selectedObservances }));
+  };
+
+  const handleFunDaysChange = (selectedFunDays: string[]) => {
+    setConfig((prev) => ({ ...prev, selectedFunDays }));
+  };
+
   const handleYearChange = (year: number) => {
     setConfig((prev) => ({ ...prev, year }));
   };
 
-  // For countries without states, we consider it "ready" if a country is selected
-  const hasStates = countryStates.length > 0;
-  const isReadyToDownload = hasStates ? config.regions.length > 0 : true;
+  // Ready to download if:
+  // - Countries with states: at least one region selected
+  // - Countries without states: at least one country selected
+  // - Or: global categories selected (vacation, observances, fun-days)
+  const hasStates = allCountryStates.length > 0;
+  const hasGlobalContent = config.categories.some(
+    (c) => c === 'vacation' || c === 'observances' || c === 'fun-days'
+  );
+  const hasCountryContent = hasStates
+    ? config.regions.length > 0
+    : config.countries.length > 0;
+  const isReadyToDownload = hasCountryContent || hasGlobalContent;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
@@ -133,31 +156,28 @@ export default function Home() {
             <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
               <CountrySelector
                 countries={countries}
-                selectedCountry={config.country}
-                onCountryChange={handleCountryChange}
+                regions={allRegions}
+                selectedCountries={config.countries}
+                selectedRegions={config.regions}
+                selectedCategories={config.categories}
+                onCountriesChange={handleCountriesChange}
+                onRegionsChange={handleRegionsChange}
+                onCategoriesChange={handleCategoriesChange}
               />
             </section>
 
-            {hasStates && (
-              <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-                <RegionSelector
-                  regions={allRegions}
-                  selectedRegions={config.regions}
-                  onSelectionChange={handleRegionsChange}
-                  country={currentCountry}
-                />
-              </section>
-            )}
-
-            {currentCountry?.hasSchoolHolidays && (
-              <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-                <CategorySelector
-                  selectedCategories={config.categories}
-                  onSelectionChange={handleCategoriesChange}
-                  country={currentCountry}
-                />
-              </section>
-            )}
+            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+              <CategorySelector
+                selectedCategories={config.categories}
+                onSelectionChange={handleCategoriesChange}
+                selectedObservances={config.selectedObservances || []}
+                onObservancesChange={handleObservancesChange}
+                selectedFunDays={config.selectedFunDays || []}
+                onFunDaysChange={handleFunDaysChange}
+                vacations={vacations}
+                onVacationsChange={setVacations}
+              />
+            </section>
 
             <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
               <YearSelector
@@ -171,8 +191,8 @@ export default function Home() {
               <DownloadButton
                 config={{
                   ...config,
-                  // For countries without states, use the country code as region
-                  regions: hasStates ? config.regions : [config.country],
+                  // For countries without states, use the country codes as regions
+                  regions: hasStates ? config.regions : config.countries,
                 }}
                 disabled={!isReadyToDownload}
               />

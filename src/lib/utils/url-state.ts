@@ -12,6 +12,8 @@ const VALID_CATEGORIES: EventCategory[] = [
   'school-holidays',
   'public-holidays',
   'observances',
+  'fun-days',
+  'vacation',
   'custom',
 ];
 
@@ -21,9 +23,9 @@ const VALID_CATEGORIES: EventCategory[] = [
 export function encodeConfigToUrl(config: CalendarConfig): string {
   const params = new URLSearchParams();
 
-  // Country (only if not default)
-  if (config.country && config.country !== 'DE') {
-    params.set('co', config.country);
+  // Countries as comma-separated list
+  if (config.countries && config.countries.length > 0) {
+    params.set('co', config.countries.join(','));
   }
 
   // Regions as comma-separated list
@@ -56,15 +58,17 @@ export function encodeConfigToUrl(config: CalendarConfig): string {
  * Decode URL search params to a calendar config
  */
 export function decodeUrlToConfig(searchParams: URLSearchParams): CalendarConfig {
-  const countryParam = searchParams.get('co');
+  const countriesParam = searchParams.get('co');
   const regionsParam = searchParams.get('r');
   const categoriesParam = searchParams.get('c');
   const yearParam = searchParams.get('y');
   const remindersParam = searchParams.get('rem');
   const reminderDaysParam = searchParams.get('remd');
 
-  // Parse country (default: DE for backwards compatibility)
-  const country = countryParam || 'DE';
+  // Parse countries (default: ['DE'] for backwards compatibility)
+  const countries = countriesParam
+    ? countriesParam.split(',').filter((c) => c.length > 0)
+    : ['DE'];
 
   // Parse regions
   const regions = regionsParam
@@ -91,7 +95,7 @@ export function decodeUrlToConfig(searchParams: URLSearchParams): CalendarConfig
     : undefined;
 
   return {
-    country,
+    countries,
     regions,
     categories,
     year: validYear,
@@ -124,9 +128,9 @@ export function createApiUrl(config: CalendarConfig, baseUrl: string): string {
  */
 export function getDefaultConfig(): CalendarConfig {
   return {
-    country: 'DE',
+    countries: [],
     regions: [],
-    categories: ['school-holidays', 'public-holidays'],
+    categories: [],
     year: getCurrentYear(),
   };
 }
@@ -142,7 +146,7 @@ export function mergeWithDefaults(
     ...defaults,
     ...partial,
     // Ensure arrays are properly merged (don't use defaults if partial has empty array)
-    country: partial.country ?? defaults.country,
+    countries: partial.countries ?? defaults.countries,
     regions: partial.regions ?? defaults.regions,
     categories: partial.categories ?? defaults.categories,
   };

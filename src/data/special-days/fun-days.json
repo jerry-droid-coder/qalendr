@@ -1,0 +1,172 @@
+{
+  "description": "Kuriose Feiertage und Aktionstage",
+  "days": [
+    {
+      "id": "weltknuddeltag",
+      "name": "Weltknuddeltag",
+      "date": "01-21",
+      "type": "fixed"
+    },
+    {
+      "id": "tag-der-jogginghose",
+      "name": "Tag der Jogginghose",
+      "date": "01-21",
+      "type": "fixed"
+    },
+    {
+      "id": "welttag-der-komplimente",
+      "name": "Welttag der Komplimente",
+      "date": "03-01",
+      "type": "fixed"
+    },
+    {
+      "id": "pi-tag",
+      "name": "Pi-Tag",
+      "date": "03-14",
+      "type": "fixed",
+      "note": "3.14 - die ersten Ziffern von Pi"
+    },
+    {
+      "id": "weltschlaftag",
+      "name": "Weltschlaftag",
+      "date": "03-15",
+      "type": "fixed"
+    },
+    {
+      "id": "tag-des-gluecks",
+      "name": "Internationaler Tag des Glücks",
+      "date": "03-20",
+      "type": "fixed"
+    },
+    {
+      "id": "welt-backup-tag",
+      "name": "Welt-Backup-Tag",
+      "date": "03-31",
+      "type": "fixed"
+    },
+    {
+      "id": "tag-des-bieres",
+      "name": "Tag des deutschen Bieres",
+      "date": "04-23",
+      "type": "fixed",
+      "note": "Jahrestag des Reinheitsgebots von 1516"
+    },
+    {
+      "id": "star-wars-tag",
+      "name": "Star Wars Tag",
+      "date": "05-04",
+      "type": "fixed",
+      "note": "May the 4th be with you"
+    },
+    {
+      "id": "handtuchtag",
+      "name": "Handtuchtag",
+      "date": "05-25",
+      "type": "fixed",
+      "note": "Zu Ehren von Douglas Adams"
+    },
+    {
+      "id": "weltelterntag",
+      "name": "Weltelterntag",
+      "date": "06-01",
+      "type": "fixed"
+    },
+    {
+      "id": "weltumwelttag",
+      "name": "Weltumwelttag",
+      "date": "06-05",
+      "type": "fixed"
+    },
+    {
+      "id": "weltyogatag",
+      "name": "Weltyogatag",
+      "date": "06-21",
+      "type": "fixed"
+    },
+    {
+      "id": "weltschokoladentag",
+      "name": "Weltschokoladentag",
+      "date": "07-07",
+      "type": "fixed"
+    },
+    {
+      "id": "welttag-der-emoji",
+      "name": "Welt-Emoji-Tag",
+      "date": "07-17",
+      "type": "fixed"
+    },
+    {
+      "id": "system-administrator-appreciation-day",
+      "name": "Sysadmin Day",
+      "date": "last-friday-07",
+      "type": "variable",
+      "note": "Letzter Freitag im Juli"
+    },
+    {
+      "id": "weltkatzentag",
+      "name": "Weltkatzentag",
+      "date": "08-08",
+      "type": "fixed"
+    },
+    {
+      "id": "linkshaendertag",
+      "name": "Linkshändertag",
+      "date": "08-13",
+      "type": "fixed"
+    },
+    {
+      "id": "weltfotografietag",
+      "name": "Weltfotografietag",
+      "date": "08-19",
+      "type": "fixed"
+    },
+    {
+      "id": "talk-like-a-pirate-day",
+      "name": "Sprich-wie-ein-Pirat-Tag",
+      "date": "09-19",
+      "type": "fixed"
+    },
+    {
+      "id": "tag-des-kaffees",
+      "name": "Tag des Kaffees",
+      "date": "10-01",
+      "type": "fixed"
+    },
+    {
+      "id": "weltlehrertag",
+      "name": "Weltlehrertag",
+      "date": "10-05",
+      "type": "fixed"
+    },
+    {
+      "id": "welttierschutztag",
+      "name": "Welttierschutztag",
+      "date": "10-04",
+      "type": "fixed"
+    },
+    {
+      "id": "weltnudeltag",
+      "name": "Weltnudeltag",
+      "date": "10-25",
+      "type": "fixed"
+    },
+    {
+      "id": "weltvegetariertag",
+      "name": "Weltvegetariertag",
+      "date": "10-01",
+      "type": "fixed"
+    },
+    {
+      "id": "weltnettigkeitstag",
+      "name": "Weltnettigkeitstag",
+      "date": "11-13",
+      "type": "fixed"
+    },
+    {
+      "id": "welttoilettentag",
+      "name": "Welttoilettentag",
+      "date": "11-19",
+      "type": "fixed"
+    }
+  ]
+}
