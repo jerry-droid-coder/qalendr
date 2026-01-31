@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest standard-termine-app --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(taskkill:*)",
+      "Bash(exit 0)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(dir:*)",
+      "Bash(robocopy:*)",
+      "Bash(cmd /c \"for %f in \\(standard-termine\\\\*\\) do move /Y %f .\")",
+      "Bash(cmd /c \"xcopy standard-termine\\\\* . /E /Y /H\")",
+      "Bash(powershell -Command \"Copy-Item -Path ''standard-termine\\\\*'' -Destination ''.'' -Recurse -Force; Remove-Item -Path ''standard-termine'' -Recurse -Force\")",
+      "Bash(del nul)",
+      "Bash(npm run build:*)",
+      "Bash(timeout:*)",
+      "Bash(ping:*)",
+      "Bash(npm run dev:*)",
+      "Bash(del:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command \"Get-Process -Name node -ErrorAction SilentlyContinue | Stop-Process -Force; Remove-Item -Recurse -Force .next -ErrorAction SilentlyContinue; Start-Sleep -Seconds 2\")",
+      "Bash(curl:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(npx next dev:*)",
+      "Bash(npm run lint)",
+      "Bash(tasklist:*)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm audit:*)"
+    ]
+  }
+}

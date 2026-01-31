@@ -93,22 +93,23 @@ export default function ImpressumPage() {
           </section>
         </div>
 
-        <div className="mt-12 text-center space-y-4">
-          <Link
-            href="/"
-            className="text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
+        <div className="mt-12 text-center space-y-6">
+          <a
+            href="https://buymeacoffee.com/qalendr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--bg-card)] border border-[var(--border)] rounded-full text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-hover)] hover:shadow-[var(--shadow-md)] transition-all"
           >
-            ← Zurück zur Startseite
-          </Link>
-          <div className="pt-4 border-t border-[var(--border)]">
-            <a
-              href="https://buymeacoffee.com/qalendr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+            <span className="text-lg">☕</span>
+            <span>Projekt unterstützen</span>
+          </a>
+          <div>
+            <Link
+              href="/"
+              className="text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
             >
-              ☕ Projekt unterstützen
-            </a>
+              ← Zurück zur Startseite
+            </Link>
           </div>
         </div>
       </main>
