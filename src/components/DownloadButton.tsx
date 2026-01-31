@@ -58,6 +58,18 @@ export function DownloadButton({ config, disabled }: DownloadButtonProps) {
       <p className="text-xs text-[var(--text-muted)] text-center">
         Funktioniert mit Apple Kalender, Google Kalender, Outlook und anderen
       </p>
+
+      <div className="pt-4 border-t border-[var(--border)]">
+        <a
+          href="https://buymeacoffee.com/qalendr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full py-3 px-6 rounded-xl font-medium text-base transition-all duration-150 flex items-center justify-center gap-2 bg-[var(--bg-primary)] border border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-hover)] hover:shadow-md"
+        >
+          <span className="text-lg">☕</span>
+          Gefällt dir Qalendr? Kauf mir einen Kaffee!
+        </a>
+      </div>
     </div>
   );
 }

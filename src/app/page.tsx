@@ -236,17 +236,6 @@ export default function Home() {
           <p className="mt-2">
             Daten ohne Gewähr. Stand: 2026-2028
           </p>
-          <div className="mt-6 flex justify-center">
-            <a
-              href="https://buymeacoffee.com/qalendr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--bg-card)] border border-[var(--border)] rounded-full text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-hover)] hover:shadow-[var(--shadow-md)] transition-all"
-            >
-              <span className="text-lg">☕</span>
-              <span>Gefällt dir Qalendr? Kauf mir einen Kaffee!</span>
-            </a>
-          </div>
           <div className="mt-6 flex justify-center gap-6">
             <Link
               href="/impressum"
