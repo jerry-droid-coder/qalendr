@@ -193,13 +193,23 @@ export default function DatenschutzPage() {
           </section>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center space-y-4">
           <Link
             href="/"
             className="text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
           >
             ← Zurück zur Startseite
           </Link>
+          <div className="pt-4 border-t border-[var(--border)]">
+            <a
+              href="https://buymeacoffee.com/qalendr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+            >
+              ☕ Projekt unterstützen
+            </a>
+          </div>
         </div>
       </main>
     </div>

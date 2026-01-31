@@ -249,6 +249,14 @@ export default function Home() {
             >
               Datenschutz
             </Link>
+            <a
+              href="https://buymeacoffee.com/qalendr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
+            >
+              ☕ Unterstützen
+            </a>
           </div>
         </footer>
       </main>
