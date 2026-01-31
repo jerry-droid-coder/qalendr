@@ -28,10 +28,10 @@ export default function ImpressumPage() {
               Angaben gemäß § 5 TMG
             </h2>
             <div className="text-[var(--text-secondary)] space-y-2">
-              <p className="font-medium text-[var(--text-primary)]">[DEIN NAME]</p>
-              <p>[STRASSE UND HAUSNUMMER]</p>
-              <p>[PLZ] [ORT]</p>
-              <p>[LAND]</p>
+              <p className="font-medium text-[var(--text-primary)]">Julian Huth</p>
+              <p>Kölnische Str. 87</p>
+              <p>34119 Kassel</p>
+              <p>Deutschland</p>
             </div>
           </section>
 
@@ -40,9 +40,7 @@ export default function ImpressumPage() {
               Kontakt
             </h2>
             <div className="text-[var(--text-secondary)] space-y-2">
-              <p>E-Mail: <a href="mailto:[DEINE-EMAIL]" className="text-[var(--accent)] hover:underline">[DEINE-EMAIL]</a></p>
-              {/* Optional: Telefon */}
-              {/* <p>Telefon: [DEINE TELEFONNUMMER]</p> */}
+              <p>E-Mail: <a href="mailto:huth.jj@gmail.com" className="text-[var(--accent)] hover:underline">huth.jj@gmail.com</a></p>
             </div>
           </section>
 
@@ -51,9 +49,9 @@ export default function ImpressumPage() {
               Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
             </h2>
             <div className="text-[var(--text-secondary)] space-y-2">
-              <p className="font-medium text-[var(--text-primary)]">[DEIN NAME]</p>
-              <p>[STRASSE UND HAUSNUMMER]</p>
-              <p>[PLZ] [ORT]</p>
+              <p className="font-medium text-[var(--text-primary)]">Julian Huth</p>
+              <p>Kölnische Str. 87</p>
+              <p>34119 Kassel</p>
             </div>
           </section>
 
