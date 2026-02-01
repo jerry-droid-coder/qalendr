@@ -13,12 +13,13 @@ import {
 } from '@/lib/data';
 import { getCurrentYear } from '@/lib/utils';
 import {
-  CountrySelector,
+  CountryGrid,
   CategorySelector,
   YearSelector,
   DownloadButton,
   EventPreview,
   ThemeToggle,
+  FeatureHero,
 } from '@/components';
 import { useVacationStorage } from '@/hooks/useVacationStorage';
 
@@ -130,6 +131,14 @@ export default function Home() {
     setConfig((prev) => ({ ...prev, year }));
   };
 
+  const handleCategoryToggle = (category: EventCategory) => {
+    if (config.categories.includes(category)) {
+      handleCategoriesChange(config.categories.filter((c) => c !== category));
+    } else {
+      handleCategoriesChange([...config.categories, category]);
+    }
+  };
+
   // Ready to download if:
   // - Countries with states: at least one region selected
   // - Countries without states: at least one country selected
@@ -147,7 +156,7 @@ export default function Home() {
     <div className="min-h-screen bg-[var(--bg-primary)]">
       {/* Sticky Header */}
       <header className="sticky top-0 z-50 backdrop-blur-sm bg-[var(--bg-primary)]/80 border-b border-[var(--border)]">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="text-xl font-semibold text-[var(--text-primary)]">
             Qalendr
           </h1>
@@ -155,9 +164,9 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-4 py-8 sm:py-12">
+      <main className="max-w-6xl mx-auto px-4 py-8 sm:py-12">
         {/* Hero Section */}
-        <section className="text-center mb-16">
+        <section className="text-center mb-4">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[var(--accent)] to-purple-500 bg-clip-text text-transparent">
             Dein Qalendr
           </h2>
@@ -167,23 +176,37 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Feature Hero - Quick Category Selection */}
+        <FeatureHero
+          selectedCategories={config.categories}
+          onCategoryToggle={handleCategoryToggle}
+          selectedObservances={config.selectedObservances || []}
+          onObservancesChange={handleObservancesChange}
+          selectedFunDays={config.selectedFunDays || []}
+          onFunDaysChange={handleFunDaysChange}
+          selectedFamousPeople={config.selectedFamousPeople || []}
+          onFamousPeopleChange={handleFamousPeopleChange}
+          vacations={vacations}
+          onVacationsChange={setVacations}
+        />
+
+        {/* Country Grid */}
+        <CountryGrid
+          countries={countries}
+          regions={allRegions}
+          selectedCountries={config.countries}
+          selectedRegions={config.regions}
+          selectedCategories={config.categories}
+          onCountriesChange={handleCountriesChange}
+          onRegionsChange={handleRegionsChange}
+          onCategoriesChange={handleCategoriesChange}
+        />
+
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
           {/* Configuration Panel */}
           <div className="lg:col-span-2 space-y-6">
-            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
-              <CountrySelector
-                countries={countries}
-                regions={allRegions}
-                selectedCountries={config.countries}
-                selectedRegions={config.regions}
-                selectedCategories={config.categories}
-                onCountriesChange={handleCountriesChange}
-                onRegionsChange={handleRegionsChange}
-                onCategoriesChange={handleCategoriesChange}
-              />
-            </section>
-
+            {/* Category Selector */}
             <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
               <CategorySelector
                 selectedCategories={config.categories}
@@ -199,6 +222,7 @@ export default function Home() {
               />
             </section>
 
+            {/* Year Selector */}
             <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
               <YearSelector
                 availableYears={availableYears}
@@ -207,6 +231,7 @@ export default function Home() {
               />
             </section>
 
+            {/* Download Button */}
             <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
               <DownloadButton
                 config={{
