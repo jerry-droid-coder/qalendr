@@ -1,7 +1,11 @@
 export { CountrySelector } from './CountrySelector';
+export { CountryGrid } from './CountryGrid';
 export { CategorySelector } from './CategorySelector';
 export { YearSelector } from './YearSelector';
 export { DownloadButton } from './DownloadButton';
 export { EventPreview } from './EventPreview';
 export { ThemeProvider } from './ThemeProvider';
 export { ThemeToggle } from './ThemeToggle';
+export { FeatureHero } from './FeatureHero';
+export { Button } from './ui/button';
+export { BentoGrid, BentoCard } from './ui/bento-grid';

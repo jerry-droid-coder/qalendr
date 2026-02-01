@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { EventCategory, VacationEntry } from '@/lib/data/types';
 import { getObservances, getFunDays, getFamousPeople, SpecialDayData, FamousPerson } from '@/lib/data';
-import { formatDateRangeDE, daysBetween, getCurrentYear } from '@/lib/utils';
+import { formatDateRangeDE, daysBetween, getCurrentYear, cn } from '@/lib/utils';
 
 interface CategorySelectorProps {
   selectedCategories: EventCategory[];
@@ -618,10 +618,10 @@ export function CategorySelector({
   };
 
   return (
-    <div className="space-y-4">
+    <div id="category-selector" className="space-y-6">
       <h3 className="text-lg font-semibold text-[var(--text-primary)]">Weitere Termine</h3>
 
-      <div className="space-y-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {CATEGORY_CONFIGS.map((config) => {
           const isSelected = selectedCategories.includes(config.id);
           const isExpanded = expandedCategories.includes(config.id);
@@ -632,76 +632,109 @@ export function CategorySelector({
           return (
             <div
               key={config.id}
-              className={`rounded-xl border overflow-hidden transition-all duration-150 ${
+              className={cn(
+                'group relative rounded-xl border overflow-hidden transition-all duration-200',
+                'shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)]',
                 isSelected
-                  ? ''
-                  : 'border-[var(--border)] hover:border-[var(--border-hover)]'
-              }`}
+                  ? 'ring-2 ring-offset-0'
+                  : 'border-[var(--border)] hover:border-[var(--border-hover)] bg-[var(--bg-card)]',
+                isExpanded && 'col-span-1 sm:col-span-2 lg:col-span-3'
+              )}
               style={{
                 borderColor: isSelected ? config.borderColor : undefined,
                 backgroundColor: isSelected ? config.bgColor : undefined,
+                // @ts-expect-error CSS custom property
+                '--tw-ring-color': isSelected ? config.borderColor : undefined,
               }}
             >
+              {/* Card Header */}
               <div
-                className={`flex items-center gap-3 p-3 transition-colors ${
-                  isSelected ? '' : 'bg-[var(--bg-card)] hover:bg-[var(--bg-hover)]'
-                }`}
+                className={cn(
+                  'relative flex items-start gap-3 p-4 transition-colors cursor-pointer',
+                  !isSelected && 'hover:bg-[var(--bg-hover)]'
+                )}
+                onClick={() => handleCategoryToggle(config.id)}
                 style={{
                   backgroundColor: isSelected ? config.bgColor : undefined,
                 }}
               >
-                <input
-                  type="checkbox"
-                  checked={isSelected}
-                  onChange={() => handleCategoryToggle(config.id)}
-                  className="h-5 w-5 rounded border-[var(--border)]"
-                  style={{ accentColor: config.checkboxColor }}
-                />
-                <button
-                  type="button"
-                  onClick={() => handleCategoryToggle(config.id)}
-                  className="flex items-center gap-2 flex-1 text-left"
-                >
-                  <span className="text-xl">{config.icon}</span>
-                  <div>
-                    <span className="font-medium text-[var(--text-primary)]">{config.title}</span>
-                    <p className="text-sm text-[var(--text-secondary)]">{config.description}</p>
-                  </div>
-                </button>
-                {isSelected && counts && (
-                  <>
-                    <span
-                      className="text-xs px-2 py-0.5 rounded-full"
-                      style={{ backgroundColor: config.badgeColor, color: config.badgeTextColor }}
-                    >
-                      {counts.count}/{counts.total}
-                    </span>
-                    {expandable && (
-                      <button
-                        type="button"
-                        onClick={() => handleExpandToggle(config.id)}
-                        aria-label={isExpanded ? `${config.title} zuklappen` : `${config.title} aufklappen`}
-                        aria-expanded={isExpanded}
-                        className="p-1 rounded transition-colors hover:bg-[var(--bg-hover)]"
+                {/* Checkbox */}
+                <div className="pt-0.5">
+                  <input
+                    type="checkbox"
+                    checked={isSelected}
+                    onChange={() => handleCategoryToggle(config.id)}
+                    onClick={(e) => e.stopPropagation()}
+                    className="h-5 w-5 rounded border-[var(--border)] cursor-pointer"
+                    style={{ accentColor: config.checkboxColor }}
+                  />
+                </div>
+
+                {/* Icon with hover animation */}
+                <div className={cn(
+                  'flex-shrink-0 text-2xl transition-transform duration-200',
+                  'group-hover:scale-110 group-hover:-rotate-3'
+                )}>
+                  {config.icon}
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="font-semibold text-[var(--text-primary)]">{config.title}</span>
+                    {isSelected && counts && (
+                      <span
+                        className="text-xs px-2 py-0.5 rounded-full font-medium"
+                        style={{ backgroundColor: config.badgeColor, color: config.badgeTextColor }}
                       >
-                        <svg
-                          className={`w-5 h-5 text-[var(--text-muted)] transition-transform duration-150 ${
-                            isExpanded ? 'rotate-180' : ''
-                          }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
+                        {counts.count}/{counts.total}
+                      </span>
                     )}
-                  </>
+                  </div>
+                  <p className="text-sm text-[var(--text-secondary)] mt-0.5">{config.description}</p>
+                </div>
+
+                {/* Expand button */}
+                {isSelected && expandable && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleExpandToggle(config.id);
+                    }}
+                    aria-label={isExpanded ? `${config.title} zuklappen` : `${config.title} aufklappen`}
+                    aria-expanded={isExpanded}
+                    className="flex-shrink-0 p-1.5 rounded-lg transition-colors hover:bg-[var(--bg-hover)] border border-transparent hover:border-[var(--border)]"
+                  >
+                    <svg
+                      className={cn(
+                        'w-5 h-5 text-[var(--text-muted)] transition-transform duration-200',
+                        isExpanded && 'rotate-180'
+                      )}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                )}
+
+                {/* Selected indicator glow */}
+                {isSelected && (
+                  <div
+                    className="absolute inset-0 opacity-10 pointer-events-none"
+                    style={{
+                      background: `radial-gradient(circle at top right, ${config.checkboxColor}, transparent 70%)`
+                    }}
+                  />
                 )}
               </div>
+
+              {/* Expanded Content */}
               {isSelected && expandable && isExpanded && expandedContent && (
                 <div
-                  className="border-t p-3 bg-[var(--bg-card)]"
+                  className="border-t p-4 bg-[var(--bg-card)]"
                   style={{ borderColor: config.borderColor }}
                 >
                   {expandedContent}
@@ -713,49 +746,59 @@ export function CategorySelector({
 
         {/* Vacation - special case with input form */}
         <div
-          className={`rounded-xl border overflow-hidden transition-all duration-150 ${
+          className={cn(
+            'group relative rounded-xl border overflow-hidden transition-all duration-200',
+            'shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)]',
             selectedCategories.includes('vacation')
-              ? ''
-              : 'border-[var(--border)] hover:border-[var(--border-hover)]'
-          }`}
+              ? 'ring-2 ring-offset-0'
+              : 'border-[var(--border)] hover:border-[var(--border-hover)] bg-[var(--bg-card)]',
+            expandedCategories.includes('vacation') && selectedCategories.includes('vacation') && 'col-span-1 sm:col-span-2 lg:col-span-3'
+          )}
           style={{
             borderColor: selectedCategories.includes('vacation') ? VACATION_CONFIG.borderColor : undefined,
             backgroundColor: selectedCategories.includes('vacation') ? VACATION_CONFIG.bgColor : undefined,
+            // @ts-expect-error CSS custom property
+            '--tw-ring-color': selectedCategories.includes('vacation') ? VACATION_CONFIG.borderColor : undefined,
           }}
         >
+          {/* Card Header */}
           <div
-            className={`flex items-center gap-3 p-3 transition-colors ${
-              selectedCategories.includes('vacation')
-                ? ''
-                : 'bg-[var(--bg-card)] hover:bg-[var(--bg-hover)]'
-            }`}
+            className={cn(
+              'relative flex items-start gap-3 p-4 transition-colors cursor-pointer',
+              !selectedCategories.includes('vacation') && 'hover:bg-[var(--bg-hover)]'
+            )}
+            onClick={() => handleCategoryToggle('vacation')}
             style={{
               backgroundColor: selectedCategories.includes('vacation') ? VACATION_CONFIG.bgColor : undefined,
             }}
           >
-            <input
-              type="checkbox"
-              checked={selectedCategories.includes('vacation')}
-              onChange={() => handleCategoryToggle('vacation')}
-              className="h-5 w-5 rounded border-[var(--border)]"
-              style={{ accentColor: VACATION_CONFIG.checkboxColor }}
-            />
-            <button
-              type="button"
-              onClick={() => handleCategoryToggle('vacation')}
-              className="flex items-center gap-2 flex-1 text-left"
-            >
-              <span className="text-xl">{VACATION_CONFIG.icon}</span>
-              <div>
-                <span className="font-medium text-[var(--text-primary)]">{VACATION_CONFIG.title}</span>
-                <p className="text-sm text-[var(--text-secondary)]">{VACATION_CONFIG.description}</p>
-              </div>
-            </button>
-            {selectedCategories.includes('vacation') && (
-              <>
-                {vacations.length > 0 && (
+            {/* Checkbox */}
+            <div className="pt-0.5">
+              <input
+                type="checkbox"
+                checked={selectedCategories.includes('vacation')}
+                onChange={() => handleCategoryToggle('vacation')}
+                onClick={(e) => e.stopPropagation()}
+                className="h-5 w-5 rounded border-[var(--border)] cursor-pointer"
+                style={{ accentColor: VACATION_CONFIG.checkboxColor }}
+              />
+            </div>
+
+            {/* Icon with hover animation */}
+            <div className={cn(
+              'flex-shrink-0 text-2xl transition-transform duration-200',
+              'group-hover:scale-110 group-hover:-rotate-3'
+            )}>
+              {VACATION_CONFIG.icon}
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="font-semibold text-[var(--text-primary)]">{VACATION_CONFIG.title}</span>
+                {selectedCategories.includes('vacation') && vacations.length > 0 && (
                   <span
-                    className="text-xs px-2 py-0.5 rounded-full"
+                    className="text-xs px-2 py-0.5 rounded-full font-medium"
                     style={{
                       backgroundColor: VACATION_CONFIG.badgeColor,
                       color: VACATION_CONFIG.badgeTextColor,
@@ -764,30 +807,51 @@ export function CategorySelector({
                     {vacations.length}
                   </span>
                 )}
-                <button
-                  type="button"
-                  onClick={() => handleExpandToggle('vacation')}
-                  aria-label={expandedCategories.includes('vacation') ? 'Urlaub zuklappen' : 'Urlaub aufklappen'}
-                  aria-expanded={expandedCategories.includes('vacation')}
-                  className="p-1 rounded transition-colors hover:bg-[var(--bg-hover)]"
+              </div>
+              <p className="text-sm text-[var(--text-secondary)] mt-0.5">{VACATION_CONFIG.description}</p>
+            </div>
+
+            {/* Expand button */}
+            {selectedCategories.includes('vacation') && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleExpandToggle('vacation');
+                }}
+                aria-label={expandedCategories.includes('vacation') ? 'Urlaub zuklappen' : 'Urlaub aufklappen'}
+                aria-expanded={expandedCategories.includes('vacation')}
+                className="flex-shrink-0 p-1.5 rounded-lg transition-colors hover:bg-[var(--bg-hover)] border border-transparent hover:border-[var(--border)]"
+              >
+                <svg
+                  className={cn(
+                    'w-5 h-5 text-[var(--text-muted)] transition-transform duration-200',
+                    expandedCategories.includes('vacation') && 'rotate-180'
+                  )}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  <svg
-                    className={`w-5 h-5 text-[var(--text-muted)] transition-transform duration-150 ${
-                      expandedCategories.includes('vacation') ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-              </>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            )}
+
+            {/* Selected indicator glow */}
+            {selectedCategories.includes('vacation') && (
+              <div
+                className="absolute inset-0 opacity-10 pointer-events-none"
+                style={{
+                  background: `radial-gradient(circle at top right, ${VACATION_CONFIG.checkboxColor}, transparent 70%)`
+                }}
+              />
             )}
           </div>
+
+          {/* Expanded Content */}
           {selectedCategories.includes('vacation') && expandedCategories.includes('vacation') && (
             <div
-              className="border-t p-3 bg-[var(--bg-card)]"
+              className="border-t p-4 bg-[var(--bg-card)]"
               style={{ borderColor: VACATION_CONFIG.borderColor }}
             >
               {renderVacationInput()}
