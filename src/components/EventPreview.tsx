@@ -85,8 +85,12 @@ export function EventPreview({ events, maxItems = 10 }: EventPreviewProps) {
 
   if (events.length === 0) {
     return (
-      <div className="text-center py-8 text-[var(--text-muted)]">
-        <p>Keine Termine für die aktuelle Auswahl</p>
+      <div className="flex flex-col items-center justify-center py-12 text-[var(--text-muted)]">
+        <svg className="w-10 h-10 mb-3 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+        </svg>
+        <p className="text-sm font-medium">Keine Termine</p>
+        <p className="text-xs mt-1 opacity-60">Wähle ein Land oder eine Kategorie aus</p>
       </div>
     );
   }

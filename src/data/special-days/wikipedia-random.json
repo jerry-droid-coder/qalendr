@@ -1,71 +1,1821 @@
 {
   "description": "Zufällige Wikipedia-Artikel für jeden Tag",
-  "lastUpdated": "2025-01-31",
+  "lastUpdated": "2026-03-18",
   "articles": {
     "01-01": {
       "title": "Quastenflosser",
       "excerpt": "Als lebende Fossilien gelten diese Fische, die seit 400 Millionen Jahren fast unverändert existieren.",
       "link": "https://de.wikipedia.org/wiki/Quastenflosser"
     },
+    "01-02": {
+      "title": "Neujahrstag",
+      "excerpt": "Die meisten Neujahrsgebräuche gehen auf das antike Rom zurück – erst Julius Caesar legte den 1. Januar fest.",
+      "link": "https://de.wikipedia.org/wiki/Neujahr"
+    },
+    "01-03": {
+      "title": "Meteorit",
+      "excerpt": "Felsbruchstücke aus dem Weltall, die die Erdatmosphäre überleben – jährlich fallen ca. 500 Tonnen auf die Erde.",
+      "link": "https://de.wikipedia.org/wiki/Meteorit"
+    },
+    "01-04": {
+      "title": "Blindenschrift",
+      "excerpt": "Louis Braille erfand das nach ihm benannte System mit 15 Jahren, nachdem er selbst erblindete.",
+      "link": "https://de.wikipedia.org/wiki/Brailleschrift"
+    },
+    "01-05": {
+      "title": "Tsunami",
+      "excerpt": "Bis zu 30 Meter hohe Wellen, die durch Unterwasserbeben entstehen – der Begriff kommt aus dem Japanischen.",
+      "link": "https://de.wikipedia.org/wiki/Tsunami"
+    },
+    "01-06": {
+      "title": "Dreikönigstag",
+      "excerpt": "Das Fest der Heiligen Drei Könige schließt die Weihnachtszeit ab – in manchen Regionen ist er wichtiger als Weihnachten.",
+      "link": "https://de.wikipedia.org/wiki/Erscheinungsfest"
+    },
+    "01-07": {
+      "title": "Wikinger",
+      "excerpt": "Die nordischen Seefahrer erreichten vor Columbus Amerika – sie hatten jedoch Angst vor Einhörnern.",
+      "link": "https://de.wikipedia.org/wiki/Wikinger"
+    },
+    "01-08": {
+      "title": "Schwarzes Loch",
+      "excerpt": "Regionen im Weltall, deren Schwerkraft so stark ist, dass nicht einmal Licht entkommt.",
+      "link": "https://de.wikipedia.org/wiki/Schwarzes_Loch"
+    },
+    "01-09": {
+      "title": "Ziffern",
+      "excerpt": "Die heute genutzten 'arabischen Zahlen' stammen eigentlich aus Indien – die Araber brachten sie nach Europa.",
+      "link": "https://de.wikipedia.org/wiki/Arabische_Ziffern"
+    },
+    "01-10": {
+      "title": "Blitzableiter",
+      "excerpt": "Der Blitzableiter wurde 1752 von Benjamin Franklin erfunden und schützt Gebäude vor Blitzeinschlägen.",
+      "link": "https://de.wikipedia.org/wiki/Blitzableiter"
+    },
+    "01-11": {
+      "title": "Labyrinth",
+      "excerpt": "Das berühmteste Labyrinth der Mythologie war auf Kreta – erbaut für den Minotaurus.",
+      "link": "https://de.wikipedia.org/wiki/Labyrinth"
+    },
+    "01-12": {
+      "title": "Erdbeben",
+      "excerpt": "Die Erde ist in tektonische Platten aufgeteilt – deren Bewegungen verursachen Erdbeben, Vulkane und Gebirge.",
+      "link": "https://de.wikipedia.org/wiki/Erdbeben"
+    },
+    "01-13": {
+      "title": "Dreyfus-Affäre",
+      "excerpt": "Ein Justizskandal, der Frankreich spaltete und die Entstehung des modernen Antisemitismus-Diskurses auslöste.",
+      "link": "https://de.wikipedia.org/wiki/Dreyfus-Affäre"
+    },
+    "01-14": {
+      "title": "Vampir",
+      "excerpt": "Der Vampirmythos existiert in fast jeder Kultur – Bram Stokers Dracula basierte auf dem realen Vlad III.",
+      "link": "https://de.wikipedia.org/wiki/Vampir"
+    },
     "01-15": {
       "title": "Voyager Golden Record",
       "excerpt": "Eine vergoldete Datenplatte mit Bild- und Audioinformationen über die Erde, die 1977 mit den Voyager-Sonden ins All geschickt wurde.",
       "link": "https://de.wikipedia.org/wiki/Voyager_Golden_Record"
+    },
+    "01-16": {
+      "title": "Zar",
+      "excerpt": "Der Titel stammt vom lateinischen 'Caesar' und bedeutet Herrscher – der letzte Zar Nikolaus II. wurde 1918 erschossen.",
+      "link": "https://de.wikipedia.org/wiki/Zar"
+    },
+    "01-17": {
+      "title": "Blitzableiter",
+      "excerpt": "Benjamin Franklin entdeckte 1752 mit dem berühmten Drachen-Experiment die elektrische Natur des Blitzes.",
+      "link": "https://de.wikipedia.org/wiki/Blitzschutzanlage"
+    },
+    "01-18": {
+      "title": "Sandwich",
+      "excerpt": "Das Sandwich soll nach dem 4. Earl of Sandwich benannt sein, der nicht aufhören wollte Karten zu spielen.",
+      "link": "https://de.wikipedia.org/wiki/Sandwich_(Gericht)"
+    },
+    "01-19": {
+      "title": "Schwarzer Schwan (Nassim Taleb)",
+      "excerpt": "In der Wahrscheinlichkeitstheorie bezeichnet ein Schwarzer Schwan ein extrem seltenes, unvorhersehbares Ereignis mit enormen Auswirkungen.",
+      "link": "https://de.wikipedia.org/wiki/Schwarzer_Schwan_(Nassim_Nicholas_Taleb)"
+    },
+    "01-20": {
+      "title": "Guillotine",
+      "excerpt": "Die als human geltende Hinrichtungsmaschine der Französischen Revolution wurde nach ihrem Erfürworter Dr. Guillotin benannt.",
+      "link": "https://de.wikipedia.org/wiki/Guillotine"
+    },
+    "01-21": {
+      "title": "Schokolade",
+      "excerpt": "Die alten Mayas tranken Kakao als bitteres Gewürzgetränk – Zucker kam erst mit den Europäern hinein.",
+      "link": "https://de.wikipedia.org/wiki/Schokolade"
+    },
+    "01-22": {
+      "title": "Viktorianisches Zeitalter",
+      "excerpt": "Unter Königin Victoria (1837–1901) entwickelte sich Großbritannien zur stärksten Weltmacht – und erfand den Weihnachtsbaum.",
+      "link": "https://de.wikipedia.org/wiki/Viktorianisches_Zeitalter"
+    },
+    "01-23": {
+      "title": "Rock 'n' Roll",
+      "excerpt": "Der Begriff wurde zuerst von Radio-DJ Alan Freed als Euphemismus für Sex verwendet – dann wurde er zur Musikrevolution.",
+      "link": "https://de.wikipedia.org/wiki/Rock_'n'_Roll"
+    },
+    "01-24": {
+      "title": "Gold",
+      "excerpt": "Alles Gold der Erde stammt von Meteoriten, die vor vier Milliarden Jahren einschlugen.",
+      "link": "https://de.wikipedia.org/wiki/Gold"
+    },
+    "01-25": {
+      "title": "Olympische Winterspiele",
+      "excerpt": "Wintersportarten wie Skifahren, Eislaufen und Bobfahren wurden als Wettkampf erst 1924 olympisch.",
+      "link": "https://de.wikipedia.org/wiki/Olympische_Winterspiele"
+    },
+    "01-26": {
+      "title": "Känguru",
+      "excerpt": "Kängurus können nicht rückwärts laufen – ihr Name stammt angeblich aus einem Missverständnis mit australischen Ureinwohnern.",
+      "link": "https://de.wikipedia.org/wiki/Känguru"
+    },
+    "01-27": {
+      "title": "Auschwitz",
+      "excerpt": "Das KZ Auschwitz war das größte nationalsozialistische Vernichtungslager – über eine Million Menschen wurden dort ermordet.",
+      "link": "https://de.wikipedia.org/wiki/KZ_Auschwitz"
+    },
+    "01-28": {
+      "title": "Kondensstreifen",
+      "excerpt": "Die weißen Linien am Himmel entstehen, wenn heißer Abgasstrahl auf kalte Atmosphäre trifft und Wasserdampf kondensiert.",
+      "link": "https://de.wikipedia.org/wiki/Kondensstreifen"
+    },
+    "01-29": {
+      "title": "Rabe",
+      "excerpt": "In nordischer Mythologie sind Raben die Boten Odins – in der Wissenschaft gelten sie als klügste Vögel der Welt.",
+      "link": "https://de.wikipedia.org/wiki/Kolkrabe"
+    },
+    "01-30": {
+      "title": "Propaganda",
+      "excerpt": "Der Begriff stammt von der katholischen Kirche, die im 17. Jahrhundert eine 'Congregatio de Propaganda Fide' gründete.",
+      "link": "https://de.wikipedia.org/wiki/Propaganda"
+    },
+    "01-31": {
+      "title": "Schimpanse",
+      "excerpt": "Schimpansen teilen 98,7 % ihrer DNA mit Menschen – sie sind die einzigen Tiere, die Kriege führen.",
+      "link": "https://de.wikipedia.org/wiki/Schimpanse"
+    },
+    "02-01": {
+      "title": "Hitzeschild",
+      "excerpt": "Raumkapseln brauchen einen Hitzeschild, weil sie beim Wiedereintritt auf über 1600 Grad Celsius erhitzt werden.",
+      "link": "https://de.wikipedia.org/wiki/Hitzeschild"
+    },
+    "02-02": {
+      "title": "Murmeltier",
+      "excerpt": "Nach nordamerikanischer Tradition sagt das Murmeltier am 2. Februar das Wetter voraus – sieht es seinen Schatten, dauert der Winter noch 6 Wochen.",
+      "link": "https://de.wikipedia.org/wiki/Murmeltiere"
+    },
+    "02-03": {
+      "title": "Mondkrater",
+      "excerpt": "Die meisten Mondkrater entstanden vor 3-4 Milliarden Jahren – heute ist der Mond geologisch nahezu inaktiv.",
+      "link": "https://de.wikipedia.org/wiki/Mondkrater"
+    },
+    "02-04": {
+      "title": "Diplomat",
+      "excerpt": "Das Wort stammt vom griechischen 'diploma' (gefaltetes Dokument) – Staatsbriefe wurden auf doppelt gefaltete Papyrusbögen geschrieben.",
+      "link": "https://de.wikipedia.org/wiki/Diplomatie"
+    },
+    "02-05": {
+      "title": "Sushi",
+      "excerpt": "Ursprünglich war Sushi eine Methode zur Fischkonservierung – der Reis wurde dabei weggeworfen.",
+      "link": "https://de.wikipedia.org/wiki/Sushi"
+    },
+    "02-06": {
+      "title": "Krone",
+      "excerpt": "Britische Krönungsregalien sind über 800 Jahre alt – der Koh-i-Noor-Diamant darin war einst der größte bekannte Diamant.",
+      "link": "https://de.wikipedia.org/wiki/Britische_Kronjuwelen"
+    },
+    "02-07": {
+      "title": "Gutenberg-Bibel",
+      "excerpt": "Die Gutenberg-Bibel war das erste mit beweglichen Metalllettern gedruckte Buch und revolutionierte die Verbreitung von Wissen.",
+      "link": "https://de.wikipedia.org/wiki/Gutenberg-Bibel"
+    },
+    "02-08": {
+      "title": "Schottland",
+      "excerpt": "Schottland hat drei Nationaleinhorn – das Einhorn ist das offizielle Nationaltier Schottlands.",
+      "link": "https://de.wikipedia.org/wiki/Schottland"
+    },
+    "02-09": {
+      "title": "Beatlemania",
+      "excerpt": "Die Beatles-Fangemeinde war so groß, dass Flughäfen gesperrt und Polizisten verletzt wurden.",
+      "link": "https://de.wikipedia.org/wiki/Beatlemania"
+    },
+    "02-10": {
+      "title": "Schach",
+      "excerpt": "In der Startposition gibt es 20 mögliche erste Züge – nach 3 Zügen beider Spieler bereits über 9 Millionen mögliche Stellungen.",
+      "link": "https://de.wikipedia.org/wiki/Schach"
+    },
+    "02-11": {
+      "title": "Glühbirne",
+      "excerpt": "Thomas Edison meldete 1879 das Patent für die Glühbirne an – obwohl viele Erfinder zuvor ähnliche Ideen hatten.",
+      "link": "https://de.wikipedia.org/wiki/Gl%C3%BChlampe"
+    },
+    "02-12": {
+      "title": "Pu Yi",
+      "excerpt": "Der letzte Kaiser Chinas bestieg mit 2 Jahren den Thron – später arbeitete er als Gärtner unter Mao.",
+      "link": "https://de.wikipedia.org/wiki/Pu_Yi"
+    },
+    "02-13": {
+      "title": "Inquisition",
+      "excerpt": "Die mittelalterliche Inquisition dauerte Jahrhunderte lang – aber statistisch tötete sie weniger Menschen als moderne Kriege.",
+      "link": "https://de.wikipedia.org/wiki/Inquisition"
     },
     "02-14": {
       "title": "Blobfisch",
       "excerpt": "Ein Tiefseefisch, der 2013 zum hässlichsten Tier der Welt gewählt wurde.",
       "link": "https://de.wikipedia.org/wiki/Blobfisch"
     },
+    "02-15": {
+      "title": "Kriegsschiff",
+      "excerpt": "Die erste eiserne Kriegsschiff wurde 1862 im Amerikanischen Bürgerkrieg eingesetzt – sie revolutionierten die Marine.",
+      "link": "https://de.wikipedia.org/wiki/Schlachtschiff"
+    },
+    "02-16": {
+      "title": "Mumie",
+      "excerpt": "Die ältesten bekannten Mumien sind nicht ägyptisch, sondern chilenisch – die Chinchorro-Mumien sind 7.000 Jahre alt.",
+      "link": "https://de.wikipedia.org/wiki/Mumie"
+    },
+    "02-17": {
+      "title": "Inquisition",
+      "excerpt": "Giordano Brunos Ideen über unendliche Welten waren der wahre Grund seiner Verbrennung – nicht seine Theologie.",
+      "link": "https://de.wikipedia.org/wiki/Giordano_Bruno"
+    },
+    "02-18": {
+      "title": "Zwergplanet",
+      "excerpt": "Pluto wurde 2006 zum Zwergplaneten degradiert – Millionen trauerten und Schulbücher mussten umgeschrieben werden.",
+      "link": "https://de.wikipedia.org/wiki/Zwergplanet"
+    },
+    "02-19": {
+      "title": "Heliozentrisches Weltbild",
+      "excerpt": "Die Idee, dass die Sonne im Mittelpunkt steht, wurde durch Nicolaus Copernicus geprägt und veränderte unser Verständnis des Universums.",
+      "link": "https://de.wikipedia.org/wiki/Heliozentrisches_Weltbild"
+    },
+    "02-20": {
+      "title": "Kapsel",
+      "excerpt": "John Glenns Raumkapsel 'Friendship 7' ist heute im Smithsonian zu sehen – er umkreiste die Erde dreimal in 5 Stunden.",
+      "link": "https://de.wikipedia.org/wiki/Friendship_7"
+    },
+    "02-21": {
+      "title": "Schützengraben",
+      "excerpt": "Im Ersten Weltkrieg entstanden über 700 Kilometer Schützengräben – die Western Front war ein Netz aus unterirdischen Tunneln.",
+      "link": "https://de.wikipedia.org/wiki/Schützengraben"
+    },
+    "02-22": {
+      "title": "Eishockey",
+      "excerpt": "Kanada erfand das moderne Eishockey – der Stanley Cup ist die älteste Trophäe im Profisport.",
+      "link": "https://de.wikipedia.org/wiki/Eishockey"
+    },
+    "02-23": {
+      "title": "Buchdruck",
+      "excerpt": "Vor Gutenberg wurden Bücher in Klöstern von Hand kopiert – ein einziges Buch konnte Jahre der Arbeit erfordern.",
+      "link": "https://de.wikipedia.org/wiki/Buchdruck"
+    },
+    "02-24": {
+      "title": "Kalender",
+      "excerpt": "Bevor der Gregorianische Kalender eingeführt wurde, hatten verschiedene europäische Länder unterschiedliche Daten.",
+      "link": "https://de.wikipedia.org/wiki/Gregorianischer_Kalender"
+    },
+    "02-25": {
+      "title": "Revolver",
+      "excerpt": "Der Colt-Revolver veränderte den Wilden Westen – erst durch ihn wurden Überfälle auf Einzelpersonen profitabel.",
+      "link": "https://de.wikipedia.org/wiki/Revolver"
+    },
+    "02-26": {
+      "title": "Elba",
+      "excerpt": "Napoleon wurde nach seiner ersten Abdankung auf die Insel Elba verbannt – er machte sie zu einem Modellstaat.",
+      "link": "https://de.wikipedia.org/wiki/Elba_(Insel)"
+    },
+    "02-27": {
+      "title": "Bermudadreieck",
+      "excerpt": "Das Bermudadreieck ist ein mysteriöses Meeresgebiet im westlichen Atlantik, in dem angeblich Schiffe und Flugzeuge spurlos verschwinden.",
+      "link": "https://de.wikipedia.org/wiki/Bermudadreieck"
+    },
+    "02-28": {
+      "title": "Doppelhelix",
+      "excerpt": "Die DNA-Struktur wurde entdeckt durch Röntgenbilder von Rosalind Franklin – Watson und Crick bekamen den Nobelpreis.",
+      "link": "https://de.wikipedia.org/wiki/DNA"
+    },
+    "03-01": {
+      "title": "Nationalpark",
+      "excerpt": "Der Yellowstone, erster Nationalpark der Welt, hat einen riesigen Supervulkan unter sich, der alle 600.000 Jahre ausbricht.",
+      "link": "https://de.wikipedia.org/wiki/Yellowstone-Nationalpark"
+    },
+    "03-02": {
+      "title": "Basketball",
+      "excerpt": "Wilt Chamberlain erzielte 100 Punkte in einem Spiel – ein Rekord, den bis heute niemand gebrochen hat.",
+      "link": "https://de.wikipedia.org/wiki/Wilt_Chamberlain"
+    },
+    "03-03": {
+      "title": "Frieden",
+      "excerpt": "Der Begriff 'Waffenstillstand' kommt davon, dass im Mittelalter Kämpfer wörtlich die Waffen stillhielten.",
+      "link": "https://de.wikipedia.org/wiki/Waffenstillstand"
+    },
+    "03-04": {
+      "title": "Kaffee",
+      "excerpt": "Kaffee wurde zuerst in Äthiopien entdeckt – laut Legende durch einen Ziegenhirten namens Kaldi.",
+      "link": "https://de.wikipedia.org/wiki/Kaffee"
+    },
+    "03-05": {
+      "title": "Boston",
+      "excerpt": "Boston war der Geburtsort der Amerikanischen Revolution – und gab dem Terrier, dem Steak und dem Ivy League seinen Namen.",
+      "link": "https://de.wikipedia.org/wiki/Boston"
+    },
+    "03-06": {
+      "title": "Sklaverei",
+      "excerpt": "Sklaverei existierte in fast allen bekannten Gesellschaften der Geschichte – auch bei den alten Griechen und Römern.",
+      "link": "https://de.wikipedia.org/wiki/Sklaverei"
+    },
+    "03-07": {
+      "title": "Bürgerrechtsbewegung",
+      "excerpt": "Der Marsch von Selma nach Montgomery war entscheidend für den Voting Rights Act von 1965.",
+      "link": "https://de.wikipedia.org/wiki/Bürgerrechtsbewegung"
+    },
+    "03-08": {
+      "title": "Frauenrechte",
+      "excerpt": "Das Wahlrecht für Frauen wurde in Deutschland erst 1918 eingeführt – in einigen Kantonen der Schweiz erst 1990.",
+      "link": "https://de.wikipedia.org/wiki/Frauenwahlrecht"
+    },
+    "03-09": {
+      "title": "Barbie",
+      "excerpt": "Barbie hieß eigentlich Barbara Millicent Roberts – ihre Erfinderin Ruth Handler modellierte sie nach ihrer Tochter.",
+      "link": "https://de.wikipedia.org/wiki/Barbie"
+    },
+    "03-10": {
+      "title": "Telefon",
+      "excerpt": "Das erste Telefongespräch lautete: 'Mr. Watson, come here – I want to see you!'",
+      "link": "https://de.wikipedia.org/wiki/Telefon"
+    },
+    "03-11": {
+      "title": "Tsunami",
+      "excerpt": "Der Tsunami von 2011 bewegte Japan um 2,4 Meter in Richtung Nordamerika.",
+      "link": "https://de.wikipedia.org/wiki/Tōhoku-Erdbeben_2011"
+    },
+    "03-12": {
+      "title": "World Wide Web",
+      "excerpt": "Das World Wide Web wurde 1989 von Tim Berners-Lee am CERN erfunden und hat die Art verändert, wie Menschen kommunizieren und Informationen teilen.",
+      "link": "https://de.wikipedia.org/wiki/World_Wide_Web"
+    },
+    "03-13": {
+      "title": "Uranus",
+      "excerpt": "Uranus dreht sich auf der Seite – seine Pole zeigen zur Sonne, nicht die Äquatorregion.",
+      "link": "https://de.wikipedia.org/wiki/Uranus_(Planet)"
+    },
     "03-14": {
       "title": "Pi",
       "excerpt": "Die Kreiszahl Pi ist eine mathematische Konstante, die das Verhältnis des Umfangs eines Kreises zu seinem Durchmesser beschreibt.",
       "link": "https://de.wikipedia.org/wiki/Kreiszahl"
+    },
+    "03-15": {
+      "title": "Iden des März",
+      "excerpt": "'Vorsicht vor den Iden des März' sagte ein Seher zu Caesar – und hatte recht.",
+      "link": "https://de.wikipedia.org/wiki/Iden_des_März"
+    },
+    "03-16": {
+      "title": "Kriegsverbrechen",
+      "excerpt": "Das Konzept des Kriegsverbrechens existiert erst seit Mitte des 19. Jahrhunderts – die Nürnberger Prozesse definierten es neu.",
+      "link": "https://de.wikipedia.org/wiki/Kriegsverbrechen"
+    },
+    "03-17": {
+      "title": "Klee",
+      "excerpt": "Vierblättriger Klee ist eine Mutation – die Wahrscheinlichkeit, einen zu finden, liegt bei 1 zu 10.000.",
+      "link": "https://de.wikipedia.org/wiki/Kleeblatt"
+    },
+    "03-18": {
+      "title": "Spacewalk",
+      "excerpt": "Alexei Leonows erster Spacewalk war fast fatal – sein Raumanzug blähte sich auf und er passte kaum durch die Schleuse.",
+      "link": "https://de.wikipedia.org/wiki/Spacewalk"
+    },
+    "03-19": {
+      "title": "Sommerzeit",
+      "excerpt": "Deutschland hat seit 1980 die Sommerzeit – in manchen Ländern brachte sie mehr Verkehrsunfälle als sie Strom sparte.",
+      "link": "https://de.wikipedia.org/wiki/Sommerzeit"
+    },
+    "03-20": {
+      "title": "Tagundnachtgleiche",
+      "excerpt": "An den Äquinoktien am 20. März und 23. September sind Tag und Nacht auf der ganzen Erde gleich lang.",
+      "link": "https://de.wikipedia.org/wiki/Tagundnachtgleiche"
+    },
+    "03-21": {
+      "title": "Heißluftballon",
+      "excerpt": "Der Ballonpionier Bertrand Piccard ist der Enkel des Stratosphärenforschers Auguste Piccard – Abenteurer liegt in der Familie.",
+      "link": "https://de.wikipedia.org/wiki/Heißluftballon"
+    },
+    "03-22": {
+      "title": "Wasserkreislauf",
+      "excerpt": "Der Wasserkreislauf beschreibt die kontinuierliche Bewegung des Wassers zwischen Ozeanen, Atmosphäre und Landmassen.",
+      "link": "https://de.wikipedia.org/wiki/Wasserkreislauf"
+    },
+    "03-23": {
+      "title": "Redefreiheit",
+      "excerpt": "Patrick Henrys Rede gilt als einer der einflussreichsten Momente in der Geschichte der Demokratie.",
+      "link": "https://de.wikipedia.org/wiki/Redefreiheit"
+    },
+    "03-24": {
+      "title": "Exxon Valdez",
+      "excerpt": "Das Öl der Exxon Valdez bedeckte 2.100 km Küste – die Aufräumarbeiten dauern bis heute an.",
+      "link": "https://de.wikipedia.org/wiki/Exxon_Valdez"
+    },
+    "03-25": {
+      "title": "Saturn",
+      "excerpt": "Saturn hat über 140 Monde – und seine Ringe bestehen größtenteils aus Wassereis und Felsbrocken.",
+      "link": "https://de.wikipedia.org/wiki/Saturn_(Planet)"
+    },
+    "03-26": {
+      "title": "Mittlerer Osten",
+      "excerpt": "Der Begriff 'Mittlerer Osten' wurde von einem US-Admiral 1902 geprägt – davor hieß die Region schlicht 'Orient'.",
+      "link": "https://de.wikipedia.org/wiki/Naher_und_Mittlerer_Osten"
+    },
+    "03-27": {
+      "title": "Flugzeugkatastrophe",
+      "excerpt": "Die Teneriffa-Katastrophe 1977 war die schlimmste Flugzeugkatastrophe der Geschichte – durch Nebel und Missverständnisse.",
+      "link": "https://de.wikipedia.org/wiki/Teneriffa-Katastrophe"
+    },
+    "03-28": {
+      "title": "Atomkraftwerk",
+      "excerpt": "Drei Mile Island führte zum Ende des US-Atomkraftwerk-Baus – neue Reaktoren wurden erst 2013 wieder genehmigt.",
+      "link": "https://de.wikipedia.org/wiki/Kernenergie_in_den_Vereinigten_Staaten"
+    },
+    "03-29": {
+      "title": "Terrakotta",
+      "excerpt": "Die Terrakottaarmee hat über 8.000 Soldaten – und jede Figur hat ein individuelles Gesicht.",
+      "link": "https://de.wikipedia.org/wiki/Terrakottaarmee"
+    },
+    "03-30": {
+      "title": "Alaska",
+      "excerpt": "Alaska ist der größte US-Bundesstaat – er ist zweimal so groß wie Texas, hat aber weniger Einwohner als Düsseldorf.",
+      "link": "https://de.wikipedia.org/wiki/Alaska"
+    },
+    "03-31": {
+      "title": "Eiffelturm",
+      "excerpt": "Der Eiffelturm wurde ursprünglich nach 20 Jahren abgerissen werden – er wurde gerettet, weil er als Funkantenne diente.",
+      "link": "https://de.wikipedia.org/wiki/Eiffelturm"
     },
     "04-01": {
       "title": "Spaghetti-Baum",
       "excerpt": "Ein berühmter Aprilscherz der BBC von 1957, der Schweizer Bauern bei der Spaghetti-Ernte zeigte.",
       "link": "https://de.wikipedia.org/wiki/Spaghetti-Baum"
     },
+    "04-02": {
+      "title": "Florida",
+      "excerpt": "Florida liegt weiter nördlich als die Sahara – und ist das einzige Festland der USA mit Krokodilen und Alligatoren.",
+      "link": "https://de.wikipedia.org/wiki/Florida"
+    },
+    "04-03": {
+      "title": "Mobiltelefon",
+      "excerpt": "Das erste Mobiltelefon von 1973 war 25 cm groß und wog fast 1 kg – Akkuzeit: 30 Minuten.",
+      "link": "https://de.wikipedia.org/wiki/Mobiltelefon"
+    },
+    "04-04": {
+      "title": "NATO",
+      "excerpt": "Artikel 5 des Nordatlantikvertrags ist der Kern der NATO – ein Angriff auf ein Mitglied gilt als Angriff auf alle.",
+      "link": "https://de.wikipedia.org/wiki/NATO"
+    },
+    "04-05": {
+      "title": "Byzantinisches Reich",
+      "excerpt": "Das Oströmische Reich überlebte das Weströmische um 1000 Jahre – es endete erst 1453 mit dem Fall Konstantinopels.",
+      "link": "https://de.wikipedia.org/wiki/Byzantinisches_Reich"
+    },
+    "04-06": {
+      "title": "Erster Weltkrieg",
+      "excerpt": "Im Ersten Weltkrieg wurden erstmals Giftgas, Panzer, Flugzeuge und Unterwasser-U-Boote als Waffen eingesetzt.",
+      "link": "https://de.wikipedia.org/wiki/Erster_Weltkrieg"
+    },
+    "04-07": {
+      "title": "Völkermord",
+      "excerpt": "Das Wort 'Völkermord' wurde erst 1944 von dem polnisch-jüdischen Anwalt Raphael Lemkin geprägt.",
+      "link": "https://de.wikipedia.org/wiki/Völkermord"
+    },
+    "04-08": {
+      "title": "Apple",
+      "excerpt": "Steve Jobs und Steve Wozniak gründeten Apple in einer Garage – der dritte Gründer Ronald Wayne verkaufte seinen Anteil für 800 Dollar.",
+      "link": "https://de.wikipedia.org/wiki/Apple"
+    },
+    "04-09": {
+      "title": "Bürgerkrieg",
+      "excerpt": "Der amerikanische Bürgerkrieg war der tödlichste Krieg in der US-Geschichte – mehr Opfer als alle anderen US-Kriege zusammen.",
+      "link": "https://de.wikipedia.org/wiki/Amerikanischer_Bürgerkrieg"
+    },
+    "04-10": {
+      "title": "RMS Titanic",
+      "excerpt": "Die Titanic galt als unsinkbar und sank dennoch 1912 auf ihrer Jungfernfahrt nach der Kollision mit einem Eisberg.",
+      "link": "https://de.wikipedia.org/wiki/RMS_Titanic"
+    },
+    "04-11": {
+      "title": "Explosion",
+      "excerpt": "Die Explosion im Apollo-13-Servicemodul wurde durch einen Kurzschluss verursacht – ausgelöst durch eine 6-Dollar-Komponente.",
+      "link": "https://de.wikipedia.org/wiki/Apollo_13"
+    },
+    "04-12": {
+      "title": "Weltraumfahrt",
+      "excerpt": "Juri Gagarins Flug dauerte 108 Minuten – er hatte keine Kontrolle über das Schiff, es wurde vollautomatisch gesteuert.",
+      "link": "https://de.wikipedia.org/wiki/Juri_Gagarin"
+    },
+    "04-13": {
+      "title": "Unabhängigkeitserklärung",
+      "excerpt": "Thomas Jefferson schrieb die erste Fassung der Unabhängigkeitserklärung in nur 17 Tagen.",
+      "link": "https://de.wikipedia.org/wiki/Unabhängigkeitserklärung_der_Vereinigten_Staaten"
+    },
+    "04-14": {
+      "title": "Eisberg",
+      "excerpt": "Nur 10 % eines Eisbergs sind sichtbar – der Rest steckt unter Wasser. Die Titanic traf den Unterwasserteil.",
+      "link": "https://de.wikipedia.org/wiki/Eisberg"
+    },
+    "04-15": {
+      "title": "Eisberg",
+      "excerpt": "Der Eisberg, der die Titanic versenkte, stammt aus einem Gletscher, der vor 15.000 Jahren auf Grönland geformt wurde.",
+      "link": "https://de.wikipedia.org/wiki/Eisberg"
+    },
+    "04-16": {
+      "title": "LSD",
+      "excerpt": "Albert Hofmann entdeckte LSD zufällig – auf seinem Heimweg mit dem Fahrrad spürte er die Wirkung erstmals.",
+      "link": "https://de.wikipedia.org/wiki/Lysergsäurediethylamid"
+    },
+    "04-17": {
+      "title": "Kuba",
+      "excerpt": "Kuba ist die einzige kommunistische Staatsform auf der westlichen Hemisphäre – und hat die älteste Population Amerikas.",
+      "link": "https://de.wikipedia.org/wiki/Kuba"
+    },
+    "04-18": {
+      "title": "Erdbeben",
+      "excerpt": "San Francisco liegt auf dem San-Andreas-Verwerfung – ein 'The Big One' wird von Geologen seit Jahrzehnten erwartet.",
+      "link": "https://de.wikipedia.org/wiki/San-Andreas-Verwerfung"
+    },
+    "04-19": {
+      "title": "Milizionäre",
+      "excerpt": "Die amerikanischen Minutemen waren Bauern und Händler, die sich zu schneller militärischer Bereitschaft verpflichtet hatten.",
+      "link": "https://de.wikipedia.org/wiki/Minutemen"
+    },
+    "04-20": {
+      "title": "Schachspiel",
+      "excerpt": "Oliver Cromwell verbot Schach als 'müßige Zeitverschwendung' – und ließ den König köpfen.",
+      "link": "https://de.wikipedia.org/wiki/Schachspiel"
+    },
+    "04-21": {
+      "title": "Rom",
+      "excerpt": "Der Gründungsmythos Roms (Romulus und Remus) hat auffällige Parallelen zu älteren mesopotamischen Mythen.",
+      "link": "https://de.wikipedia.org/wiki/Gründung_Roms"
+    },
+    "04-22": {
+      "title": "Erde",
+      "excerpt": "Die Erde ist das einzige bekannte Himmelskörper im Universum, auf dem Leben existiert.",
+      "link": "https://de.wikipedia.org/wiki/Erde"
+    },
+    "04-23": {
+      "title": "Theater",
+      "excerpt": "Shakespeares Globe Theatre fasste 3.000 Zuschauer – ohne Bestuhlung, die meisten standen.",
+      "link": "https://de.wikipedia.org/wiki/Globe_Theatre"
+    },
+    "04-24": {
+      "title": "Ostern",
+      "excerpt": "Das Datum des Osterfestes wird nach einem komplizierten Mondkalender berechnet – es kann zwischen dem 22. März und 25. April fallen.",
+      "link": "https://de.wikipedia.org/wiki/Ostern"
+    },
+    "04-25": {
+      "title": "DNA-Fingerabdruck",
+      "excerpt": "Der DNA-Fingerabdruck wurde 1984 entdeckt und revolutionierte die Forensik und die Verbrechensaufklärung.",
+      "link": "https://de.wikipedia.org/wiki/DNA-Analyse"
+    },
+    "04-26": {
+      "title": "Radioaktivität",
+      "excerpt": "Radioaktivität ist die Eigenschaft instabiler Atomkerne, spontan ionisierende Strahlung auszusenden.",
+      "link": "https://de.wikipedia.org/wiki/Radioaktivit%C3%A4t"
+    },
+    "04-27": {
+      "title": "Verlorenes Paradies",
+      "excerpt": "John Miltons Epos beschreibt den Sündenfall – die Figur des Satans gilt als eine der komplexesten der Literatur.",
+      "link": "https://de.wikipedia.org/wiki/Das_verlorene_Paradies"
+    },
+    "04-28": {
+      "title": "Meuterei",
+      "excerpt": "Auf der Bounty verließen die Meuterer Captain Bligh auf einem offenen Boot – er navigierte 6.700 km zum rettenden Hafen.",
+      "link": "https://de.wikipedia.org/wiki/Meuterei_auf_der_Bounty"
+    },
+    "04-29": {
+      "title": "Konzentrationslager",
+      "excerpt": "Dachau war das erste KZ der Nazis – es diente als Modell für alle späteren Vernichtungslager.",
+      "link": "https://de.wikipedia.org/wiki/KZ_Dachau"
+    },
+    "04-30": {
+      "title": "Louisiana",
+      "excerpt": "Louisiana ist der einzige US-Staat, der sein Rechtssystem nach dem napoleonischen Code – und nicht nach englischem Recht – strukturiert.",
+      "link": "https://de.wikipedia.org/wiki/Louisiana"
+    },
+    "05-01": {
+      "title": "Crystal Palace",
+      "excerpt": "Der Crystal Palace war das erste Großgebäude aus Glas und Eisen – 1936 brannte er nieder.",
+      "link": "https://de.wikipedia.org/wiki/Crystal_Palace"
+    },
+    "05-02": {
+      "title": "Universalgelehrter",
+      "excerpt": "Leonardo da Vinci hinterließ Notizbücher mit Entwürfen für Hubschrauber, Panzer und Solarenergie – 500 Jahre zu früh.",
+      "link": "https://de.wikipedia.org/wiki/Leonardo_da_Vinci"
+    },
+    "05-03": {
+      "title": "Tornado",
+      "excerpt": "Die USA haben mehr Tornados als jedes andere Land – im 'Tornado Alley' treffen verschiedene Luftmassen aufeinander.",
+      "link": "https://de.wikipedia.org/wiki/Tornado"
+    },
     "05-04": {
       "title": "Lichtschwert",
       "excerpt": "Die ikonische Waffe der Jedi-Ritter aus dem Star-Wars-Universum.",
       "link": "https://de.wikipedia.org/wiki/Lichtschwert"
+    },
+    "05-05": {
+      "title": "Astronaut",
+      "excerpt": "Die Kapseln der frühen Mercury-Astronauten hatten weniger Computerkraft als ein modernes Taschentaschenrechner.",
+      "link": "https://de.wikipedia.org/wiki/Mercury-Programm"
+    },
+    "05-06": {
+      "title": "Luftschiff",
+      "excerpt": "Die Hindenburg war 245 Meter lang – größer als die meisten heutigen Kreuzfahrtschiffe.",
+      "link": "https://de.wikipedia.org/wiki/LZ_129_Hindenburg"
+    },
+    "05-07": {
+      "title": "Sinfonie",
+      "excerpt": "Beethovens 9. Sinfonie wurde von einem tauben Komponisten geschrieben – er soll nach der Uraufführung die Ovationen nicht gehört haben.",
+      "link": "https://de.wikipedia.org/wiki/9._Sinfonie_(Beethoven)"
+    },
+    "05-08": {
+      "title": "Kriegsende",
+      "excerpt": "Deutschland unterzeichnete die Kapitulation zweimal – einmal in Reims und einmal in Berlin, auf sowjetischen Wunsch.",
+      "link": "https://de.wikipedia.org/wiki/Bedingungslose_Kapitulation_der_Wehrmacht"
+    },
+    "05-09": {
+      "title": "Tennis",
+      "excerpt": "Wimbledon ist das älteste Tennisturnier der Welt – Spieler müssen noch immer traditionell weiß spielen.",
+      "link": "https://de.wikipedia.org/wiki/Wimbledon_Championships"
+    },
+    "05-10": {
+      "title": "Geschichte der Eisenbahn",
+      "excerpt": "Die erste dampfbetriebene Eisenbahn fuhr 1825 in England und revolutionierte den Personen- und Gütertransport.",
+      "link": "https://de.wikipedia.org/wiki/Geschichte_der_Eisenbahn"
+    },
+    "05-11": {
+      "title": "Künstliche Intelligenz",
+      "excerpt": "Deep Blues Sieg über Kasparov 1997 löste eine weltweite Debatte über KI aus – Kasparov vermutete Betrug.",
+      "link": "https://de.wikipedia.org/wiki/Deep_Blue"
+    },
+    "05-12": {
+      "title": "Berlin-Blockade",
+      "excerpt": "Während der Blockade wurden Westberlin täglich über 8.000 Tonnen Güter per Luftbrücke geliefert.",
+      "link": "https://de.wikipedia.org/wiki/Berlin-Blockade"
+    },
+    "05-13": {
+      "title": "Papst",
+      "excerpt": "Papst Johannes Paul II. vergab seinem Attentäter und besuchte ihn im Gefängnis.",
+      "link": "https://de.wikipedia.org/wiki/Johannes_Paul_II."
+    },
+    "05-14": {
+      "title": "Israel",
+      "excerpt": "Der Staat Israel wurde innerhalb weniger Stunden nach seiner Gründung von den USA anerkannt.",
+      "link": "https://de.wikipedia.org/wiki/Israel"
+    },
+    "05-15": {
+      "title": "Suezkanal",
+      "excerpt": "Der Suezkanal spart Schiffen 7.000 km Umweg um Afrika – täglich passieren ihn 50 Schiffe.",
+      "link": "https://de.wikipedia.org/wiki/Sueskanal"
+    },
+    "05-16": {
+      "title": "Segregation",
+      "excerpt": "Die Rassentrennung in den USA war so real, dass es eigene Telefonbücher, Restaurants und sogar Blutbanken gab.",
+      "link": "https://de.wikipedia.org/wiki/Rassentrennung"
+    },
+    "05-17": {
+      "title": "Vulkan",
+      "excerpt": "Der Mount St. Helens-Ausbruch 1980 war so heftig, dass er einen kompletten Berggipfel wegblies.",
+      "link": "https://de.wikipedia.org/wiki/Mount_St._Helens"
+    },
+    "05-18": {
+      "title": "Turm des London",
+      "excerpt": "Die sechs Ravens des Towers of London müssen per Gesetz dort leben – ihr Wegfluß würde laut Legende das Königreich zerstören.",
+      "link": "https://de.wikipedia.org/wiki/Tower_of_London"
+    },
+    "05-19": {
+      "title": "Atlantik",
+      "excerpt": "Der erste Soloflug über den Atlantik dauerte 33,5 Stunden – ohne Schlaf, ohne Radio, ohne GPS.",
+      "link": "https://de.wikipedia.org/wiki/Atlantischer_Ozean"
+    },
+    "05-20": {
+      "title": "Fußball",
+      "excerpt": "Die FIFA hat mehr Mitgliedsstaaten als die Vereinten Nationen – Fußball ist die einzige wirklich globale Sprache.",
+      "link": "https://de.wikipedia.org/wiki/Fußball"
+    },
+    "05-21": {
+      "title": "Oregonpfad",
+      "excerpt": "Hunderttausende Siedler zogen auf dem Oregon Trail westwärts – der Weg ist heute noch als Wagenspur sichtbar.",
+      "link": "https://de.wikipedia.org/wiki/Oregon_Trail"
+    },
+    "05-22": {
+      "title": "Dreißigjähriger Krieg",
+      "excerpt": "Der Dreißigjährige Krieg tötete ein Drittel der deutschen Bevölkerung – mehr als der Schwarze Tod.",
+      "link": "https://de.wikipedia.org/wiki/Dreißigjähriger_Krieg"
+    },
+    "05-23": {
+      "title": "Prager Fenstersturz",
+      "excerpt": "Der Prager Fenstersturz von 1618 tötete niemanden – die Opfer fielen auf einen Misthaufen und überlebten.",
+      "link": "https://de.wikipedia.org/wiki/Prager_Fenstersturz"
+    },
+    "05-24": {
+      "title": "Morse-Code",
+      "excerpt": "Im Morsecode gibt es keine Pause zwischen Buchstaben – Einzel- und Doppelpunkte müssen unterschieden werden.",
+      "link": "https://de.wikipedia.org/wiki/Morsezeichen"
+    },
+    "05-25": {
+      "title": "Galaxis",
+      "excerpt": "In 'Krieg der Sterne' wurden Hunderte von Sprachen erfunden – Wookiee-Sprache hat echte linguistische Regeln.",
+      "link": "https://de.wikipedia.org/wiki/Krieg_der_Sterne"
+    },
+    "05-26": {
+      "title": "St. Petersburg",
+      "excerpt": "St. Petersburg liegt auf 42 Inseln und hat über 300 Brücken – viele öffnen sich nachts für Schiffe.",
+      "link": "https://de.wikipedia.org/wiki/Sankt_Petersburg"
+    },
+    "05-27": {
+      "title": "Menschenrechte",
+      "excerpt": "Amnesty International begann damit, Protestbriefe für zwei portugiesische Studenten zu schreiben, die auf das Wohl der Freiheit getrunken hatten.",
+      "link": "https://de.wikipedia.org/wiki/Amnesty_International"
+    },
+    "05-28": {
+      "title": "Jeanne d'Arc",
+      "excerpt": "Jeanne d'Arc behauptete, Stimmen von Heiligen zu hören – heute würde man es als Schizophrenie diagnostizieren.",
+      "link": "https://de.wikipedia.org/wiki/Jeanne_d'Arc"
+    },
+    "05-29": {
+      "title": "Mount Everest",
+      "excerpt": "Mit 8.848 Metern ist der Mount Everest der höchste Berg der Erde. Er wurde 1953 erstmals von Hillary und Norgay bestiegen.",
+      "link": "https://de.wikipedia.org/wiki/Mount_Everest"
+    },
+    "05-30": {
+      "title": "Tulsa",
+      "excerpt": "Das Greenwood-Viertel in Tulsa war vor dem Massaker als 'Black Wall Street' bekannt – ein florierendes afroamerikanisches Geschäftszentrum.",
+      "link": "https://de.wikipedia.org/wiki/Massaker_von_Tulsa_1921"
+    },
+    "05-31": {
+      "title": "Sklaverei in den USA",
+      "excerpt": "Fast 4 Millionen Menschen lebten in den USA in Sklaverei – erst die 13. Amendment schaffte sie 1865 ab.",
+      "link": "https://de.wikipedia.org/wiki/Sklaverei_in_den_Vereinigten_Staaten"
+    },
+    "06-01": {
+      "title": "Whisky",
+      "excerpt": "Scotch Whisky muss mindestens 3 Jahre in Eichenfässern reifen – einige lagern 50 Jahre oder länger.",
+      "link": "https://de.wikipedia.org/wiki/Whisky"
+    },
+    "06-02": {
+      "title": "Fernsehen",
+      "excerpt": "Die erste TV-Übertragung der Krönung 1953 war ein Gamble – das BBC übertrug live, obwohl niemand wusste ob es klappen würde.",
+      "link": "https://de.wikipedia.org/wiki/Fernsehen"
+    },
+    "06-03": {
+      "title": "Tiananmen-Platz",
+      "excerpt": "Das berühmte Foto des 'Tankman' wurde von mehreren Fotografen aus einem Hotelzimmer geschossen.",
+      "link": "https://de.wikipedia.org/wiki/Tian'anmen-Platz"
+    },
+    "06-04": {
+      "title": "Wahlen",
+      "excerpt": "In Polen 1989 war Solidarność auf dem Stimmzettel – die Kommunisten verloren fast alle wählbaren Sitze.",
+      "link": "https://de.wikipedia.org/wiki/Solidarność"
+    },
+    "06-05": {
+      "title": "Umweltverschmutzung",
+      "excerpt": "Der erste Weltumwelttag 1973 war eine Reaktion auf den Bericht 'Die Grenzen des Wachstums', der eine Katastrophe vorhersagte.",
+      "link": "https://de.wikipedia.org/wiki/Weltumwelttag"
+    },
+    "06-06": {
+      "title": "Fallschirmjäger",
+      "excerpt": "Beim D-Day sprangen Fallschirmjäger nachts ab – viele landeten im falschen Bereich und kämpften trotzdem.",
+      "link": "https://de.wikipedia.org/wiki/Fallschirmjäger"
+    },
+    "06-07": {
+      "title": "Kreuzritter",
+      "excerpt": "Kreuzfahrer trugen keine weißen Rüstungen – das ist ein Mythos. Sie trugen alles, was sie sich leisten konnten.",
+      "link": "https://de.wikipedia.org/wiki/Kreuzzüge"
+    },
+    "06-08": {
+      "title": "Mönch",
+      "excerpt": "Mittelalterliche Klöster waren Zentren des Wissens – die meisten Bücher Europas wurden dort aufbewahrt.",
+      "link": "https://de.wikipedia.org/wiki/Kloster"
+    },
+    "06-09": {
+      "title": "Donald Duck",
+      "excerpt": "Donald Duck wurde nie offiziell auf Micky Maus-Niveau gebracht – sein Charakter war zu wütend und unberechenbar.",
+      "link": "https://de.wikipedia.org/wiki/Donald_Duck"
+    },
+    "06-10": {
+      "title": "Selbsthilfe",
+      "excerpt": "Die Anonymen Alkoholiker haben heute über 2 Millionen Mitglieder in 180 Ländern.",
+      "link": "https://de.wikipedia.org/wiki/Anonyme_Alkoholiker"
+    },
+    "06-11": {
+      "title": "Heinrich VIII.",
+      "excerpt": "Heinrich VIII. war in seiner Jugend sportlich und belesen – erst im Alter wurde er durch eine Kopfverletzung zur Tyrannen.",
+      "link": "https://de.wikipedia.org/wiki/Heinrich_VIII._(England)"
+    },
+    "06-12": {
+      "title": "Berliner Mauer",
+      "excerpt": "Reagan hielt seine Mauer-Rede trotz Bedenken der Berater – die hatten empfohlen, den Satz zu streichen.",
+      "link": "https://de.wikipedia.org/wiki/Berliner_Mauer"
+    },
+    "06-13": {
+      "title": "V2-Rakete",
+      "excerpt": "Die V2 war die erste Rakete, die den Weltraum erreichte – die Konstrukteure wurden nach dem Krieg von NASA und Sowjets umworben.",
+      "link": "https://de.wikipedia.org/wiki/V2_(Rakete)"
+    },
+    "06-14": {
+      "title": "Okkupation",
+      "excerpt": "Der Fall Frankreichs 1940 dauerte nur 6 Wochen – Frankreich hatte die größte Armee Westeuropas.",
+      "link": "https://de.wikipedia.org/wiki/Westfeldzug"
+    },
+    "06-15": {
+      "title": "Magna Carta",
+      "excerpt": "Die Magna Carta wurde von König Johann innerhalb weniger Wochen annulliert – dennoch wurde sie zur Grundlage moderner Demokratie.",
+      "link": "https://de.wikipedia.org/wiki/Magna_Carta"
+    },
+    "06-16": {
+      "title": "Kosmonautin",
+      "excerpt": "Valentina Tereshkova flog 48 Mal um die Erde in 71 Stunden – mehr als alle US-Astronauten zusammen bis dahin.",
+      "link": "https://de.wikipedia.org/wiki/Walentina_Tereschkowa"
+    },
+    "06-17": {
+      "title": "Kalter Krieg",
+      "excerpt": "Der Kalte Krieg war die politische und militärische Konfrontation zwischen den USA und der Sowjetunion von 1947 bis 1991.",
+      "link": "https://de.wikipedia.org/wiki/Kalter_Krieg"
+    },
+    "06-18": {
+      "title": "Juneteenth",
+      "excerpt": "Der 19. Juni wurde erst 2021 zum nationalen Feiertag der USA erklärt – 156 Jahre nach dem Ereignis.",
+      "link": "https://de.wikipedia.org/wiki/Juneteenth"
+    },
+    "06-19": {
+      "title": "Briefmarke",
+      "excerpt": "Die erste Briefmarke der Welt, der britische 'Penny Black', wurde 1840 ausgegeben – das Porträt zeigt Königin Victoria.",
+      "link": "https://de.wikipedia.org/wiki/Briefmarke"
+    },
+    "06-20": {
+      "title": "Victorianisches England",
+      "excerpt": "Queen Victoria war zeitgleich Herrscherin über ein Viertel der Erdbevölkerung – das British Empire.",
+      "link": "https://de.wikipedia.org/wiki/Victoria_(Königin)"
     },
     "06-21": {
       "title": "Mitternachtssonne",
       "excerpt": "Ein Phänomen in polaren Regionen, bei dem die Sonne im Sommer nicht untergeht.",
       "link": "https://de.wikipedia.org/wiki/Mitternachtssonne"
     },
+    "06-22": {
+      "title": "Inquisitionsprozesse",
+      "excerpt": "Im Galileo-Prozess wurde nichts Folter eingesetzt – der eigentliche Druck war sozialer und finanzieller Natur.",
+      "link": "https://de.wikipedia.org/wiki/Galileo-Affäre"
+    },
+    "06-23": {
+      "title": "Turingmaschine",
+      "excerpt": "Die Turingmaschine ist ein theoretisches Rechenmodell und bildet die Grundlage der modernen Informatik.",
+      "link": "https://de.wikipedia.org/wiki/Turingmaschine"
+    },
+    "06-24": {
+      "title": "UFO-Sichtung",
+      "excerpt": "Der Begriff 'Flying Saucer' geht auf Kenneths Arnolds Bericht zurück – er beschrieb die Flugbewegung, nicht die Form.",
+      "link": "https://de.wikipedia.org/wiki/Unbekanntes_Flugobjekt"
+    },
+    "06-25": {
+      "title": "Koreakrieg",
+      "excerpt": "Der Koreakrieg endete nie offiziell – Nordkorea und Südkorea sind technisch gesehen noch im Krieg.",
+      "link": "https://de.wikipedia.org/wiki/Koreakrieg"
+    },
+    "06-26": {
+      "title": "Vereinte Nationen",
+      "excerpt": "Der Name 'United Nations' wurde von US-Präsident Roosevelt erfunden – Churchill stimmte während eines Badezimmer-Gesprächs zu.",
+      "link": "https://de.wikipedia.org/wiki/Vereinte_Nationen"
+    },
+    "06-27": {
+      "title": "Battleship Potemkin",
+      "excerpt": "Eisensteins Film über die Meuterei gilt als einer der wichtigsten Filme der Geschichte.",
+      "link": "https://de.wikipedia.org/wiki/Panzerkreuzer_Potemkin_(Film)"
+    },
+    "06-28": {
+      "title": "Franz Ferdinand",
+      "excerpt": "Gavrilo Princip hatte das Attentat eigentlich aufgegeben – er kaufte gerade ein Sandwich, als der Wagen zum zweiten Mal vorbeifuhr.",
+      "link": "https://de.wikipedia.org/wiki/Attentat_von_Sarajevo"
+    },
+    "06-29": {
+      "title": "App Store",
+      "excerpt": "Der App Store eröffnete 2008 – ein Jahr nach dem ersten iPhone. Heute gibt es über 1,8 Millionen Apps.",
+      "link": "https://de.wikipedia.org/wiki/App_Store"
+    },
+    "06-30": {
+      "title": "Meteoriteneinschlag",
+      "excerpt": "Das Tunguska-Ereignis fällte 80 Millionen Bäume auf 2.000 km² – und hinterließ keinen Krater.",
+      "link": "https://de.wikipedia.org/wiki/Tunguska-Ereignis"
+    },
+    "07-01": {
+      "title": "Ahornsirup",
+      "excerpt": "Kanada produziert 71 % des weltweiten Ahornsirups – und hat eine strategische Reserve davon.",
+      "link": "https://de.wikipedia.org/wiki/Ahornsirup"
+    },
+    "07-02": {
+      "title": "Radio",
+      "excerpt": "Marconi war nicht allein – Nikola Tesla und Reginald Fessenden stritten jahrzehntelang um das Funkpatent.",
+      "link": "https://de.wikipedia.org/wiki/Radiotechnik"
+    },
+    "07-03": {
+      "title": "Seeschlacht",
+      "excerpt": "Die französische Flotte in Mers-el-Kébir war versenkt, damit die Deutschen sie nicht nutzen konnten.",
+      "link": "https://de.wikipedia.org/wiki/Mers-el-Kébir"
+    },
+    "07-04": {
+      "title": "Freiheitsstatue",
+      "excerpt": "Die Freiheitsstatue wurde 1886 eingeweiht und war ein Geschenk Frankreichs an die USA als Symbol der Freiheit.",
+      "link": "https://de.wikipedia.org/wiki/Freiheitsstatue"
+    },
+    "07-05": {
+      "title": "Tollwut",
+      "excerpt": "Tollwut ist fast immer tödlich sobald Symptome auftreten – Pasteurs Impfstoff war medizinisches Wunder.",
+      "link": "https://de.wikipedia.org/wiki/Tollwut"
+    },
+    "07-06": {
+      "title": "Schokolade",
+      "excerpt": "Weiße Schokolade enthält keine Kakaomasse – streng genommen ist sie gar keine Schokolade.",
+      "link": "https://de.wikipedia.org/wiki/Schokolade"
+    },
+    "07-07": {
+      "title": "Weltkrieg",
+      "excerpt": "Der Zweite Japanisch-Chinesische Krieg begann mit einem Vorfall, den niemand genau geplant hatte.",
+      "link": "https://de.wikipedia.org/wiki/Zweiter_Japanisch-Chinesischer_Krieg"
+    },
+    "07-08": {
+      "title": "Vasco da Gama",
+      "excerpt": "Vasco da Gamas Schiffe brauchten über 10 Monate bis nach Indien – sie mussten auch um ganz Afrika herumfahren.",
+      "link": "https://de.wikipedia.org/wiki/Vasco_da_Gama"
+    },
+    "07-09": {
+      "title": "Tango",
+      "excerpt": "Argentinien erklärte den Tango zum nationalen Kulturgut – UNESCO schützte ihn als immaterielles Welterbe.",
+      "link": "https://de.wikipedia.org/wiki/Tango"
+    },
+    "07-10": {
+      "title": "Wechselstrom",
+      "excerpt": "Nikola Tesla und Edison führten den 'Stromkrieg' – Edison wollte Gleichstrom, Tesla Wechselstrom durchsetzen.",
+      "link": "https://de.wikipedia.org/wiki/Nikola_Tesla"
+    },
+    "07-11": {
+      "title": "Weltbevölkerung",
+      "excerpt": "Die Menschheit wuchs von 1 auf 8 Milliarden in etwa 200 Jahren – die meisten davon in den letzten 70 Jahren.",
+      "link": "https://de.wikipedia.org/wiki/Weltbevölkerung"
+    },
+    "07-12": {
+      "title": "Kathedrale",
+      "excerpt": "Die Kathedrale von Köln war 632 Jahre lang die höchste Struktur der Welt.",
+      "link": "https://de.wikipedia.org/wiki/Kölner_Dom"
+    },
+    "07-13": {
+      "title": "Live Aid",
+      "excerpt": "Live Aid wurde von 1,9 Milliarden Menschen in 150 Ländern verfolgt – damals größte TV-Übertragung aller Zeiten.",
+      "link": "https://de.wikipedia.org/wiki/Live_Aid"
+    },
+    "07-14": {
+      "title": "Eiffelturm",
+      "excerpt": "Der Eiffelturm wurde 1889 zur Weltausstellung in Paris errichtet und ist heute das bekannteste Wahrzeichen Frankreichs.",
+      "link": "https://de.wikipedia.org/wiki/Eiffelturm"
+    },
+    "07-15": {
+      "title": "Neutronenstern",
+      "excerpt": "Wenn die Sonne zu einem Neutronenstern würde, wäre sie nur noch 20 km groß – aber schwerer als heute.",
+      "link": "https://de.wikipedia.org/wiki/Neutronenstern"
+    },
+    "07-16": {
+      "title": "Atomwaffe",
+      "excerpt": "Der Trinity-Test war so hell, dass er noch 300 Kilometer entfernt sichtbar war.",
+      "link": "https://de.wikipedia.org/wiki/Kernwaffe"
+    },
+    "07-17": {
+      "title": "Freizeitpark",
+      "excerpt": "Walt Disney hatte Disneyland auf einer Orangenplantage erbaut – heute ist es das meistbesuchte Themenpark der Welt.",
+      "link": "https://de.wikipedia.org/wiki/Disneyland"
+    },
+    "07-18": {
+      "title": "Großer Brand von Rom",
+      "excerpt": "Nach dem Brand von Rom beschuldigte Nero die Christen – seine Verfolgung war der erste staatliche Antisemitismus.",
+      "link": "https://de.wikipedia.org/wiki/Großer_Brand_von_Rom"
+    },
+    "07-19": {
+      "title": "Mondstaub",
+      "excerpt": "Mondstaub riecht wie Schießpulver – berichten Astronauten. Er haftet elektrostatisch an allem.",
+      "link": "https://de.wikipedia.org/wiki/Mond"
+    },
     "07-20": {
       "title": "Mondlandung",
       "excerpt": "Am 20. Juli 1969 betraten Neil Armstrong und Buzz Aldrin als erste Menschen den Mond.",
       "link": "https://de.wikipedia.org/wiki/Mondlandung"
+    },
+    "07-21": {
+      "title": "Eisenbahn-Räuber",
+      "excerpt": "Jesse James und Billy the Kid lebten zur gleichen Zeit – und kannten sich wahrscheinlich.",
+      "link": "https://de.wikipedia.org/wiki/Jesse_James"
+    },
+    "07-22": {
+      "title": "Breivik",
+      "excerpt": "Anders Behring Breivik schrieb ein 1.500-seitiges Manifest – und verschickte es kurz vor den Anschlägen.",
+      "link": "https://de.wikipedia.org/wiki/Terroranschläge_in_Norwegen_2011"
+    },
+    "07-23": {
+      "title": "Pyramiden",
+      "excerpt": "Die Cheops-Pyramide hatte ursprünglich glatte weiße Verkleidungssteine – sie wurden im Mittelalter für andere Bauten abgebaut.",
+      "link": "https://de.wikipedia.org/wiki/Cheops-Pyramide"
+    },
+    "07-24": {
+      "title": "Salt Lake City",
+      "excerpt": "Die Mormonen wählten Utah, weil es damals kein US-Territorium war – sie wollten eigene Regeln.",
+      "link": "https://de.wikipedia.org/wiki/Salt_Lake_City"
+    },
+    "07-25": {
+      "title": "Retortenbaby",
+      "excerpt": "Nach Louise Browns Geburt 1978 gingen bei den Forschern Drohbriefe und Morddrohungen ein – heute sind es Millionen IVF-Kinder.",
+      "link": "https://de.wikipedia.org/wiki/In-vitro-Fertilisation"
+    },
+    "07-26": {
+      "title": "Traumdeutung (Freud)",
+      "excerpt": "Sigmund Freuds Werk 'Die Traumdeutung' von 1899 gilt als Grundstein der Psychoanalyse.",
+      "link": "https://de.wikipedia.org/wiki/Die_Traumdeutung"
+    },
+    "07-27": {
+      "title": "Korea",
+      "excerpt": "Korea ist seit 1945 geteilt – durch eine beliebige Linie, die ein US-Offizier auf einer Landkarte zog.",
+      "link": "https://de.wikipedia.org/wiki/Koreanische_Halbinsel"
+    },
+    "07-28": {
+      "title": "Kontrapunkt",
+      "excerpt": "Johann Sebastian Bach gilt als Meister des Kontrapunkts – seine Fuge in h-Moll gilt als Höhepunkt der Musikgeschichte.",
+      "link": "https://de.wikipedia.org/wiki/Johann_Sebastian_Bach"
+    },
+    "07-29": {
+      "title": "Bastille",
+      "excerpt": "Die Bastille war zum Zeitpunkt des Sturms fast leer – nur sieben Gefangene waren dort inhaftiert.",
+      "link": "https://de.wikipedia.org/wiki/Sturm_auf_die_Bastille"
+    },
+    "07-30": {
+      "title": "Systemadministrator",
+      "excerpt": "Ohne Sysadmins würde das Internet kollabieren – und trotzdem sind sie die unsichtbarsten Helden der Technikwelt.",
+      "link": "https://de.wikipedia.org/wiki/Systemadministrator"
+    },
+    "07-31": {
+      "title": "Mars",
+      "excerpt": "Mars hat zwei kleine Monde, Phobos und Deimos – Phobos bewegt sich so nah, dass er in 50 Millionen Jahren auf den Mars stürzen wird.",
+      "link": "https://de.wikipedia.org/wiki/Mars_(Planet)"
+    },
+    "08-01": {
+      "title": "Schweizer Käse",
+      "excerpt": "Die Löcher im Schweizer Käse entstehen durch CO2-Blasen von Bakterien – seit 2015 weiß man, dass Heuhaupt-Partikel dafür sorgen.",
+      "link": "https://de.wikipedia.org/wiki/Emmentaler"
+    },
+    "08-02": {
+      "title": "Kuwait",
+      "excerpt": "Kuwait ist kleiner als Thüringen, hat aber die sechstgrößten Erdölreserven der Welt.",
+      "link": "https://de.wikipedia.org/wiki/Kuwait"
+    },
+    "08-03": {
+      "title": "Kompass",
+      "excerpt": "Christoph Kolumbus stellte auf seiner Reise fest, dass der Kompass nicht genau nach Norden zeigte – er entdeckte die magnetische Deklination.",
+      "link": "https://de.wikipedia.org/wiki/Kompass"
+    },
+    "08-04": {
+      "title": "Tempel in Jerusalem",
+      "excerpt": "Die Klagemauer in Jerusalem ist die letzte erhaltene Stützwand des Zweiten Tempels.",
+      "link": "https://de.wikipedia.org/wiki/Klagemauer"
+    },
+    "08-05": {
+      "title": "Marilyn Monroe",
+      "excerpt": "Marilyn Monroes bürgerlicher Name war Norma Jeane Mortenson – sie wuchs in Pflegefamilien auf.",
+      "link": "https://de.wikipedia.org/wiki/Marilyn_Monroe"
+    },
+    "08-06": {
+      "title": "Sonnenfinsternis",
+      "excerpt": "Bei einer Sonnenfinsternis schiebt sich der Mond zwischen Erde und Sonne und verdeckt diese ganz oder teilweise.",
+      "link": "https://de.wikipedia.org/wiki/Sonnenfinsternis"
+    },
+    "08-07": {
+      "title": "Sprengstoff",
+      "excerpt": "Alfred Nobel erfand das Dynamit, um sicherere Sprengmittel herzustellen – das Geld finanzierte seinen Friedenspreis.",
+      "link": "https://de.wikipedia.org/wiki/Dynamit"
     },
     "08-08": {
       "title": "Schrödingers Katze",
       "excerpt": "Ein Gedankenexperiment, das die Paradoxien der Quantenmechanik veranschaulicht.",
       "link": "https://de.wikipedia.org/wiki/Schr%C3%B6dingers_Katze"
     },
+    "08-09": {
+      "title": "Polarlicht",
+      "excerpt": "Polarlichter sind faszinierende Leuchtphänomene am Himmel, verursacht durch geladene Teilchen der Sonnenwinde.",
+      "link": "https://de.wikipedia.org/wiki/Polarlicht"
+    },
+    "08-10": {
+      "title": "Wikingerschiff",
+      "excerpt": "Das Wasa-Schiff in Stockholm ist eines der am besten erhaltenen Schiffe des 17. Jahrhunderts.",
+      "link": "https://de.wikipedia.org/wiki/Vasa_(Schiff)"
+    },
+    "08-11": {
+      "title": "Mayakalender",
+      "excerpt": "Der Mayakalender ist nicht wirklich am 21. Dezember 2012 'abgelaufen' – es war nur das Ende eines Zyklus.",
+      "link": "https://de.wikipedia.org/wiki/Mayakalender"
+    },
+    "08-12": {
+      "title": "Elefant",
+      "excerpt": "Elefanten sind die einzigen Tiere, die Verstorbene betrauern – sie kehren zu den Überresten ihrer Toten zurück.",
+      "link": "https://de.wikipedia.org/wiki/Elefanten"
+    },
+    "08-13": {
+      "title": "Berliner Mauer",
+      "excerpt": "Die Berliner Mauer war 155 km lang – sie tötete mindestens 140 Menschen, die sie zu überwinden versuchten.",
+      "link": "https://de.wikipedia.org/wiki/Berliner_Mauer"
+    },
+    "08-14": {
+      "title": "Japanische Kapitulation",
+      "excerpt": "Japan kapitulierte, aber der letzte japanische Soldat ergab sich erst 1974 – er wusste nicht, dass der Krieg vorbei war.",
+      "link": "https://de.wikipedia.org/wiki/Hiroo_Onoda"
+    },
+    "08-15": {
+      "title": "Schlacht bei Waterloo",
+      "excerpt": "Die Schlacht bei Waterloo 1815 war Napoleons letzte Niederlage und beendete seine Herrschaft über Frankreich.",
+      "link": "https://de.wikipedia.org/wiki/Schlacht_bei_Waterloo"
+    },
+    "08-16": {
+      "title": "Elvis",
+      "excerpt": "Elvis Presley besaß über 100 Autos und schenkte sie regelmäßig an Fremde – er lebte extrem verschwenderisch.",
+      "link": "https://de.wikipedia.org/wiki/Elvis_Presley"
+    },
+    "08-17": {
+      "title": "Woodstock",
+      "excerpt": "Woodstock lief ohne Zaun – als Hunderttausende ankamen, gaben die Veranstalter auf, Eintritt zu verlangen.",
+      "link": "https://de.wikipedia.org/wiki/Woodstock-Festival"
+    },
+    "08-18": {
+      "title": "Kolonie",
+      "excerpt": "Das 'Lost Colony' Roanoke verschwand spurlos – bis heute weiß niemand, was mit den 115 Siedlern passiert ist.",
+      "link": "https://de.wikipedia.org/wiki/Roanoke_Colony"
+    },
+    "08-19": {
+      "title": "Fotografie",
+      "excerpt": "Daguerre war zunächst Panorama-Maler – die Fotografie sollte seine Gemälde realistischer machen.",
+      "link": "https://de.wikipedia.org/wiki/Fotografie"
+    },
+    "08-20": {
+      "title": "Evolutionstheorie",
+      "excerpt": "Darwin wartete 20 Jahre, bevor er seine Evolutionstheorie veröffentlichte – aus Angst vor den Konsequenzen.",
+      "link": "https://de.wikipedia.org/wiki/Evolutionstheorie"
+    },
+    "08-21": {
+      "title": "Sklavenaufstand",
+      "excerpt": "Nat Turners Aufstand erschütterte den amerikanischen Süden – danach wurden Gesetze verschärft, die Sklaven das Lesen verboten.",
+      "link": "https://de.wikipedia.org/wiki/Sklavenaufstand"
+    },
+    "08-22": {
+      "title": "Segelregatta",
+      "excerpt": "Der Americas Cup ist die älteste noch ausgetragene internationale Sportveranstaltung.",
+      "link": "https://de.wikipedia.org/wiki/America's_Cup"
+    },
+    "08-23": {
+      "title": "Pakt",
+      "excerpt": "Der Hitler-Stalin-Pakt enthielt ein geheimes Zusatzprotokoll, das die Aufteilung Europas regelte – die Sowjetunion leugnete es bis 1989.",
+      "link": "https://de.wikipedia.org/wiki/Hitler-Stalin-Pakt"
+    },
+    "08-24": {
+      "title": "Vulkan Vesuv",
+      "excerpt": "Pompeji wurde durch den Ausbruch unter Asche konserviert – Forscher fanden Knochen, Schmuck, Brot und Graffiti.",
+      "link": "https://de.wikipedia.org/wiki/Pompeji"
+    },
+    "08-25": {
+      "title": "Paris",
+      "excerpt": "Paris hat eine geheime unterirdische Stadt – die Katakomben enthalten die Knochen von 6 Millionen Menschen.",
+      "link": "https://de.wikipedia.org/wiki/Katakomben_von_Paris"
+    },
+    "08-26": {
+      "title": "Menschenrechte",
+      "excerpt": "Die Erklärung der Menschen- und Bürgerrechte von 1789 war das Vorbild für die UN-Menschenrechtserklärung.",
+      "link": "https://de.wikipedia.org/wiki/Menschenrechte"
+    },
+    "08-27": {
+      "title": "Krakatau",
+      "excerpt": "Der Ausbruch des Krakatau 1883 war so laut, dass er auf der anderen Seite der Erde gehört wurde.",
+      "link": "https://de.wikipedia.org/wiki/Krakatau"
+    },
+    "08-28": {
+      "title": "I have a dream",
+      "excerpt": "Martin Luther Kings Rede war improvisiert – den berühmten 'I have a dream'-Teil hatte er vorbereitet, aber erst auf Zuruf eingebaut.",
+      "link": "https://de.wikipedia.org/wiki/Ich_habe_einen_Traum"
+    },
+    "08-29": {
+      "title": "Elektromagnetismus",
+      "excerpt": "Faradays Entdeckung der Induktion ermöglichte Generatoren, Motoren und das moderne Stromnetz.",
+      "link": "https://de.wikipedia.org/wiki/Elektromagnetische_Induktion"
+    },
+    "08-30": {
+      "title": "Staubsauger",
+      "excerpt": "Der erste Staubsauger wurde von Pferden gezogen – so groß war die Maschine, die draußen stand und durch Fenster saugte.",
+      "link": "https://de.wikipedia.org/wiki/Staubsauger"
+    },
+    "08-31": {
+      "title": "Paparazzi",
+      "excerpt": "Das Wort 'Paparazzi' stammt aus Fellinis Film 'La dolce vita' – der Fotograf heißt Paparazzo.",
+      "link": "https://de.wikipedia.org/wiki/Paparazzi"
+    },
+    "09-02": {
+      "title": "Brand",
+      "excerpt": "Der Große Brand von London 1666 vernichtete 13.000 Häuser – aber tötete offiziell nur 6 Menschen.",
+      "link": "https://de.wikipedia.org/wiki/Großer_Brand_von_London"
+    },
+    "09-03": {
+      "title": "Kriegserklärung",
+      "excerpt": "Großbritannien erklärte Deutschland den Krieg nach dem Ablauf eines 11-Uhr-Ultimatums am 3. September 1939.",
+      "link": "https://de.wikipedia.org/wiki/Kriegserklärung"
+    },
+    "09-04": {
+      "title": "Los Angeles",
+      "excerpt": "L.A. ist die größte Stadt der USA ohne natürliche Wasserversorgung – Wasser wird 700 km durch eine Pipeline gebracht.",
+      "link": "https://de.wikipedia.org/wiki/Los_Angeles"
+    },
+    "09-05": {
+      "title": "Olympia",
+      "excerpt": "Die Olympischen Spiele 1972 in München hatten zum ersten Mal Farbfernsehen – und wurden durch das Attentat erschüttert.",
+      "link": "https://de.wikipedia.org/wiki/Olympia-Attentat_1972"
+    },
+    "09-06": {
+      "title": "Weltumsegelung",
+      "excerpt": "Magellans Expedition startete mit 270 Mann – 18 kehrten zurück, Magellan selbst starb auf den Philippinen.",
+      "link": "https://de.wikipedia.org/wiki/Weltumsegelung"
+    },
+    "09-07": {
+      "title": "Luftangriff",
+      "excerpt": "Der Blitz tötete 43.000 Briten – aber die meisten Londoner schliefen nicht in der U-Bahn.",
+      "link": "https://de.wikipedia.org/wiki/The_Blitz"
+    },
+    "09-08": {
+      "title": "Skulptur",
+      "excerpt": "Michelangelos David wurde aus einem Marmorblock gemeißelt, den andere Bildhauer aufgegeben hatten.",
+      "link": "https://de.wikipedia.org/wiki/David_(Michelangelo)"
+    },
+    "09-09": {
+      "title": "Staatsnamen",
+      "excerpt": "Viele Staatsnamen klingen englisch, weil Briten sie verändert haben – 'Deutschland' und 'Germany' stammen aus verschiedenen Sprachen.",
+      "link": "https://de.wikipedia.org/wiki/Ländername"
+    },
+    "09-10": {
+      "title": "Nähmaschine",
+      "excerpt": "Die Nähmaschine ermöglichte die Massenproduktion von Kleidung – und löste die Handweberei-Industrie ab.",
+      "link": "https://de.wikipedia.org/wiki/Nähmaschine"
+    },
+    "09-11": {
+      "title": "New York",
+      "excerpt": "New York ist die einzige US-Stadt, in der mehr Menschen mit U-Bahn fahren als mit dem Auto.",
+      "link": "https://de.wikipedia.org/wiki/New_York_City"
+    },
+    "09-12": {
+      "title": "Mondprogramm",
+      "excerpt": "Das Apollo-Programm kostete 25,4 Milliarden Dollar – umgerechnet auf heute wäre es 280 Milliarden.",
+      "link": "https://de.wikipedia.org/wiki/Apollo-Programm"
+    },
+    "09-13": {
+      "title": "Programmierer",
+      "excerpt": "Der 256. Tag des Jahres markiert den Programmierer-Tag – 256 ist die höchste Zweierpotenz kleiner als 365.",
+      "link": "https://de.wikipedia.org/wiki/Programmierer"
+    },
+    "09-14": {
+      "title": "Napoleon in Moskau",
+      "excerpt": "Als Napoleon Moskau erreichte, war die Stadt fast verlassen – und brannte schon.",
+      "link": "https://de.wikipedia.org/wiki/Russlandfeldzug_1812"
+    },
+    "09-15": {
+      "title": "Oktopus",
+      "excerpt": "Oktopusse haben drei Herzen, neun Gehirne und blaues Blut – sie gelten als die intelligentesten wirbellosen Tiere.",
+      "link": "https://de.wikipedia.org/wiki/Kraken"
+    },
+    "09-16": {
+      "title": "Mayflower",
+      "excerpt": "Die Mayflower war ursprünglich ein Weintransportschiff – danach roch sie hundert Jahre lang nach Wein.",
+      "link": "https://de.wikipedia.org/wiki/Mayflower"
+    },
+    "09-17": {
+      "title": "Verfassung",
+      "excerpt": "Die US-Verfassung ist das älteste noch gültige nationale Verfassungsdokument der Welt.",
+      "link": "https://de.wikipedia.org/wiki/Verfassung_der_Vereinigten_Staaten"
+    },
+    "09-18": {
+      "title": "Zeitung",
+      "excerpt": "Zeitungen hatten einst eigene Telegrafen-Netzwerke, um Nachrichten schneller als die Konkurrenz zu bekommen.",
+      "link": "https://de.wikipedia.org/wiki/Zeitung"
+    },
     "09-19": {
       "title": "Talk Like a Pirate Day",
       "excerpt": "Ein parodistischer Feiertag, an dem Menschen ermutigt werden, wie Piraten zu sprechen.",
       "link": "https://de.wikipedia.org/wiki/International_Talk_Like_a_Pirate_Day"
+    },
+    "09-20": {
+      "title": "Seefahrt",
+      "excerpt": "Magellan wusste nicht, wie groß der Pazifik war – die Crew litt wochenlang an Hunger und Skorbut.",
+      "link": "https://de.wikipedia.org/wiki/Pazifischer_Ozean"
+    },
+    "09-21": {
+      "title": "Hobbits",
+      "excerpt": "Tolkien erfand die Hobbits spontan – er schrieb den ersten Satz des Buches auf ein leeres Blatt.",
+      "link": "https://de.wikipedia.org/wiki/Hobbits"
+    },
+    "09-22": {
+      "title": "Republik",
+      "excerpt": "Frankreich hat seit der Revolution fünf verschiedene Republiken gehabt – jede mit eigener Verfassung.",
+      "link": "https://de.wikipedia.org/wiki/Französische_Republik"
+    },
+    "09-23": {
+      "title": "Neptun",
+      "excerpt": "Neptun wurde mathematisch vorhergesagt, bevor er mit dem Teleskop beobachtet wurde.",
+      "link": "https://de.wikipedia.org/wiki/Neptun_(Planet)"
+    },
+    "09-24": {
+      "title": "Gericht",
+      "excerpt": "Der US-Supreme-Court tagt nur 6-7 Monate im Jahr – die neun Richter müssen sich auf Lebzeiten entscheiden.",
+      "link": "https://de.wikipedia.org/wiki/Supreme_Court"
+    },
+    "09-25": {
+      "title": "Pazifik",
+      "excerpt": "Der Pazifik macht fast die Hälfte der gesamten Erdoberfläche aus – alle Kontinente würden hineinpassen.",
+      "link": "https://de.wikipedia.org/wiki/Pazifischer_Ozean"
+    },
+    "09-26": {
+      "title": "Neonlicht",
+      "excerpt": "Echte Neonröhren leuchten rot-orange. Die meisten bunten Werbetafeln nutzen eigentlich Argon oder Krypton.",
+      "link": "https://de.wikipedia.org/wiki/Neonr%C3%B6hre"
+    },
+    "09-27": {
+      "title": "Lokomotive",
+      "excerpt": "Die erste Lokomotive 'Locomotion No. 1' fuhr mit 24 km/h – schneller als Pferde damals galoppieren konnten.",
+      "link": "https://de.wikipedia.org/wiki/Dampflokomotive"
+    },
+    "09-28": {
+      "title": "Konfuzianismus",
+      "excerpt": "Konfuzius' Lehre prägte China, Japan und Korea – seine Gedanken wurden 500 Jahre nach seinem Tod gesammelt.",
+      "link": "https://de.wikipedia.org/wiki/Konfuzianismus"
+    },
+    "09-29": {
+      "title": "Bibelexegese",
+      "excerpt": "Das Wort 'Bibel' kommt vom griechischen 'Biblion' (Buch) – es ist eigentlich Plural: die Bücher.",
+      "link": "https://de.wikipedia.org/wiki/Bibel"
+    },
+    "09-30": {
+      "title": "Roadmovie",
+      "excerpt": "James Dean drehte nur 3 Filme – er wurde 24 Jahre alt und ist bis heute Ikone.",
+      "link": "https://de.wikipedia.org/wiki/James_Dean"
+    },
+    "10-01": {
+      "title": "Nürnberger Prozesse",
+      "excerpt": "Die Nürnberger Prozesse schufen das Konzept von 'Verbrechen gegen die Menschlichkeit' – als neue Rechtskategorie.",
+      "link": "https://de.wikipedia.org/wiki/Nürnberger_Prozesse"
+    },
+    "10-02": {
+      "title": "Gewaltloser Widerstand",
+      "excerpt": "Gandhi entwickelte das Konzept des Satyagraha – 'Festhalten an der Wahrheit' – und revolutionierte den politischen Protest.",
+      "link": "https://de.wikipedia.org/wiki/Satyagraha"
+    },
+    "10-03": {
+      "title": "Deutsche Einheit",
+      "excerpt": "Die Währungsunion war der entscheidende Schritt der Wiedervereinigung – viele Ökonomen hielten sie für zu früh.",
+      "link": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung"
+    },
+    "10-04": {
+      "title": "Sputnik 1",
+      "excerpt": "Sputnik 1 war 1957 der erste künstliche Erdsatellit und markierte den Beginn des Weltraumzeitalters.",
+      "link": "https://de.wikipedia.org/wiki/Sputnik_1"
+    },
+    "10-05": {
+      "title": "Lehrberuf",
+      "excerpt": "Das Wort 'Lehrer' hat dieselbe Wurzel wie 'lehren' und 'Lecker' – beide kommen vom germanischen 'leccan' (führen).",
+      "link": "https://de.wikipedia.org/wiki/Lehrer"
+    },
+    "10-06": {
+      "title": "Tonfilm",
+      "excerpt": "Der Übergang vom Stumm- zum Tonfilm ließ viele Filmstars aus der Mode fallen – wegen ihrer Stimmen.",
+      "link": "https://de.wikipedia.org/wiki/Tonfilm"
+    },
+    "10-07": {
+      "title": "Osmanisches Reich",
+      "excerpt": "Das Osmanische Reich regierte 600 Jahre lang – es dehnte sich von Wien bis Marokko und Persien aus.",
+      "link": "https://de.wikipedia.org/wiki/Osmanisches_Reich"
+    },
+    "10-08": {
+      "title": "Feuerwehr",
+      "excerpt": "Die erste Berufsfeuerwehr gab es im antiken Rom – Kaiser Augustus ließ sie nach einem verheerenden Stadtbrand aufbauen.",
+      "link": "https://de.wikipedia.org/wiki/Feuerwehr"
+    },
+    "10-09": {
+      "title": "Che Guevara",
+      "excerpt": "Che Guevaras Foto von Alberto Korda ist das meistverbreitete Foto der Geschichte.",
+      "link": "https://de.wikipedia.org/wiki/Che_Guevara"
+    },
+    "10-10": {
+      "title": "Karolingerreich",
+      "excerpt": "Karl Martells Sieg bei Poitiers gilt als Wendepunkt der europäischen Geschichte – er stoppte die islamische Expansion.",
+      "link": "https://de.wikipedia.org/wiki/Karl_Martell"
+    },
+    "10-11": {
+      "title": "Fernsehsendung",
+      "excerpt": "Saturday Night Live begann mit dem Cast von 'The Not Ready for Prime Time Players' – heute ist es der Maßstab für Satire.",
+      "link": "https://de.wikipedia.org/wiki/Saturday_Night_Live"
+    },
+    "10-12": {
+      "title": "Kompass",
+      "excerpt": "Der Kompass ist ein Navigationsinstrument, das seit über 2000 Jahren verwendet wird und sich nach dem Magnetfeld der Erde ausrichtet.",
+      "link": "https://de.wikipedia.org/wiki/Kompass"
+    },
+    "10-13": {
+      "title": "Ritterorden",
+      "excerpt": "Die Templer waren so reich, dass sie quasi das erste internationale Bankensystem schufen.",
+      "link": "https://de.wikipedia.org/wiki/Templerorden"
+    },
+    "10-14": {
+      "title": "Mittelalter",
+      "excerpt": "Die Schlachten von Hastings und Waterloo liegen 749 Jahre auseinander – mehr als Zeit zwischen Waterloo und heute.",
+      "link": "https://de.wikipedia.org/wiki/Normannische_Eroberung_Englands"
+    },
+    "10-15": {
+      "title": "Philosophie",
+      "excerpt": "Friedrich Nietzsche schrieb 'Gott ist tot' – nicht als Aussage über Glauben, sondern über den Bedeutungsverlust von Werten.",
+      "link": "https://de.wikipedia.org/wiki/Friedrich_Nietzsche"
+    },
+    "10-16": {
+      "title": "Guillotine",
+      "excerpt": "Marie Antoinette wurde 9 Monate nach Ludwig XVI. hingerichtet – sie kämpfte die ganze Zeit für ihr Kind.",
+      "link": "https://de.wikipedia.org/wiki/Marie_Antoinette"
+    },
+    "10-17": {
+      "title": "Bierfass",
+      "excerpt": "Das 'London Beer Flood' von 1814 war eine echte Katastrophe – ein Brauerei-Tank platzte und überflutete ein Viertel.",
+      "link": "https://de.wikipedia.org/wiki/London_Beer_Flood"
+    },
+    "10-18": {
+      "title": "Tundra",
+      "excerpt": "Alaska hat mehr Küstenlinie als alle anderen US-Bundesstaaten zusammen.",
+      "link": "https://de.wikipedia.org/wiki/Alaska"
+    },
+    "10-19": {
+      "title": "Amerikanische Revolution",
+      "excerpt": "Die Amerikanische Revolution war eine der wenigen Revolutionen, die kein totalitäres Regime hervorbrachte.",
+      "link": "https://de.wikipedia.org/wiki/Amerikanische_Revolution"
+    },
+    "10-20": {
+      "title": "Onassis",
+      "excerpt": "Aristoteles Onassis baute sein Vermögen mit einer Handelsflotte auf – er begann mit einem kleinen Tabakgeschäft.",
+      "link": "https://de.wikipedia.org/wiki/Aristoteles_Onassis"
+    },
+    "10-21": {
+      "title": "Glühbirne",
+      "excerpt": "Edison testete über 3.000 Materialien für den Glühfaden – der einzige Grund er Wolfram wählte war es der langlebigste.",
+      "link": "https://de.wikipedia.org/wiki/Glühlampe"
+    },
+    "10-22": {
+      "title": "Kubakrise",
+      "excerpt": "Die Kubakrise 1962 brachte die Welt dem Atomkrieg am nächsten – sie dauerte 13 Tage.",
+      "link": "https://de.wikipedia.org/wiki/Kubakrise"
+    },
+    "10-23": {
+      "title": "Erschaffung der Welt",
+      "excerpt": "Bischof Ussher berechnete die Erschaffung auf den 23. Oktober 4004 v.Chr., 9 Uhr morgens.",
+      "link": "https://de.wikipedia.org/wiki/James_Ussher"
+    },
+    "10-24": {
+      "title": "Winterzeit",
+      "excerpt": "Wenn die Uhren zurückgestellt werden, gibt es tatsächlich eine Stunde, die zweimal existiert.",
+      "link": "https://de.wikipedia.org/wiki/Zeitumstellung"
+    },
+    "10-25": {
+      "title": "Nudeln",
+      "excerpt": "Nudeln haben nichts mit Marco Polo und China zu tun – in Italien wurden sie schon vor seiner Reise gegessen.",
+      "link": "https://de.wikipedia.org/wiki/Nudeln"
+    },
+    "10-26": {
+      "title": "Wilder Westen",
+      "excerpt": "Wyatt Earp lebte bis 1929 – er erlebte noch das Radio und das Kino.",
+      "link": "https://de.wikipedia.org/wiki/Wyatt_Earp"
+    },
+    "10-27": {
+      "title": "Untergrundbahn",
+      "excerpt": "New York City hat das komplexeste U-Bahn-System der Welt – 472 Stationen auf 245 Linienkilometern.",
+      "link": "https://de.wikipedia.org/wiki/New_York_City_Subway"
+    },
+    "10-28": {
+      "title": "Freiheitsstatue",
+      "excerpt": "Das Innere der Freiheitsstatue enthält eine Metallträgerkonstruktion, die Gustave Eiffel entworfen hat.",
+      "link": "https://de.wikipedia.org/wiki/Freiheitsstatue"
+    },
+    "10-29": {
+      "title": "Börsencrash",
+      "excerpt": "Beim Schwarzen Donnerstag 1929 verlor die Börse 11 % in einem einzigen Tag – ein Rekord der 70 Jahre stand.",
+      "link": "https://de.wikipedia.org/wiki/Weltwirtschaftskrise"
+    },
+    "10-30": {
+      "title": "War of the Worlds",
+      "excerpt": "Orson Welles' Radioübertragung war so realistisch, dass viele Hörer tatsächlich flüchteten.",
+      "link": "https://de.wikipedia.org/wiki/The_War_of_the_Worlds_(Hörspiel_von_Orson_Welles)"
     },
     "10-31": {
       "title": "Kürbis",
       "excerpt": "Eine Pflanzengattung, deren Früchte zu Halloween traditionell zu Laternen geschnitzt werden.",
       "link": "https://de.wikipedia.org/wiki/K%C3%BCrbisse"
     },
+    "11-01": {
+      "title": "Allerheiligen",
+      "excerpt": "In Mexiko ist Allerheiligen der 'Día de los Muertos' – ein buntes Fest, kein Trauertag.",
+      "link": "https://de.wikipedia.org/wiki/Día_de_los_Muertos"
+    },
+    "11-02": {
+      "title": "Bundesstaat",
+      "excerpt": "North und South Dakota wurden am gleichen Tag aufgenommen – laut Überlieferung warf Präsident Harrison die Unterschriften um.",
+      "link": "https://de.wikipedia.org/wiki/Bundesstaat_(Vereinigte_Staaten)"
+    },
+    "11-03": {
+      "title": "Raumstation",
+      "excerpt": "Raumstationen sind orbitale Laboratorien, in denen Astronauten über längere Zeit in der Schwerelosigkeit forschen.",
+      "link": "https://de.wikipedia.org/wiki/Raumstation"
+    },
+    "11-04": {
+      "title": "Ägyptologie",
+      "excerpt": "Howard Carter wartete 17 Jahre auf die Genehmigung zu graben – Tutanchamun war sein letzter Versuch.",
+      "link": "https://de.wikipedia.org/wiki/Howard_Carter"
+    },
+    "11-05": {
+      "title": "Guy Fawkes",
+      "excerpt": "Guy Fawkes wurde durch V for Vendetta zur Ikone – seine Maske ist heute das Symbol politischen Protests.",
+      "link": "https://de.wikipedia.org/wiki/Guy_Fawkes"
+    },
+    "11-06": {
+      "title": "UN-Sanktionen",
+      "excerpt": "Wirtschaftssanktionen werden häufig von der UN verhängt, aber ihre Wirksamkeit ist umstritten.",
+      "link": "https://de.wikipedia.org/wiki/Wirtschaftssanktionen"
+    },
+    "11-07": {
+      "title": "Radioaktivität",
+      "excerpt": "Marie Curie gewann zwei Nobelpreise in verschiedenen Fächern – ein bis heute einzigartiger Rekord.",
+      "link": "https://de.wikipedia.org/wiki/Marie_Curie"
+    },
+    "11-08": {
+      "title": "Röntgenstrahlen",
+      "excerpt": "Röntgen nannte seine Entdeckung 'X-Strahlen', weil er nicht wusste, was sie waren – der Name blieb.",
+      "link": "https://de.wikipedia.org/wiki/Röntgenstrahlung"
+    },
+    "11-09": {
+      "title": "Mauerfall",
+      "excerpt": "Als die Mauer fiel, öffneten DDR-Bürger gar keine Grenze – sie drängten sich einfach durch, und die Wachen ließen sie durch.",
+      "link": "https://de.wikipedia.org/wiki/Mauerfall"
+    },
+    "11-10": {
+      "title": "Reformation",
+      "excerpt": "Martin Luther postete seine Thesen nicht nur an die Kirchentür – er schickte sie auch an den Erzbischof.",
+      "link": "https://de.wikipedia.org/wiki/Reformation"
+    },
     "11-11": {
       "title": "Karneval",
       "excerpt": "Die fünfte Jahreszeit beginnt traditionell am 11.11. um 11:11 Uhr.",
       "link": "https://de.wikipedia.org/wiki/Karneval"
     },
+    "11-12": {
+      "title": "Saturn-Ringe",
+      "excerpt": "Voyager 1 entdeckte, dass die Saturnringe aus Milliarden einzelner Partikel bestehen – von Staubkörnern bis Felsbrocken.",
+      "link": "https://de.wikipedia.org/wiki/Saturnringe"
+    },
+    "11-13": {
+      "title": "Dänemark",
+      "excerpt": "Æthelreds Massaker an den Dänen führte letztlich dazu, dass Dänemark England Jahre später vollständig eroberte.",
+      "link": "https://de.wikipedia.org/wiki/Knut_der_Große"
+    },
+    "11-14": {
+      "title": "Wal",
+      "excerpt": "Der weiße Wal 'Moby Dick' basiert auf echten Ereignissen – dem Angriff eines Pottwals auf ein Schiff 1820.",
+      "link": "https://de.wikipedia.org/wiki/Moby_Dick"
+    },
+    "11-15": {
+      "title": "Mikroprozessor",
+      "excerpt": "Der Intel 4004 hatte 2.300 Transistoren – ein moderner Chip hat über 100 Milliarden.",
+      "link": "https://de.wikipedia.org/wiki/Intel_4004"
+    },
+    "11-16": {
+      "title": "Inkastaat",
+      "excerpt": "Das Inkareich war das größte vor-europäische Imperium Amerikas – und hatte keine Schrift, nur Knotensysteme.",
+      "link": "https://de.wikipedia.org/wiki/Inka"
+    },
+    "11-17": {
+      "title": "Frühgeburt",
+      "excerpt": "Frühgeborene Babys können heute ab der 22. Schwangerschaftswoche überleben – dank moderner Neonatologie.",
+      "link": "https://de.wikipedia.org/wiki/Frühgeburt"
+    },
+    "11-18": {
+      "title": "Micky Maus",
+      "excerpt": "Micky Maus wurde ursprünglich 'Mortimer Mouse' genannt – Lillian Disney überzeugte ihren Mann, den Namen zu ändern.",
+      "link": "https://de.wikipedia.org/wiki/Micky_Maus"
+    },
+    "11-19": {
+      "title": "Gettysburg",
+      "excerpt": "Lincolns Gettysburg-Rede dauerte nur 2 Minuten – der Hauptredner sprach davor zwei Stunden.",
+      "link": "https://de.wikipedia.org/wiki/Gettysburg-Ansprache"
+    },
+    "11-20": {
+      "title": "Tolstoi",
+      "excerpt": "Leo Tolstoi verließ mit 82 Jahren sein Zuhause – um als einfacher Mann zu sterben.",
+      "link": "https://de.wikipedia.org/wiki/Lew_Nikolajewitsch_Tolstoi"
+    },
+    "11-21": {
+      "title": "Ballon",
+      "excerpt": "Die Montgolfier-Brüder entdeckten den Auftrieb durch Beobachtung brennender Papiertüten.",
+      "link": "https://de.wikipedia.org/wiki/Heißluftballon"
+    },
+    "11-22": {
+      "title": "Grammophon",
+      "excerpt": "Das Grammophon wurde 1887 von Emil Berliner erfunden und ermöglichte erstmals die massentaugliche Wiedergabe von Musik.",
+      "link": "https://de.wikipedia.org/wiki/Grammophon"
+    },
+    "11-23": {
+      "title": "Fotojournalismus",
+      "excerpt": "Das Life-Magazin revolutionierte den Fotojournalismus – Bilder erzählten Geschichten, bevor Worte es konnten.",
+      "link": "https://de.wikipedia.org/wiki/Life_(Magazin)"
+    },
+    "11-24": {
+      "title": "Philosophie",
+      "excerpt": "Baruch Spinoza wurde aus seiner jüdischen Gemeinde ausgestoßen – sein Gott war die Natur selbst.",
+      "link": "https://de.wikipedia.org/wiki/Baruch_de_Spinoza"
+    },
+    "11-25": {
+      "title": "Kriminalroman",
+      "excerpt": "Agatha Christies Mousetrap läuft seit 1952 – das Stück hält den Weltrekord für die längste Laufzeit eines Theaterstücks.",
+      "link": "https://de.wikipedia.org/wiki/The_Mousetrap"
+    },
+    "11-26": {
+      "title": "Straßenbahn",
+      "excerpt": "Die erste Straßenbahn wurde von Pferden gezogen – elektrische Bahnen kamen erst 50 Jahre später.",
+      "link": "https://de.wikipedia.org/wiki/Straßenbahn"
+    },
+    "11-27": {
+      "title": "Kreuzzüge",
+      "excerpt": "Die Kreuzzüge dauerten fast 200 Jahre – und hinterließen tiefe Spuren im christlich-islamischen Verhältnis.",
+      "link": "https://de.wikipedia.org/wiki/Kreuzzüge"
+    },
+    "11-28": {
+      "title": "Magellanstraße",
+      "excerpt": "Die Magellanstraße ist die einzige natürliche Wasserstraße zwischen Atlantik und Pazifik in Südamerika.",
+      "link": "https://de.wikipedia.org/wiki/Magellanstraße"
+    },
+    "11-29": {
+      "title": "Antarktis",
+      "excerpt": "Richard Byrd überflog den Südpol 1929 – die Antarktis hat kein natürliches Licht für 6 Monate im Jahr.",
+      "link": "https://de.wikipedia.org/wiki/Antarktis"
+    },
+    "11-30": {
+      "title": "Finnland",
+      "excerpt": "Der Winterkrieg gilt als Wunder – Finnland mit 3 Millionen Einwohnern wehrte die Sowjetunion mit 170 Millionen ab.",
+      "link": "https://de.wikipedia.org/wiki/Winterkrieg"
+    },
+    "12-01": {
+      "title": "Busboykott",
+      "excerpt": "Rosa Parks' Protest löste den Montgomery Bus Boycott aus – er dauerte 381 Tage.",
+      "link": "https://de.wikipedia.org/wiki/Montgomery_Bus_Boycott"
+    },
+    "12-02": {
+      "title": "Krönung",
+      "excerpt": "Napoleon krönte sich selbst, weil er niemandem erlauben wollte, größer als er zu sein.",
+      "link": "https://de.wikipedia.org/wiki/Napoleons_Kaiserkrönung"
+    },
+    "12-03": {
+      "title": "Chemie-Industrie",
+      "excerpt": "Bhopal gilt als schlimmste Industriekatastrophe der Geschichte – trotzdem wurde niemand ernsthaft bestraft.",
+      "link": "https://de.wikipedia.org/wiki/Chemiekatastrophe_von_Bhopal"
+    },
+    "12-04": {
+      "title": "Ritter",
+      "excerpt": "Karl der Große schuf das Konzept des Ritters als christlichen Kämpfer – und erfand so das Mittelalter.",
+      "link": "https://de.wikipedia.org/wiki/Karl_der_Große"
+    },
+    "12-05": {
+      "title": "Requiem",
+      "excerpt": "Mozart schrieb sein Requiem im Sterben – es wurde von einem anonymen Boten in Auftrag gegeben.",
+      "link": "https://de.wikipedia.org/wiki/Requiem_(Mozart)"
+    },
+    "12-06": {
+      "title": "Nikolaus von Myra",
+      "excerpt": "Der historische Nikolaus von Myra war ein reicher Bischof, der heimlich Goldmünzen für mittellose Familien hinterließ.",
+      "link": "https://de.wikipedia.org/wiki/Nikolaus_von_Myra"
+    },
+    "12-07": {
+      "title": "Pearl Harbor",
+      "excerpt": "Der Angriff auf Pearl Harbor tötete 2.403 Amerikaner – fast die gleiche Zahl wie 9/11.",
+      "link": "https://de.wikipedia.org/wiki/Angriff_auf_Pearl_Harbor"
+    },
+    "12-08": {
+      "title": "Beatles",
+      "excerpt": "John Lennon wurde vor seinem eigenen Haus erschossen – von einem Fan, der das Album 'Double Fantasy' dabei hatte.",
+      "link": "https://de.wikipedia.org/wiki/John_Lennon"
+    },
+    "12-09": {
+      "title": "Pocken",
+      "excerpt": "Pocken haben mehr Menschen getötet als alle Kriege der Geschichte zusammen.",
+      "link": "https://de.wikipedia.org/wiki/Pocken"
+    },
+    "12-10": {
+      "title": "Nobelpreis",
+      "excerpt": "Alfred Nobel erfand das Dynamit – quälende Schuldgefühle über seine Zerstörungskraft motivierten den Friedenspreis.",
+      "link": "https://de.wikipedia.org/wiki/Nobelpreis"
+    },
+    "12-11": {
+      "title": "Kinderrechte",
+      "excerpt": "UNICEF schützt Kinder weltweit – heute sind 300 Millionen Kinder von Armut betroffen.",
+      "link": "https://de.wikipedia.org/wiki/UNICEF"
+    },
+    "12-12": {
+      "title": "Transatlantik",
+      "excerpt": "Marconis erstes transatlantisches Signal war ein einziges 'S' in Morsecode – drei Punkte.",
+      "link": "https://de.wikipedia.org/wiki/Guglielmo_Marconi"
+    },
+    "12-13": {
+      "title": "Kriegsgräuel",
+      "excerpt": "Das Massaker von Nanking wird in Japan bis heute kontrovers diskutiert.",
+      "link": "https://de.wikipedia.org/wiki/Massaker_von_Nanking"
+    },
+    "12-14": {
+      "title": "Nostradamus",
+      "excerpt": "Nostradamus schrieb 942 Vierzeiler – Anhänger sehen darin Prophezeiungen für alles.",
+      "link": "https://de.wikipedia.org/wiki/Nostradamus"
+    },
+    "12-15": {
+      "title": "Weltraumrendezvous",
+      "excerpt": "Das erste Rendezvous zweier Raumschiffe 1965 bereitete die Mondlandung vor.",
+      "link": "https://de.wikipedia.org/wiki/Gemini-Programm"
+    },
+    "12-16": {
+      "title": "Teekanne",
+      "excerpt": "Der Tee-Protest in Boston 1773 war kein Aufstand, sondern eine gezielte PR-Aktion verkleideter Aktivisten.",
+      "link": "https://de.wikipedia.org/wiki/Boston_Tea_Party"
+    },
+    "12-17": {
+      "title": "Motorflug",
+      "excerpt": "Der erste Motorflug der Gebrüder Wright dauerte nur 12 Sekunden und legte 37 Meter zurück.",
+      "link": "https://de.wikipedia.org/wiki/Motorflug"
+    },
+    "12-18": {
+      "title": "Weihnachtsgeschichte",
+      "excerpt": "Dickens erfand mit 'A Christmas Carol' das moderne Weihnachten – die Idee des Schenkens stammt von ihm.",
+      "link": "https://de.wikipedia.org/wiki/A_Christmas_Carol"
+    },
+    "12-19": {
+      "title": "Weihnachtsmann",
+      "excerpt": "Der moderne Weihnachtsmann wurde 1931 von Coca-Cola erfunden – vorher hatte jede Region eine andere Figur.",
+      "link": "https://de.wikipedia.org/wiki/Weihnachtsmann"
+    },
+    "12-20": {
+      "title": "Handel",
+      "excerpt": "Der Louisiana-Kauf verdoppelte das Staatsgebiet der USA – für nur 3 Cent pro Hektar.",
+      "link": "https://de.wikipedia.org/wiki/Louisiana-Kauf"
+    },
+    "12-21": {
+      "title": "Wintersonnenwende",
+      "excerpt": "An der Wintersonnenwende ist die Nacht in Berlin über 16 Stunden lang – in Nordnorwegen geht die Sonne gar nicht auf.",
+      "link": "https://de.wikipedia.org/wiki/Sonnenwende"
+    },
+    "12-22": {
+      "title": "Ardennenoffensive",
+      "excerpt": "Hitlers letzte große Offensive im Westen wurde von der Antwort 'Nuts!' gestoppt.",
+      "link": "https://de.wikipedia.org/wiki/Ardennenoffensive"
+    },
+    "12-23": {
+      "title": "Absinthe",
+      "excerpt": "Van Gogh trank exzessiv Absinth, der Thujon enthält – möglicherweise verstärkte das seine Psychose.",
+      "link": "https://de.wikipedia.org/wiki/Absinth"
+    },
     "12-24": {
       "title": "Weihnachtsbaum",
       "excerpt": "Der geschmückte Nadelbaum ist seit dem 19. Jahrhundert ein zentrales Symbol des Weihnachtsfestes.",
       "link": "https://de.wikipedia.org/wiki/Weihnachtsbaum"
+    },
+    "12-25": {
+      "title": "Weihnachten",
+      "excerpt": "Das Datum des 25. Dezember wurde erst im 4. Jahrhundert als Geburtstag Jesu festgelegt – es gibt keine biblische Grundlage.",
+      "link": "https://de.wikipedia.org/wiki/Weihnachten"
+    },
+    "12-26": {
+      "title": "Radium",
+      "excerpt": "Radium wurde 1898 von Marie und Pierre Curie entdeckt und spielte eine Schlüsselrolle in der Erforschung der Radioaktivität.",
+      "link": "https://de.wikipedia.org/wiki/Radium"
+    },
+    "12-27": {
+      "title": "Pasteurisierung",
+      "excerpt": "Louis Pasteur erfand nicht nur Impfungen, sondern auch die Pasteurisierung – ohne ihn gäbe es keine Milch aus dem Supermarkt.",
+      "link": "https://de.wikipedia.org/wiki/Pasteurisierung"
+    },
+    "12-28": {
+      "title": "Kino",
+      "excerpt": "Die Lumières filmten Arbeiter beim Verlassen der Fabrik – das erste Kino-Publikum lief schreiend weg.",
+      "link": "https://de.wikipedia.org/wiki/Gebrüder_Lumière"
+    },
+    "12-29": {
+      "title": "Lone Star",
+      "excerpt": "Texas war 10 Jahre lang eine unabhängige Republik – mit eigener Armee, Währung und Botschaften.",
+      "link": "https://de.wikipedia.org/wiki/Republik_Texas"
+    },
+    "12-30": {
+      "title": "Grenze",
+      "excerpt": "Die mexikanisch-amerikanische Grenze wurde mehrfach gekauft und verschoben – der letzte Kauf war 1853.",
+      "link": "https://de.wikipedia.org/wiki/Gadsden_Purchase"
     },
     "12-31": {
       "title": "Feuerwerk",

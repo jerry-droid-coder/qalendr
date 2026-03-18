@@ -2,74 +2,69 @@
 
 import { CalendarConfig } from '@/lib/data/types';
 import { encodeConfigToUrl } from '@/lib/utils';
+import { Download } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 interface DownloadButtonProps {
   config: CalendarConfig;
   disabled?: boolean;
+  variant?: 'sidebar' | 'mobile';
 }
 
-export function DownloadButton({ config, disabled }: DownloadButtonProps) {
+export function DownloadButton({ config, disabled, variant = 'sidebar' }: DownloadButtonProps) {
   const handleDownload = () => {
     const params = encodeConfigToUrl(config);
     const url = `/api/calendar?${params}`;
     window.location.href = url;
   };
 
-  return (
-    <div className="space-y-4">
+  if (variant === 'mobile') {
+    return (
       <button
         type="button"
         onClick={handleDownload}
         disabled={disabled}
-        className={`
-          w-full py-4 px-6 rounded-xl font-semibold text-lg
-          transition-all duration-150
-          flex items-center justify-center gap-3
-          ${
-            disabled
-              ? 'bg-[var(--border)] text-[var(--text-muted)] cursor-not-allowed'
-              : 'bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] active:scale-[0.98] shadow-lg hover:shadow-xl'
-          }
-        `}
+        className={cn(
+          'w-full py-3 px-4 rounded-xl font-semibold text-sm transition-all duration-200 flex items-center justify-center gap-2',
+          disabled
+            ? 'bg-[var(--border)] text-[var(--text-muted)] cursor-not-allowed'
+            : 'bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] active:scale-[0.98] shadow-lg shadow-[var(--accent)]/20'
+        )}
       >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-          />
-        </svg>
-        Kalender herunterladen (.ics)
+        <Download className="w-4 h-4" />
+        Herunterladen (.ics)
+      </button>
+    );
+  }
+
+  return (
+    <div className="space-y-2.5">
+      <button
+        type="button"
+        onClick={handleDownload}
+        disabled={disabled}
+        className={cn(
+          'w-full py-3 px-4 rounded-xl font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2.5',
+          disabled
+            ? 'bg-[var(--border)] text-[var(--text-muted)] cursor-not-allowed'
+            : 'bg-gradient-to-r from-[var(--accent)] to-purple-500 text-white hover:brightness-110 active:scale-[0.98] shadow-lg shadow-[var(--accent)]/25'
+        )}
+      >
+        <Download className="w-4 h-4" />
+        Kalender herunterladen
       </button>
 
       {disabled && (
-        <p className="text-sm text-amber-500 dark:text-amber-400 text-center">
-          Bitte wähle mindestens ein Land/Region oder eine Kategorie aus
+        <p className="text-[10px] text-amber-500/80 text-center leading-tight">
+          Wähle mindestens ein Land oder eine Kategorie
         </p>
       )}
 
-      <p className="text-xs text-[var(--text-muted)] text-center">
-        Funktioniert mit Apple Kalender, Google Kalender, Outlook und anderen
-      </p>
-
-      <div className="pt-4 border-t border-[var(--border)]">
-        <a
-          href="https://buymeacoffee.com/qalendr"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full py-3 px-6 rounded-xl font-medium text-base transition-all duration-150 flex items-center justify-center gap-2 bg-[var(--bg-primary)] border border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-hover)] hover:shadow-md"
-        >
-          <span className="text-lg">☕</span>
-          Gefällt dir Qalendr? Kauf mir einen Kaffee!
-        </a>
-      </div>
+      {!disabled && (
+        <p className="text-[10px] text-[var(--text-muted)] text-center opacity-60">
+          Apple Kalender, Google, Outlook & mehr
+        </p>
+      )}
     </div>
   );
 }

@@ -2,6 +2,20 @@
   "description": "Kuriose Feiertage und Aktionstage",
   "days": [
     {
+      "id": "weltlachtag",
+      "name": "Weltlachtag",
+      "date": "01-10",
+      "type": "fixed",
+      "note": "Feiert die heilende Wirkung des Lachens"
+    },
+    {
+      "id": "tag-der-umarmung",
+      "name": "Tag der Umarmung",
+      "date": "01-19",
+      "type": "fixed",
+      "note": "National Hugging Day – Tag für Herzlichkeit und Nähe"
+    },
+    {
       "id": "weltknuddeltag",
       "name": "Weltknuddeltag",
       "date": "01-21",
@@ -14,10 +28,31 @@
       "type": "fixed"
     },
     {
+      "id": "murmeltiertag",
+      "name": "Murmeltiertag",
+      "date": "02-02",
+      "type": "fixed",
+      "note": "Groundhog Day – nordamerikanische Tradition zur Wettervorhersage"
+    },
+    {
+      "id": "frauen-in-wissenschaft",
+      "name": "Tag der Frauen in der Wissenschaft",
+      "date": "02-11",
+      "type": "fixed",
+      "note": "UN-Aktionstag für Frauen und Mädchen in MINT-Berufen"
+    },
+    {
       "id": "welttag-der-komplimente",
       "name": "Welttag der Komplimente",
       "date": "03-01",
       "type": "fixed"
+    },
+    {
+      "id": "welttagebuch-tag",
+      "name": "Welttagebuch-Tag",
+      "date": "03-06",
+      "type": "fixed",
+      "note": "Feiert das tägliche Schreiben und Selbstreflexion"
     },
     {
       "id": "pi-tag",
@@ -45,6 +80,20 @@
       "type": "fixed"
     },
     {
+      "id": "weltautismustag",
+      "name": "Weltautismustag",
+      "date": "04-02",
+      "type": "fixed",
+      "note": "UN-Welttag zur Sensibilisierung für das Autismus-Spektrum"
+    },
+    {
+      "id": "tag-der-denkmaeler",
+      "name": "Tag der Denkmäler und Stätten",
+      "date": "04-18",
+      "type": "fixed",
+      "note": "ICOMOS-Aktionstag zum Schutz des kulturellen Erbes"
+    },
+    {
       "id": "tag-des-bieres",
       "name": "Tag des deutschen Bieres",
       "date": "04-23",
@@ -59,11 +108,25 @@
       "note": "May the 4th be with you"
     },
     {
+      "id": "tag-der-familie",
+      "name": "Internationaler Tag der Familie",
+      "date": "05-15",
+      "type": "fixed",
+      "note": "UN-Aktionstag zur Bedeutung der Familie in der Gesellschaft"
+    },
+    {
       "id": "handtuchtag",
       "name": "Handtuchtag",
       "date": "05-25",
       "type": "fixed",
       "note": "Zu Ehren von Douglas Adams"
+    },
+    {
+      "id": "tag-der-nachbarschaft",
+      "name": "Tag der Nachbarschaft",
+      "date": "05-26",
+      "type": "fixed",
+      "note": "Aktionstag für Zusammenhalt und Miteinander in der Nachbarschaft"
     },
     {
       "id": "weltelterntag",
@@ -78,16 +141,44 @@
       "type": "fixed"
     },
     {
+      "id": "weltmeertag",
+      "name": "Weltmeertag",
+      "date": "06-08",
+      "type": "fixed",
+      "note": "UN-Aktionstag zum Schutz der Weltmeere und Ozeane"
+    },
+    {
+      "id": "picknicktag",
+      "name": "Internationaler Picknicktag",
+      "date": "06-18",
+      "type": "fixed",
+      "note": "Tag für gemeinsames Essen im Freien"
+    },
+    {
       "id": "weltyogatag",
       "name": "Weltyogatag",
       "date": "06-21",
       "type": "fixed"
     },
     {
+      "id": "weltmusiktag",
+      "name": "Weltmusiktag",
+      "date": "06-21",
+      "type": "fixed",
+      "note": "Fête de la Musique – kostenlose Straßenkonzerte weltweit"
+    },
+    {
       "id": "weltschokoladentag",
       "name": "Weltschokoladentag",
       "date": "07-07",
       "type": "fixed"
+    },
+    {
+      "id": "weltbevoelkerungstag",
+      "name": "Weltbevölkerungstag",
+      "date": "07-11",
+      "type": "fixed",
+      "note": "UN-Aktionstag zu Bevölkerungswachstum und Nachhaltigkeit"
     },
     {
       "id": "welttag-der-emoji",
@@ -109,6 +200,13 @@
       "type": "fixed"
     },
     {
+      "id": "welt-elefanten-tag",
+      "name": "Welt-Elefanten-Tag",
+      "date": "08-12",
+      "type": "fixed",
+      "note": "Aktionstag zum Schutz der Elefanten und ihrer Lebensräume"
+    },
+    {
       "id": "linkshaendertag",
       "name": "Linkshändertag",
       "date": "08-13",
@@ -121,33 +219,29 @@
       "type": "fixed"
     },
     {
+      "id": "programmierertag",
+      "name": "Programmierer-Tag",
+      "date": "09-13",
+      "type": "fixed",
+      "note": "Am 256. Tag des Jahres – die höchste Zweierpotenz unter 365"
+    },
+    {
       "id": "talk-like-a-pirate-day",
       "name": "Sprich-wie-ein-Pirat-Tag",
       "date": "09-19",
       "type": "fixed"
     },
     {
+      "id": "autofreier-tag",
+      "name": "Autofreier Tag",
+      "date": "09-22",
+      "type": "fixed",
+      "note": "Europäischer Aktionstag für Mobilität ohne Auto"
+    },
+    {
       "id": "tag-des-kaffees",
       "name": "Tag des Kaffees",
       "date": "10-01",
-      "type": "fixed"
-    },
-    {
-      "id": "weltlehrertag",
-      "name": "Weltlehrertag",
-      "date": "10-05",
-      "type": "fixed"
-    },
-    {
-      "id": "welttierschutztag",
-      "name": "Welttierschutztag",
-      "date": "10-04",
-      "type": "fixed"
-    },
-    {
-      "id": "weltnudeltag",
-      "name": "Weltnudeltag",
-      "date": "10-25",
       "type": "fixed"
     },
     {
@@ -157,16 +251,55 @@
       "type": "fixed"
     },
     {
+      "id": "welttierschutztag",
+      "name": "Welttierschutztag",
+      "date": "10-04",
+      "type": "fixed"
+    },
+    {
+      "id": "weltlehrertag",
+      "name": "Weltlehrertag",
+      "date": "10-05",
+      "type": "fixed"
+    },
+    {
+      "id": "weltei-tag",
+      "name": "Weltei-Tag",
+      "date": "10-14",
+      "type": "fixed",
+      "note": "Aktionstag zur Bedeutung des Eis als Nahrungsmittel"
+    },
+    {
+      "id": "weltnudeltag",
+      "name": "Weltnudeltag",
+      "date": "10-25",
+      "type": "fixed"
+    },
+    {
       "id": "weltnettigkeitstag",
       "name": "Weltnettigkeitstag",
       "date": "11-13",
       "type": "fixed"
     },
     {
+      "id": "weltfruehgeborenen-tag",
+      "name": "Weltfrühgeborenen-Tag",
+      "date": "11-17",
+      "type": "fixed",
+      "note": "Aktionstag zur Sensibilisierung für Frühgeborene"
+    },
+    {
       "id": "welttoilettentag",
       "name": "Welttoilettentag",
       "date": "11-19",
       "type": "fixed"
+    },
+    {
+      "id": "tee-tag",
+      "name": "Internationaler Tee-Tag",
+      "date": "12-15",
+      "type": "fixed",
+      "note": "UN-Aktionstag zur Bedeutung des Tees für Handel und Kultur"
     }
   ]
 }

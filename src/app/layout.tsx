@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
   display: "swap",
 });
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#FAFAFA" },
-    { media: "(prefers-color-scheme: dark)", color: "#161618" },
+    { media: "(prefers-color-scheme: light)", color: "#F8F9FC" },
+    { media: "(prefers-color-scheme: dark)", color: "#0F0F12" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -54,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" suppressHydrationWarning>
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${jakarta.variable} antialiased noise-bg`}>
         <ThemeProvider>
           {children}
         </ThemeProvider>

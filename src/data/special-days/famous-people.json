@@ -3,116 +3,6 @@
   "lastUpdated": "2025-01-31",
   "people": [
     {
-      "id": "einstein",
-      "name": "Albert Einstein",
-      "birthDate": "03-14",
-      "birthYear": 1879,
-      "deathDate": "04-18",
-      "deathYear": 1955,
-      "profession": "Physiker",
-      "link": "https://de.wikipedia.org/wiki/Albert_Einstein"
-    },
-    {
-      "id": "goethe",
-      "name": "Johann Wolfgang von Goethe",
-      "birthDate": "08-28",
-      "birthYear": 1749,
-      "deathDate": "03-22",
-      "deathYear": 1832,
-      "profession": "Dichter",
-      "link": "https://de.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"
-    },
-    {
-      "id": "beethoven",
-      "name": "Ludwig van Beethoven",
-      "birthDate": "12-17",
-      "birthYear": 1770,
-      "deathDate": "03-26",
-      "deathYear": 1827,
-      "profession": "Komponist",
-      "link": "https://de.wikipedia.org/wiki/Ludwig_van_Beethoven"
-    },
-    {
-      "id": "mozart",
-      "name": "Wolfgang Amadeus Mozart",
-      "birthDate": "01-27",
-      "birthYear": 1756,
-      "deathDate": "12-05",
-      "deathYear": 1791,
-      "profession": "Komponist",
-      "link": "https://de.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
-    },
-    {
-      "id": "bach",
-      "name": "Johann Sebastian Bach",
-      "birthDate": "03-31",
-      "birthYear": 1685,
-      "deathDate": "07-28",
-      "deathYear": 1750,
-      "profession": "Komponist",
-      "link": "https://de.wikipedia.org/wiki/Johann_Sebastian_Bach"
-    },
-    {
-      "id": "curie",
-      "name": "Marie Curie",
-      "birthDate": "11-07",
-      "birthYear": 1867,
-      "deathDate": "07-04",
-      "deathYear": 1934,
-      "profession": "Physikerin & Chemikerin",
-      "link": "https://de.wikipedia.org/wiki/Marie_Curie"
-    },
-    {
-      "id": "darwin",
-      "name": "Charles Darwin",
-      "birthDate": "02-12",
-      "birthYear": 1809,
-      "deathDate": "04-19",
-      "deathYear": 1882,
-      "profession": "Naturforscher",
-      "link": "https://de.wikipedia.org/wiki/Charles_Darwin"
-    },
-    {
-      "id": "picasso",
-      "name": "Pablo Picasso",
-      "birthDate": "10-25",
-      "birthYear": 1881,
-      "deathDate": "04-08",
-      "deathYear": 1973,
-      "profession": "Maler",
-      "link": "https://de.wikipedia.org/wiki/Pablo_Picasso"
-    },
-    {
-      "id": "davinci",
-      "name": "Leonardo da Vinci",
-      "birthDate": "04-15",
-      "birthYear": 1452,
-      "deathDate": "05-02",
-      "deathYear": 1519,
-      "profession": "Universalgelehrter",
-      "link": "https://de.wikipedia.org/wiki/Leonardo_da_Vinci"
-    },
-    {
-      "id": "shakespeare",
-      "name": "William Shakespeare",
-      "birthDate": "04-23",
-      "birthYear": 1564,
-      "deathDate": "04-23",
-      "deathYear": 1616,
-      "profession": "Dichter & Dramatiker",
-      "link": "https://de.wikipedia.org/wiki/William_Shakespeare"
-    },
-    {
-      "id": "kant",
-      "name": "Immanuel Kant",
-      "birthDate": "04-22",
-      "birthYear": 1724,
-      "deathDate": "02-12",
-      "deathYear": 1804,
-      "profession": "Philosoph",
-      "link": "https://de.wikipedia.org/wiki/Immanuel_Kant"
-    },
-    {
       "id": "newton",
       "name": "Isaac Newton",
       "birthDate": "01-04",
@@ -121,86 +11,6 @@
       "deathYear": 1727,
       "profession": "Physiker & Mathematiker",
       "link": "https://de.wikipedia.org/wiki/Isaac_Newton"
-    },
-    {
-      "id": "galileo",
-      "name": "Galileo Galilei",
-      "birthDate": "02-15",
-      "birthYear": 1564,
-      "deathDate": "01-08",
-      "deathYear": 1642,
-      "profession": "Astronom & Physiker",
-      "link": "https://de.wikipedia.org/wiki/Galileo_Galilei"
-    },
-    {
-      "id": "schiller",
-      "name": "Friedrich Schiller",
-      "birthDate": "11-10",
-      "birthYear": 1759,
-      "deathDate": "05-09",
-      "deathYear": 1805,
-      "profession": "Dichter & Dramatiker",
-      "link": "https://de.wikipedia.org/wiki/Friedrich_Schiller"
-    },
-    {
-      "id": "kafka",
-      "name": "Franz Kafka",
-      "birthDate": "07-03",
-      "birthYear": 1883,
-      "deathDate": "06-03",
-      "deathYear": 1924,
-      "profession": "Schriftsteller",
-      "link": "https://de.wikipedia.org/wiki/Franz_Kafka"
-    },
-    {
-      "id": "freud",
-      "name": "Sigmund Freud",
-      "birthDate": "05-06",
-      "birthYear": 1856,
-      "deathDate": "09-23",
-      "deathYear": 1939,
-      "profession": "Neurologe & Psychoanalytiker",
-      "link": "https://de.wikipedia.org/wiki/Sigmund_Freud"
-    },
-    {
-      "id": "mlk",
-      "name": "Martin Luther King Jr.",
-      "birthDate": "01-15",
-      "birthYear": 1929,
-      "deathDate": "04-04",
-      "deathYear": 1968,
-      "profession": "Bürgerrechtler",
-      "link": "https://de.wikipedia.org/wiki/Martin_Luther_King"
-    },
-    {
-      "id": "mandela",
-      "name": "Nelson Mandela",
-      "birthDate": "07-18",
-      "birthYear": 1918,
-      "deathDate": "12-05",
-      "deathYear": 2013,
-      "profession": "Politiker & Aktivist",
-      "link": "https://de.wikipedia.org/wiki/Nelson_Mandela"
-    },
-    {
-      "id": "gandhi",
-      "name": "Mahatma Gandhi",
-      "birthDate": "10-02",
-      "birthYear": 1869,
-      "deathDate": "01-30",
-      "deathYear": 1948,
-      "profession": "Freiheitskämpfer",
-      "link": "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
-    },
-    {
-      "id": "tesla",
-      "name": "Nikola Tesla",
-      "birthDate": "07-10",
-      "birthYear": 1856,
-      "deathDate": "01-07",
-      "deathYear": 1943,
-      "profession": "Erfinder & Elektroingenieur",
-      "link": "https://de.wikipedia.org/wiki/Nikola_Tesla"
     },
     {
       "id": "hawking",
@@ -213,24 +23,104 @@
       "link": "https://de.wikipedia.org/wiki/Stephen_Hawking"
     },
     {
-      "id": "rembrandt",
-      "name": "Rembrandt van Rijn",
-      "birthDate": "07-15",
-      "birthYear": 1606,
-      "deathDate": "10-04",
-      "deathYear": 1669,
-      "profession": "Maler",
-      "link": "https://de.wikipedia.org/wiki/Rembrandt_van_Rijn"
+      "id": "mlk",
+      "name": "Martin Luther King Jr.",
+      "birthDate": "01-15",
+      "birthYear": 1929,
+      "deathDate": "04-04",
+      "deathYear": 1968,
+      "profession": "Bürgerrechtler",
+      "link": "https://de.wikipedia.org/wiki/Martin_Luther_King"
     },
     {
-      "id": "vangogh",
-      "name": "Vincent van Gogh",
-      "birthDate": "03-30",
-      "birthYear": 1853,
-      "deathDate": "07-29",
-      "deathYear": 1890,
-      "profession": "Maler",
-      "link": "https://de.wikipedia.org/wiki/Vincent_van_Gogh"
+      "id": "benjamin-franklin",
+      "name": "Benjamin Franklin",
+      "birthDate": "01-17",
+      "birthYear": 1706,
+      "deathDate": "04-17",
+      "deathYear": 1790,
+      "profession": "Politiker, Erfinder & Gründervater der USA",
+      "link": "https://de.wikipedia.org/wiki/Benjamin_Franklin"
+    },
+    {
+      "id": "edgar-allan-poe",
+      "name": "Edgar Allan Poe",
+      "birthDate": "01-19",
+      "birthYear": 1809,
+      "deathDate": "10-07",
+      "deathYear": 1849,
+      "profession": "Schriftsteller & Dichter",
+      "link": "https://de.wikipedia.org/wiki/Edgar_Allan_Poe"
+    },
+    {
+      "id": "mozart",
+      "name": "Wolfgang Amadeus Mozart",
+      "birthDate": "01-27",
+      "birthYear": 1756,
+      "deathDate": "12-05",
+      "deathYear": 1791,
+      "profession": "Komponist",
+      "link": "https://de.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+    },
+    {
+      "id": "charles-dickens",
+      "name": "Charles Dickens",
+      "birthDate": "02-07",
+      "birthYear": 1812,
+      "deathDate": "06-09",
+      "deathYear": 1870,
+      "profession": "Schriftsteller",
+      "link": "https://de.wikipedia.org/wiki/Charles_Dickens"
+    },
+    {
+      "id": "thomas-edison",
+      "name": "Thomas Edison",
+      "birthDate": "02-11",
+      "birthYear": 1847,
+      "deathDate": "10-18",
+      "deathYear": 1931,
+      "profession": "Erfinder & Unternehmer",
+      "link": "https://de.wikipedia.org/wiki/Thomas_Alva_Edison"
+    },
+    {
+      "id": "darwin",
+      "name": "Charles Darwin",
+      "birthDate": "02-12",
+      "birthYear": 1809,
+      "deathDate": "04-19",
+      "deathYear": 1882,
+      "profession": "Naturforscher",
+      "link": "https://de.wikipedia.org/wiki/Charles_Darwin"
+    },
+    {
+      "id": "galileo",
+      "name": "Galileo Galilei",
+      "birthDate": "02-15",
+      "birthYear": 1564,
+      "deathDate": "01-08",
+      "deathYear": 1642,
+      "profession": "Astronom & Physiker",
+      "link": "https://de.wikipedia.org/wiki/Galileo_Galilei"
+    },
+    {
+      "id": "nicolaus-copernicus",
+      "name": "Nicolaus Copernicus",
+      "birthDate": "02-19",
+      "birthYear": 1473,
+      "deathDate": "05-23",
+      "deathYear": 1543,
+      "profession": "Astronom",
+      "link": "https://de.wikipedia.org/wiki/Nikolaus_Kopernikus"
+    },
+    {
+      "id": "arthur-schopenhauer",
+      "name": "Arthur Schopenhauer",
+      "birthDate": "02-22",
+      "birthYear": 1788,
+      "deathDate": "09-21",
+      "deathYear": 1860,
+      "profession": "Philosoph",
+      "link": "https://de.wikipedia.org/wiki/Arthur_Schopenhauer"
     },
     {
       "id": "michelangelo",
@@ -243,24 +133,24 @@
       "link": "https://de.wikipedia.org/wiki/Michelangelo"
     },
     {
-      "id": "planck",
-      "name": "Max Planck",
-      "birthDate": "04-23",
-      "birthYear": 1858,
-      "deathDate": "10-04",
-      "deathYear": 1947,
-      "profession": "Physiker",
-      "link": "https://de.wikipedia.org/wiki/Max_Planck"
+      "id": "douglas-adams",
+      "name": "Douglas Adams",
+      "birthDate": "03-11",
+      "birthYear": 1952,
+      "deathDate": "05-11",
+      "deathYear": 2001,
+      "profession": "Schriftsteller & Humorist",
+      "link": "https://de.wikipedia.org/wiki/Douglas_Adams"
     },
     {
-      "id": "heisenberg",
-      "name": "Werner Heisenberg",
-      "birthDate": "12-05",
-      "birthYear": 1901,
-      "deathDate": "02-01",
-      "deathYear": 1976,
+      "id": "einstein",
+      "name": "Albert Einstein",
+      "birthDate": "03-14",
+      "birthYear": 1879,
+      "deathDate": "04-18",
+      "deathYear": 1955,
       "profession": "Physiker",
-      "link": "https://de.wikipedia.org/wiki/Werner_Heisenberg"
+      "link": "https://de.wikipedia.org/wiki/Albert_Einstein"
     },
     {
       "id": "roentgen",
@@ -273,14 +163,134 @@
       "link": "https://de.wikipedia.org/wiki/Wilhelm_Conrad_R%C3%B6ntgen"
     },
     {
-      "id": "luther",
-      "name": "Martin Luther",
-      "birthDate": "11-10",
-      "birthYear": 1483,
-      "deathDate": "02-18",
-      "deathYear": 1546,
-      "profession": "Theologe & Reformator",
-      "link": "https://de.wikipedia.org/wiki/Martin_Luther"
+      "id": "vangogh",
+      "name": "Vincent van Gogh",
+      "birthDate": "03-30",
+      "birthYear": 1853,
+      "deathDate": "07-29",
+      "deathYear": 1890,
+      "profession": "Maler",
+      "link": "https://de.wikipedia.org/wiki/Vincent_van_Gogh"
+    },
+    {
+      "id": "bach",
+      "name": "Johann Sebastian Bach",
+      "birthDate": "03-31",
+      "birthYear": 1685,
+      "deathDate": "07-28",
+      "deathYear": 1750,
+      "profession": "Komponist",
+      "link": "https://de.wikipedia.org/wiki/Johann_Sebastian_Bach"
+    },
+    {
+      "id": "davinci",
+      "name": "Leonardo da Vinci",
+      "birthDate": "04-15",
+      "birthYear": 1452,
+      "deathDate": "05-02",
+      "deathYear": 1519,
+      "profession": "Universalgelehrter",
+      "link": "https://de.wikipedia.org/wiki/Leonardo_da_Vinci"
+    },
+    {
+      "id": "adolf-hitler",
+      "name": "Adolf Hitler",
+      "birthDate": "04-20",
+      "birthYear": 1889,
+      "deathDate": "04-30",
+      "deathYear": 1945,
+      "profession": "Diktator",
+      "link": "https://de.wikipedia.org/wiki/Adolf_Hitler"
+    },
+    {
+      "id": "kant",
+      "name": "Immanuel Kant",
+      "birthDate": "04-22",
+      "birthYear": 1724,
+      "deathDate": "02-12",
+      "deathYear": 1804,
+      "profession": "Philosoph",
+      "link": "https://de.wikipedia.org/wiki/Immanuel_Kant"
+    },
+    {
+      "id": "shakespeare",
+      "name": "William Shakespeare",
+      "birthDate": "04-23",
+      "birthYear": 1564,
+      "deathDate": "04-23",
+      "deathYear": 1616,
+      "profession": "Dichter & Dramatiker",
+      "link": "https://de.wikipedia.org/wiki/William_Shakespeare"
+    },
+    {
+      "id": "planck",
+      "name": "Max Planck",
+      "birthDate": "04-23",
+      "birthYear": 1858,
+      "deathDate": "10-04",
+      "deathYear": 1947,
+      "profession": "Physiker",
+      "link": "https://de.wikipedia.org/wiki/Max_Planck"
+    },
+    {
+      "id": "freud",
+      "name": "Sigmund Freud",
+      "birthDate": "05-06",
+      "birthYear": 1856,
+      "deathDate": "09-23",
+      "deathYear": 1939,
+      "profession": "Neurologe & Psychoanalytiker",
+      "link": "https://de.wikipedia.org/wiki/Sigmund_Freud"
+    },
+    {
+      "id": "richard-wagner",
+      "name": "Richard Wagner",
+      "birthDate": "05-22",
+      "birthYear": 1813,
+      "deathDate": "02-13",
+      "deathYear": 1883,
+      "profession": "Komponist & Opernschöpfer",
+      "link": "https://de.wikipedia.org/wiki/Richard_Wagner"
+    },
+    {
+      "id": "john-f-kennedy",
+      "name": "John F. Kennedy",
+      "birthDate": "05-29",
+      "birthYear": 1917,
+      "deathDate": "11-22",
+      "deathYear": 1963,
+      "profession": "35. Präsident der USA",
+      "link": "https://de.wikipedia.org/wiki/John_F._Kennedy"
+    },
+    {
+      "id": "paul-gauguin",
+      "name": "Paul Gauguin",
+      "birthDate": "06-07",
+      "birthYear": 1848,
+      "deathDate": "05-08",
+      "deathYear": 1903,
+      "profession": "Maler",
+      "link": "https://de.wikipedia.org/wiki/Paul_Gauguin"
+    },
+    {
+      "id": "anne-frank",
+      "name": "Anne Frank",
+      "birthDate": "06-12",
+      "birthYear": 1929,
+      "deathDate": "03-12",
+      "deathYear": 1945,
+      "profession": "Tagebuchautorin",
+      "link": "https://de.wikipedia.org/wiki/Anne_Frank"
+    },
+    {
+      "id": "alan-turing",
+      "name": "Alan Turing",
+      "birthDate": "06-23",
+      "birthYear": 1912,
+      "deathDate": "06-07",
+      "deathYear": 1954,
+      "profession": "Mathematiker & Informatik-Pionier",
+      "link": "https://de.wikipedia.org/wiki/Alan_Turing"
     },
     {
       "id": "gutenberg",
@@ -293,14 +303,274 @@
       "link": "https://de.wikipedia.org/wiki/Johannes_Gutenberg"
     },
     {
-      "id": "anne-frank",
-      "name": "Anne Frank",
-      "birthDate": "06-12",
-      "birthYear": 1929,
-      "deathDate": "03-12",
-      "deathYear": 1945,
-      "profession": "Tagebuchautorin",
-      "link": "https://de.wikipedia.org/wiki/Anne_Frank"
+      "id": "kafka",
+      "name": "Franz Kafka",
+      "birthDate": "07-03",
+      "birthYear": 1883,
+      "deathDate": "06-03",
+      "deathYear": 1924,
+      "profession": "Schriftsteller",
+      "link": "https://de.wikipedia.org/wiki/Franz_Kafka"
+    },
+    {
+      "id": "tesla",
+      "name": "Nikola Tesla",
+      "birthDate": "07-10",
+      "birthYear": 1856,
+      "deathDate": "01-07",
+      "deathYear": 1943,
+      "profession": "Erfinder & Elektroingenieur",
+      "link": "https://de.wikipedia.org/wiki/Nikola_Tesla"
+    },
+    {
+      "id": "gustav-klimt",
+      "name": "Gustav Klimt",
+      "birthDate": "07-14",
+      "birthYear": 1862,
+      "deathDate": "02-06",
+      "deathYear": 1918,
+      "profession": "Maler",
+      "link": "https://de.wikipedia.org/wiki/Gustav_Klimt"
+    },
+    {
+      "id": "rembrandt",
+      "name": "Rembrandt van Rijn",
+      "birthDate": "07-15",
+      "birthYear": 1606,
+      "deathDate": "10-04",
+      "deathYear": 1669,
+      "profession": "Maler",
+      "link": "https://de.wikipedia.org/wiki/Rembrandt_van_Rijn"
+    },
+    {
+      "id": "mandela",
+      "name": "Nelson Mandela",
+      "birthDate": "07-18",
+      "birthYear": 1918,
+      "deathDate": "12-05",
+      "deathYear": 2013,
+      "profession": "Politiker & Aktivist",
+      "link": "https://de.wikipedia.org/wiki/Nelson_Mandela"
+    },
+    {
+      "id": "carl-gustav-jung",
+      "name": "Carl Gustav Jung",
+      "birthDate": "07-26",
+      "birthYear": 1875,
+      "deathDate": "06-06",
+      "deathYear": 1961,
+      "profession": "Psychiater & Psychologe",
+      "link": "https://de.wikipedia.org/wiki/Carl_Gustav_Jung"
+    },
+    {
+      "id": "napoleon-bonaparte",
+      "name": "Napoleon Bonaparte",
+      "birthDate": "08-15",
+      "birthYear": 1769,
+      "deathDate": "05-05",
+      "deathYear": 1821,
+      "profession": "Feldherr & Kaiser",
+      "link": "https://de.wikipedia.org/wiki/Napoleon_Bonaparte"
+    },
+    {
+      "id": "mutter-teresa",
+      "name": "Mutter Teresa",
+      "birthDate": "08-26",
+      "birthYear": 1910,
+      "deathDate": "09-05",
+      "deathYear": 1997,
+      "profession": "Ordensschwester & Friedensnobelpreisträgerin",
+      "link": "https://de.wikipedia.org/wiki/Mutter_Teresa"
+    },
+    {
+      "id": "goethe",
+      "name": "Johann Wolfgang von Goethe",
+      "birthDate": "08-28",
+      "birthYear": 1749,
+      "deathDate": "03-22",
+      "deathYear": 1832,
+      "profession": "Dichter",
+      "link": "https://de.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"
+    },
+    {
+      "id": "leo-tolstoi",
+      "name": "Leo Tolstoi",
+      "birthDate": "09-09",
+      "birthYear": 1828,
+      "deathDate": "11-20",
+      "deathYear": 1910,
+      "profession": "Schriftsteller",
+      "link": "https://de.wikipedia.org/wiki/Lew_Nikolajewitsch_Tolstoi"
+    },
+    {
+      "id": "agatha-christie",
+      "name": "Agatha Christie",
+      "birthDate": "09-15",
+      "birthYear": 1890,
+      "deathDate": "01-12",
+      "deathYear": 1976,
+      "profession": "Krimiautorin",
+      "link": "https://de.wikipedia.org/wiki/Agatha_Christie"
+    },
+    {
+      "id": "michael-faraday",
+      "name": "Michael Faraday",
+      "birthDate": "09-22",
+      "birthYear": 1791,
+      "deathDate": "08-25",
+      "deathYear": 1867,
+      "profession": "Physiker & Chemiker",
+      "link": "https://de.wikipedia.org/wiki/Michael_Faraday"
+    },
+    {
+      "id": "gandhi",
+      "name": "Mahatma Gandhi",
+      "birthDate": "10-02",
+      "birthYear": 1869,
+      "deathDate": "01-30",
+      "deathYear": 1948,
+      "profession": "Freiheitskämpfer",
+      "link": "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
+    },
+    {
+      "id": "john-lennon",
+      "name": "John Lennon",
+      "birthDate": "10-09",
+      "birthYear": 1940,
+      "deathDate": "12-08",
+      "deathYear": 1980,
+      "profession": "Musiker & Friedensaktivist",
+      "link": "https://de.wikipedia.org/wiki/John_Lennon"
+    },
+    {
+      "id": "friedrich-nietzsche",
+      "name": "Friedrich Nietzsche",
+      "birthDate": "10-15",
+      "birthYear": 1844,
+      "deathDate": "08-25",
+      "deathYear": 1900,
+      "profession": "Philosoph",
+      "link": "https://de.wikipedia.org/wiki/Friedrich_Nietzsche"
+    },
+    {
+      "id": "franz-liszt",
+      "name": "Franz Liszt",
+      "birthDate": "10-22",
+      "birthYear": 1811,
+      "deathDate": "07-31",
+      "deathYear": 1886,
+      "profession": "Komponist & Pianist",
+      "link": "https://de.wikipedia.org/wiki/Franz_Liszt"
+    },
+    {
+      "id": "picasso",
+      "name": "Pablo Picasso",
+      "birthDate": "10-25",
+      "birthYear": 1881,
+      "deathDate": "04-08",
+      "deathYear": 1973,
+      "profession": "Maler",
+      "link": "https://de.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "id": "curie",
+      "name": "Marie Curie",
+      "birthDate": "11-07",
+      "birthYear": 1867,
+      "deathDate": "07-04",
+      "deathYear": 1934,
+      "profession": "Physikerin & Chemikerin",
+      "link": "https://de.wikipedia.org/wiki/Marie_Curie"
+    },
+    {
+      "id": "schiller",
+      "name": "Friedrich Schiller",
+      "birthDate": "11-10",
+      "birthYear": 1759,
+      "deathDate": "05-09",
+      "deathYear": 1805,
+      "profession": "Dichter & Dramatiker",
+      "link": "https://de.wikipedia.org/wiki/Friedrich_Schiller"
+    },
+    {
+      "id": "luther",
+      "name": "Martin Luther",
+      "birthDate": "11-10",
+      "birthYear": 1483,
+      "deathDate": "02-18",
+      "deathYear": 1546,
+      "profession": "Theologe & Reformator",
+      "link": "https://de.wikipedia.org/wiki/Martin_Luther"
+    },
+    {
+      "id": "robert-louis-stevenson",
+      "name": "Robert Louis Stevenson",
+      "birthDate": "11-13",
+      "birthYear": 1850,
+      "deathDate": "12-03",
+      "deathYear": 1894,
+      "profession": "Schriftsteller",
+      "link": "https://de.wikipedia.org/wiki/Robert_Louis_Stevenson"
+    },
+    {
+      "id": "baruch-spinoza",
+      "name": "Baruch Spinoza",
+      "birthDate": "11-24",
+      "birthYear": 1632,
+      "deathDate": "02-21",
+      "deathYear": 1677,
+      "profession": "Philosoph",
+      "link": "https://de.wikipedia.org/wiki/Baruch_de_Spinoza"
+    },
+    {
+      "id": "rainer-maria-rilke",
+      "name": "Rainer Maria Rilke",
+      "birthDate": "12-04",
+      "birthYear": 1875,
+      "deathDate": "12-29",
+      "deathYear": 1926,
+      "profession": "Dichter",
+      "link": "https://de.wikipedia.org/wiki/Rainer_Maria_Rilke"
+    },
+    {
+      "id": "heisenberg",
+      "name": "Werner Heisenberg",
+      "birthDate": "12-05",
+      "birthYear": 1901,
+      "deathDate": "02-01",
+      "deathYear": 1976,
+      "profession": "Physiker",
+      "link": "https://de.wikipedia.org/wiki/Werner_Heisenberg"
+    },
+    {
+      "id": "beethoven",
+      "name": "Ludwig van Beethoven",
+      "birthDate": "12-17",
+      "birthYear": 1770,
+      "deathDate": "03-26",
+      "deathYear": 1827,
+      "profession": "Komponist",
+      "link": "https://de.wikipedia.org/wiki/Ludwig_van_Beethoven"
+    },
+    {
+      "id": "paul-klee",
+      "name": "Paul Klee",
+      "birthDate": "12-18",
+      "birthYear": 1879,
+      "deathDate": "06-29",
+      "deathYear": 1940,
+      "profession": "Maler",
+      "link": "https://de.wikipedia.org/wiki/Paul_Klee"
+    },
+    {
+      "id": "louis-pasteur",
+      "name": "Louis Pasteur",
+      "birthDate": "12-27",
+      "birthYear": 1822,
+      "deathDate": "09-28",
+      "deathYear": 1895,
+      "profession": "Chemiker & Mikrobiologe",
+      "link": "https://de.wikipedia.org/wiki/Louis_Pasteur"
     }
   ]
 }

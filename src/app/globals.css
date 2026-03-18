@@ -2,20 +2,23 @@
 
 /* Base Colors - Light Mode (default) */
 :root {
-  --bg-primary: #FAFAFA;
+  --bg-primary: #F8F9FC;
   --bg-card: #FFFFFF;
-  --bg-hover: #F5F5F5;
-  --text-primary: #1A1A1A;
-  --text-secondary: #4B5563;
+  --bg-hover: #F1F3F8;
+  --bg-sidebar: #FFFFFF;
+  --text-primary: #1A1A2E;
+  --text-secondary: #4B5063;
   --text-muted: #9CA3AF;
-  --accent: #3B82F6;
-  --accent-hover: #2563EB;
-  --accent-light: #DBEAFE;
+  --accent: #6366F1;
+  --accent-hover: #4F46E5;
+  --accent-light: #E0E7FF;
+  --accent-glow: rgba(99, 102, 241, 0.15);
   --border: #E5E7EB;
   --border-hover: #D1D5DB;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --shadow-lg: 0 12px 24px -4px rgb(0 0 0 / 0.08), 0 4px 8px -4px rgb(0 0 0 / 0.04);
+  --shadow-glow: 0 0 20px var(--accent-glow);
 
   /* Category colors - Light mode */
   --green-bg: #F0FDF4;
@@ -70,68 +73,71 @@ html.light,
   color-scheme: light;
 }
 
-/* Dark Mode Colors - Softer contrast */
+/* Dark Mode Colors */
 html.dark {
   color-scheme: dark;
 
-  --bg-primary: #161618;
-  --bg-card: #1E1E20;
-  --bg-hover: #28282A;
-  --text-primary: #B8B8BC;
-  --text-secondary: #8A8A92;
-  --text-muted: #636369;
-  --accent: #60A5FA;
-  --accent-hover: #93C5FD;
-  --accent-light: #1E3A5F;
-  --border: #2E2E32;
-  --border-hover: #3F3F46;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --bg-primary: #0F0F12;
+  --bg-card: #18181C;
+  --bg-hover: #222228;
+  --bg-sidebar: #141418;
+  --text-primary: #E4E4E8;
+  --text-secondary: #9494A0;
+  --text-muted: #5C5C68;
+  --accent: #818CF8;
+  --accent-hover: #A5B4FC;
+  --accent-light: #1E1B4B;
+  --accent-glow: rgba(129, 140, 248, 0.12);
+  --border: #27272E;
+  --border-hover: #38383F;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 12px 24px -4px rgb(0 0 0 / 0.5), 0 4px 8px -4px rgb(0 0 0 / 0.4);
+  --shadow-glow: 0 0 24px var(--accent-glow);
 
-  /* Category colors - Dark mode (softer) */
-  --green-bg: #0D1F12;
-  --green-border: #1A4024;
+  /* Category colors - Dark mode */
+  --green-bg: #0C1A10;
+  --green-border: #1A3D24;
   --green-badge-bg: #14532D;
   --green-badge-text: #86EFAC;
-  --red-bg: #1F0D0D;
-  --red-border: #5C1D1D;
+  --red-bg: #1A0C0C;
+  --red-border: #4C1A1A;
   --red-badge-bg: #450A0A;
   --red-badge-text: #FCA5A5;
-  --orange-bg: #1F1408;
-  --orange-border: #6B3410;
+  --orange-bg: #1A1208;
+  --orange-border: #5C2E0E;
   --orange-badge-bg: #431407;
   --orange-badge-text: #FDBA74;
-  --yellow-bg: #1F1A08;
-  --yellow-border: #5C400E;
+  --yellow-bg: #1A1708;
+  --yellow-border: #4D370C;
   --yellow-badge-bg: #422006;
   --yellow-badge-text: #FDE047;
-  --teal-bg: #0A1F1E;
-  --teal-border: #134E4A;
+  --teal-bg: #0A1A19;
+  --teal-border: #114440;
   --teal-badge-bg: #115E59;
   --teal-badge-text: #5EEAD4;
-  --indigo-bg: #151530;
-  --indigo-border: #2E2B6B;
+  --indigo-bg: #12122B;
+  --indigo-border: #282560;
   --indigo-badge-bg: #312E81;
   --indigo-badge-text: #A5B4FC;
-  --slate-bg: #181C24;
-  --slate-border: #334155;
+  --slate-bg: #151820;
+  --slate-border: #2D3548;
   --slate-badge-bg: #334155;
   --slate-badge-text: #CBD5E1;
-  --cyan-bg: #0A1820;
-  --cyan-border: #155E75;
+  --cyan-bg: #0A151C;
+  --cyan-border: #124D60;
   --cyan-badge-bg: #164E63;
   --cyan-badge-text: #67E8F9;
-  --pink-bg: #1F0D18;
-  --pink-border: #6B1A40;
+  --pink-bg: #1A0C15;
+  --pink-border: #5C1538;
   --pink-badge-bg: #500724;
   --pink-badge-text: #F9A8D4;
-  --purple-bg: #1A1030;
-  --purple-border: #4C1D6B;
+  --purple-bg: #160E28;
+  --purple-border: #3E1860;
   --purple-badge-bg: #4C1D95;
   --purple-badge-text: #D8B4FE;
-  --blue-bg: #101828;
-  --blue-border: #1E3A6B;
+  --blue-bg: #0E1520;
+  --blue-border: #1A3260;
   --blue-badge-bg: #1E3A8A;
   --blue-badge-text: #93C5FD;
 }
@@ -139,7 +145,7 @@ html.dark {
 @theme inline {
   --color-background: var(--bg-primary);
   --color-foreground: var(--text-primary);
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 html {
@@ -149,38 +155,60 @@ html {
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  transition: background-color 200ms ease, color 200ms ease;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth transitions for theme changes */
+/* Smooth transitions for theme changes - scoped to color props only */
 * {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: ease;
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-/* Exclude transform transitions from the global transition */
-*:not(.transition-transform) {
-  transition-property: background-color, border-color, color, fill, stroke;
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Custom scrollbar for dark mode */
-html.dark ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: var(--shadow-glow); }
+  50% { box-shadow: 0 0 32px var(--accent-glow); }
 }
 
-html.dark ::-webkit-scrollbar-track {
-  background: var(--bg-card);
+.animate-fade-in {
+  animation: fade-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-html.dark ::-webkit-scrollbar-thumb {
+/* Stagger children animations */
+.stagger-children > * {
+  animation: fade-in 0.35s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 50ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 100ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 150ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 200ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 250ms; }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
   background: var(--border);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
-html.dark ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: var(--border-hover);
 }
 
@@ -195,13 +223,41 @@ input[type="checkbox"] {
   accent-color: var(--accent);
 }
 
-/* Softer checkboxes in dark mode */
 html.dark input[type="checkbox"] {
-  accent-color: #7899C6;
-  opacity: 0.85;
+  accent-color: #818CF8;
+  opacity: 0.9;
 }
 
 /* Date input styling for dark mode */
 html.dark input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
+}
+
+/* Subtle noise texture overlay */
+.noise-bg::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.015;
+  z-index: 100;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+}
+
+html.dark .noise-bg::after {
+  opacity: 0.03;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: color-mix(in srgb, var(--bg-card) 80%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+html.dark .glass-card {
+  background: color-mix(in srgb, var(--bg-card) 60%, transparent);
 }

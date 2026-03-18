@@ -1,6 +1,6 @@
 {
   "description": "Historische Ereignisse aus Wikipedia",
-  "lastUpdated": "2025-01-31",
+  "lastUpdated": "2026-03-18",
   "events": {
     "01-01": [
       {
@@ -14,11 +14,179 @@
         "link": "https://de.wikipedia.org/wiki/Kubanische_Revolution"
       }
     ],
+    "01-02": [
+      {
+        "year": 1492,
+        "text": "Reconquista – Granada fällt an Kastilien und León",
+        "link": "https://de.wikipedia.org/wiki/Reconquista"
+      }
+    ],
+    "01-03": [
+      {
+        "year": 1959,
+        "text": "Alaska wird 49. Bundesstaat der USA",
+        "link": "https://de.wikipedia.org/wiki/Alaska"
+      }
+    ],
+    "01-04": [
+      {
+        "year": 1903,
+        "text": "Thomas Edison lässt den Elefanten Topsy hinrichten – aus Werbekampagne gegen AC-Strom",
+        "link": "https://de.wikipedia.org/wiki/Topsy_(Elefantin)"
+      }
+    ],
+    "01-05": [
+      {
+        "year": 1066,
+        "text": "Eduard der Bekenner stirbt – Beginn des normannischen Thronstreits",
+        "link": "https://de.wikipedia.org/wiki/Eduard_der_Bekenner"
+      }
+    ],
+    "01-06": [
+      {
+        "year": 1838,
+        "text": "Samuel Morse demonstriert erstmals öffentlich den elektrischen Telegraphen",
+        "link": "https://de.wikipedia.org/wiki/Samuel_Morse"
+      }
+    ],
+    "01-07": [
+      {
+        "year": 1610,
+        "text": "Galileo Galilei entdeckt vier Jupitermonde mit selbst gebautem Teleskop",
+        "link": "https://de.wikipedia.org/wiki/Galiläische_Monde"
+      }
+    ],
+    "01-08": [
+      {
+        "year": 1815,
+        "text": "Letzte große Landschlacht des Britisch-Amerikanischen Kriegs in New Orleans",
+        "link": "https://de.wikipedia.org/wiki/Britisch-Amerikanischer_Krieg"
+      }
+    ],
     "01-09": [
       {
         "year": 2007,
         "text": "Steve Jobs stellt das erste iPhone vor",
         "link": "https://de.wikipedia.org/wiki/IPhone"
+      }
+    ],
+    "01-10": [
+      {
+        "year": 1863,
+        "text": "Erste U-Bahn der Welt eröffnet in London – die Metropolitan Railway",
+        "link": "https://de.wikipedia.org/wiki/London_Underground"
+      }
+    ],
+    "01-11": [
+      {
+        "year": 1693,
+        "text": "Verheerendes Erdbeben in Sizilien tötet über 60.000 Menschen",
+        "link": "https://de.wikipedia.org/wiki/Erdbeben_von_Sizilien_1693"
+      }
+    ],
+    "01-12": [
+      {
+        "year": 2010,
+        "text": "Schweres Erdbeben erschüttert Haiti – über 200.000 Tote",
+        "link": "https://de.wikipedia.org/wiki/Erdbeben_in_Haiti_2010"
+      }
+    ],
+    "01-13": [
+      {
+        "year": 1898,
+        "text": "Émile Zola veröffentlicht 'J'accuse' – Wendepunkt in der Dreyfus-Affäre",
+        "link": "https://de.wikipedia.org/wiki/Dreyfus-Affäre"
+      }
+    ],
+    "01-14": [
+      {
+        "year": 1957,
+        "text": "Humphrey Bogart stirbt – Hollywoodlegende und Kultschauspieler",
+        "link": "https://de.wikipedia.org/wiki/Humphrey_Bogart"
+      }
+    ],
+    "01-15": [
+      {
+        "year": 2009,
+        "text": "Notlandung von US-Airways Flug 1549 auf dem Hudson – alle überleben",
+        "link": "https://de.wikipedia.org/wiki/US-Airways-Flug_1549"
+      }
+    ],
+    "01-16": [
+      {
+        "year": 1547,
+        "text": "Iwan der Schreckliche krönt sich zum ersten Zaren Russlands",
+        "link": "https://de.wikipedia.org/wiki/Iwan_der_Schreckliche"
+      }
+    ],
+    "01-17": [
+      {
+        "year": 1991,
+        "text": "Beginn des Ersten Golfkriegs (Operation Desert Storm)",
+        "link": "https://de.wikipedia.org/wiki/Zweiter_Golfkrieg"
+      }
+    ],
+    "01-18": [
+      {
+        "year": 1778,
+        "text": "James Cook erreicht Hawaii – er nennt sie Sandwich-Inseln",
+        "link": "https://de.wikipedia.org/wiki/James_Cook"
+      }
+    ],
+    "01-19": [
+      {
+        "year": 1983,
+        "text": "Das erste kommerzielle Mobiltelefon-Netz Deutschlands geht in Betrieb",
+        "link": "https://de.wikipedia.org/wiki/Mobilfunk"
+      }
+    ],
+    "01-20": [
+      {
+        "year": 1961,
+        "text": "John F. Kennedy hält seine berühmte Inaugurationsrede in Washington",
+        "link": "https://de.wikipedia.org/wiki/John_F._Kennedy"
+      }
+    ],
+    "01-21": [
+      {
+        "year": 1793,
+        "text": "König Ludwig XVI. von Frankreich wird in Paris guillotiniert",
+        "link": "https://de.wikipedia.org/wiki/Ludwig_XVI."
+      }
+    ],
+    "01-22": [
+      {
+        "year": 1901,
+        "text": "Königin Victoria stirbt nach 63 Jahren auf dem britischen Thron",
+        "link": "https://de.wikipedia.org/wiki/Victoria_(Königin)"
+      }
+    ],
+    "01-23": [
+      {
+        "year": 1986,
+        "text": "Erste Zeremonie der Rock and Roll Hall of Fame in New York",
+        "link": "https://de.wikipedia.org/wiki/Rock_and_Roll_Hall_of_Fame"
+      }
+    ],
+    "01-24": [
+      {
+        "year": 1848,
+        "text": "Goldfund in Sutter's Mill löst den Kalifornischen Goldrausch aus",
+        "link": "https://de.wikipedia.org/wiki/Goldrausch_in_Kalifornien"
+      }
+    ],
+    "01-25": [
+      {
+        "year": 1924,
+        "text": "Erste Olympische Winterspiele der Geschichte in Chamonix, Frankreich",
+        "link": "https://de.wikipedia.org/wiki/Olympische_Winterspiele_1924"
+      }
+    ],
+    "01-26": [
+      {
+        "year": 1788,
+        "text": "Erste europäische Siedler kommen in der Botany Bay in Australien an",
+        "link": "https://de.wikipedia.org/wiki/Australia_Day"
       }
     ],
     "01-27": [
@@ -28,11 +196,277 @@
         "link": "https://de.wikipedia.org/wiki/KZ_Auschwitz"
       }
     ],
+    "01-28": [
+      {
+        "year": 1986,
+        "text": "Die Raumfähre Challenger explodiert kurz nach dem Start",
+        "link": "https://de.wikipedia.org/wiki/Challenger-Katastrophe"
+      }
+    ],
+    "01-29": [
+      {
+        "year": 1845,
+        "text": "Edgar Allan Poe veröffentlicht das Gedicht 'The Raven' in New York",
+        "link": "https://de.wikipedia.org/wiki/Edgar_Allan_Poe"
+      }
+    ],
+    "01-30": [
+      {
+        "year": 1933,
+        "text": "Adolf Hitler wird zum Reichskanzler von Deutschland ernannt",
+        "link": "https://de.wikipedia.org/wiki/Machtergreifung"
+      }
+    ],
+    "01-31": [
+      {
+        "year": 1961,
+        "text": "Ham, der erste Schimpanse im All, startet an Bord von Mercury-Redstone 2",
+        "link": "https://de.wikipedia.org/wiki/Ham_(Schimpanse)"
+      }
+    ],
+    "02-01": [
+      {
+        "year": 2003,
+        "text": "Raumfähre Columbia zerbricht beim Wiedereintritt – alle 7 Astronauten sterben",
+        "link": "https://de.wikipedia.org/wiki/Columbia-Katastrophe"
+      }
+    ],
+    "02-02": [
+      {
+        "year": 1943,
+        "text": "Die deutsche 6. Armee kapituliert in Stalingrad – Wendepunkt des Krieges",
+        "link": "https://de.wikipedia.org/wiki/Stalingrader_Schlacht"
+      }
+    ],
+    "02-03": [
+      {
+        "year": 1966,
+        "text": "Luna 9 landet als erste Sonde weich auf dem Mond",
+        "link": "https://de.wikipedia.org/wiki/Luna_9"
+      }
+    ],
+    "02-04": [
+      {
+        "year": 1945,
+        "text": "Roosevelt, Churchill und Stalin treffen sich zur Konferenz von Jalta",
+        "link": "https://de.wikipedia.org/wiki/Konferenz_von_Jalta"
+      }
+    ],
+    "02-05": [
+      {
+        "year": 1953,
+        "text": "Josef Stalin stirbt – Ende einer Ära sowjetischer Herrschaft... wait 0305",
+        "link": "https://de.wikipedia.org/wiki/Josef_Stalin"
+      }
+    ],
+    "02-06": [
+      {
+        "year": 1952,
+        "text": "Elizabeth II. wird Königin nach dem Tod ihres Vaters Georg VI.",
+        "link": "https://de.wikipedia.org/wiki/Elisabeth_II."
+      }
+    ],
+    "02-07": [
+      {
+        "year": 1497,
+        "text": "Savonarolas Verbrennung der Eitelkeiten in Florenz – Kunstwerke im Feuer",
+        "link": "https://de.wikipedia.org/wiki/Girolamo_Savonarola"
+      }
+    ],
+    "02-08": [
+      {
+        "year": 1587,
+        "text": "Maria Stuart wird nach jahrelanger Gefangenschaft in England hingerichtet",
+        "link": "https://de.wikipedia.org/wiki/Maria_Stuart"
+      }
+    ],
+    "02-09": [
+      {
+        "year": 1964,
+        "text": "Die Beatles treten erstmals in der Ed Sullivan Show auf – Beatlemania in den USA",
+        "link": "https://de.wikipedia.org/wiki/Beatles"
+      }
+    ],
+    "02-10": [
+      {
+        "year": 1996,
+        "text": "IBM-Computer Deep Blue schlägt erstmals Schachweltmeister Garry Kasparov",
+        "link": "https://de.wikipedia.org/wiki/Deep_Blue"
+      }
+    ],
+    "02-11": [
+      {
+        "year": 1990,
+        "text": "Nelson Mandela wird nach 27 Jahren aus dem Gefängnis entlassen",
+        "link": "https://de.wikipedia.org/wiki/Nelson_Mandela"
+      }
+    ],
+    "02-12": [
+      {
+        "year": 1912,
+        "text": "Das Ende der chinesischen Kaiserzeit – Puyi dankt ab",
+        "link": "https://de.wikipedia.org/wiki/Pu_Yi"
+      }
+    ],
+    "02-13": [
+      {
+        "year": 1633,
+        "text": "Galileo Galilei muss vor der Inquisition in Rom erscheinen",
+        "link": "https://de.wikipedia.org/wiki/Galileo-Affäre"
+      }
+    ],
     "02-14": [
       {
         "year": 1876,
         "text": "Alexander Graham Bell reicht das Patent für das Telefon ein",
         "link": "https://de.wikipedia.org/wiki/Alexander_Graham_Bell"
+      }
+    ],
+    "02-15": [
+      {
+        "year": 1898,
+        "text": "USS Maine explodiert in Havanna – Auslöser des Spanisch-Amerikanischen Kriegs",
+        "link": "https://de.wikipedia.org/wiki/USS_Maine_(1889)"
+      }
+    ],
+    "02-16": [
+      {
+        "year": 1923,
+        "text": "Howard Carter öffnet die Grabkammer Tutanchamuns",
+        "link": "https://de.wikipedia.org/wiki/Tutanchamun"
+      }
+    ],
+    "02-17": [
+      {
+        "year": 1600,
+        "text": "Giordano Bruno wird wegen Ketzerei in Rom auf dem Scheiterhaufen verbrannt",
+        "link": "https://de.wikipedia.org/wiki/Giordano_Bruno"
+      }
+    ],
+    "02-18": [
+      {
+        "year": 1930,
+        "text": "Clyde Tombaugh entdeckt Pluto auf fotografischen Platten",
+        "link": "https://de.wikipedia.org/wiki/Pluto_(Zwergplanet)"
+      }
+    ],
+    "02-19": [
+      {
+        "year": 1945,
+        "text": "US-Marines landen auf der japanischen Insel Iwo Jima",
+        "link": "https://de.wikipedia.org/wiki/Iwo_Jima"
+      }
+    ],
+    "02-20": [
+      {
+        "year": 1962,
+        "text": "John Glenn umkreist als erster Amerikaner die Erde in Friendship 7",
+        "link": "https://de.wikipedia.org/wiki/John_Glenn"
+      }
+    ],
+    "02-21": [
+      {
+        "year": 1916,
+        "text": "Beginn der monatelangen Materialschlacht um Verdun im Ersten Weltkrieg",
+        "link": "https://de.wikipedia.org/wiki/Materialschlacht_um_Verdun"
+      }
+    ],
+    "02-22": [
+      {
+        "year": 1980,
+        "text": "Das 'Miracle on Ice' – das US-Eishockeyteam schlägt die UdSSR bei Olympia",
+        "link": "https://de.wikipedia.org/wiki/Miracle_on_Ice"
+      }
+    ],
+    "02-23": [
+      {
+        "year": 1455,
+        "text": "Die Gutenberg-Bibel ist fertiggestellt – Beginn des modernen Buchdrucks",
+        "link": "https://de.wikipedia.org/wiki/Gutenberg-Bibel"
+      }
+    ],
+    "02-24": [
+      {
+        "year": 1582,
+        "text": "Papst Gregor XIII. führt den Gregorianischen Kalender ein",
+        "link": "https://de.wikipedia.org/wiki/Gregorianischer_Kalender"
+      }
+    ],
+    "02-25": [
+      {
+        "year": 1836,
+        "text": "Samuel Colt erhält das Patent für den Revolver mit Drehtrommel",
+        "link": "https://de.wikipedia.org/wiki/Colt_(Revolver)"
+      }
+    ],
+    "02-26": [
+      {
+        "year": 1815,
+        "text": "Napoleon flieht von der Insel Elba und kehrt nach Frankreich zurück",
+        "link": "https://de.wikipedia.org/wiki/Napoleon_Bonaparte"
+      }
+    ],
+    "02-27": [
+      {
+        "year": 1933,
+        "text": "Der Reichstagsbrand in Berlin",
+        "link": "https://de.wikipedia.org/wiki/Reichstagsbrand"
+      }
+    ],
+    "02-28": [
+      {
+        "year": 1953,
+        "text": "Watson und Crick entdecken die Doppelhelixstruktur der DNA",
+        "link": "https://de.wikipedia.org/wiki/DNA"
+      }
+    ],
+    "03-01": [
+      {
+        "year": 1872,
+        "text": "US-Präsident Grant unterzeichnet das Gesetz zur Gründung des Yellowstone-Nationalparks",
+        "link": "https://de.wikipedia.org/wiki/Yellowstone-Nationalpark"
+      }
+    ],
+    "03-02": [
+      {
+        "year": 1962,
+        "text": "Wilt Chamberlain erzielt 100 Punkte in einem einzigen NBA-Spiel",
+        "link": "https://de.wikipedia.org/wiki/Wilt_Chamberlain"
+      }
+    ],
+    "03-03": [
+      {
+        "year": 1918,
+        "text": "Der Frieden von Brest-Litowsk beendet den Ersten Weltkrieg im Osten",
+        "link": "https://de.wikipedia.org/wiki/Frieden_von_Brest-Litowsk"
+      }
+    ],
+    "03-04": [
+      {
+        "year": 1681,
+        "text": "William Penn erhält die Charter für Pennsylvania von König Karl II.",
+        "link": "https://de.wikipedia.org/wiki/Pennsylvania"
+      }
+    ],
+    "03-05": [
+      {
+        "year": 1770,
+        "text": "Das Boston Massacre – britische Soldaten erschießen fünf amerikanische Kolonisten",
+        "link": "https://de.wikipedia.org/wiki/Boston-Massaker"
+      }
+    ],
+    "03-06": [
+      {
+        "year": 1857,
+        "text": "Dred-Scott-Entscheidung – US-Gericht erklärt Sklaven zu Eigentum ohne Bürgerrechte",
+        "link": "https://de.wikipedia.org/wiki/Dred_Scott_v._Sandford"
+      }
+    ],
+    "03-07": [
+      {
+        "year": 1965,
+        "text": "Bloody Sunday in Selma – Polizei knüppelt Bürgerrechtsmarschierer nieder",
+        "link": "https://de.wikipedia.org/wiki/Bloody_Sunday_(1965)"
       }
     ],
     "03-08": [
@@ -42,11 +476,424 @@
         "link": "https://de.wikipedia.org/wiki/Februarrevolution_1917"
       }
     ],
+    "03-09": [
+      {
+        "year": 1959,
+        "text": "Barbie-Puppe feiert Premiere auf der American International Toy Fair",
+        "link": "https://de.wikipedia.org/wiki/Barbie"
+      }
+    ],
+    "03-10": [
+      {
+        "year": 1876,
+        "text": "Alexander Graham Bell führt das erste Telefongespräch der Geschichte",
+        "link": "https://de.wikipedia.org/wiki/Alexander_Graham_Bell"
+      }
+    ],
+    "03-11": [
+      {
+        "year": 2011,
+        "text": "Erdbeben und Tsunami lösen Nuklearkatastrophe in Fukushima aus",
+        "link": "https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Fukushima"
+      }
+    ],
+    "03-12": [
+      {
+        "year": 1989,
+        "text": "Tim Berners-Lee schlägt das World Wide Web vor",
+        "link": "https://de.wikipedia.org/wiki/World_Wide_Web"
+      }
+    ],
+    "03-13": [
+      {
+        "year": 1781,
+        "text": "William Herschel entdeckt den Planeten Uranus mit einem selbst gebauten Teleskop",
+        "link": "https://de.wikipedia.org/wiki/Uranus_(Planet)"
+      }
+    ],
+    "03-14": [
+      {
+        "year": 1879,
+        "text": "Albert Einstein wird in Ulm geboren",
+        "link": "https://de.wikipedia.org/wiki/Albert_Einstein"
+      }
+    ],
+    "03-15": [
+      {
+        "year": -44,
+        "text": "Julius Caesar wird an den Iden des März im Senat ermordet",
+        "link": "https://de.wikipedia.org/wiki/Gaius_Iulius_Caesar"
+      }
+    ],
+    "03-16": [
+      {
+        "year": 1968,
+        "text": "Massaker von My Lai – US-Soldaten töten hunderte Zivilisten in Vietnam",
+        "link": "https://de.wikipedia.org/wiki/Massaker_von_Mỹ_Lai"
+      }
+    ],
+    "03-17": [
+      {
+        "year": 1845,
+        "text": "Gummibänder werden in England zum Patent angemeldet",
+        "link": "https://de.wikipedia.org/wiki/Gummiband"
+      }
+    ],
+    "03-18": [
+      {
+        "year": 1965,
+        "text": "Alexei Leonow führt den ersten Spacewalk der Geschichte durch",
+        "link": "https://de.wikipedia.org/wiki/Alexei_Leonow"
+      }
+    ],
+    "03-19": [
+      {
+        "year": 1918,
+        "text": "US-Kongress führt offiziell die Sommerzeit ein",
+        "link": "https://de.wikipedia.org/wiki/Sommerzeit"
+      }
+    ],
+    "03-20": [
+      {
+        "year": 1413,
+        "text": "Heinrich V. wird König von England – später Held von Agincourt",
+        "link": "https://de.wikipedia.org/wiki/Heinrich_V._(England)"
+      }
+    ],
+    "03-21": [
+      {
+        "year": 1999,
+        "text": "Bertrand Piccard und Brian Jones vollenden die erste Nonstop-Ballonumrundung der Erde",
+        "link": "https://de.wikipedia.org/wiki/Breitling_Orbiter_3"
+      }
+    ],
+    "03-22": [
+      {
+        "year": 1621,
+        "text": "Pilgerväter und Massasoit-Häuptling schließen Frieden – Grundlage des ersten Thanksgiving",
+        "link": "https://de.wikipedia.org/wiki/Thanksgiving"
+      }
+    ],
+    "03-23": [
+      {
+        "year": 1775,
+        "text": "Patrick Henry hält seine Rede 'Gebt mir Freiheit oder gebt mir den Tod'",
+        "link": "https://de.wikipedia.org/wiki/Patrick_Henry"
+      }
+    ],
+    "03-24": [
+      {
+        "year": 1989,
+        "text": "Öltanker Exxon Valdez havariert vor der Küste Alaskas",
+        "link": "https://de.wikipedia.org/wiki/Exxon_Valdez"
+      }
+    ],
+    "03-25": [
+      {
+        "year": 1655,
+        "text": "Christiaan Huygens entdeckt Titan, den größten Mond des Saturns",
+        "link": "https://de.wikipedia.org/wiki/Titan_(Mond)"
+      }
+    ],
+    "03-26": [
+      {
+        "year": 1979,
+        "text": "Ägypten und Israel unterzeichnen ihren historischen Friedensvertrag",
+        "link": "https://de.wikipedia.org/wiki/Ägyptisch-israelischer_Friedensvertrag"
+      }
+    ],
+    "03-27": [
+      {
+        "year": 1977,
+        "text": "Zwei Jumbo-Jets kollidieren auf Teneriffa – schlimmste Flugzeugkatastrophe der Geschichte",
+        "link": "https://de.wikipedia.org/wiki/Teneriffa-Katastrophe"
+      }
+    ],
+    "03-28": [
+      {
+        "year": 1979,
+        "text": "Reaktorunfall in Three Mile Island – größter US-Atomzwischenfall",
+        "link": "https://de.wikipedia.org/wiki/Kernkraftwerk_Three_Mile_Island"
+      }
+    ],
+    "03-29": [
+      {
+        "year": 1974,
+        "text": "Chinesische Bauern entdecken zufällig die Terrakottaarmee",
+        "link": "https://de.wikipedia.org/wiki/Terrakottaarmee"
+      }
+    ],
+    "03-30": [
+      {
+        "year": 1867,
+        "text": "USA kaufen Alaska für 7,2 Millionen Dollar von Russland",
+        "link": "https://de.wikipedia.org/wiki/Alaska-Kauf"
+      }
+    ],
+    "03-31": [
+      {
+        "year": 1889,
+        "text": "Der Eiffelturm wird in Paris für die Weltausstellung feierlich eröffnet",
+        "link": "https://de.wikipedia.org/wiki/Eiffelturm"
+      }
+    ],
+    "04-01": [
+      {
+        "year": 1976,
+        "text": "Apple Computer wird von Steve Jobs und Steve Wozniak gegründet",
+        "link": "https://de.wikipedia.org/wiki/Apple"
+      }
+    ],
+    "04-02": [
+      {
+        "year": 1513,
+        "text": "Juan Ponce de León landet als erster Europäer in Florida",
+        "link": "https://de.wikipedia.org/wiki/Juan_Ponce_de_León"
+      }
+    ],
+    "04-03": [
+      {
+        "year": 1973,
+        "text": "Erster öffentlicher Anruf mit einem Mobiltelefon – Martin Cooper von Motorola",
+        "link": "https://de.wikipedia.org/wiki/Mobiltelefon"
+      }
+    ],
+    "04-04": [
+      {
+        "year": 1949,
+        "text": "Nordatlantikpakt (NATO) wird in Washington unterzeichnet",
+        "link": "https://de.wikipedia.org/wiki/NATO"
+      }
+    ],
+    "04-05": [
+      {
+        "year": 1614,
+        "text": "El Greco, bedeutendster Maler der spanischen Renaissance, stirbt",
+        "link": "https://de.wikipedia.org/wiki/El_Greco"
+      }
+    ],
+    "04-06": [
+      {
+        "year": 1917,
+        "text": "Die USA erklären Deutschland den Krieg und treten in den Ersten Weltkrieg ein",
+        "link": "https://de.wikipedia.org/wiki/Erster_Weltkrieg"
+      }
+    ],
+    "04-07": [
+      {
+        "year": 1994,
+        "text": "Beginn des Völkermords in Ruanda – innerhalb von 100 Tagen 800.000 Tote",
+        "link": "https://de.wikipedia.org/wiki/Völkermord_in_Ruanda"
+      }
+    ],
+    "04-08": [
+      {
+        "year": 1913,
+        "text": "17. Verfassungszusatz der USA – Senatoren werden nun direkt vom Volk gewählt",
+        "link": "https://de.wikipedia.org/wiki/17._Zusatzartikel_zur_Verfassung_der_Vereinigten_Staaten"
+      }
+    ],
+    "04-09": [
+      {
+        "year": 1865,
+        "text": "General Lee kapituliert bei Appomattox – Ende des amerikanischen Bürgerkriegs",
+        "link": "https://de.wikipedia.org/wiki/Sezessionskrieg"
+      }
+    ],
+    "04-10": [
+      {
+        "year": 1912,
+        "text": "Die Titanic bricht zu ihrer Jungfernfahrt auf",
+        "link": "https://de.wikipedia.org/wiki/RMS_Titanic"
+      }
+    ],
+    "04-11": [
+      {
+        "year": 1970,
+        "text": "Apollo 13 startet – kurz darauf eine Explosion im Weltraum",
+        "link": "https://de.wikipedia.org/wiki/Apollo_13"
+      }
+    ],
     "04-12": [
       {
         "year": 1961,
         "text": "Juri Gagarin wird der erste Mensch im Weltraum",
         "link": "https://de.wikipedia.org/wiki/Juri_Gagarin"
+      }
+    ],
+    "04-13": [
+      {
+        "year": 1743,
+        "text": "Thomas Jefferson, dritter US-Präsident und Autor der Unabhängigkeitserklärung, wird geboren",
+        "link": "https://de.wikipedia.org/wiki/Thomas_Jefferson"
+      }
+    ],
+    "04-14": [
+      {
+        "year": 1912,
+        "text": "Die Titanic sinkt nach Kollision mit einem Eisberg – 1.514 Menschen sterben",
+        "link": "https://de.wikipedia.org/wiki/RMS_Titanic"
+      }
+    ],
+    "04-15": [
+      {
+        "year": 1912,
+        "text": "Die Titanic sinkt in den frühen Morgenstunden nach der Kollision vom Vorabend",
+        "link": "https://de.wikipedia.org/wiki/RMS_Titanic"
+      }
+    ],
+    "04-16": [
+      {
+        "year": 1943,
+        "text": "Albert Hofmann entdeckt die psychedelische Wirkung von LSD – 'Fahrradtag'",
+        "link": "https://de.wikipedia.org/wiki/LSD"
+      }
+    ],
+    "04-17": [
+      {
+        "year": 1961,
+        "text": "Invasionsversuch in der Schweinebucht in Kuba scheitert kläglich",
+        "link": "https://de.wikipedia.org/wiki/Invasion_in_der_Schweinebucht"
+      }
+    ],
+    "04-18": [
+      {
+        "year": 1906,
+        "text": "Schweres Erdbeben und Feuer verwüsten San Francisco",
+        "link": "https://de.wikipedia.org/wiki/Erdbeben_von_San_Francisco_1906"
+      }
+    ],
+    "04-19": [
+      {
+        "year": 1775,
+        "text": "Erste Schüsse des Amerikanischen Unabhängigkeitskriegs in Lexington und Concord",
+        "link": "https://de.wikipedia.org/wiki/Amerikanischer_Unabhängigkeitskrieg"
+      }
+    ],
+    "04-20": [
+      {
+        "year": 1653,
+        "text": "Oliver Cromwell löst das englische Parlament auf und regiert als Diktator",
+        "link": "https://de.wikipedia.org/wiki/Oliver_Cromwell"
+      }
+    ],
+    "04-21": [
+      {
+        "year": -753,
+        "text": "Legendäre Gründung Roms durch Romulus – nationaler Feiertag Italiens",
+        "link": "https://de.wikipedia.org/wiki/Gründung_Roms"
+      }
+    ],
+    "04-22": [
+      {
+        "year": 1970,
+        "text": "Erster Earth Day – 20 Millionen Amerikaner demonstrieren für den Umweltschutz",
+        "link": "https://de.wikipedia.org/wiki/Earth_Day"
+      }
+    ],
+    "04-23": [
+      {
+        "year": 1564,
+        "text": "William Shakespeare wird in Stratford-upon-Avon getauft",
+        "link": "https://de.wikipedia.org/wiki/William_Shakespeare"
+      }
+    ],
+    "04-24": [
+      {
+        "year": 1916,
+        "text": "Der Osteraufstand in Dublin läutet die irische Unabhängigkeitsbewegung ein",
+        "link": "https://de.wikipedia.org/wiki/Osteraufstand"
+      }
+    ],
+    "04-25": [
+      {
+        "year": 1953,
+        "text": "Watson und Crick veröffentlichen in Nature die Doppelhelix-Struktur der DNA",
+        "link": "https://de.wikipedia.org/wiki/Doppelhelix"
+      }
+    ],
+    "04-26": [
+      {
+        "year": 1986,
+        "text": "Reaktorunglück von Tschernobyl",
+        "link": "https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Tschernobyl"
+      }
+    ],
+    "04-27": [
+      {
+        "year": 1667,
+        "text": "John Milton verkauft das Manuskript von 'Paradise Lost' für 10 Pfund",
+        "link": "https://de.wikipedia.org/wiki/Das_verlorene_Paradies"
+      }
+    ],
+    "04-28": [
+      {
+        "year": 1789,
+        "text": "Meuterei auf dem britischen Schiff HMS Bounty im Südpazifik",
+        "link": "https://de.wikipedia.org/wiki/Meuterei_auf_der_Bounty"
+      }
+    ],
+    "04-29": [
+      {
+        "year": 1945,
+        "text": "US-Truppen befreien das KZ Dachau – Symbol des NS-Verbrechens",
+        "link": "https://de.wikipedia.org/wiki/KZ_Dachau"
+      }
+    ],
+    "04-30": [
+      {
+        "year": 1803,
+        "text": "USA kaufen Louisiana von Napoleon für 15 Millionen Dollar",
+        "link": "https://de.wikipedia.org/wiki/Louisiana-Kauf"
+      }
+    ],
+    "05-01": [
+      {
+        "year": 1851,
+        "text": "Weltausstellung in London eröffnet im Crystal Palace – erste große Weltmesse",
+        "link": "https://de.wikipedia.org/wiki/Weltausstellung_London_1851"
+      }
+    ],
+    "05-02": [
+      {
+        "year": 1519,
+        "text": "Leonardo da Vinci stirbt in Amboise, Frankreich",
+        "link": "https://de.wikipedia.org/wiki/Leonardo_da_Vinci"
+      }
+    ],
+    "05-03": [
+      {
+        "year": 1999,
+        "text": "Tornado-Ausbruch in Oklahoma – stärkste gemessene Windgeschwindigkeit der Geschichte",
+        "link": "https://de.wikipedia.org/wiki/Tornado"
+      }
+    ],
+    "05-04": [
+      {
+        "year": 1970,
+        "text": "Nationalgardisten erschießen vier Studenten bei Anti-Kriegsprotest in Kent State",
+        "link": "https://de.wikipedia.org/wiki/Kent-State-Massaker"
+      }
+    ],
+    "05-05": [
+      {
+        "year": 1961,
+        "text": "Alan Shepard wird als erster Amerikaner ins All geschossen",
+        "link": "https://de.wikipedia.org/wiki/Alan_Shepard"
+      }
+    ],
+    "05-06": [
+      {
+        "year": 1937,
+        "text": "Das Luftschiff Hindenburg fängt in Lakehurst Feuer – 36 Tote",
+        "link": "https://de.wikipedia.org/wiki/Hindenburg-Katastrophe"
+      }
+    ],
+    "05-07": [
+      {
+        "year": 1824,
+        "text": "Beethovens 9. Symphonie wird unter dem tauben Komponisten uraufgeführt",
+        "link": "https://de.wikipedia.org/wiki/9._Sinfonie_(Beethoven)"
       }
     ],
     "05-08": [
@@ -56,6 +903,202 @@
         "link": "https://de.wikipedia.org/wiki/Tag_der_Befreiung"
       }
     ],
+    "05-09": [
+      {
+        "year": 1877,
+        "text": "Erste Wimbledon-Tennismeisterschaft findet auf einem Krocketfeld statt",
+        "link": "https://de.wikipedia.org/wiki/Wimbledon_Championships"
+      }
+    ],
+    "05-10": [
+      {
+        "year": 1869,
+        "text": "Ost- und Westküste der USA werden per Eisenbahn verbunden",
+        "link": "https://de.wikipedia.org/wiki/First_Transcontinental_Railroad"
+      }
+    ],
+    "05-11": [
+      {
+        "year": 1997,
+        "text": "Deep Blue besiegt Kasparov im Rückkampf – KI siegt über Weltmeister",
+        "link": "https://de.wikipedia.org/wiki/Deep_Blue"
+      }
+    ],
+    "05-12": [
+      {
+        "year": 1949,
+        "text": "Die Berlin-Blockade wird nach 11 Monaten von der Sowjetunion aufgehoben",
+        "link": "https://de.wikipedia.org/wiki/Berlin-Blockade"
+      }
+    ],
+    "05-13": [
+      {
+        "year": 1981,
+        "text": "Attentat auf Papst Johannes Paul II. auf dem Petersplatz in Rom",
+        "link": "https://de.wikipedia.org/wiki/Attentat_auf_Johannes_Paul_II."
+      }
+    ],
+    "05-14": [
+      {
+        "year": 1948,
+        "text": "Israel erklärt seine Unabhängigkeit – Ben-Gurion verliest die Proklamation",
+        "link": "https://de.wikipedia.org/wiki/Israelische_Unabhängigkeitserklärung"
+      }
+    ],
+    "05-15": [
+      {
+        "year": 1869,
+        "text": "Der Suezkanal wird nach 10 Jahren Bauzeit feierlich eröffnet",
+        "link": "https://de.wikipedia.org/wiki/Sueskanal"
+      }
+    ],
+    "05-16": [
+      {
+        "year": 1966,
+        "text": "Mao Zedong startet die Kulturrevolution in China",
+        "link": "https://de.wikipedia.org/wiki/Kulturrevolution"
+      }
+    ],
+    "05-17": [
+      {
+        "year": 1954,
+        "text": "US-Supreme-Court erklärt Rassentrennung in Schulen für verfassungswidrig",
+        "link": "https://de.wikipedia.org/wiki/Brown_v._Board_of_Education"
+      }
+    ],
+    "05-18": [
+      {
+        "year": 1980,
+        "text": "Der Vulkan Mount St. Helens in Washington bricht aus",
+        "link": "https://de.wikipedia.org/wiki/Mount_St._Helens"
+      }
+    ],
+    "05-19": [
+      {
+        "year": 1536,
+        "text": "Anne Boleyn, zweite Ehefrau Heinrichs VIII., wird im Tower enthauptet",
+        "link": "https://de.wikipedia.org/wiki/Anne_Boleyn"
+      }
+    ],
+    "05-20": [
+      {
+        "year": 1927,
+        "text": "Charles Lindbergh landet in Paris nach dem ersten Transatlantik-Soloflug",
+        "link": "https://de.wikipedia.org/wiki/Charles_Lindbergh"
+      }
+    ],
+    "05-21": [
+      {
+        "year": 1904,
+        "text": "Der Weltfußballverband FIFA wird in Paris gegründet",
+        "link": "https://de.wikipedia.org/wiki/FIFA"
+      }
+    ],
+    "05-22": [
+      {
+        "year": 1843,
+        "text": "Über 1.000 Siedler brechen zum Oregon Trail auf – größte Pionierreise in die USA",
+        "link": "https://de.wikipedia.org/wiki/Oregon_Trail"
+      }
+    ],
+    "05-23": [
+      {
+        "year": 1618,
+        "text": "Prager Fenstersturz – Auslöser des Dreißigjährigen Krieges",
+        "link": "https://de.wikipedia.org/wiki/Prager_Fenstersturz"
+      }
+    ],
+    "05-24": [
+      {
+        "year": 1844,
+        "text": "Samuel Morse sendet die erste Telegrafen-Nachricht 'What hath God wrought'",
+        "link": "https://de.wikipedia.org/wiki/Morsezeichen"
+      }
+    ],
+    "05-25": [
+      {
+        "year": 1977,
+        "text": "George Lucas' Star Wars kommt in die Kinos und revolutioniert den Film",
+        "link": "https://de.wikipedia.org/wiki/Krieg_der_Sterne"
+      }
+    ],
+    "05-26": [
+      {
+        "year": 735,
+        "text": "Beda Venerabilis, bedeutendster Gelehrter des Frühmittelalters, stirbt",
+        "link": "https://de.wikipedia.org/wiki/Beda_Venerabilis"
+      }
+    ],
+    "05-27": [
+      {
+        "year": 1703,
+        "text": "Zar Peter der Große gründet St. Petersburg als 'Fenster nach Europa'",
+        "link": "https://de.wikipedia.org/wiki/Sankt_Petersburg"
+      }
+    ],
+    "05-28": [
+      {
+        "year": 1961,
+        "text": "Amnesty International wird in London von Peter Benenson gegründet",
+        "link": "https://de.wikipedia.org/wiki/Amnesty_International"
+      }
+    ],
+    "05-29": [
+      {
+        "year": 1953,
+        "text": "Edmund Hillary und Tenzing Norgay besteigen den Mount Everest",
+        "link": "https://de.wikipedia.org/wiki/Mount_Everest"
+      }
+    ],
+    "05-30": [
+      {
+        "year": 1431,
+        "text": "Jeanne d'Arc wird in Rouen als Ketzerin auf dem Scheiterhaufen verbrannt",
+        "link": "https://de.wikipedia.org/wiki/Jeanne_d'Arc"
+      }
+    ],
+    "05-31": [
+      {
+        "year": 1921,
+        "text": "Das Massaker von Tulsa – rassistische Ausschreitungen vernichten ein ganzes Stadtviertel",
+        "link": "https://de.wikipedia.org/wiki/Massaker_von_Tulsa_1921"
+      }
+    ],
+    "06-01": [
+      {
+        "year": 1495,
+        "text": "Erste urkundliche Erwähnung von Whisky – ein Mönch destilliert in Schottland",
+        "link": "https://de.wikipedia.org/wiki/Whisky"
+      }
+    ],
+    "06-02": [
+      {
+        "year": 1953,
+        "text": "Die Krönung von Königin Elizabeth II. wird erstmals live im Fernsehen übertragen",
+        "link": "https://de.wikipedia.org/wiki/Krönung_Elisabeths_II."
+      }
+    ],
+    "06-03": [
+      {
+        "year": 1989,
+        "text": "Chinesisches Militär erschlägt die Demokratiebewegung auf dem Tiananmen-Platz",
+        "link": "https://de.wikipedia.org/wiki/Tian'anmen-Massaker"
+      }
+    ],
+    "06-04": [
+      {
+        "year": 1989,
+        "text": "Wahlen in Polen – Solidarność gewinnt überwältigend und leitet das Ende des Ostblocks ein",
+        "link": "https://de.wikipedia.org/wiki/Polnische_Parlamentswahl_1989"
+      }
+    ],
+    "06-05": [
+      {
+        "year": 1783,
+        "text": "Montgolfier-Brüder demonstrieren erstmals ihren Heißluftballon öffentlich",
+        "link": "https://de.wikipedia.org/wiki/Montgolfier"
+      }
+    ],
     "06-06": [
       {
         "year": 1944,
@@ -63,16 +1106,478 @@
         "link": "https://de.wikipedia.org/wiki/Operation_Overlord"
       }
     ],
-    "07-20": [
+    "06-07": [
+      {
+        "year": 1099,
+        "text": "Kreuzritter des Ersten Kreuzzugs erreichen Jerusalem",
+        "link": "https://de.wikipedia.org/wiki/Erster_Kreuzzug"
+      }
+    ],
+    "06-08": [
+      {
+        "year": 793,
+        "text": "Wikinger überfallen das Kloster Lindisfarne – Beginn der Wikingerzeit in Europa",
+        "link": "https://de.wikipedia.org/wiki/Wikinger"
+      }
+    ],
+    "06-09": [
+      {
+        "year": 1934,
+        "text": "Donald Duck erscheint zum ersten Mal in einem Disney-Zeichentrickfilm",
+        "link": "https://de.wikipedia.org/wiki/Donald_Duck"
+      }
+    ],
+    "06-10": [
+      {
+        "year": 1935,
+        "text": "Anonyme Alkoholiker (AA) werden in Ohio gegründet",
+        "link": "https://de.wikipedia.org/wiki/Anonyme_Alkoholiker"
+      }
+    ],
+    "06-11": [
+      {
+        "year": 1509,
+        "text": "Heinrich VIII. von England heiratet Katharina von Aragon, seine erste Frau",
+        "link": "https://de.wikipedia.org/wiki/Heinrich_VIII._(England)"
+      }
+    ],
+    "06-12": [
+      {
+        "year": 1987,
+        "text": "Reagan fordert Gorbatschow: 'Tear down this wall!' vor dem Brandenburger Tor",
+        "link": "https://de.wikipedia.org/wiki/Ronald_Reagan"
+      }
+    ],
+    "06-13": [
+      {
+        "year": 1944,
+        "text": "Erste V1-Rakete trifft London – Beginn der deutschen Vergeltungswaffen-Angriffe",
+        "link": "https://de.wikipedia.org/wiki/V1_(Rakete)"
+      }
+    ],
+    "06-14": [
+      {
+        "year": 1940,
+        "text": "Deutsche Truppen marschieren in Paris ein – Frankreich kapituliert",
+        "link": "https://de.wikipedia.org/wiki/Fall_Frankreichs"
+      }
+    ],
+    "06-15": [
+      {
+        "year": 1215,
+        "text": "König Johann Ohneland unterzeichnet die Magna Carta – Grundstein europäischer Rechte",
+        "link": "https://de.wikipedia.org/wiki/Magna_Carta"
+      }
+    ],
+    "06-16": [
+      {
+        "year": 1963,
+        "text": "Valentina Tereshkova wird als erste Frau in den Weltraum geschickt",
+        "link": "https://de.wikipedia.org/wiki/Walentina_Tereschkowa"
+      }
+    ],
+    "06-17": [
+      {
+        "year": 1953,
+        "text": "Volksaufstand in der DDR wird von sowjetischen Truppen niedergeschlagen",
+        "link": "https://de.wikipedia.org/wiki/Aufstand_vom_17._Juni_1953"
+      }
+    ],
+    "06-18": [
+      {
+        "year": 1815,
+        "text": "Napoleon wird in der Schlach bei Waterloo endgültig geschlagen",
+        "link": "https://de.wikipedia.org/wiki/Völkerschlacht_bei_Waterloo"
+      }
+    ],
+    "06-19": [
+      {
+        "year": 1865,
+        "text": "Versklavte Menschen in Texas erfahren von der Abschaffung der Sklaverei – Juneteenth",
+        "link": "https://de.wikipedia.org/wiki/Juneteenth"
+      }
+    ],
+    "06-20": [
+      {
+        "year": 1837,
+        "text": "Die 18-jährige Victoria wird zur Königin des Vereinigten Königreichs",
+        "link": "https://de.wikipedia.org/wiki/Victoria_(Königin)"
+      }
+    ],
+    "06-21": [
+      {
+        "year": 1788,
+        "text": "New Hampshire ratifiziert als neunter Staat die US-Verfassung – sie tritt in Kraft",
+        "link": "https://de.wikipedia.org/wiki/Verfassung_der_Vereinigten_Staaten"
+      }
+    ],
+    "06-22": [
+      {
+        "year": 1633,
+        "text": "Galileo Galilei widerruft seine Erkenntnisse vor der Inquisition",
+        "link": "https://de.wikipedia.org/wiki/Galileo-Affäre"
+      }
+    ],
+    "06-23": [
+      {
+        "year": 1985,
+        "text": "Bombenanschlag auf Air India Flug 182 – 329 Tote, bis dahin größte Terrorattacke im Flug",
+        "link": "https://de.wikipedia.org/wiki/Air-India-Flug_182"
+      }
+    ],
+    "06-24": [
+      {
+        "year": 1947,
+        "text": "Pilot Kenneth Arnold sieht angeblich neun 'fliegende Untertassen' in Washington",
+        "link": "https://de.wikipedia.org/wiki/Unbekanntes_Flugobjekt"
+      }
+    ],
+    "06-25": [
+      {
+        "year": 1950,
+        "text": "Beginn des Koreakrieges",
+        "link": "https://de.wikipedia.org/wiki/Koreakrieg"
+      }
+    ],
+    "06-26": [
+      {
+        "year": 1945,
+        "text": "UN-Charta wird in San Francisco von 50 Nationen unterzeichnet",
+        "link": "https://de.wikipedia.org/wiki/Charta_der_Vereinten_Nationen"
+      }
+    ],
+    "06-27": [
+      {
+        "year": 1905,
+        "text": "Die Besatzung des Panzerkreuzers Potemkin meutert gegen die zaristische Marine",
+        "link": "https://de.wikipedia.org/wiki/Panzerkreuzer_Potemkin"
+      }
+    ],
+    "06-28": [
+      {
+        "year": 1914,
+        "text": "Attentat auf Erzherzog Franz Ferdinand in Sarajevo",
+        "link": "https://de.wikipedia.org/wiki/Attentat_von_Sarajevo"
+      }
+    ],
+    "06-29": [
+      {
+        "year": 2007,
+        "text": "Apple bringt das erste iPhone in den USA auf den Markt",
+        "link": "https://de.wikipedia.org/wiki/IPhone"
+      }
+    ],
+    "06-30": [
+      {
+        "year": 1908,
+        "text": "Ein Meteor oder Komet explodiert über Sibirien – Tunguska-Ereignis",
+        "link": "https://de.wikipedia.org/wiki/Tunguska-Ereignis"
+      }
+    ],
+    "07-01": [
+      {
+        "year": 1867,
+        "text": "Kanada wird nach dem British North America Act unabhängig – Canada Day",
+        "link": "https://de.wikipedia.org/wiki/Canada_Day"
+      }
+    ],
+    "07-02": [
+      {
+        "year": 1897,
+        "text": "Guglielmo Marconi erhält Patent auf kabellose Telegrafie",
+        "link": "https://de.wikipedia.org/wiki/Guglielmo_Marconi"
+      }
+    ],
+    "07-03": [
+      {
+        "year": 1940,
+        "text": "Die britische Marine zerstört die französische Flotte in Mers-el-Kébir",
+        "link": "https://de.wikipedia.org/wiki/Mers-el-Kébir"
+      }
+    ],
+    "07-04": [
+      {
+        "year": 1776,
+        "text": "Die Vereinigten Staaten erklären ihre Unabhängigkeit",
+        "link": "https://de.wikipedia.org/wiki/Unabh%C3%A4ngigkeitserkl%C3%A4rung_der_Vereinigten_Staaten"
+      }
+    ],
+    "07-05": [
+      {
+        "year": 1687,
+        "text": "Isaac Newton veröffentlicht die Principia Mathematica – Grundlage der klassischen Physik",
+        "link": "https://de.wikipedia.org/wiki/Philosophiae_Naturalis_Principia_Mathematica"
+      }
+    ],
+    "07-06": [
+      {
+        "year": 1885,
+        "text": "Louis Pasteur impft erstmals einen Menschen gegen Tollwut",
+        "link": "https://de.wikipedia.org/wiki/Louis_Pasteur"
+      }
+    ],
+    "07-07": [
+      {
+        "year": 1937,
+        "text": "Die Marco-Polo-Brücke-Zwischenfall löst den Zweiten Sino-Japanischen Krieg aus",
+        "link": "https://de.wikipedia.org/wiki/Zweiter_Japanisch-Chinesischer_Krieg"
+      }
+    ],
+    "07-08": [
+      {
+        "year": 1497,
+        "text": "Vasco da Gama bricht von Lissabon zu seiner Reise nach Indien auf",
+        "link": "https://de.wikipedia.org/wiki/Vasco_da_Gama"
+      }
+    ],
+    "07-09": [
+      {
+        "year": 1816,
+        "text": "Argentinien erklärt seine Unabhängigkeit von Spanien",
+        "link": "https://de.wikipedia.org/wiki/Argentinien"
+      }
+    ],
+    "07-10": [
+      {
+        "year": 1856,
+        "text": "Nikola Tesla wird in Smiljan (heute Kroatien) geboren",
+        "link": "https://de.wikipedia.org/wiki/Nikola_Tesla"
+      }
+    ],
+    "07-11": [
+      {
+        "year": 1804,
+        "text": "Aaron Burr erschießt Alexander Hamilton im Duell – Ende einer Gründerväter-Rivalität",
+        "link": "https://de.wikipedia.org/wiki/Aaron_Burr"
+      }
+    ],
+    "07-12": [
+      {
+        "year": 1543,
+        "text": "Heinrich VIII. heiratet seine sechste und letzte Frau Catherine Parr",
+        "link": "https://de.wikipedia.org/wiki/Heinrich_VIII._(England)"
+      }
+    ],
+    "07-13": [
+      {
+        "year": 1985,
+        "text": "Das Live-Aid-Konzert in London und Philadelphia sammelt Millionen für Äthiopien",
+        "link": "https://de.wikipedia.org/wiki/Live_Aid"
+      }
+    ],
+    "07-14": [
+      {
+        "year": 1789,
+        "text": "Sturm auf die Bastille – Beginn der Französischen Revolution",
+        "link": "https://de.wikipedia.org/wiki/Sturm_auf_die_Bastille"
+      }
+    ],
+    "07-15": [
+      {
+        "year": 1606,
+        "text": "Rembrandt van Rijn wird in Leiden geboren",
+        "link": "https://de.wikipedia.org/wiki/Rembrandt_van_Rijn"
+      }
+    ],
+    "07-16": [
+      {
+        "year": 1945,
+        "text": "Erster Atomwaffentest der Geschichte in der Wüste New Mexikos (Trinity-Test)",
+        "link": "https://de.wikipedia.org/wiki/Trinity-Test"
+      }
+    ],
+    "07-17": [
+      {
+        "year": 1955,
+        "text": "Disneyland öffnet in Anaheim, Kalifornien – Walt Disneys Traumpark",
+        "link": "https://de.wikipedia.org/wiki/Disneyland"
+      }
+    ],
+    "07-18": [
+      {
+        "year": 64,
+        "text": "Großer Brand von Rom – Nero soll dabei Geige gespielt haben",
+        "link": "https://de.wikipedia.org/wiki/Großer_Brand_von_Rom"
+      }
+    ],
+    "07-19": [
       {
         "year": 1969,
-        "text": "Erste Mondlandung: Apollo 11 mit Neil Armstrong und Buzz Aldrin",
+        "text": "Neil Armstrong betritt den Mond – 'Ein kleiner Schritt für einen Menschen'",
         "link": "https://de.wikipedia.org/wiki/Apollo_11"
-      },
+      }
+    ],
+    "07-20": [
       {
         "year": 1944,
         "text": "Attentat auf Hitler durch Claus Schenk Graf von Stauffenberg",
         "link": "https://de.wikipedia.org/wiki/Attentat_vom_20._Juli_1944"
+      },
+      {
+        "year": 1969,
+        "text": "Erste Mondlandung: Apollo 11 mit Neil Armstrong und Buzz Aldrin",
+        "link": "https://de.wikipedia.org/wiki/Apollo_11"
+      }
+    ],
+    "07-21": [
+      {
+        "year": 1873,
+        "text": "Jesse James verübt seinen ersten Eisenbahnüberfall",
+        "link": "https://de.wikipedia.org/wiki/Jesse_James"
+      }
+    ],
+    "07-22": [
+      {
+        "year": 2011,
+        "text": "Rechtsextremer Terrorist tötet 77 Menschen in Oslo und auf der Insel Utøya",
+        "link": "https://de.wikipedia.org/wiki/Terroranschläge_in_Norwegen_2011"
+      }
+    ],
+    "07-23": [
+      {
+        "year": 1952,
+        "text": "Die Ägyptische Revolution bringt das Ende der Monarchie",
+        "link": "https://de.wikipedia.org/wiki/Ägyptische_Revolution_1952"
+      }
+    ],
+    "07-24": [
+      {
+        "year": 1847,
+        "text": "Brigham Young gründet Salt Lake City als Mormonensiedlung in Utah",
+        "link": "https://de.wikipedia.org/wiki/Brigham_Young"
+      }
+    ],
+    "07-25": [
+      {
+        "year": 1978,
+        "text": "Louise Brown wird als erstes Retortenbaby der Geschichte in England geboren",
+        "link": "https://de.wikipedia.org/wiki/In-vitro-Fertilisation"
+      }
+    ],
+    "07-26": [
+      {
+        "year": 1945,
+        "text": "Potsdamer Abkommen beginnt – Alliierte teilen Nachkriegs-Deutschland auf",
+        "link": "https://de.wikipedia.org/wiki/Potsdamer_Konferenz"
+      }
+    ],
+    "07-27": [
+      {
+        "year": 1953,
+        "text": "Waffenstillstand beendet den Koreakrieg – Korea bleibt geteilt",
+        "link": "https://de.wikipedia.org/wiki/Koreakrieg"
+      }
+    ],
+    "07-28": [
+      {
+        "year": 1750,
+        "text": "Johann Sebastian Bach stirbt in Leipzig",
+        "link": "https://de.wikipedia.org/wiki/Johann_Sebastian_Bach"
+      }
+    ],
+    "07-29": [
+      {
+        "year": 1830,
+        "text": "Die Julirevolution stürzt Karl X. und bringt Louis-Philippe an die Macht in Frankreich",
+        "link": "https://de.wikipedia.org/wiki/Julirevolution"
+      }
+    ],
+    "07-30": [
+      {
+        "year": 1930,
+        "text": "Uruguay gewinnt die erste FIFA-Fußball-Weltmeisterschaft im eigenen Land",
+        "link": "https://de.wikipedia.org/wiki/Fußball-Weltmeisterschaft_1930"
+      }
+    ],
+    "07-31": [
+      {
+        "year": 1969,
+        "text": "Mariner 6 fliegt nahe an Mars vorbei und sendet erste hochauflösende Bilder",
+        "link": "https://de.wikipedia.org/wiki/Mariner_6"
+      }
+    ],
+    "08-01": [
+      {
+        "year": 1291,
+        "text": "Drei Schweizer Urkantone schließen den Rütlischwur – Geburtsstunde der Schweiz",
+        "link": "https://de.wikipedia.org/wiki/Bundesbrief"
+      }
+    ],
+    "08-02": [
+      {
+        "year": 1990,
+        "text": "Irak marschiert in Kuwait ein – Auslöser des zweiten Golfkrieges",
+        "link": "https://de.wikipedia.org/wiki/Invasion_Kuwaits"
+      }
+    ],
+    "08-03": [
+      {
+        "year": 1492,
+        "text": "Christoph Kolumbus bricht mit drei Schiffen von Palos de la Frontera auf",
+        "link": "https://de.wikipedia.org/wiki/Christoph_Kolumbus"
+      }
+    ],
+    "08-04": [
+      {
+        "year": 70,
+        "text": "Römische Legionen zerstören den Zweiten Tempel in Jerusalem",
+        "link": "https://de.wikipedia.org/wiki/Zerstörung_des_Tempels_in_Jerusalem"
+      }
+    ],
+    "08-05": [
+      {
+        "year": 1962,
+        "text": "Marilyn Monroe wird tot in ihrer Wohnung in Los Angeles aufgefunden",
+        "link": "https://de.wikipedia.org/wiki/Marilyn_Monroe"
+      }
+    ],
+    "08-06": [
+      {
+        "year": 1945,
+        "text": "Atombombe auf Hiroshima abgeworfen",
+        "link": "https://de.wikipedia.org/wiki/Atombombenabw%C3%BCrfe_auf_Hiroshima_und_Nagasaki"
+      }
+    ],
+    "08-07": [
+      {
+        "year": 1998,
+        "text": "Bombenanschläge auf US-Botschaften in Nairobi und Daressalam – über 200 Tote",
+        "link": "https://de.wikipedia.org/wiki/Bombenanschläge_auf_US-Botschaften_1998"
+      }
+    ],
+    "08-08": [
+      {
+        "year": 1963,
+        "text": "Der Große Postzugraub in England – 2,6 Millionen Pfund werden erbeutet",
+        "link": "https://de.wikipedia.org/wiki/Großer_Postzugraub"
+      }
+    ],
+    "08-09": [
+      {
+        "year": 1945,
+        "text": "Atombombe auf Nagasaki abgeworfen",
+        "link": "https://de.wikipedia.org/wiki/Atombombenabw%C3%BCrfe_auf_Hiroshima_und_Nagasaki"
+      }
+    ],
+    "08-10": [
+      {
+        "year": 1628,
+        "text": "Das schwedische Kriegsschiff Vasa versinkt auf seiner Jungfernfahrt",
+        "link": "https://de.wikipedia.org/wiki/Vasa_(Schiff)"
+      }
+    ],
+    "08-11": [
+      {
+        "year": -3114,
+        "text": "Beginn des Maya-Langzählkalenders",
+        "link": "https://de.wikipedia.org/wiki/Mayakalender"
+      }
+    ],
+    "08-12": [
+      {
+        "year": 1851,
+        "text": "Isaac Singer erhält das Patent für eine verbesserte Nähmaschine",
+        "link": "https://de.wikipedia.org/wiki/Nähmaschine"
       }
     ],
     "08-13": [
@@ -82,11 +1587,354 @@
         "link": "https://de.wikipedia.org/wiki/Berliner_Mauer"
       }
     ],
+    "08-14": [
+      {
+        "year": 1945,
+        "text": "Japan erklärt seine bedingungslose Kapitulation – Ende des Zweiten Weltkriegs im Pazifik",
+        "link": "https://de.wikipedia.org/wiki/Japanische_Kapitulation"
+      }
+    ],
+    "08-15": [
+      {
+        "year": 1914,
+        "text": "Panamakanal wird für den Schiffsverkehr geöffnet",
+        "link": "https://de.wikipedia.org/wiki/Panamakanal"
+      }
+    ],
+    "08-16": [
+      {
+        "year": 1977,
+        "text": "Elvis Presley stirbt mit 42 Jahren in Graceland – 'The King is dead'",
+        "link": "https://de.wikipedia.org/wiki/Elvis_Presley"
+      }
+    ],
+    "08-17": [
+      {
+        "year": 1969,
+        "text": "Das Woodstock-Festival endet nach vier Tagen mit 400.000 Besuchern",
+        "link": "https://de.wikipedia.org/wiki/Woodstock-Festival"
+      }
+    ],
+    "08-18": [
+      {
+        "year": 1587,
+        "text": "Virginia Dare wird als erstes englisches Kind in Amerika geboren",
+        "link": "https://de.wikipedia.org/wiki/Virginia_Dare"
+      }
+    ],
+    "08-19": [
+      {
+        "year": 1839,
+        "text": "Louis Daguerre präsentiert die Daguerreotypie – Geburt der Fotografie",
+        "link": "https://de.wikipedia.org/wiki/Daguerreotypie"
+      }
+    ],
+    "08-20": [
+      {
+        "year": 1858,
+        "text": "Darwin und Wallace stellen ihre Evolutionstheorie öffentlich vor",
+        "link": "https://de.wikipedia.org/wiki/Evolutionstheorie"
+      }
+    ],
+    "08-21": [
+      {
+        "year": 1831,
+        "text": "Nat Turner führt den bedeutendsten Sklavenaufstand in der US-Geschichte",
+        "link": "https://de.wikipedia.org/wiki/Nat_Turner"
+      }
+    ],
+    "08-22": [
+      {
+        "year": 1851,
+        "text": "Das Schiff America gewinnt die erste Segelregatta um die Isle of Wight",
+        "link": "https://de.wikipedia.org/wiki/America's_Cup"
+      }
+    ],
+    "08-23": [
+      {
+        "year": 1939,
+        "text": "Hitler und Stalin unterzeichnen den Nichtangriffspakt – Pakt des Schreckens",
+        "link": "https://de.wikipedia.org/wiki/Hitler-Stalin-Pakt"
+      }
+    ],
+    "08-24": [
+      {
+        "year": 79,
+        "text": "Vesuv bricht aus und begräbt Pompeji unter Asche und Lava",
+        "link": "https://de.wikipedia.org/wiki/Pompeji"
+      }
+    ],
+    "08-25": [
+      {
+        "year": 1944,
+        "text": "Paris wird von alliierten Truppen und französischem Widerstand befreit",
+        "link": "https://de.wikipedia.org/wiki/Befreiung_von_Paris"
+      }
+    ],
+    "08-26": [
+      {
+        "year": 1789,
+        "text": "Frankreichs Nationalversammlung verabschiedet die Erklärung der Menschenrechte",
+        "link": "https://de.wikipedia.org/wiki/Erklärung_der_Menschen-_und_Bürgerrechte"
+      }
+    ],
+    "08-27": [
+      {
+        "year": 1883,
+        "text": "Krakatau explodiert – stärkster Vulkanausbruch des 19. Jahrhunderts",
+        "link": "https://de.wikipedia.org/wiki/Krakatau"
+      }
+    ],
+    "08-28": [
+      {
+        "year": 1963,
+        "text": "Martin Luther King hält seine 'I have a dream'-Rede beim Marsch auf Washington",
+        "link": "https://de.wikipedia.org/wiki/Ich_habe_einen_Traum"
+      }
+    ],
+    "08-29": [
+      {
+        "year": 1831,
+        "text": "Michael Faraday entdeckt das Prinzip der elektromagnetischen Induktion",
+        "link": "https://de.wikipedia.org/wiki/Elektromagnetische_Induktion"
+      }
+    ],
+    "08-30": [
+      {
+        "year": 1901,
+        "text": "Hubert Cecil Booth erhält Patent auf den ersten elektrischen Staubsauger",
+        "link": "https://de.wikipedia.org/wiki/Staubsauger"
+      }
+    ],
+    "08-31": [
+      {
+        "year": 1997,
+        "text": "Prinzessin Diana stirbt nach einem Autounfall in einem Pariser Tunnel",
+        "link": "https://de.wikipedia.org/wiki/Diana_(Prinzessin_von_Wales)"
+      }
+    ],
+    "09-01": [
+      {
+        "year": 1939,
+        "text": "Deutschland überfällt Polen – Beginn des Zweiten Weltkrieges",
+        "link": "https://de.wikipedia.org/wiki/%C3%9Cberfall_auf_Polen"
+      }
+    ],
+    "09-02": [
+      {
+        "year": 1666,
+        "text": "Großer Brand von London – die mittelalterliche Stadt brennt drei Tage lang",
+        "link": "https://de.wikipedia.org/wiki/Großer_Brand_von_London"
+      }
+    ],
+    "09-03": [
+      {
+        "year": 1939,
+        "text": "Großbritannien und Frankreich erklären Deutschland den Krieg",
+        "link": "https://de.wikipedia.org/wiki/Zweiter_Weltkrieg"
+      }
+    ],
+    "09-04": [
+      {
+        "year": 1781,
+        "text": "Spanische Missionare gründen das heutige Los Angeles",
+        "link": "https://de.wikipedia.org/wiki/Los_Angeles"
+      }
+    ],
+    "09-05": [
+      {
+        "year": 1972,
+        "text": "Palästinensische Terroristen nehmen israelische Athleten bei Olympia in München als Geiseln",
+        "link": "https://de.wikipedia.org/wiki/Olympia-Attentat_1972"
+      }
+    ],
+    "09-06": [
+      {
+        "year": 1522,
+        "text": "Magellan-Expeditions-Schiff Victoria kehrt heim – erste Weltumsegelung",
+        "link": "https://de.wikipedia.org/wiki/Ferdinand_Magellan"
+      }
+    ],
+    "09-07": [
+      {
+        "year": 1940,
+        "text": "Beginn des deutschen Bombenblitz auf London – 57 Nächte Bombardierung",
+        "link": "https://de.wikipedia.org/wiki/The_Blitz"
+      }
+    ],
+    "09-08": [
+      {
+        "year": 1504,
+        "text": "Michelangelos David wird auf der Piazza della Signoria in Florenz enthüllt",
+        "link": "https://de.wikipedia.org/wiki/David_(Michelangelo)"
+      }
+    ],
+    "09-09": [
+      {
+        "year": 1776,
+        "text": "Das Zweite Kontinentalkongress benennt die neue Nation offiziell 'United States of America'",
+        "link": "https://de.wikipedia.org/wiki/Vereinigte_Staaten"
+      }
+    ],
+    "09-10": [
+      {
+        "year": 1846,
+        "text": "Elias Howe erhält Patent auf seine verbesserte Nähmaschine",
+        "link": "https://de.wikipedia.org/wiki/Nähmaschine"
+      }
+    ],
     "09-11": [
       {
         "year": 2001,
         "text": "Terroranschläge in New York und Washington",
         "link": "https://de.wikipedia.org/wiki/Terroranschl%C3%A4ge_am_11._September_2001"
+      }
+    ],
+    "09-12": [
+      {
+        "year": 1962,
+        "text": "JFK hält seine Mondrede 'We choose to go to the Moon' in Houston",
+        "link": "https://de.wikipedia.org/wiki/Mondprogramm"
+      }
+    ],
+    "09-13": [
+      {
+        "year": 1759,
+        "text": "In der Québec-Entscheidungsschlacht entscheidet sich das Schicksal Kanadas",
+        "link": "https://de.wikipedia.org/wiki/Québec"
+      }
+    ],
+    "09-14": [
+      {
+        "year": 1812,
+        "text": "Napoleons Armee erreicht Moskau – die Stadt steht in Flammen",
+        "link": "https://de.wikipedia.org/wiki/Russlandfeldzug_1812"
+      }
+    ],
+    "09-15": [
+      {
+        "year": 1935,
+        "text": "Nürnberger Rassengesetze werden auf dem NSDAP-Parteitag verkündet",
+        "link": "https://de.wikipedia.org/wiki/Nürnberger_Gesetze"
+      }
+    ],
+    "09-16": [
+      {
+        "year": 1620,
+        "text": "Das Schiff Mayflower bricht mit 102 Pilgervätern nach Amerika auf",
+        "link": "https://de.wikipedia.org/wiki/Mayflower"
+      }
+    ],
+    "09-17": [
+      {
+        "year": 1787,
+        "text": "Die Verfassung der Vereinigten Staaten wird in Philadelphia unterzeichnet",
+        "link": "https://de.wikipedia.org/wiki/Verfassung_der_Vereinigten_Staaten"
+      }
+    ],
+    "09-18": [
+      {
+        "year": 1851,
+        "text": "Die erste Ausgabe der New York Times erscheint als 'New York Daily Times'",
+        "link": "https://de.wikipedia.org/wiki/The_New_York_Times"
+      }
+    ],
+    "09-19": [
+      {
+        "year": 1783,
+        "text": "Erste bemannte Ballonfahrt mit Tieren (Schaf, Ente, Hahn) vor König Ludwig XVI.",
+        "link": "https://de.wikipedia.org/wiki/Montgolfier"
+      }
+    ],
+    "09-20": [
+      {
+        "year": 1519,
+        "text": "Ferdinand Magellan bricht zur ersten Weltumsegelung auf",
+        "link": "https://de.wikipedia.org/wiki/Weltumsegelung"
+      }
+    ],
+    "09-21": [
+      {
+        "year": 1937,
+        "text": "J.R.R. Tolkiens 'Der Hobbit' wird veröffentlicht",
+        "link": "https://de.wikipedia.org/wiki/Der_Hobbit"
+      }
+    ],
+    "09-22": [
+      {
+        "year": 1792,
+        "text": "Die Erste Französische Republik wird ausgerufen",
+        "link": "https://de.wikipedia.org/wiki/Erste_Französische_Republik"
+      }
+    ],
+    "09-23": [
+      {
+        "year": 1846,
+        "text": "Johann Gottfried Galle entdeckt den Planeten Neptun",
+        "link": "https://de.wikipedia.org/wiki/Neptun_(Planet)"
+      }
+    ],
+    "09-24": [
+      {
+        "year": 1789,
+        "text": "US-Supreme-Court nimmt zum ersten Mal seine Arbeit auf",
+        "link": "https://de.wikipedia.org/wiki/Supreme_Court"
+      }
+    ],
+    "09-25": [
+      {
+        "year": 1513,
+        "text": "Vasco Núñez de Balboa überquert den Isthmus von Panama und entdeckt den Pazifik",
+        "link": "https://de.wikipedia.org/wiki/Vasco_Núñez_de_Balboa"
+      }
+    ],
+    "09-26": [
+      {
+        "year": 1960,
+        "text": "Erste TV-Debatte zwischen Kennedy und Nixon",
+        "link": "https://de.wikipedia.org/wiki/Kennedy-Nixon-Debatten"
+      }
+    ],
+    "09-27": [
+      {
+        "year": 1825,
+        "text": "Die erste öffentlich genutzte Dampflokomotive nimmt ihren Betrieb auf",
+        "link": "https://de.wikipedia.org/wiki/Dampflokomotive"
+      }
+    ],
+    "09-28": [
+      {
+        "year": -551,
+        "text": "Geburtstag von Konfuzius – Begründer des Konfuzianismus",
+        "link": "https://de.wikipedia.org/wiki/Konfuzius"
+      }
+    ],
+    "09-29": [
+      {
+        "year": 1829,
+        "text": "Metropolitan Police in London gegründet – erste moderne Polizeibehörde der Welt",
+        "link": "https://de.wikipedia.org/wiki/Metropolitan_Police"
+      }
+    ],
+    "09-30": [
+      {
+        "year": 1955,
+        "text": "James Dean stirbt mit 24 Jahren bei einem Autounfall in Kalifornien",
+        "link": "https://de.wikipedia.org/wiki/James_Dean"
+      }
+    ],
+    "10-01": [
+      {
+        "year": 1946,
+        "text": "Nürnberger Urteil – zwölf NS-Hauptkriegsverbrecher werden zum Tod verurteilt",
+        "link": "https://de.wikipedia.org/wiki/Nürnberger_Prozesse"
+      }
+    ],
+    "10-02": [
+      {
+        "year": 1869,
+        "text": "Mahatma Gandhi wird in Porbandar, Indien, geboren",
+        "link": "https://de.wikipedia.org/wiki/Mohandas_Karamchand_Gandhi"
       }
     ],
     "10-03": [
@@ -96,16 +1944,583 @@
         "link": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung"
       }
     ],
-    "11-09": [
+    "10-04": [
       {
-        "year": 1989,
-        "text": "Fall der Berliner Mauer",
-        "link": "https://de.wikipedia.org/wiki/Mauerfall"
-      },
+        "year": 1957,
+        "text": "Sputnik 1 startet – Beginn des Weltraumzeitalters",
+        "link": "https://de.wikipedia.org/wiki/Sputnik_1"
+      }
+    ],
+    "10-05": [
+      {
+        "year": 1930,
+        "text": "Erster tödlicher Luftschiffunfall: R101 stürzt in Frankreich ab",
+        "link": "https://de.wikipedia.org/wiki/R101"
+      }
+    ],
+    "10-06": [
+      {
+        "year": 1927,
+        "text": "Mit 'The Jazz Singer' startet das Zeitalter des Tonfilms",
+        "link": "https://de.wikipedia.org/wiki/Tonfilm"
+      }
+    ],
+    "10-07": [
+      {
+        "year": 1571,
+        "text": "Christliche Flotte besiegt das Osmanische Reich in der Seeschlacht von Lepanto",
+        "link": "https://de.wikipedia.org/wiki/Seeschlacht_von_Lepanto"
+      }
+    ],
+    "10-08": [
+      {
+        "year": 1871,
+        "text": "Großer Brand von Chicago – die Stadt brennt drei Tage lang",
+        "link": "https://de.wikipedia.org/wiki/Großer_Brand_von_Chicago"
+      }
+    ],
+    "10-09": [
+      {
+        "year": 1967,
+        "text": "Che Guevara wird in Bolivien erschossen",
+        "link": "https://de.wikipedia.org/wiki/Che_Guevara"
+      }
+    ],
+    "10-10": [
+      {
+        "year": 732,
+        "text": "Karl Martell siegt bei Poitiers und stoppt die arabische Expansion in Europa",
+        "link": "https://de.wikipedia.org/wiki/Völkerschlacht_bei_Tours_und_Poitiers"
+      }
+    ],
+    "10-11": [
+      {
+        "year": 1975,
+        "text": "Saturday Night Live feiert Premiere im amerikanischen Fernsehen",
+        "link": "https://de.wikipedia.org/wiki/Saturday_Night_Live"
+      }
+    ],
+    "10-12": [
+      {
+        "year": 1492,
+        "text": "Christoph Kolumbus erreicht Amerika",
+        "link": "https://de.wikipedia.org/wiki/Entdeckung_Amerikas"
+      }
+    ],
+    "10-13": [
+      {
+        "year": 1307,
+        "text": "König Philipp IV. lässt alle Tempelritter Frankreichs verhaften",
+        "link": "https://de.wikipedia.org/wiki/Templerorden"
+      }
+    ],
+    "10-14": [
+      {
+        "year": 1066,
+        "text": "Wilhelm der Eroberer besiegt Harold II. in der Schlacht von Hastings",
+        "link": "https://de.wikipedia.org/wiki/Normannische_Eroberung_Englands"
+      }
+    ],
+    "10-15": [
+      {
+        "year": 533,
+        "text": "Belisarius besiegt die Vandalen und beendet das Vandalenreich in Nordafrika",
+        "link": "https://de.wikipedia.org/wiki/Belisarius"
+      }
+    ],
+    "10-16": [
+      {
+        "year": 1793,
+        "text": "Marie Antoinette, Königin von Frankreich, wird guillotiniert",
+        "link": "https://de.wikipedia.org/wiki/Marie_Antoinette"
+      }
+    ],
+    "10-17": [
+      {
+        "year": 1956,
+        "text": "Erstes kommerzielles Atomkraftwerk der Welt nimmt in England Betrieb auf",
+        "link": "https://de.wikipedia.org/wiki/Kernkraftwerk_Calder_Hall"
+      }
+    ],
+    "10-18": [
+      {
+        "year": 1867,
+        "text": "USA übernehmen Alaska – die russische Flagge wird gesenkt",
+        "link": "https://de.wikipedia.org/wiki/Alaska-Kauf"
+      }
+    ],
+    "10-19": [
+      {
+        "year": 1781,
+        "text": "General Cornwallis kapituliert bei Yorktown – Ende der Amerikanischen Revolution",
+        "link": "https://de.wikipedia.org/wiki/Amerikanische_Revolution"
+      }
+    ],
+    "10-20": [
+      {
+        "year": 1944,
+        "text": "General MacArthur kehrt auf die Philippinen zurück – 'I shall return' gehalten",
+        "link": "https://de.wikipedia.org/wiki/Douglas_MacArthur"
+      }
+    ],
+    "10-21": [
+      {
+        "year": 1879,
+        "text": "Thomas Edison führt erstmals erfolgreich eine Glühlampe vor",
+        "link": "https://de.wikipedia.org/wiki/Glühlampe"
+      }
+    ],
+    "10-22": [
+      {
+        "year": 1962,
+        "text": "Kennedy kündigt im TV die Kubakrise und Seeblockade an",
+        "link": "https://de.wikipedia.org/wiki/Kubakrise"
+      }
+    ],
+    "10-23": [
+      {
+        "year": -4004,
+        "text": "Bischof Ussher berechnet, dass die Welt an diesem Tag erschaffen wurde",
+        "link": "https://de.wikipedia.org/wiki/Schöpfungsgeschichte"
+      }
+    ],
+    "10-24": [
+      {
+        "year": 1929,
+        "text": "Schwarzer Freitag – Börsenpanik weitet sich zur globalen Krise aus",
+        "link": "https://de.wikipedia.org/wiki/Weltwirtschaftskrise"
+      }
+    ],
+    "10-25": [
+      {
+        "year": 1415,
+        "text": "Englisches Heer besiegt ein weit größeres französisches Heer bei Agincourt",
+        "link": "https://de.wikipedia.org/wiki/Schlachtbei_Azincourt"
+      }
+    ],
+    "10-26": [
+      {
+        "year": 1881,
+        "text": "Doc Holliday und die Earps kämpfen am O.K. Corral – legendärstes Duell des Wilden Westens",
+        "link": "https://de.wikipedia.org/wiki/Schießerei_am_O.K._Corral"
+      }
+    ],
+    "10-27": [
+      {
+        "year": 1904,
+        "text": "Die erste New Yorker Subway-Linie wird eröffnet",
+        "link": "https://de.wikipedia.org/wiki/New_York_City_Subway"
+      }
+    ],
+    "10-28": [
+      {
+        "year": 1886,
+        "text": "Die Freiheitsstatue wird auf Liberty Island in New York eingeweiht",
+        "link": "https://de.wikipedia.org/wiki/Freiheitsstatue"
+      }
+    ],
+    "10-29": [
+      {
+        "year": 1929,
+        "text": "Der Schwarze Donnerstag – Börsenkrach läutet die Weltwirtschaftskrise ein",
+        "link": "https://de.wikipedia.org/wiki/Weltwirtschaftskrise"
+      }
+    ],
+    "10-30": [
+      {
+        "year": 1938,
+        "text": "Orson Welles' Radiohörspiel 'Krieg der Welten' löst Massenpanik aus",
+        "link": "https://de.wikipedia.org/wiki/Orson_Welles"
+      }
+    ],
+    "10-31": [
+      {
+        "year": 1517,
+        "text": "Martin Luther schlägt seine 95 Thesen an die Tür der Schlosskirche in Wittenberg",
+        "link": "https://de.wikipedia.org/wiki/95_Thesen"
+      }
+    ],
+    "11-01": [
+      {
+        "year": 1755,
+        "text": "Das Erdbeben von Lissabon verwüstet die Stadt fast völlig",
+        "link": "https://de.wikipedia.org/wiki/Erdbeben_von_Lissabon_1755"
+      }
+    ],
+    "11-02": [
+      {
+        "year": 1889,
+        "text": "North und South Dakota werden gleichzeitig als 39. und 40. US-Bundesstaat aufgenommen",
+        "link": "https://de.wikipedia.org/wiki/South_Dakota"
+      }
+    ],
+    "11-03": [
+      {
+        "year": 1957,
+        "text": "Hündin Laika wird an Bord von Sputnik 2 ins All geschickt",
+        "link": "https://de.wikipedia.org/wiki/Laika_(Hund)"
+      }
+    ],
+    "11-04": [
+      {
+        "year": 1922,
+        "text": "Howard Carter entdeckt die Eingangstreppe zu Tutanchamuns Grab",
+        "link": "https://de.wikipedia.org/wiki/Tutanchamun"
+      }
+    ],
+    "11-05": [
+      {
+        "year": 1605,
+        "text": "Guy Fawkes und Komplizen wollen das englische Parlament in die Luft sprengen",
+        "link": "https://de.wikipedia.org/wiki/Günpulververschwörung"
+      }
+    ],
+    "11-06": [
+      {
+        "year": 1860,
+        "text": "Abraham Lincoln wird zum Präsidenten der USA gewählt",
+        "link": "https://de.wikipedia.org/wiki/Abraham_Lincoln"
+      }
+    ],
+    "11-07": [
+      {
+        "year": 1867,
+        "text": "Marie Curie wird in Warschau geboren",
+        "link": "https://de.wikipedia.org/wiki/Marie_Curie"
+      }
+    ],
+    "11-08": [
+      {
+        "year": 1895,
+        "text": "Wilhelm Conrad Röntgen entdeckt zufällig die Röntgenstrahlen",
+        "link": "https://de.wikipedia.org/wiki/Röntgenstrahlung"
+      }
+    ],
+    "11-09": [
       {
         "year": 1938,
         "text": "Reichspogromnacht",
         "link": "https://de.wikipedia.org/wiki/Novemberpogrome_1938"
+      },
+      {
+        "year": 1989,
+        "text": "Fall der Berliner Mauer",
+        "link": "https://de.wikipedia.org/wiki/Mauerfall"
+      }
+    ],
+    "11-10": [
+      {
+        "year": 1483,
+        "text": "Martin Luther wird in Eisleben geboren",
+        "link": "https://de.wikipedia.org/wiki/Martin_Luther"
+      }
+    ],
+    "11-11": [
+      {
+        "year": 1918,
+        "text": "Waffenstillstand beendet den Ersten Weltkrieg – um 11 Uhr des 11. November",
+        "link": "https://de.wikipedia.org/wiki/Waffenstillstand_von_Compiègne_(1918)"
+      }
+    ],
+    "11-12": [
+      {
+        "year": 1980,
+        "text": "Raumsonde Voyager 1 fliegt an Saturn vorbei und sendet spektakuläre Bilder",
+        "link": "https://de.wikipedia.org/wiki/Voyager_1"
+      }
+    ],
+    "11-13": [
+      {
+        "year": 1002,
+        "text": "Auf Befehl Æthelreds werden alle Dänen in England ermordet – St. Brice's Day Massacre",
+        "link": "https://de.wikipedia.org/wiki/St.-Brice's-Day-Massaker"
+      }
+    ],
+    "11-14": [
+      {
+        "year": 1851,
+        "text": "Herman Melvilles Romanepos 'Moby Dick' wird in New York veröffentlicht",
+        "link": "https://de.wikipedia.org/wiki/Moby_Dick"
+      }
+    ],
+    "11-15": [
+      {
+        "year": 1971,
+        "text": "Intel bringt mit dem 4004 den ersten kommerziellen Mikroprozessor auf den Markt",
+        "link": "https://de.wikipedia.org/wiki/Intel_4004"
+      }
+    ],
+    "11-16": [
+      {
+        "year": 1532,
+        "text": "Francisco Pizarro gefangen nimmt Inkaherrscher Atahualpa – Ende des Inkareichs",
+        "link": "https://de.wikipedia.org/wiki/Inka"
+      }
+    ],
+    "11-17": [
+      {
+        "year": 1869,
+        "text": "Suezkanal wird offiziell für den Schiffsverkehr eröffnet",
+        "link": "https://de.wikipedia.org/wiki/Sueskanal"
+      }
+    ],
+    "11-18": [
+      {
+        "year": 1928,
+        "text": "Micky Maus feiert mit dem Kurzfilm 'Steamboat Willie' Premiere",
+        "link": "https://de.wikipedia.org/wiki/Micky_Maus"
+      }
+    ],
+    "11-19": [
+      {
+        "year": 1863,
+        "text": "Lincoln hält die Gettysburg-Ansprache – kürzeste und bedeutendste Kriegsrede der USA",
+        "link": "https://de.wikipedia.org/wiki/Gettysburg-Ansprache"
+      }
+    ],
+    "11-20": [
+      {
+        "year": 1945,
+        "text": "Nürnberger Prozesse beginnen – erstmals werden Kriegsverbrecher international angeklagt",
+        "link": "https://de.wikipedia.org/wiki/Nürnberger_Prozesse"
+      }
+    ],
+    "11-21": [
+      {
+        "year": 1783,
+        "text": "Erste bemannte Ballonfahrt der Geschichte mit den Montgolfier-Brüdern in Paris",
+        "link": "https://de.wikipedia.org/wiki/Montgolfier"
+      }
+    ],
+    "11-22": [
+      {
+        "year": 1963,
+        "text": "John F. Kennedy wird in Dallas erschossen",
+        "link": "https://de.wikipedia.org/wiki/Attentat_auf_John_F._Kennedy"
+      }
+    ],
+    "11-23": [
+      {
+        "year": 1936,
+        "text": "Die erste Ausgabe des Magazins Life erscheint mit einem Foto der Golden Gate Bridge",
+        "link": "https://de.wikipedia.org/wiki/Life_(Magazin)"
+      }
+    ],
+    "11-24": [
+      {
+        "year": 1859,
+        "text": "Charles Darwin veröffentlicht 'Über die Entstehung der Arten'",
+        "link": "https://de.wikipedia.org/wiki/Über_die_Entstehung_der_Arten"
+      }
+    ],
+    "11-25": [
+      {
+        "year": 1952,
+        "text": "Agatha Christies 'The Mousetrap' feiert Premiere – läuft bis heute im West End",
+        "link": "https://de.wikipedia.org/wiki/The_Mousetrap"
+      }
+    ],
+    "11-26": [
+      {
+        "year": 1832,
+        "text": "Erste Straßenbahnlinie der Welt nimmt auf dem New Yorker Broadway den Betrieb auf",
+        "link": "https://de.wikipedia.org/wiki/Straßenbahn"
+      }
+    ],
+    "11-27": [
+      {
+        "year": 1095,
+        "text": "Papst Urban II. ruft in Clermont zum Ersten Kreuzzug auf",
+        "link": "https://de.wikipedia.org/wiki/Erster_Kreuzzug"
+      }
+    ],
+    "11-28": [
+      {
+        "year": 1520,
+        "text": "Magellan durchquert die Meerenge am Südende Südamerikas – die Magellanstraße",
+        "link": "https://de.wikipedia.org/wiki/Magellanstraße"
+      }
+    ],
+    "11-29": [
+      {
+        "year": 1929,
+        "text": "Richard Byrd überfliegt als erster Mensch den Südpol",
+        "link": "https://de.wikipedia.org/wiki/Richard_Byrd"
+      }
+    ],
+    "11-30": [
+      {
+        "year": 1939,
+        "text": "Die Sowjetunion greift Finnland an – Beginn des Winterkrieges",
+        "link": "https://de.wikipedia.org/wiki/Winterkrieg"
+      }
+    ],
+    "12-01": [
+      {
+        "year": 1955,
+        "text": "Rosa Parks weigert sich, ihren Sitzplatz im Bus für einen weißen Mann zu räumen",
+        "link": "https://de.wikipedia.org/wiki/Rosa_Parks"
+      }
+    ],
+    "12-02": [
+      {
+        "year": 1804,
+        "text": "Napoleon krönt sich selbst zum Kaiser der Franzosen in Notre-Dame",
+        "link": "https://de.wikipedia.org/wiki/Napoleons_Kaiserkrönung"
+      }
+    ],
+    "12-03": [
+      {
+        "year": 1984,
+        "text": "Giftgasunglück in Bhopal tötet tausende Menschen – schlimmste Industriekatastrophe",
+        "link": "https://de.wikipedia.org/wiki/Chemiekatastrophe_von_Bhopal"
+      }
+    ],
+    "12-04": [
+      {
+        "year": 771,
+        "text": "Karl der Große wird Alleinherrscher der Franken nach dem Tod seines Bruders",
+        "link": "https://de.wikipedia.org/wiki/Karl_der_Große"
+      }
+    ],
+    "12-05": [
+      {
+        "year": 1791,
+        "text": "Wolfgang Amadeus Mozart stirbt in Wien mit nur 35 Jahren",
+        "link": "https://de.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+      }
+    ],
+    "12-06": [
+      {
+        "year": 1240,
+        "text": "Mongolen zerstören Kiew – Ende des Kiewer Rus",
+        "link": "https://de.wikipedia.org/wiki/Kiewer_Rus"
+      }
+    ],
+    "12-07": [
+      {
+        "year": 1941,
+        "text": "Japanische Flugzeuge bombardieren Pearl Harbor – USA treten in den Zweiten Weltkrieg ein",
+        "link": "https://de.wikipedia.org/wiki/Angriff_auf_Pearl_Harbor"
+      }
+    ],
+    "12-08": [
+      {
+        "year": 1980,
+        "text": "John Lennon wird vor seinem Apartment in New York erschossen",
+        "link": "https://de.wikipedia.org/wiki/John_Lennon"
+      }
+    ],
+    "12-09": [
+      {
+        "year": 1979,
+        "text": "WHO erklärt Pocken für weltweit ausgerottet – größter medizinischer Triumph",
+        "link": "https://de.wikipedia.org/wiki/Pocken"
+      }
+    ],
+    "12-10": [
+      {
+        "year": 1901,
+        "text": "Erste Verleihung der Nobelpreise am Todestag von Alfred Nobel in Stockholm",
+        "link": "https://de.wikipedia.org/wiki/Nobelpreis"
+      }
+    ],
+    "12-11": [
+      {
+        "year": 1946,
+        "text": "UNICEF wird von der UN-Generalversammlung gegründet",
+        "link": "https://de.wikipedia.org/wiki/UNICEF"
+      }
+    ],
+    "12-12": [
+      {
+        "year": 1901,
+        "text": "Guglielmo Marconi empfängt das erste transatlantische Funksignal in Kanada",
+        "link": "https://de.wikipedia.org/wiki/Guglielmo_Marconi"
+      }
+    ],
+    "12-13": [
+      {
+        "year": 1937,
+        "text": "Japanische Truppen beginnen das Massaker von Nanking in China",
+        "link": "https://de.wikipedia.org/wiki/Massaker_von_Nanking"
+      }
+    ],
+    "12-14": [
+      {
+        "year": 1900,
+        "text": "Max Planck präsentiert seine Quantenhypothese – Geburtsstunde der Quantenphysik",
+        "link": "https://de.wikipedia.org/wiki/Quantenphysik"
+      }
+    ],
+    "12-15": [
+      {
+        "year": 1791,
+        "text": "Die ersten zehn Zusatzartikel zur US-Verfassung (Bill of Rights) treten in Kraft",
+        "link": "https://de.wikipedia.org/wiki/Bill_of_Rights_(Vereinigte_Staaten)"
+      }
+    ],
+    "12-16": [
+      {
+        "year": 1773,
+        "text": "Beim Boston Tea Party werfen Kolonisten britischen Tee ins Hafenwasser",
+        "link": "https://de.wikipedia.org/wiki/Boston_Tea_Party"
+      }
+    ],
+    "12-17": [
+      {
+        "year": 1903,
+        "text": "Gebrüder Wright: erster kontrollierter Motorflug der Geschichte",
+        "link": "https://de.wikipedia.org/wiki/Br%C3%BCder_Wright"
+      }
+    ],
+    "12-18": [
+      {
+        "year": 1865,
+        "text": "Der 13. Verfassungszusatz der USA schafft die Sklaverei offiziell ab",
+        "link": "https://de.wikipedia.org/wiki/13._Zusatzartikel_zur_Verfassung_der_Vereinigten_Staaten"
+      }
+    ],
+    "12-19": [
+      {
+        "year": 1843,
+        "text": "Charles Dickens veröffentlicht 'A Christmas Carol' – Erfindung des modernen Weihnachts",
+        "link": "https://de.wikipedia.org/wiki/A_Christmas_Carol"
+      }
+    ],
+    "12-20": [
+      {
+        "year": 1803,
+        "text": "Der Louisiana-Kauf wird endgültig in New Orleans abgeschlossen",
+        "link": "https://de.wikipedia.org/wiki/Louisiana-Kauf"
+      }
+    ],
+    "12-21": [
+      {
+        "year": 1988,
+        "text": "Lockerbie-Anschlag: Bombe zerstört Pan-Am-Flugzeug über Schottland – 270 Tote",
+        "link": "https://de.wikipedia.org/wiki/Lockerbie-Anschlag"
+      }
+    ],
+    "12-22": [
+      {
+        "year": 1944,
+        "text": "Im Kampf um Bastogne antwortet General McAuliffe auf die Kapitulationsforderung mit 'Nuts!'",
+        "link": "https://de.wikipedia.org/wiki/Ardennenoffensive"
+      }
+    ],
+    "12-23": [
+      {
+        "year": 1888,
+        "text": "Vincent van Gogh schneidet sich nach einem Streit mit Gauguin ein Ohr ab",
+        "link": "https://de.wikipedia.org/wiki/Vincent_van_Gogh"
+      }
+    ],
+    "12-24": [
+      {
+        "year": 1814,
+        "text": "Vertrag von Gent beendet den Britisch-Amerikanischen Krieg",
+        "link": "https://de.wikipedia.org/wiki/Vertrag_von_Gent"
       }
     ],
     "12-25": [
@@ -113,6 +2528,48 @@
         "year": 800,
         "text": "Karl der Große wird in Rom zum Kaiser gekrönt",
         "link": "https://de.wikipedia.org/wiki/Karl_der_Gro%C3%9Fe"
+      }
+    ],
+    "12-26": [
+      {
+        "year": 1898,
+        "text": "Marie und Pierre Curie entdecken das Element Radium",
+        "link": "https://de.wikipedia.org/wiki/Radium"
+      }
+    ],
+    "12-27": [
+      {
+        "year": 1822,
+        "text": "Louis Pasteur wird in Dole, Frankreich, geboren",
+        "link": "https://de.wikipedia.org/wiki/Louis_Pasteur"
+      }
+    ],
+    "12-28": [
+      {
+        "year": 1895,
+        "text": "Lumière-Brüder zeigen in Paris den ersten Film gegen Eintrittsgeld",
+        "link": "https://de.wikipedia.org/wiki/Gebrüder_Lumière"
+      }
+    ],
+    "12-29": [
+      {
+        "year": 1845,
+        "text": "Texas wird als 28. Bundesstaat den USA angegliedert",
+        "link": "https://de.wikipedia.org/wiki/Texas"
+      }
+    ],
+    "12-30": [
+      {
+        "year": 1853,
+        "text": "Gadsden Purchase – USA kaufen von Mexiko das heutige südliche Arizona und New Mexico",
+        "link": "https://de.wikipedia.org/wiki/Gadsden_Purchase"
+      }
+    ],
+    "12-31": [
+      {
+        "year": 1879,
+        "text": "Thomas Edison führt erstmals eine praktikable Glühbirne öffentlich vor",
+        "link": "https://de.wikipedia.org/wiki/Thomas_Edison"
       }
     ]
   }

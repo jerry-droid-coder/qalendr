@@ -1,282 +1,118 @@
-'use client';
-
-import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { CalendarConfig, EventCategory } from '@/lib/data/types';
-import {
-  getCountries,
-  getCountryByCode,
-  getRegions,
-  getStatesByCountry,
-  loadEvents,
-  getAvailableYears,
-} from '@/lib/data';
-import { getCurrentYear } from '@/lib/utils';
-import {
-  CountryGrid,
-  CategorySelector,
-  YearSelector,
-  DownloadButton,
-  EventPreview,
-  ThemeToggle,
-  FeatureHero,
-} from '@/components';
-import { useVacationStorage } from '@/hooks/useVacationStorage';
+import { Calendar, Download, Globe, Sparkles } from 'lucide-react';
 
-export default function Home() {
-  const countries = getCountries();
-  const allRegions = getRegions();
-  const availableYears = getAvailableYears();
-  const [vacations, setVacations] = useVacationStorage();
-
-  const [config, setConfig] = useState<CalendarConfig>({
-    countries: [],
-    regions: [],
-    categories: [],
-    selectedObservances: [],
-    selectedFunDays: [],
-    selectedFamousPeople: [],
-    year: getCurrentYear(),
-  });
-
-  // Get states for all selected countries that have states
-  const allCountryStates = useMemo(
-    () => config.countries.flatMap((c) => getStatesByCountry(c)),
-    [config.countries]
-  );
-
-  // Ensure the selected year is in available years
-  useEffect(() => {
-    if (!availableYears.includes(config.year)) {
-      setConfig((prev) => ({
-        ...prev,
-        year: availableYears[availableYears.length - 1] || getCurrentYear(),
-      }));
-    }
-  }, [availableYears, config.year]);
-
-  // Load events for preview
-  const events = useMemo(() => {
-    // For countries without states, use the country codes as regions
-    const effectiveRegions =
-      allCountryStates.length === 0 ? config.countries : config.regions;
-
-    // Check if there's any content to load
-    const hasCountryContent = effectiveRegions.length > 0;
-    const hasGlobalContent = config.categories.some(
-      (c) => c === 'vacation' || c === 'observances' || c === 'fun-days' || c === 'wikipedia-today' || c === 'wikipedia-random' || c === 'famous-birthdays' || c === 'moon-phases'
-    );
-
-    if (!hasCountryContent && !hasGlobalContent) return [];
-
-    return loadEvents(
-      effectiveRegions,
-      config.categories,
-      config.year,
-      config.countries,
-      vacations,
-      config.selectedObservances,
-      config.selectedFunDays,
-      config.selectedFamousPeople
-    );
-  }, [config.regions, config.categories, config.year, config.countries, allCountryStates.length, vacations, config.selectedObservances, config.selectedFunDays, config.selectedFamousPeople]);
-
-  const handleCountriesChange = (countryCodes: string[]) => {
-    // Check if any of the new countries has school holidays
-    const anyHasSchoolHolidays = countryCodes.some(
-      (c) => getCountryByCode(c)?.hasSchoolHolidays
-    );
-
-    // Filter school-holidays if none of the new countries support it
-    let newCategories = config.categories;
-    if (!anyHasSchoolHolidays && config.categories.includes('school-holidays')) {
-      newCategories = config.categories.filter((c) => c !== 'school-holidays');
-    }
-
-    // Filter regions to only include those from selected countries
-    const validRegions = config.regions.filter((r) => {
-      const countryCode = r.split('-')[0];
-      return countryCodes.includes(countryCode);
-    });
-
-    setConfig((prev) => ({
-      ...prev,
-      countries: countryCodes,
-      regions: validRegions,
-      categories: newCategories,
-    }));
-  };
-
-  const handleRegionsChange = (regions: string[]) => {
-    setConfig((prev) => ({ ...prev, regions }));
-  };
-
-  const handleCategoriesChange = (categories: EventCategory[]) => {
-    setConfig((prev) => ({ ...prev, categories }));
-  };
-
-  const handleObservancesChange = (selectedObservances: string[]) => {
-    setConfig((prev) => ({ ...prev, selectedObservances }));
-  };
-
-  const handleFunDaysChange = (selectedFunDays: string[]) => {
-    setConfig((prev) => ({ ...prev, selectedFunDays }));
-  };
-
-  const handleFamousPeopleChange = (selectedFamousPeople: string[]) => {
-    setConfig((prev) => ({ ...prev, selectedFamousPeople }));
-  };
-
-  const handleYearChange = (year: number) => {
-    setConfig((prev) => ({ ...prev, year }));
-  };
-
-  const handleCategoryToggle = (category: EventCategory) => {
-    if (config.categories.includes(category)) {
-      handleCategoriesChange(config.categories.filter((c) => c !== category));
-    } else {
-      handleCategoriesChange([...config.categories, category]);
-    }
-  };
-
-  // Ready to download if:
-  // - Countries with states: at least one region selected
-  // - Countries without states: at least one country selected
-  // - Or: global categories selected
-  const hasStates = allCountryStates.length > 0;
-  const hasGlobalContent = config.categories.some(
-    (c) => c === 'vacation' || c === 'observances' || c === 'fun-days' || c === 'wikipedia-today' || c === 'wikipedia-random' || c === 'famous-birthdays' || c === 'moon-phases'
-  );
-  const hasCountryContent = hasStates
-    ? config.regions.length > 0
-    : config.countries.length > 0;
-  const isReadyToDownload = hasCountryContent || hasGlobalContent;
-
+export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[var(--bg-primary)]">
-      {/* Sticky Header */}
-      <header className="sticky top-0 z-50 backdrop-blur-sm bg-[var(--bg-primary)]/80 border-b border-[var(--border)]">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-xl font-semibold text-[var(--text-primary)]">
-            Qalendr
-          </h1>
-          <ThemeToggle />
-        </div>
+      {/* Header */}
+      <header className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
+        <span className="text-lg font-bold tracking-tight text-[var(--text-primary)]">
+          <span className="bg-gradient-to-r from-[var(--accent)] to-purple-400 bg-clip-text text-transparent">Q</span>alendr
+        </span>
+        <Link
+          href="/erstellen"
+          className="text-sm font-medium text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
+        >
+          Kalender erstellen
+        </Link>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 py-8 sm:py-12">
-        {/* Hero Section */}
-        <section className="text-center mb-4">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[var(--accent)] to-purple-500 bg-clip-text text-transparent">
-            Dein Qalendr
-          </h2>
-          <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed">
-            Erstelle einen Kalender mit Feiertagen, Schulferien und besonderen Tagen.
-            Einfach herunterladen und in deinen Kalender importieren.
+      {/* Hero */}
+      <main className="max-w-5xl mx-auto px-6">
+        <section className="relative pt-20 pb-24 text-center">
+          {/* Ambient glow */}
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-48 bg-[var(--accent)] opacity-[0.06] blur-[100px] rounded-full pointer-events-none" />
+
+          <h1 className="relative text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
+            <span className="bg-gradient-to-br from-[var(--accent)] via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Dein Kalender,
+            </span>
+            <br />
+            <span className="text-[var(--text-primary)]">deine Regeln.</span>
+          </h1>
+
+          <p className="relative mt-6 text-lg text-[var(--text-secondary)] max-w-lg mx-auto leading-relaxed">
+            Feiertage, Schulferien, Mondphasen, kuriose Tage und mehr &mdash;
+            alles in einer .ics-Datei für deinen Kalender.
           </p>
+
+          <div className="relative mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/erstellen"
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-xl bg-gradient-to-r from-[var(--accent)] to-purple-500 text-white font-bold text-sm hover:brightness-110 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[var(--accent)]/25"
+            >
+              <Sparkles className="h-4 w-4" />
+              Kalender erstellen
+            </Link>
+            <span className="text-xs text-[var(--text-muted)]">Kostenlos &middot; Kein Account nötig</span>
+          </div>
         </section>
 
-        {/* Feature Hero - Quick Category Selection */}
-        <FeatureHero
-          selectedCategories={config.categories}
-          onCategoryToggle={handleCategoryToggle}
-          selectedObservances={config.selectedObservances || []}
-          onObservancesChange={handleObservancesChange}
-          selectedFunDays={config.selectedFunDays || []}
-          onFunDaysChange={handleFunDaysChange}
-          selectedFamousPeople={config.selectedFamousPeople || []}
-          onFamousPeopleChange={handleFamousPeopleChange}
-          vacations={vacations}
-          onVacationsChange={setVacations}
-        />
+        {/* Features */}
+        <section className="py-20 border-t border-[var(--border)]">
+          <div className="grid sm:grid-cols-3 gap-8">
+            <div className="text-center sm:text-left">
+              <div className="inline-flex p-3 rounded-2xl bg-[var(--indigo-bg)] mb-4">
+                <Globe className="h-6 w-6 text-[var(--accent)]" />
+              </div>
+              <h3 className="font-bold text-[var(--text-primary)] mb-2">14+ Länder</h3>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                Feiertage und Schulferien für Deutschland, Österreich, Schweiz, Frankreich, USA und viele mehr.
+              </p>
+            </div>
 
-        {/* Country Grid */}
-        <CountryGrid
-          countries={countries}
-          regions={allRegions}
-          selectedCountries={config.countries}
-          selectedRegions={config.regions}
-          selectedCategories={config.categories}
-          onCountriesChange={handleCountriesChange}
-          onRegionsChange={handleRegionsChange}
-          onCategoriesChange={handleCategoriesChange}
-        />
+            <div className="text-center sm:text-left">
+              <div className="inline-flex p-3 rounded-2xl bg-[var(--purple-bg)] mb-4">
+                <Calendar className="h-6 w-6 text-purple-500" />
+              </div>
+              <h3 className="font-bold text-[var(--text-primary)] mb-2">Alles in einem Kalender</h3>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                Mondphasen, Brückentage, kuriose Feiertage, Wikipedia-Jahrestage &mdash; du wählst, was reinkommt.
+              </p>
+            </div>
 
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
-          {/* Configuration Panel */}
-          <div className="lg:col-span-2 space-y-6">
-            {/* Category Selector */}
-            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
-              <CategorySelector
-                selectedCategories={config.categories}
-                onSelectionChange={handleCategoriesChange}
-                selectedObservances={config.selectedObservances || []}
-                onObservancesChange={handleObservancesChange}
-                selectedFunDays={config.selectedFunDays || []}
-                onFunDaysChange={handleFunDaysChange}
-                selectedFamousPeople={config.selectedFamousPeople || []}
-                onFamousPeopleChange={handleFamousPeopleChange}
-                vacations={vacations}
-                onVacationsChange={setVacations}
-              />
-            </section>
-
-            {/* Year Selector */}
-            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
-              <YearSelector
-                availableYears={availableYears}
-                selectedYear={config.year}
-                onYearChange={handleYearChange}
-              />
-            </section>
-
-            {/* Download Button */}
-            <section className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 hover:shadow-[var(--shadow-lg)] hover:border-[var(--border-hover)] transition-all duration-150">
-              <DownloadButton
-                config={{
-                  ...config,
-                  // For countries without states, use the country codes as regions
-                  regions: hasStates ? config.regions : config.countries,
-                }}
-                disabled={!isReadyToDownload}
-              />
-            </section>
-          </div>
-
-          {/* Preview Panel */}
-          <div className="lg:col-span-1">
-            <div className="bg-[var(--bg-card)] rounded-2xl shadow-[var(--shadow-md)] border border-[var(--border)] p-6 sticky top-24">
-              <EventPreview events={events} maxItems={15} />
+            <div className="text-center sm:text-left">
+              <div className="inline-flex p-3 rounded-2xl bg-[var(--teal-bg)] mb-4">
+                <Download className="h-6 w-6 text-teal-500" />
+              </div>
+              <h3 className="font-bold text-[var(--text-primary)] mb-2">Einfach importieren</h3>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                Eine .ics-Datei für Apple Kalender, Google Kalender, Outlook und jede andere Kalender-App.
+              </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Footer */}
-        <footer className="mt-20 text-center text-sm text-[var(--text-muted)]">
-          <p>
-            Die Kalender-Datei (.ics) ist kompatibel mit Apple Kalender, Google Kalender,
-            Microsoft Outlook und anderen Kalender-Apps.
-          </p>
-          <p className="mt-2">
-            Daten ohne Gewähr. Stand: 2026-2028
-          </p>
-          <div className="mt-6 flex justify-center gap-6">
-            <Link
-              href="/impressum"
-              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
-            >
-              Impressum
-            </Link>
-            <Link
-              href="/datenschutz"
-              className="text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors"
-            >
-              Datenschutz
-            </Link>
+        {/* How it works */}
+        <section className="py-20 border-t border-[var(--border)]">
+          <h2 className="text-2xl font-bold text-[var(--text-primary)] text-center mb-12">So funktioniert&apos;s</h2>
+          <div className="grid sm:grid-cols-4 gap-6">
+            {[
+              { step: '1', title: 'Kategorien wählen', desc: 'Feiertage, Mondphasen, kuriose Tage und mehr' },
+              { step: '2', title: 'Länder festlegen', desc: 'Nur für Feiertage und Schulferien relevant' },
+              { step: '3', title: 'Feintuning', desc: 'Einzelne Einträge an- oder abwählen' },
+              { step: '4', title: 'Herunterladen', desc: '.ics-Datei in deinen Kalender importieren' },
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[var(--accent-light)] text-[var(--accent)] font-bold text-sm mb-3">
+                  {item.step}
+                </div>
+                <h3 className="font-semibold text-[var(--text-primary)] text-sm mb-1">{item.title}</h3>
+                <p className="text-xs text-[var(--text-muted)] leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
-        </footer>
+        </section>
       </main>
+
+      {/* Footer */}
+      <footer className="max-w-5xl mx-auto px-6 py-10 border-t border-[var(--border)] text-center text-xs text-[var(--text-muted)]">
+        <p>Daten ohne Gewähr. Stand: 2026&ndash;2028</p>
+        <div className="mt-3 flex justify-center gap-6">
+          <Link href="/impressum" className="hover:text-[var(--accent)] transition-colors">Impressum</Link>
+          <Link href="/datenschutz" className="hover:text-[var(--accent)] transition-colors">Datenschutz</Link>
+        </div>
+      </footer>
     </div>
   );
 }

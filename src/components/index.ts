@@ -1,11 +1,13 @@
 export { CountrySelector } from './CountrySelector';
 export { CountryGrid } from './CountryGrid';
-export { CategorySelector } from './CategorySelector';
+export { CategoryCards } from './CategoryCards';
 export { YearSelector } from './YearSelector';
 export { DownloadButton } from './DownloadButton';
 export { EventPreview } from './EventPreview';
+export { MiniCalendar } from './MiniCalendar';
 export { ThemeProvider } from './ThemeProvider';
 export { ThemeToggle } from './ThemeToggle';
-export { FeatureHero } from './FeatureHero';
+export { Sidebar } from './Sidebar';
+export { MobileNav } from './MobileNav';
 export { Button } from './ui/button';
-export { BentoGrid, BentoCard } from './ui/bento-grid';
+export { ToggleSwitch } from './ui/toggle-switch';

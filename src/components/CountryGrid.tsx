@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Country, Region, EventCategory } from '@/lib/data/types';
-import { MapPin, ChevronDown, Check } from 'lucide-react';
+import { ChevronDown, Check, X } from 'lucide-react';
 
 interface CountryGridProps {
   countries: Country[];
@@ -53,72 +53,44 @@ export function CountryGrid({
   const getSelectedRegionCount = (countryCode: string) =>
     selectedRegions.filter((r) => r.startsWith(countryCode + '-')).length;
 
-  const handleCountryClick = (countryCode: string) => {
+  const handleCountryToggle = (countryCode: string) => {
     const country = countries.find((c) => c.code === countryCode);
     const isSelected = selectedCountries.includes(countryCode);
-    const hasStates = getStatesForCountry(countryCode).length > 0;
 
     if (isSelected) {
-      // Wenn bereits ausgewählt, toggle erweiterte Ansicht bei Ländern mit Regionen
-      if (hasStates || country?.hasSchoolHolidays) {
-        if (expandedCountry === countryCode) {
-          setExpandedCountry(null);
-        } else {
-          setExpandedCountry(countryCode);
+      onCountriesChange(selectedCountries.filter((c) => c !== countryCode));
+      onRegionsChange(selectedRegions.filter((r) => !r.startsWith(countryCode + '-')));
+      if (expandedCountry === countryCode) setExpandedCountry(null);
+
+      if (country?.hasSchoolHolidays) {
+        const remaining = selectedCountries.filter((c) => c !== countryCode);
+        const anyHasSchoolHolidays = remaining.some(
+          (c) => countries.find((co) => co.code === c)?.hasSchoolHolidays
+        );
+        if (!anyHasSchoolHolidays && selectedCategories.includes('school-holidays')) {
+          onCategoriesChange(selectedCategories.filter((c) => c !== 'school-holidays'));
         }
-      } else {
-        // Für Länder ohne Regionen: Abwählen
-        handleCountryDeselect(countryCode);
+      }
+
+      if (selectedCountries.length === 1) {
+        onCategoriesChange(selectedCategories.filter((c) => c !== 'public-holidays' && c !== 'school-holidays'));
       }
     } else {
-      // Neu auswählen
-      handleCountrySelect(countryCode);
-    }
-  };
+      const newCountries = [...selectedCountries, countryCode];
+      onCountriesChange(newCountries);
 
-  const handleCountrySelect = (countryCode: string) => {
-    const country = countries.find((c) => c.code === countryCode);
-    const newCountries = [...selectedCountries, countryCode];
-    onCountriesChange(newCountries);
+      if (selectedCountries.length === 0) {
+        onCategoriesChange([...selectedCategories, 'public-holidays']);
+      }
 
-    // Auto-add public-holidays wenn erstes Land
-    if (selectedCountries.length === 0) {
-      onCategoriesChange([...selectedCategories, 'public-holidays']);
-    }
-
-    // Auto-expand wenn Land Regionen hat
-    if (country?.hasStates || country?.hasSchoolHolidays) {
-      setExpandedCountry(countryCode);
-    }
-  };
-
-  const handleCountryDeselect = (countryCode: string) => {
-    const country = countries.find((c) => c.code === countryCode);
-
-    onCountriesChange(selectedCountries.filter((c) => c !== countryCode));
-    onRegionsChange(selectedRegions.filter((r) => !r.startsWith(countryCode + '-')));
-
-    if (expandedCountry === countryCode) {
-      setExpandedCountry(null);
-    }
-
-    // Schulferien entfernen wenn letztes Land mit Schulferien
-    if (country?.hasSchoolHolidays) {
-      const remainingCountries = selectedCountries.filter((c) => c !== countryCode);
-      const anyHasSchoolHolidays = remainingCountries.some(
-        (c) => countries.find((co) => co.code === c)?.hasSchoolHolidays
-      );
-      if (!anyHasSchoolHolidays && selectedCategories.includes('school-holidays')) {
-        onCategoriesChange(selectedCategories.filter((c) => c !== 'school-holidays'));
+      if (country?.hasStates || country?.hasSchoolHolidays) {
+        setExpandedCountry(countryCode);
       }
     }
+  };
 
-    // Länderspezifische Kategorien entfernen wenn kein Land mehr
-    if (selectedCountries.length === 1) {
-      onCategoriesChange(
-        selectedCategories.filter((c) => c !== 'public-holidays' && c !== 'school-holidays')
-      );
-    }
+  const handleExpandToggle = (countryCode: string) => {
+    setExpandedCountry(expandedCountry === countryCode ? null : countryCode);
   };
 
   const handleRegionToggle = (regionCode: string) => {
@@ -154,18 +126,11 @@ export function CountryGrid({
   };
 
   return (
-    <section className="py-8">
-      <div className="mb-6 text-center">
-        <h2 className="text-2xl font-bold text-[var(--text-primary)] sm:text-3xl flex items-center justify-center gap-3">
-          <MapPin className="h-8 w-8 text-[var(--accent)]" />
-          Länder & Regionen
-        </h2>
-        <p className="mt-2 text-[var(--text-secondary)]">
-          Wähle die Länder aus, für die du Feiertage und Ferien sehen möchtest
-        </p>
-      </div>
+    <div className="space-y-3">
+      <h3 className="text-[11px] font-semibold text-[var(--text-muted)] uppercase tracking-widest">Länder & Regionen</h3>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+      {/* Vertical list of countries */}
+      <div className="space-y-1 max-h-[400px] overflow-y-auto pr-1">
         {countries.map((country) => {
           const isSelected = selectedCountries.includes(country.code);
           const isExpanded = expandedCountry === country.code;
@@ -176,162 +141,102 @@ export function CountryGrid({
           const needsExpansion = country.hasStates || country.hasSchoolHolidays;
 
           return (
-            <div
-              key={country.code}
-              className={cn(
-                'relative rounded-xl border overflow-hidden transition-all duration-200',
-                'shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)]',
-                isSelected
-                  ? 'ring-2 ring-[var(--accent)] border-[var(--accent)] bg-[var(--accent-light)]'
-                  : 'border-[var(--border)] hover:border-[var(--border-hover)] bg-[var(--bg-card)]',
-                isExpanded && 'col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 row-span-2'
-              )}
-            >
-              {/* Country Card Header */}
+            <div key={country.code} className="rounded-lg overflow-hidden">
+              {/* Country row */}
               <div
                 className={cn(
-                  'relative flex flex-col items-center justify-center p-4 cursor-pointer transition-colors min-h-[100px]',
-                  !isSelected && 'hover:bg-[var(--bg-hover)]'
+                  'flex items-center gap-2.5 px-3 py-2 cursor-pointer rounded-lg transition-all duration-150',
+                  isSelected
+                    ? 'bg-[var(--accent-light)] text-[var(--text-primary)]'
+                    : 'hover:bg-[var(--bg-hover)] text-[var(--text-secondary)]'
                 )}
-                onClick={() => handleCountryClick(country.code)}
+                onClick={() => handleCountryToggle(country.code)}
               >
-                {/* Selected Checkmark */}
-                {isSelected && (
-                  <div className="absolute top-2 right-2">
-                    <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--accent)] text-white">
-                      <Check className="h-3 w-3" />
-                    </div>
-                  </div>
-                )}
+                <span className="text-lg">{country.flag}</span>
+                <span className="flex-1 text-sm font-medium">{country.name}</span>
 
-                {/* Flag */}
-                <span className="text-4xl mb-2">{country.flag}</span>
-
-                {/* Country Name */}
-                <span className="font-medium text-[var(--text-primary)] text-sm text-center">
-                  {country.name}
-                </span>
-
-                {/* Badge for selected regions */}
                 {isSelected && hasStates && selectedCount > 0 && !isExpanded && (
-                  <span className="mt-1 text-xs bg-[var(--accent)] text-white px-2 py-0.5 rounded-full">
-                    {selectedCount} {selectedCount === 1 ? labels.singular : labels.plural}
+                  <span className="text-xs bg-[var(--accent)] text-white px-1.5 py-0.5 rounded-full">
+                    {selectedCount}
                   </span>
                 )}
 
-                {/* Expand indicator */}
-                {isSelected && needsExpansion && (
-                  <ChevronDown
-                    className={cn(
-                      'absolute bottom-2 h-4 w-4 text-[var(--text-muted)] transition-transform',
-                      isExpanded && 'rotate-180'
+                {isSelected && (
+                  <div className="flex items-center gap-1">
+                    {needsExpansion && (
+                      <button
+                        type="button"
+                        onClick={(e) => { e.stopPropagation(); handleExpandToggle(country.code); }}
+                        className="p-0.5 rounded hover:bg-[var(--bg-hover)] transition-colors"
+                        aria-label={isExpanded ? 'Zuklappen' : 'Aufklappen'}
+                      >
+                        <ChevronDown className={cn('h-4 w-4 text-[var(--text-muted)] transition-transform', isExpanded && 'rotate-180')} />
+                      </button>
                     )}
-                  />
+                    <Check className="h-4 w-4 text-[var(--accent)]" />
+                  </div>
                 )}
               </div>
 
-              {/* Expanded Content */}
+              {/* Expanded inline */}
               {isSelected && needsExpansion && isExpanded && (
-                <div className="border-t border-[var(--accent)] bg-[var(--bg-card)] p-4 space-y-4">
-                  {/* Actions */}
-                  <div className="flex items-center justify-between flex-wrap gap-2">
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleCountryDeselect(country.code);
-                      }}
-                      className="text-sm text-red-500 hover:text-red-600"
-                    >
-                      Land entfernen
-                    </button>
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setExpandedCountry(null);
-                      }}
-                      className="text-sm text-[var(--accent)] hover:text-[var(--accent-hover)]"
-                    >
-                      Zuklappen
-                    </button>
-                  </div>
-
+                <div className="ml-4 pl-4 border-l-2 border-[var(--accent)] space-y-3 py-2 mb-2">
                   {/* Category toggles */}
-                  <div className="space-y-2">
-                    <span className="text-sm font-medium text-[var(--text-secondary)]">Inhalte:</span>
-                    <div className="flex flex-wrap gap-3">
-                      <label className="flex items-center gap-2 cursor-pointer">
+                  <div className="flex flex-wrap gap-2">
+                    <label className="flex items-center gap-1.5 cursor-pointer text-xs">
+                      <input
+                        type="checkbox"
+                        checked={selectedCategories.includes('public-holidays')}
+                        onChange={() => handleCategoryToggle('public-holidays')}
+                        className="h-3.5 w-3.5 rounded border-[var(--border)]"
+                        style={{ accentColor: 'var(--accent)' }}
+                      />
+                      <span className="text-[var(--text-secondary)]">Feiertage</span>
+                    </label>
+
+                    {country.hasSchoolHolidays && (
+                      <label className="flex items-center gap-1.5 cursor-pointer text-xs">
                         <input
                           type="checkbox"
-                          checked={selectedCategories.includes('public-holidays')}
-                          onChange={() => handleCategoryToggle('public-holidays')}
-                          className="h-4 w-4 rounded border-[var(--border)]"
+                          checked={selectedCategories.includes('school-holidays')}
+                          onChange={() => handleCategoryToggle('school-holidays')}
+                          className="h-3.5 w-3.5 rounded border-[var(--border)]"
                           style={{ accentColor: 'var(--accent)' }}
                         />
-                        <span className="text-sm text-[var(--text-secondary)]">Gesetzliche Feiertage</span>
+                        <span className="text-[var(--text-secondary)]">Schulferien</span>
                       </label>
-
-                      {country.hasSchoolHolidays && (
-                        <label className="flex items-center gap-2 cursor-pointer">
-                          <input
-                            type="checkbox"
-                            checked={selectedCategories.includes('school-holidays')}
-                            onChange={() => handleCategoryToggle('school-holidays')}
-                            className="h-4 w-4 rounded border-[var(--border)]"
-                            style={{ accentColor: 'var(--accent)' }}
-                          />
-                          <span className="text-sm text-[var(--text-secondary)]">Schulferien</span>
-                        </label>
-                      )}
-                    </div>
+                    )}
                   </div>
 
                   {/* Regions */}
                   {hasStates && (
-                    <div className="space-y-3 pt-2 border-t border-[var(--border)]">
+                    <div className="space-y-2">
                       <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium text-[var(--text-secondary)]">
-                          {labels.plural}:
-                        </span>
-                        <div className="flex gap-2">
-                          <button
-                            type="button"
-                            onClick={() => handleSelectAllRegions(country.code)}
-                            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
-                          >
-                            Alle
-                          </button>
+                        <span className="text-xs font-medium text-[var(--text-muted)]">{labels.plural}</span>
+                        <div className="flex gap-1.5">
+                          <button type="button" onClick={() => handleSelectAllRegions(country.code)} className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]">Alle</button>
                           <span className="text-[var(--border)]">|</span>
-                          <button
-                            type="button"
-                            onClick={() => handleClearRegions(country.code)}
-                            className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
-                          >
-                            Keine
-                          </button>
+                          <button type="button" onClick={() => handleClearRegions(country.code)} className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]">Keine</button>
                         </div>
                       </div>
-
-                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                      <div className="space-y-0.5 max-h-48 overflow-y-auto">
                         {states.map((region) => {
                           const isRegionSelected = selectedRegions.includes(region.code);
                           return (
                             <label
                               key={region.code}
                               className={cn(
-                                'flex items-center gap-2 p-2 rounded-lg border cursor-pointer',
-                                'transition-all duration-150 text-sm',
+                                'flex items-center gap-2 px-2 py-1.5 rounded-md cursor-pointer transition-all duration-150 text-xs',
                                 isRegionSelected
-                                  ? 'bg-[var(--accent-light)] border-[var(--accent)] text-[var(--text-primary)]'
-                                  : 'bg-[var(--bg-hover)] border-[var(--border)] text-[var(--text-secondary)] hover:border-[var(--border-hover)] hover:bg-[var(--bg-card)]'
+                                  ? 'bg-[var(--accent-light)] text-[var(--text-primary)]'
+                                  : 'text-[var(--text-secondary)] hover:bg-[var(--bg-hover)]'
                               )}
                             >
                               <input
                                 type="checkbox"
                                 checked={isRegionSelected}
                                 onChange={() => handleRegionToggle(region.code)}
-                                className="h-4 w-4 rounded border-[var(--border)]"
+                                className="h-3.5 w-3.5 rounded border-[var(--border)]"
                                 style={{ accentColor: 'var(--accent)' }}
                               />
                               <span className="truncate">{region.name}</span>
@@ -341,6 +246,16 @@ export function CountryGrid({
                       </div>
                     </div>
                   )}
+
+                  {/* Remove country */}
+                  <button
+                    type="button"
+                    onClick={(e) => { e.stopPropagation(); handleCountryToggle(country.code); }}
+                    className="flex items-center gap-1 text-xs text-red-500 hover:text-red-600 transition-colors"
+                  >
+                    <X className="h-3 w-3" />
+                    Land entfernen
+                  </button>
                 </div>
               )}
             </div>
@@ -350,11 +265,11 @@ export function CountryGrid({
 
       {/* Summary */}
       {selectedCountries.length > 0 && (
-        <p className="text-sm text-[var(--text-muted)] text-center mt-4">
-          {selectedCountries.length} {selectedCountries.length === 1 ? 'Land' : 'Länder'} ausgewählt
+        <p className="text-xs text-[var(--text-muted)]">
+          {selectedCountries.length} {selectedCountries.length === 1 ? 'Land' : 'Länder'}
           {selectedRegions.length > 0 && ` · ${selectedRegions.length} Regionen`}
         </p>
       )}
-    </section>
+    </div>
   );
 }

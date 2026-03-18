@@ -2,11 +2,18 @@
   "description": "Gedenktage und besondere Anlässe",
   "days": [
     {
-      "id": "zeitumstellung-sommer",
-      "name": "Zeitumstellung (Sommerzeit)",
-      "date": "dst-spring",
-      "type": "variable",
-      "note": "Uhren 1 Stunde vor (2:00 → 3:00 Uhr)"
+      "id": "holocaust-gedenktag",
+      "name": "Internationaler Holocaust-Gedenktag",
+      "date": "01-27",
+      "type": "fixed",
+      "note": "Gedenktag zur Erinnerung an die Opfer des Nationalsozialismus – Jahrestag der Befreiung von Auschwitz"
+    },
+    {
+      "id": "weltkrebstag",
+      "name": "Weltkrebstag",
+      "date": "02-04",
+      "type": "fixed",
+      "note": "Internationaler Tag zur Sensibilisierung für Krebserkrankungen und deren Prävention"
     },
     {
       "id": "valentinstag",
@@ -27,10 +34,59 @@
       "type": "fixed"
     },
     {
+      "id": "weltwassertag",
+      "name": "Weltwassertag",
+      "date": "03-22",
+      "type": "fixed",
+      "note": "UN-Aktionstag für den nachhaltigen Umgang mit der Ressource Wasser"
+    },
+    {
+      "id": "zeitumstellung-sommer",
+      "name": "Zeitumstellung (Sommerzeit)",
+      "date": "dst-spring",
+      "type": "variable",
+      "note": "Uhren 1 Stunde vor (2:00 → 3:00 Uhr)"
+    },
+    {
+      "id": "weltgesundheitstag",
+      "name": "Weltgesundheitstag",
+      "date": "04-07",
+      "type": "fixed",
+      "note": "Gedenktag der Weltgesundheitsorganisation (WHO), gegründet am 7. April 1948"
+    },
+    {
       "id": "tag-der-erde",
       "name": "Tag der Erde",
       "date": "04-22",
       "type": "fixed"
+    },
+    {
+      "id": "welttag-des-buches",
+      "name": "Welttag des Buches",
+      "date": "04-23",
+      "type": "fixed",
+      "note": "UNESCO-Aktionstag zur Förderung des Lesens und der Buchkultur"
+    },
+    {
+      "id": "tag-der-arbeit",
+      "name": "Tag der Arbeit",
+      "date": "05-01",
+      "type": "fixed",
+      "note": "Internationaler Kampftag der Arbeiterbewegung, in Deutschland gesetzlicher Feiertag"
+    },
+    {
+      "id": "weltpressefreiheitstag",
+      "name": "Weltpressefreiheitstag",
+      "date": "05-03",
+      "type": "fixed",
+      "note": "UN-Aktionstag für die Grundprinzipien der Pressefreiheit"
+    },
+    {
+      "id": "tag-der-befreiung",
+      "name": "Tag der Befreiung",
+      "date": "05-08",
+      "type": "fixed",
+      "note": "Ende des Zweiten Weltkrieges in Europa am 8. Mai 1945"
     },
     {
       "id": "muttertag",
@@ -52,10 +108,52 @@
       "type": "fixed"
     },
     {
+      "id": "volksaufstand-ddr",
+      "name": "Tag des Volksaufstands in der DDR",
+      "date": "06-17",
+      "type": "fixed",
+      "note": "Gedenktag an den Volksaufstand vom 17. Juni 1953"
+    },
+    {
+      "id": "weltfluechtlingstag",
+      "name": "Weltflüchtlingstag",
+      "date": "06-20",
+      "type": "fixed",
+      "note": "UN-Aktionstag zur Solidarität mit Geflüchteten weltweit"
+    },
+    {
       "id": "sommerbeginn",
       "name": "Sommeranfang",
       "date": "06-21",
       "type": "fixed"
+    },
+    {
+      "id": "bastille-tag",
+      "name": "Bastille-Tag",
+      "date": "07-14",
+      "type": "fixed",
+      "note": "Französischer Nationalfeiertag, Sturm auf die Bastille 1789"
+    },
+    {
+      "id": "hiroshima-gedenktag",
+      "name": "Hiroshima-Gedenktag",
+      "date": "08-06",
+      "type": "fixed",
+      "note": "Gedenktag für die Opfer des Atombombenabwurfs am 6. August 1945"
+    },
+    {
+      "id": "antikriegstag",
+      "name": "Antikriegstag",
+      "date": "09-01",
+      "type": "fixed",
+      "note": "Gedenktag an den Beginn des Zweiten Weltkrieges, Überfall auf Polen 1939"
+    },
+    {
+      "id": "friedenstag",
+      "name": "Internationaler Friedenstag",
+      "date": "09-21",
+      "type": "fixed",
+      "note": "UN-Aktionstag für weltweiten Frieden und Gewaltfreiheit"
     },
     {
       "id": "herbstbeginn",
@@ -70,6 +168,13 @@
       "type": "variable"
     },
     {
+      "id": "welternaehrungstag",
+      "name": "Welternährungstag",
+      "date": "10-16",
+      "type": "fixed",
+      "note": "Jahrestag der Gründung der Welternährungsorganisation FAO 1945"
+    },
+    {
       "id": "zeitumstellung-winter",
       "name": "Zeitumstellung (Winterzeit)",
       "date": "dst-autumn",
@@ -81,6 +186,13 @@
       "name": "Halloween",
       "date": "10-31",
       "type": "fixed"
+    },
+    {
+      "id": "allerheiligen",
+      "name": "Allerheiligen",
+      "date": "11-01",
+      "type": "fixed",
+      "note": "Christlicher Feiertag, in mehreren Bundesländern gesetzlich"
     },
     {
       "id": "martinstag",
@@ -103,15 +215,22 @@
       "note": "Sonntag vor dem 1. Advent"
     },
     {
-      "id": "winterbeginn",
-      "name": "Winteranfang",
-      "date": "12-21",
-      "type": "fixed"
-    },
-    {
       "id": "nikolaus",
       "name": "Nikolaus",
       "date": "12-06",
+      "type": "fixed"
+    },
+    {
+      "id": "tag-der-menschenrechte",
+      "name": "Tag der Menschenrechte",
+      "date": "12-10",
+      "type": "fixed",
+      "note": "Jahrestag der Allgemeinen Erklärung der Menschenrechte 1948"
+    },
+    {
+      "id": "winterbeginn",
+      "name": "Winteranfang",
+      "date": "12-21",
       "type": "fixed"
     },
     {
