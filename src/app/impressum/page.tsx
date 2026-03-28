@@ -40,7 +40,7 @@ export default function ImpressumPage() {
               Kontakt
             </h2>
             <div className="text-[var(--text-secondary)] space-y-2">
-              <p>E-Mail: <a href="mailto:huth.jj@gmail.com" className="text-[var(--accent)] hover:underline">huth.jj@gmail.com</a></p>
+              <p>E-Mail: <a href="mailto:kontakt@huthfabrik.de" className="text-[var(--accent)] hover:underline">kontakt@huthfabrik.de</a></p>
             </div>
           </section>
 
